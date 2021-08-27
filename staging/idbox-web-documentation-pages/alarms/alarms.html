@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div style="clear: both;">
+  
+<div style="float: left; margin-inline: 5px;">
+    <span class="ti-alert"></span>
+  </div>
+  
+<div style="float: left; margin-center">
+    
+<h1>Alarmas</h1>
+  </div>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a></li>
+<li>2 <a href="#alarmas">Visualizaci&#xf3;n de alarmas</a></li>
+<li>3 <a href="#alarmasFiltrado">Filtrado b&#xe1;sico de alarmas</a></li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>Desde el documento de alarmas podremos visualizar las alarmas ocurridas en el sistema, permitiendo aplicar un filtrado b&#xe1;sico de las alarmas que deseamos visualizar.</p>
+<p>Los documentos de alarmas se pueden crear desde desde el lanzador (1) o desde el shortcut (2).</p>
+<p><img src="images/image01.png" class="grande" alt="Creación de documento de alarmas" title="Creación de documento de alarmas" /></p>
+<p>1) Al pulsar en el shortcut de alarmas se abrir&#xe1; el asistente de creaci&#xf3;n de un nuevo documento de alarmas, en el cual podremos seleccionar las se&#xf1;ales a filtrar y el rango de fechas a visualizar, cabe destacar que para crear un nuevo documento de alamas no es necesario seleccionar ninguna se&#xf1;al, las se&#xf1;ales con las cuales creemos el documento de alarmas se aplicar&#xe1;n al filtrado b&#xe1;sico, de forma que solo visualizaremos las alarmas de dicha se&#xf1;ales.</p>
+<ul>
+
+<li>Se&#xf1;ales Podemos seleccionar las se&#xf1;ales sobre las cuales deseamos consultar las alarmas, en caso de que no seleccionemos ninguna se&#xf1;al, se visualizar&#xe1;n las alarmas de todo el sistema.
+<ul>
+
+<li>Configuraci&#xf3;n de fechas: Permite seleccionar el intervalo temporal para el que se mostrar&#xe1;n los datos. Se podr&#xe1;n escribir las fechas en el <a href="../dates/dates.html#lite">campo de texto</a> o pulsar sobre el calendario (2) para que se abra <a href="../dates/dates.html#full">el selector de fechas</a>.</li>
+</ul>
+</li>
+</ul>
+<p>Establecida la configuraci&#xf3;n inicial, se mostrar&#xe1; la gr&#xe1;fica configurada en la pantalla. El &#xe1;rea central, la representaci&#xf3;n gr&#xe1;fica se corresponde con la configuraci&#xf3;n seleccionada previamente tipo de gr&#xe1;fica, fechas y series.</p>
+<p>2) Para crear un documento de alarmas desde el lanzador basta con pulsar sobre el icono de alarmas y se creara un nuevo documento de alarmas, al igual que desde el asistente no es obligatorio que seleccionemos alguna se&#xf1;al para crear un documento de alarmas.</p>
+<p>Una vez creado el documento de alarmas, En la parte central podremos visualizar el momento, duraci&#xf3;n, descripci&#xf3;n la se&#xf1;al que ha generado la alarma y si ha sido reconocida por alg&#xfa;n usuario. En la parte derecha del documento tenemos el panel de filtrado b&#xe1;sico que nos permitir&#xe1; excluir las alarmas a mostrar.</p>
+<p><img src="images/image02.png" class="grande" alt="Barra de herramientas" title="Documento de alarmas" /></p><hr /></section><section>
+<h2><a name="a2_Visualizaci.C3.B3n_de_alarmas."></a><a name="alarmas"></a>2 Visualizaci&#xf3;n de alarmas.</h2>
+<p>Desde la visualizaci&#xf3;n de alarmas podemos realizar dos posibles acciones:</p>
+<p>1) Iniciar/Pausar tiempo real: Permite parar o reanudar el listado a tiempo real de las alarmas. <span class="ti-play"></span> 2) Reconocer alarmas: Seleccionando  uno  o  varios  elementos  del  listado y haciendo clic en reconocer alamras <span class="ti-eye"></span>.Al reconocer la alarma, se  activa el campo  de reconocimiento  (Ack)  como &#x201c;true&#x201d;,indicando  que  esta alarma ya ha sido atendida y en el campo de usuario (Ack User) qui&#xe9;n reconoci&#xf3; la alarma.</p>
+<p><img src="images/image04.png" class="grande" alt="Barra de herramientas" title="Visualización de alarmas" /></p>
+<p>En la tabla de datos se muestran los siguientes campos: 1) Momento: Momento en el que se ha producido la alarma. 2) Severidad: Nive de severidad de la alarma. 3) Duraci&#xf3;n: Duraci&#xf3;n de la alarma, en caso de que la alarma siga activa, se mostrar&#xe1; &#x201c;Active&#x201d;. 4) Se&#xf1;al: Se&#xf1;al asociada a la alarma. 5) Descripci&#xf3;n: Descripci&#xf3;n asociada a la configuraci&#xf3;n de alarma. 6) Ack: Inidica si la alarma ha sido reconocida. 7) Ack usuario: Muestra el usuario que ha reconocido la alarma.</p><hr /></section><section>
+<h2><a name="a3.09Filtrado_b.C3.A1sico_de_alarmas"></a><a name="alarmasFiltrado"></a>3	Filtrado b&#xe1;sico de alarmas</h2>
+<p>En el panel de filtrado b&#xe1;sico de alarmas, podremos establecer una serie de filtros, de manera que solo visualizaremos las alarmas que cumplan con los filtros establecidos.</p>
+<p><img src="images/image05.png" class="grande" alt="Gráfica de agrupados" title="Gráfica de agrupados" /></p>
+<p>Disponemos de los siguientes filtros: 1)Se&#xf1;ales: Solo visualizaremos las alarmas de se&#xf1;ales introducidas, en caso de no haber introducido ninguna se&#xf1;al, se mostrar&#xe1; &#x201c;Todas las se&#xf1;ales&#x201d; 2)Configuraci&#xf3;n de fechas: Permite seleccionar el intervalo temporal para el que se mostrar&#xe1;n los datos. Se podr&#xe1;n escribir las fechas en el <a href="../dates/dates.html#lite">campo de texto</a> o pulsar sobre el calendario (1) para que se abra <a href="../dates/dates.html#full">el selector de fechas</a>. 3)Severidad: Nivel de severidad que deseamos visualizar, por defecto aparece seleccionado &#x201c;Sin filtro&#x201d;, por tanto visualizaremos alarmas con todos los niveles de criticidad. 4)Activas: Indica si deseamos visualizar &#xfa;nicamente las alarmas, activas, desactivadas o ambas. 5)Reconocidas: Indica si deseamos visualizar &#xfa;nicamente las alarmas no reconocidas, pendientes de reconocer o ambas. 6)Duraci&#xf3;n: Permite la posibilidad de filtrar las alarmas por su duraci&#xf3;n, indicando una duraci&#xf3;n m&#xed;nima y m&#xe1;xima.</p></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

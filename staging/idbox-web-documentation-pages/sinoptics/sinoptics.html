@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div style="clear: both;">
+  
+<div style="float: left; margin-inline: 5px;">
+    <img src="images/sinoptics.png" alt="Sinópticos" width="50" />
+  </div>
+  
+<div style="float: left; margin-center">
+    
+<h1>Sin&#xf3;pticos</h1>
+  </div>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ol style="list-style-type: decimal">
+
+<li><a href="#intro">Introducci&#xf3;n</a>
+<ul>
+
+<li>1.1 <a href="#editor">Dise&#xf1;ador</a>
+<ul>
+
+<li>1.1.1 <a href="#menu">Men&#xfa;</a></li>
+<li>1.1.2 <a href="#drawing">Herramientas de dibujo</a>
+<ul>
+
+<li>1.1.2.1 <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a></li>
+<li>1.1.2.2 <a href="#drawing_effects">Efectos</a></li>
+<li>1.1.2.3 <a href="#drawing_specific">Propiedades espec&#xed;ficas</a>
+<ul>
+
+<li>1.1.2.3.1 <a href="#rectangle">Rect&#xe1;ngulo</a></li>
+<li>1.1.2.3.2 <a href="#ellipse">Elipse</a></li>
+<li>1.1.2.3.3 <a href="#text">Texto</a></li>
+<li>1.1.2.3.4 <a href="#image">Imagen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1.1.3 <a href="#dynamic">Componentes din&#xe1;micos</a>
+<ul>
+
+<li>1.1.3.1 <a href="#label">Etiqueta</a></li>
+<li>1.1.3.2 <a href="#gauje">Indicador</a></li>
+<li>1.1.3.3 <a href="#progress_bar">Barra progreso</a></li>
+<li>1.1.3.4 <a href="#switch">Switch</a></li>
+<li>1.1.3.5 <a href="#circular_progress">Barra progreso circular</a></li>
+<li>1.1.3.6 <a href="#link">Enlace</a></li>
+<li>1.1.3.7 <a href="#pie_chart">Gr&#xe1;fica tarta</a></li>
+<li>1.1.3.8 <a href="#chart">Gr&#xe1;fica</a></li>
+<li>1.1.3.9 <a href="#historic_table">Tabla hist&#xf3;ricos</a></li>
+<li>1.1.3.10 <a href="#operation_switch">Interruptor operaci&#xf3;n</a></li>
+<li>1.1.3.11 <a href="#operation_button">Bot&#xf3;n operaci&#xf3;n</a></li>
+</ul>
+</li>
+<li>1.1.4 <a href="#layers">Capas</a></li>
+<li>1.1.5 <a href="#params">Par&#xe1;metros</a>
+<ul>
+
+<li>1.1.5.1 <a href="#paramList">Lista de par&#xe1;metros</a></li>
+<li>1.1.5.2 <a href="#paramEditor">Propiedades de par&#xe1;metros</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1.2 <a href="#viewer">Visor</a>
+<ul>
+
+<li>1.2.1 <a href="#modalParameterVisor">Sin&#xf3;ptico con par&#xe1;metros</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>Una de las herramientas de an&#xe1;lisis que dispone el sistema son los sin&#xf3;pticos, la cual permite la visualizaci&#xf3;n de los valores en tiempo real representados mediante unos gr&#xe1;ficos vectoriales que cambian din&#xe1;micamente en funci&#xf3;n de los distintos valores de las se&#xf1;ales que se asocian a los mismos.</p>
+<p>Esta secci&#xf3;n est&#xe1; dividida en dos herramientas importantes que son el visor y el dise&#xf1;ador de sin&#xf3;pticos.</p><section>
+<h3><a name="a1.1_Dise.C3.B1ador_de_sin.C3.B3pticos"></a><a name="editor"></a>1.1 Dise&#xf1;ador de sin&#xf3;pticos</h3>
+<p>El dise&#xf1;ador de sin&#xf3;ptico permite tanto la edici&#xf3;n de un sin&#xf3;ptico ya existente en IDbox como la creaci&#xf3;n de uno nuevo.</p>
+<p>La creaci&#xf3;n de un nuevo sin&#xf3;ptico se har&#xe1; desde la secci&#xf3;n de accesos directos del cliente Web.</p>
+<p><img src="images/img1.png" alt="Creación de sinóptico desde los accesos directos" title="Creación de sinóptico desde los accesos directos" style="width: 300px;" /></p>
+<p>Para la edici&#xf3;n de un sin&#xf3;ptico existen varias opciones: * Desde el explorador de documentos, buscaremos en la jerarqu&#xed;a de documentos la ubicaci&#xf3;n del sin&#xf3;ptico y le editaremos bien mediante la opci&#xf3;n de editar de la toolbar superior de la jerarqu&#xed;a o mediante dicha opci&#xf3;n del men&#xfa; contextual del documento.</p>
+<p><img src="images/img2.png" alt="Edición de un sinóptico desde latoolbar" title="Edición de un sinóptico desde latoolbar" style="width: 300px;" /> <img src="images/img3.png" alt="Edición de un sinóptico desde elmenú contextual" title="Edición de un sinóptico desde elmenú contextual" style="width: 300px;" /></p>
+<ul>
+
+<li>En el explorador de documentos, en la secci&#xf3;n central de documentos de la jerarqu&#xed;a seleccionada, al situarnos sobre el sin&#xf3;ptico nos aparecer&#xe1; el siguiente bot&#xf3;n <img src="images/img4.png" alt="IDbox" /> para editar el sin&#xf3;ptico.</li>
+<li>Desde la edici&#xf3;n de otro sin&#xf3;ptico, tambi&#xe9;n existe la posibilidad de abrir en modo edici&#xf3;n otro sin&#xf3;ptico.</li>
+</ul>
+<p>Con cualquiera de las opciones anteriormente expuestas se abrir&#xe1; el dise&#xf1;ador de sin&#xf3;pticos.</p>
+<p><img src="images/img5.png" alt="Diseñador de un sinóptico nuevo" title="Diseñador de un sinóptico nuevo" style="width: 300px;" /></p>
+<p>El &#xe1;rea principal de la interfaz (1) estar&#xe1; ocupada por el tapiz, donde se dibujar&#xe1; el sin&#xf3;ptico.</p>
+<blockquote>
+
+<p>La rueda del rat&#xf3;n permite aumentar o disminuir el detalle del tapiz.</p>
+</blockquote>
+<p>Al seleccionar una opci&#xf3;n del panel lateral izquierdo(2) se desplegar&#xe1; un submen&#xfa; con las configuraciones disponibles para ese elemento.</p>
+<p>Los men&#xfa;s disponibles del panel lateral izquierdo son:</p>
+<ul>
+
+<li><a href="#menu">Men&#xfa;</a>: Da acceso a las herramientas b&#xe1;sicas del trabajo sobre los elementos.</li>
+<li><a href="#drawing">Herramientas de dibujo</a>: Da acceso a los elementos est&#xe1;ticos que se pueden a&#xf1;adir al sin&#xf3;ptico (formas, texto, imagen, etc.).</li>
+<li><a href="#dynamic">Componentes din&#xe1;micos</a>: Da acceso a los elementos din&#xe1;micos que se pueden a&#xf1;adir al sin&#xf3;ptico (barra de progreso, gr&#xe1;fica, indicador, etc.).</li>
+<li><a href="#layers">Capas</a>: Da acceso al listado de capas del sin&#xf3;ptico. Permite configurar las capas del sin&#xf3;ptico.</li>
+<li><a href="#params">Par&#xe1;metros</a>: Da acceso al listado de par&#xe1;metros del sin&#xf3;ptico. Permite configurar los par&#xe1;metros del sin&#xf3;ptico.</li>
+</ul>
+<p>Cuando se selecciona m&#xe1;s de un componente en el tapiz, se abre el panel lateral derecho con las opciones de alineaci&#xf3;n para aplicar a la selecci&#xf3;n en varias posiciones.</p>
+<p><img src="images/img5_1.png" alt="Alineación selección múltiple" title="Alineación selección múltiple" style="width: 300px;" /></p>
+<p>El editor dispone de un portapapeles donde se almacenan los &#xfa;ltimos elementos copiados, permitiendo arrastrar los elementos al t&#xe1;piz para crear copias.</p>
+<p><img src="images/img5_2.png" alt="Portapapeles" title="Portapapeles" style="width: 500px;" /></p><section>
+<h4><a name="a1.1.1_Men.C3.BA"></a><a name="menu"></a>1.1.1 Men&#xfa;</h4>
+<p>Desde el apartado de Men&#xfa;, al seleccionarlo se desplegar&#xe1; un panel contiguo con las siguientes acciones:</p>
+<p><img src="images/img6.png" alt="Acciones menú de sinópticos" title="Acciones menú de sinópticos" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Mostrar/Ocultar c&#xf3;digo</b>: Muestra el c&#xf3;digo svg del sin&#xf3;ptico. Es posible modificar el sin&#xf3;ptico desde la vista de c&#xf3;digo.</li>
+<li><b>Copiar</b>: Posibilidad de copiar elementos seleccionados (combinaci&#xf3;n de teclado CTRL+C).</li>
+<li><b>Pegar</b>: Acci&#xf3;n de pegar aquellos elementos previamente copiados (CTRL+V).</li>
+<li><b>Clonar</b>: Capacidad de clonar elementos previamente dise&#xf1;ados sobre el tapiz del sin&#xf3;ptico.</li>
+<li><b>Eliminar</b>: Posibilidad de borrar elementos (tecla de Supr).</li>
+<li><b>Mover al frente</b>: Permite ordenar elementos del tapiz, traer delante al tapiz los elementos seleccionados.</li>
+<li><b>Mover al fondo</b>: Permite ordenar elementos del tapiz, llevar atr&#xe1;s del tapiz los elementos seleccionados.</li>
+<li><b>Agrupar</b>: Permite agrupar los elementos seleccionados.</li>
+<li><b>Desagrupar</b>: Permite desagrupar un elemento previamente agrupado en tantos elementos como tenian antes de la agrupaci&#xf3;n</li>
+<li><b>Preferencias tapiz</b>: Muestra en el panel derecho las propiedades del t&#xe1;piz d&#xf3;nde se permite elegir la resoluci&#xf3;n, ajustar el tapiz al contenido del lienzo, cambiar la orientaci&#xf3;n y aplicar al tapiz un fondo (color o importar archivos svg). Al seleccionar esta opci&#xf3;n se abre un panel lateral a la derecha del tapiz con dichas opciones.</li>
+</ul>
+<p><img src="images/img6_1.png" alt="Acciones preferencias del tapiz" title="Acciones preferencias del tapiz" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Ajstar al tapiz</b>: Permite centrar el lienzo ajust&#xe1;ndose al tama&#xf1;o del t&#xe1;piz.</li>
+<li><b>Mostrar cuadr&#xed;cula</b>: Permite mostrar u ocultar la cuadr&#xed;cula en el lienzo.</li>
+</ul></section><section>
+<h4><a name="a1.1.2_Herramientas_de_dibujo"></a><a name="drawing"></a>1.1.2 Herramientas de dibujo</h4>
+<p>Las herramientas de dibujo nos permiten dibujar formas est&#xe1;ticas en los sin&#xf3;pticos, se pueden mejorar estos elementos cambiando el color, bordes y otros efectos.</p>
+<p>Para dibujar elementos en el tapiz, debemos seleccionar la forma deseada y pinchar sobre el tapiz en el lugar donde queramos empezar a dibujar el elemento.</p>
+<p>Disponemos de las siguientes herramientas de dibujo.</p>
+<p><img src="images/img7.png" alt="Herramientas de dibujo" title="Herramientas de dibujo" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Seleccionar</b>: Permite seleccionar uno o varios (Shift) objetos del tapiz.</li>
+<li><b>Rect&#xe1;ngulo</b>: Permite dibujar un rect&#xe1;ngulo. Si se mantiene pulsado &#x2018;shift&#x2019; al dibujar, dibujar&#xe1; un cuadrado.</li>
+<li><b>Elipse</b>: Permite dibujar una elipse. Si se mantiene pulsado &#x2018;shift&#x2019; al dibujar, dibujar&#xe1; un circulo.</li>
+<li><b>L&#xed;nea</b>: Permite dibujar l&#xed;neas rectas.</li>
+<li><b>L&#xe1;piz</b>: Permite dibujar una linea a mano alzada.</li>
+<li><b>Path</b>: Permite dibujar un trazado punto a punto. La herramienta permite modificar la curvatura de las l&#xed;neas que unen los puntos una vez creado el trazado.</li>
+<li><b>Texto</b>: Crea una caja de texto.</li>
+<li><b>Imagen</b>: Permite insertar una imagen al tapiz.</li>
+</ul>
+<p>Al dibujar cualquier de las formas, se abrir&#xe1; un panel derecho con las propiedades gen&#xe9;ricas as&#xed; como las espec&#xed;ficas de algunas de ellas.</p>
+<p><img src="images/img8.png" alt="Propiedades de las herramientas de dibujo" title="Propiedades de las herramientas de dibujo" style="width: 300px;" /></p><section>
+<h5><a name="a1.1.2.1_Propiedades_gen.C3.A9ricas"></a><a name="drawing_generic"></a>1.1.2.1 Propiedades gen&#xe9;ricas</h5>
+<p>Las propiedades gen&#xe9;ricas que aplica a todos las herramientas de dibujo son las siguientes:</p>
+<p><img src="images/img9.png" alt="Propiedades genéricas de herramientas de dibujo" title="Propiedades genéricas de herramientas de dibujo" style="width: 300px;" /></p>
+<ul>
+
+<li><b>ID</b>: Identificador que tendr&#xe1; el objeto en el c&#xf3;digo.</li>
+<li><b>Alias</b>: Nombre que permitir&#xe1; identificar el objeto en los selectores de plantillas.</li>
+<li><b>x e y</b>: Indica la posici&#xf3;n x e y del objeto en el tapiz y permite la localizaci&#xf3;n exacta del objeto al introducir los valores en los campos.</li>
+<li><b>Rotaci&#xf3;n</b>: Indica el rango de rotaci&#xf3;n del objeto.</li>
+<li><b>Grosor borde</b>: Estable el grosor de borde del objeto mediante un valor, bien introducido en la caja de texto o mediante los selectores de valor. <img src="images/img9_1.png" alt="IDbox" /></li>
+<li><b>Color borde</b>: Estable el color del borde mediante c&#xf3;digo hexadecimal.</li>
+<li><b>Color relleno</b>: Establece el color de relleno del elemento meciante c&#xf3;digo hexadecimal.</li>
+<li><b>Opacidad</b>: Configura la transparencia del objeto.</li>
+</ul></section><section>
+<h5><a name="a1.1.2.2_Efectos"></a><a name="drawing_effects"></a>1.1.2.2 Efectos</h5>
+<p>Las propiedades incluidas dentro del apartado de efectos tambi&#xe9;n son comunes a todas las herramientas de dibujo, excepto la propiedad cambio de color que no aplica al componente imagen.</p>
+<p><img src="images/img10.png" alt="Efectos de herramientas de dibujo" title="Efectos de herramientas de dibujo" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Parpadeo</b>: Opci&#xf3;n de activar el parpadeo del elemento cuando se est&#xe1; visualizando el sin&#xf3;ptico.</li>
+<li><b>Tooltip texto</b>: Texto que se mostrar&#xe1; al situarse o pinchar sobre el objeto.</li>
+<li><b>Objeto tooltip</b>: Permite seleccionar otro objeto del sin&#xf3;ptico (seleccion&#xe1;ndolo con la lupa o escribiendo su Identificador en el campo de texto) para ser mostrado cuando se pasa el puntero del rat&#xf3;n sobre &#xe9;l.</li>
+<li><b>Mostrar al inicio</b>: Opci&#xf3;n de mostrar el tooltip al iniciar el sin&#xf3;ptico.</li>
+<li><b>Ocultar el resto</b>: Opci&#xf3;n de ocultar los dem&#xe1;s tooltips del sin&#xf3;ptico que est&#xe9;n visibles.</li>
+<li><b>Mostrar al pasar el rat&#xf3;n</b>: Muestra el tooltip al pasar el cursor por encima del elemento. Si est&#xe1; desactivado este check se mostrar&#xe1; el tooltip unicamente al hacer click sobre el elemento. <b>Cambio de color</b></li>
+<li><b>Valor</b>: Permite seleccionar la se&#xf1;al por la que se va a producir el cambio de color del documento.</li>
+<li><b>Cambio en</b>: Permite seleccionar si el cambio de color va a venir definido por el valor o estado de la se&#xf1;al seleccionada.</li>
+<li><b>A&#xf1;adir nuevo item</b>: Configuraci&#xf3;n del color as&#xed; como del intervalo por el que se producir&#xe1; el cambio del color en el elemento. Nos permite a&#xf1;adir tantos items como cambios de color por intervalo necesarios.</li>
+</ul></section><section>
+<h5><a name="a1.1.2.3_Propiedades_espec.C3.ADficas"></a><a name="drawing_specific"></a>1.1.2.3 Propiedades espec&#xed;ficas</h5>
+<p>Algunas herramientas de dibujo disponen de propiedades espec&#xed;ficas, de las herramientas que actualmente dispone el sistema disponen de propiedades espec&#xed;ficas el rect&#xe1;ngulo, la elipse, el texto y la imagen.</p><section>
+<h6><a name="a1.1.2.3.1_Rect.C3.A1ngulo"></a><a name="rectangle"></a>1.1.2.3.1 Rect&#xe1;ngulo</h6>
+<p>La herramienta rect&#xe1;ngulo dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img11.png" alt="Propiedades específicas rectángulo" title="Propiedades específicas rectángulo" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Ancho/alto</b>: Permite ajustar con m&#xe1;s precisi&#xf3;n las dimensiones del rect&#xe1;ngulo/cuadrado.</li>
+<li><b>Radio esquina</b>: Permite aplicar el radio a las esquinas.</li>
+</ul></section><section>
+<h6><a name="a1.1.2.3.1_Elipse"></a><a name="ellipse"></a>1.1.2.3.1 Elipse</h6>
+<p>La herramienta elipse dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img12.png" alt="Propiedades específicas elipse" title="Propiedades específicas elipse" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Radio X/Radio Y</b>: Permite ajustar las dimensiones(X e Y)con m&#xe1;s precisi&#xf3;n num&#xe9;rica.</li>
+</ul></section><section>
+<h6><a name="a1.1.2.3.1_Texto"></a><a name="text"></a>1.1.2.3.1 Texto</h6>
+<p>La herramienta de texto dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img13.png" alt="Propiedades específicas texto" title="Propiedades específicas texto" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Contenido</b>: Indica el texto a visualizar en el elemento</li>
+<li><b>Tama&#xf1;o de fuente</b>: Permite cambiar el tama&#xf1;o de la fuente.</li>
+<li><b>Opciones de formato de texto</b>: Permite activar el formato del texto en negrita, cursiva y subrayado. Se pueden combinar varios formatos.</li>
+<li><b>Fuente</b>: Permite la selecci&#xf3;n de la fuente para el texto.</li>
+<li><b>Alineaci&#xf3;n</b>: Permite seleccionar la alineaci&#xf3;n del texto en el propio elemento.</li>
+</ul></section><section>
+<h6><a name="a1.1.2.3.1_Imagen"></a><a name="image"></a>1.1.2.3.1 Imagen</h6>
+<p>La herramienta imagen dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img14.png" alt="Propiedades específicas imagen" title="Propiedades específicas imagen" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Ancho/Alto</b>: Permite ajustar con m&#xe1;s precisi&#xf3;n n&#xfa;merica las dimensiones de la imagen.</li>
+<li><b>Seleccionar imagen</b>: Permite cambiar la imagen previamente seleccionada al agregar el objeto.</li>
+</ul></section></section></section><section>
+<h4><a name="a1.1.3_Componentes_din.C3.A1micos"></a><a name="dynamic"></a>1.1.3 Componentes din&#xe1;micos</h4>
+<p>Los componentes din&#xe1;micos son  los  objetos  encargados  de  realizar  las  animaciones que muestren el estado de los diferentes puntos de control a monitorizar. Su representaci&#xf3;n cambiar&#xe1; en funci&#xf3;n de los valores que reciban en tiempo real de la se&#xf1;al que tengan asociada.</p>
+<p>Para a&#xf1;adir estos componentes al tapiz, tendremos que seleccionar el componente y arrastrarlo a la posici&#xf3;n del tapiz deseada.</p>
+<p>Disponemos de los siguientes componentes din&#xe1;micos.</p>
+<p><img src="images/img15.png" alt="Componentes dinámicos" title="Componentes dinámicos" style="width: 200px;" /></p>
+<p>Al igual que ocurre con las herramientas de dibujo, todos estos componentes din&#xe1;micos disponen de las mismas propiedades gen&#xe9;ricas explicadas en el apartado de herramientas de dibujo <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y <a href="#drawing_effects">efectos</a>, adem&#xe1;s de las espec&#xed;ficas de cada componente.</p>
+<p>Todos los componentes din&#xe1;micos comparten la misma propiedad que es <b>se&#xf1;al</b>, la cual escogeremos desde las propiedades especificas de cada componente, el cual nos abrir&#xe1; el selector de se&#xf1;ales en donde podremos seleccionar la se&#xf1;al o funci&#xf3;n a la que queremos vincular el componente.</p><section>
+<h5><a name="a1.1.3.1_Componente_etiqueta."></a><a name="label"></a>1.1.3.1 Componente etiqueta.</h5>
+<p>El componente etiqueta es un cuadro de texto al cual se le asigna una se&#xf1;al, y mostrar&#xe1; en la visualizaci&#xf3;n su valor en tiempo real.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a>, el componente etiqueta dispone de las propiedades del componente <a href="#text">Texto</a> y de las siguientes espec&#xed;ficas.</p>
+<p><img src="images/img16.png" alt="Propiedades específicas componente etiqueta" title="Propiedades específicas componente etiqueta" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Tipo</b>: Opci&#xf3;n de elegir si se mostrar&#xe1; el valor o el estado en tiempo real.</li>
+<li><b>Se&#xf1;al</b>: Permite seleccionar una se&#xf1;al del listado de se&#xf1;ales disponibles que se abrir&#xe1; al seleccionar sobre la lupa o pinchar directamente sobre este campo.</li>
+<li><b>N&#xfa;mero de decimales</b>: Si el tipo seleccionado es &#x201c;valor&#x201d;, se muestra la opci&#xf3;n para introducir el n&#xfa;mero de decimales que se muestran.</li>
+<li><b>Mapeo de textos</b>: Si el tipo seleccionado es &#x201c;valor&#x201d;, nos permite introducir mapeos de texto a los valores. Por ejemplo: O-Apagado, 1-Encendido.</li>
+<li><b>Mostrar unidades</b>: Marcado por defecto. Si el tipo seleccionado es &#x201c;valor&#x201d;,nos permite elegir si mostrar las unidades de la se&#xf1;al.</li>
+<li><b>Separador de miles</b>: Nos permite elegir si se mostrar&#xe1; un punto como separador de miles.</li>
+<li><b>Mostrar estado</b>: Si el tipo seleccionado es &#x201c;estado&#x201d;, nos permite elegir si se mostrar&#xe1;n todos los estados o el estado m&#xe1;s prioritario.</li>
+<li><b>Enlace</b>: Si el tipo seleccionado es &#x201c;valor&#x201d;, nos permite elegir si se habilitar&#xe1; el evento de clic para abrir una nueva gr&#xe1;fica con la se&#xf1;al seleccionada.</li>
+<li><b>Tipo gr&#xe1;fica</b>: Nos permite elegir el tipo de gr&#xe1;fica que se abrir&#xe1; al hacer clic sobre el objeto.</li>
+<li><b>Selecci&#xf3;n de fechas</b>: Si el tipo de gr&#xe1;fica seleccionada el distinta de &#x201c;tiempo real&#x201d;, nos permite elegir las fechas con las que se abrir&#xe1; la gr&#xe1;fica al hacer clic sobre el objeto.</li>
+</ul></section><section>
+<h5><a name="a1.1.3.2_Componente_indicador."></a><a name="gauje"></a>1.1.3.2 Componente indicador.</h5>
+<p>El componente indicador es una aguja que cambia de posici&#xf3;n seg&#xfa;n el valor en tiempo real de la se&#xf1;al seleccionada dentro de los valores de minimo y m&#xe1;ximos configurados en el propio componente.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a> (salvo la propiedad cambio de color que no aplica a este componente), el componente indicador dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img17.png" alt="Propiedades específicas componente indicador" title="Propiedades específicas componente indicador" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Se&#xf1;al</b>: Permite seleccionar una se&#xf1;al del listado de se&#xf1;ales disponibles que se abrir&#xe1; al seleccionar sobre la lupa o pinchar directamente sobre este campo.</li>
+<li><b>Valor m&#xed;nimo</b>: Rango m&#xed;nimo de valores del indicador.</li>
+<li><b>Valor m&#xe1;ximo</b>: Rango m&#xe1;ximo de valores del indicador.</li>
+<li><b>&#xc1;ngulo m&#xed;nimo</b>: Rango m&#xed;nimo de rotaci&#xf3;n de la aguja (en grados)</li>
+<li><b>&#xc1;ngulo m&#xe1;ximo</b>: Rango m&#xe1;ximo de rotaci&#xf3;n de la aguja (en grados)</li>
+</ul></section><section>
+<h5><a name="a1.1.3.3_Barra_de_progreso."></a><a name="progress_bar"></a>1.1.3.3 Barra de progreso.</h5>
+<p>El componente barra de progreso, es un elemento gr&#xe1;fico en forma de banda que var&#xed;a en funci&#xf3;n del valor en tiempo real de la se&#xf1;al.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a>, el componente barra de progreso dispone de las propiedades del componente <a href="#rectangle">Rect&#xe1;ngulo</a> y de las siguientes espec&#xed;ficas.</p>
+<p><img src="images/img18.png" alt="Propiedades específicas barra de progreso" title="Propiedades específicas barra de progreso" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Se&#xf1;al</b>: Permite seleccionar una se&#xf1;al del listado de se&#xf1;ales disponibles que se abrir&#xe1; al seleccionar sobre la lupa o pinchar directamente sobre este campo.</li>
+<li><b>Valor m&#xed;nimo</b>: Valor m&#xed;nimo a mostrar en la barra de progreso</li>
+<li><b>Valor m&#xe1;ximo</b>: Valor m&#xe1;ximo a mostrar en la barra de progreso</li>
+<li><b>Orientaci&#xf3;n</b>: Permite orientar la barra de progreso horizontal o verticalmente.</li>
+<li><b>Direcci&#xf3;n inversa</b>: Permite activar la direcci&#xf3;n inversa en la barra, realizandose el movimiento de derecha a izquierda.</li>
+<li><b>Color fondo</b>: Color de fondo est&#xe1;tico de la barra.</li>
+</ul></section><section>
+<h5><a name="a1.1.3.4_Componente_switch."></a><a name="switch"></a>1.1.3.4 Componente switch.</h5>
+<p>El componente switch permite dibujar varios objetos que se mostrar&#xe1;n cada uno de ellos en funci&#xf3;n del valor en tiempo real de la se&#xf1;al elegida.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a> (salvo la propiedad cambio de color que no aplica a este componente), el componente switch dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img19.png" alt="Propiedades específicas switch" title="Propiedades específicas switch" style="width: 200px;" /></p>
+<ul>
+
+<li><b>Se&#xf1;al</b>: Permite seleccionar una se&#xf1;al del listado de se&#xf1;ales disponibles que se abrir&#xe1; al seleccionar sobre la lupa o pinchar directamente sobre este campo.</li>
+<li><b>A&#xf1;adir nuevo item</b>: Permite agregar tantos items como configuraciones de valores queramos para la se&#xf1;al. Por cada item a&#xf1;adido se nos mostrara una ficha de configuraci&#xf3;n del item como se muestra en la siguiente captura</li>
+</ul>
+<p><img src="images/img20.png" alt="Configuración item" title="Configuración item" style="width: 200px;" /></p>
+<p>En esta configuraci&#xf3;n se nos mostrar&#xe1; una miniatura de la imagen que se visualizar&#xe1; cuando la se&#xf1;al tenga el valor configurado para ese item. * <b>Valor m&#xed;nimo</b>: Valor m&#xed;nimo del rango de valores por el cual se mostrar&#xe1; la imagen. * <b>Valor m&#xe1;ximo</b>: Valor m&#xe1;ximo del rango de valores por el cual se mostrar&#xe1; la imagen. * <b>Item por defecto</b>: Nos permite seleccionar cual ser&#xe1; el item por defecto a mostrar de todos los items configurados.</p>
+<p>Para agregar la imagen a cada item configurado debemos seguir los siguientes pasos.</p>
+<ol style="list-style-type: decimal">
+
+<li>En el tapiz tendremos que tener la forma o imagen que queremos vincular al item. (en nuestro ejemplo ser&#xe1; el cuadrado en rojo) <img src="images/img20_1.png" alt="Tapiz con componente switch e imagen para el item" title="Tapiz con componente switch e imagen para el item" style="width: 200px;" /></li>
+<li>Arrastrar la imagen (cuadrado en rojo) encima del componente switch que habremos incorporado previamente al tapiz, nos aparecer&#xe1; la siguiente pantalla en donde tendremos que arrastrar la imagen al item deseado. <img src="images/img20_2.png" alt="Pantalla de configuración imagen al item y orden" title="Pantalla de configuración imagen al item y orden" style="width: 150px;" /></li>
+</ol>
+<p>Los items podremos cambiarlos de orden bien desde la pantalla de configuraci&#xf3;n del propio switch haciendo drag and drop sobre el item a mover y soltando sobre la nueva posici&#xf3;n.</p></section><section>
+<h5><a name="a1.1.3.5_Barra_de_progreso_circular."></a><a name="circular_progress"></a>1.1.3.5 Barra de progreso circular.</h5>
+<p>El componente barra de progreso circular, es un indicador de porcentaje en forma de circulo que visualmente muestra el valor de la se&#xf1;al seleccionada.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a>, la barra de progreso circular dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img21.png" alt="Propiedades barra de progreso circular" title="Propiedades barra de progreso circular" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Se&#xf1;al</b>: Permite seleccionar una se&#xf1;al del listado de se&#xf1;ales disponibles que se abrir&#xe1; al seleccionar sobre la lupa o pinchar directamente sobre este campo.</li>
+<li><b>Valor m&#xed;nimo</b>: Valor m&#xed;nimo a mostrar en la barra de progreso</li>
+<li><b>Valor m&#xe1;ximo</b>: Valor m&#xe1;ximo a mostrar en la barra de progreso</li>
+<li><b>Color fondo</b>: Color de fondo est&#xe1;tico de la barra.</li>
+</ul></section><section>
+<h5><a name="a1.1.3.6_Componente_enlace."></a><a name="link"></a>1.1.3.6 Componente enlace.</h5>
+<p>El componente enlace crea en el tapiz un rect&#xe1;ngulo que se sit&#xfa;a sobre la zona a enlazar. Permite elegir entre enlaces a diferentes documentos de la web(sinopticos, gr&#xe1;ficas, diagramas, etc.)</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a> (salvo la propiedad cambio de color que no aplica a este componente), el componente enlace dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img22.png" alt="Propiedades componente enlace" title="Propiedades componente enlace" style="width: 300px;" /></p>
+<p><img src="images/003PR.png" alt="Enlace con parámetros" title="Enlace con parámetros" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Documento</b>: Permite seleccionar la ubicaci&#xf3;n y el documento sobre el que queremos crear un enlace.</li>
+<li><b>Editar par&#xe1;metros</b>: Visible si el documento seleccionado es de tipo sin&#xf3;ptico y tiene par&#xe1;metros. Al hacer clic muestra ventana modal en el que permite establecer los valores de los par&#xe1;metros del sin&#xf3;ptico seleccionado.</li>
+</ul>
+<p><img src="images/004PR.png" alt="Modal de parámetros" title="Modal de parámetros" style="width: 800px;" /></p></section><section>
+<h5><a name="a1.1.3.7_Gr.C3.A1fica_de_tarta."></a><a name="pie_chart"></a>1.1.3.7 Gr&#xe1;fica de tarta.</h5>
+<p>El componente gr&#xe1;fica de tarta, permite visualizar los valores de diferentes se&#xf1;ales mediante una representaci&#xf3;n gr&#xe1;fica en tarta.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a> (salvo la propiedad cambio de color que no aplica a este componente), la gr&#xe1;fica de tarta dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img23.png" alt="Propiedades gráfica de tarta" title="Propiedades gráfica de tarta" style="width: 300px;" /></p>
+<ul>
+
+<li><b>A&#xf1;adir nuevo item</b>: Permite la selecci&#xf3;n y configuraci&#xf3;n de las se&#xf1;ales a a&#xf1;adir a la gr&#xe1;fica de tarta. Al a&#xf1;adir un nuevo item, se agrega a la configuraci&#xf3;n una ficha en la cual podemos seleccionar la se&#xf1;al, el tooltip a mostrar y el color, as&#xed; como la opci&#xf3;n de eliminar el item seleccionado.</li>
+</ul>
+<p><img src="images/img23_1.png" alt="Configuración item gráfica de tarta" title="Configuración item gráfica de tarta" style="width: 300px;" /></p>
+<ul>
+
+<li><b>C&#xed;rculo completo</b>: Permite seleccionar si se quiere una circunferencia completa (360&#xba;, checkeado) o media (180&#xba; sin checkear)</li>
+<li><b>&#xc1;ngulo de inicio</b>: Permite seleccionar cual ser&#xe1; la posici&#xf3;n de inicio en grados para el primer valor.</li>
+<li><b>Mostrar tooltip</b>: Marcado por defecto, muestra el nombre de la se&#xf1;al o el texto configurado a mostrar en el tooltip, al pasar por encima de la secci&#xf3;n de la tarta correspondiente.</li>
+<li><b>Mostrar descripci&#xf3;n</b>: Muestra el nombre de la se&#xf1;al encima de cada secci&#xf3;n de la tarta.</li>
+<li><b>Mostrar porcentaje</b>: Muestra el porcentaje de la se&#xf1;al encima de cada secci&#xf3;n de la tarta.</li>
+<li><b>Radio interior</b>: Permite configurar el centro hueco de la tarta (tipo donut) bien en pixel indicando solo valor n&#xfa;merico o en porcentaje a&#xf1;adiendo al valor n&#xfa;merico simbolo de %.</li>
+</ul>
+<p>Dentro de la configuraci&#xf3;n de la gr&#xe1;fica de tarta, se dispone de la opci&#xf3;n de reordenaci&#xf3;n de los items mediante drag and drop.</p></section><section>
+<h5><a name="a1.1.3.8_Componente_gr.C3.A1fica."></a><a name="chart"></a>1.1.3.8 Componente gr&#xe1;fica.</h5>
+<p>El componente gr&#xe1;fica permite agregar al sin&#xf3;ptico una gr&#xe1;fica generada previamente y almacenada en el sistema.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a> (salvo la propiedad cambio de color que no aplica a este componente), el componente gr&#xe1;fica dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img24.png" alt="Propiedades componente gráfica" title="Propiedades componente gráfica" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Documento</b>: Permite seleccionar la ubicaci&#xf3;n y la gr&#xe1;fica a embeber en el sin&#xf3;ptico.</li>
+<li><b>Color fondo</b>: Permite seleccionar el color de fondo de la gr&#xe1;fica, por defecto transparente.</li>
+</ul></section><section>
+<h5><a name="a1.1.3.9_Tabla_hist.C3.B3ricos."></a><a name="historic_table"></a>1.1.3.9 Tabla hist&#xf3;ricos.</h5>
+<p>El componente tabla hist&#xf3;ricos permite visualizar los datos hist&#xf3;ricos de varias se&#xf1;ales en formato tabla.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a> (salvo la propiedad cambio de color que no aplica a este componente), el componente taabla hist&#xf3;ricos dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img27.png" alt="Propiedades componente tabla históricos" title="Propiedades componente tabla históricos" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Se&#xf1;ales</b>: Permite seleccionar las se&#xf1;ales a visualizar.</li>
+<li><b>T&#xed;tulo</b>: Permite indicar si mostrar el nombre o la descripci&#xf3;n de la se&#xf1;al, por defecto se mostrar&#xe1; el nombre de la se&#xf1;al.</li>
+<li><b>Marca</b>: Permite modificar la frecuencia de los datos hist&#xf3;ricos.</li>
+<li><b>Muestras</b>: Permite modificar el n&#xfa;mero de muestras a mostrar.</li>
+<li><b>Pivotar</b>: Permite pivotas la tabla (cambiar las filas por columnas).</li>
+<li><b>Autoactualizar</b>: Permite indicar si la tabla se actualizar&#xe1; con nuevos datos hist&#xf3;ricos.</li>
+<li><b>Editar tabla</b>: Muestra una ventana modal que permite modificar las propiedades de la tabla.</li>
+</ul><section>
+<h6><a name="a1.1.3.9.1_Propiedades_tabla."></a><a name="table_properties"></a>1.1.3.9.1 Propiedades tabla.</h6>
+<p>Permite modificar las propiedades de la tabla mostrando su previsualizaci&#xf3;n.</p>
+<p><img src="images/img28.png" alt="Modal propiedades tabla" title="Modal propiedades tabla" /></p>
+<ul>
+
+<li><b>Filas</b>: Muestra el n&#xfa;mero de filas de la tabla.</li>
+<li><b>Columnas</b>: Muestra el n&#xfa;mero de columnas de la tabla.</li>
+<li><b>Borde</b>: Permite seleccionar si mostrar el borde de la tabla o no.</li>
+<li><b>Color border</b>: Permite modificar el color del borde de la tabla.</li>
+<li><b>Cabeceras</b>: Permite modificar las celdas resaltadas (ninguna, primera fila, primera columna, &#xfa;ltima fila, &#xfa;ltima columna, filas a bandas, columnas a bandas).</li>
+<li><b>Alineaci&#xf3;n</b>: Permite modificar la alineaci&#xf3;n de los textos de la tabla (izquierda, centro o derecha).</li>
+<li><b>Color cabeceras</b>: Permite modificar el color de relleno de las celdas resaltadas.</li>
+<li><b>Color contenido</b>: Permite modificar el color de las celdas que no est&#xe1;n resaltadas.</li>
+</ul>
+<p>Se permite cambiar el alto de las filas y el ancho de las columnas arrastrando el rat&#xf3;n sobre la l&#xed;nea divisoria:</p>
+<p><img src="images/img28_1.png" alt="Modal propiedades tabla: Cambiar tamaño columna" title="Modal propiedades tabla: Cambiar tamaño columna" style="width: 400px;" /></p>
+<p><img src="images/img28_2.png" alt="Modal propiedades tabla: Cambiar tamaño fila" title="Modal propiedades tabla: Cambiar tamaño fila" style="width: 400px;" /></p></section></section><section>
+<h5><a name="a1.1.3.10_Interruptor_operaci.C3.B3n."></a><a name="operation_switch"></a>1.1.3.10 Interruptor operaci&#xf3;n.</h5>
+<p>El componente interruptor permite enviar comandos sobre la se&#xf1;al seleccionada.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a> (salvo la propiedad cambio de color que no aplica a este componente), el componente interruptor operaci&#xf3;n dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img29.png" alt="Propiedades componente interruptor operación" title="Propiedades componente interruptor operación" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Se&#xf1;al</b>: Permite seleccionar la se&#xf1;al sobre la que se va a enviar el comando.</li>
+<li><b>Valor encendido</b>: Valor a enviar cuando se enciende el interruptor.</li>
+<li><b>Valor apagado</b>: Valor a enviar cuando se apaga el interruptor.</li>
+</ul>
+<p>Para agregar la imagen a cada item configurado debemos seguir los siguientes pasos.</p>
+<ol style="list-style-type: decimal">
+
+<li>En el tapiz tendremos que tener la forma o imagen que queremos vincular al item. (en nuestro ejemplo ser&#xe1; el cuadrado en verde) <img src="images/img29_1.png" alt="Tapiz con componente switch e imagen para el item" title="Tapiz con componente switch e imagen para el item" style="width: 200px;" /></li>
+<li>Arrastrar la imagen (cuadrado en verde) encima del componente switch que habremos incorporado previamente al tapiz, nos aparecer&#xe1; la siguiente pantalla en donde tendremos que arrastrar la imagen al item deseado. <img src="images/img29_2.png" alt="Pantalla de configuración imagen al item y orden" title="Pantalla de configuración imagen al item y orden" style="width: 150px;" /></li>
+</ol></section><section>
+<h5><a name="a1.1.3.11_Bot.C3.B3n_operaci.C3.B3n."></a><a name="operation_button"></a>1.1.3.11 Bot&#xf3;n operaci&#xf3;n.</h5>
+<p>El componente bot&#xf3;n operaci&#xf3;n permite enviar comando sobre la se&#xf1;al seleccionada. Permite seleccionar entre tres formas de env&#xed;o.</p>
+<p>Adem&#xe1;s de las <a href="#drawing_generic">Propiedades gen&#xe9;ricas</a> y los <a href="#drawing_effects">efectos</a>, el componente bot&#xf3;n operaci&#xf3;n dispone de las siguientes propiedades espec&#xed;ficas.</p>
+<p><img src="images/img30.png" alt="Propiedades componente botón operación" title="Propiedades componente botón operación" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Se&#xf1;al</b>: Permite seleccionar la se&#xf1;al sobre la que se va a enviar el comando.</li>
+<li><b>Retardo</b>: Tiempo de retardo para realizar el env&#xed;o.</li>
+<li><b>Valor m&#xed;nimo</b>: Valor m&#xed;nimo que se podr&#xe1; enviar en el comando.</li>
+<li><b>Valor m&#xe1;ximo</b>: Valor m&#xe1;ximo que se podr&#xe1; enviar en el comando.</li>
+<li><b>L&#xed;mite de tiempo</b>: L&#xed;mite de tiempo para reestablecer el valor.</li>
+<li><b>Valor l&#xed;mite de tiempo</b>: Valor a reestablecer cuando transcurra el tiempo indicado en el campo &#x201c;l&#xed;mite de tiempo&#x201d;.</li>
+<li><b>Tipo</b>: Permite seleccionar el tipo de env&#xed;o: teclado, selector o env&#xed;o. El tipo por defecto es teclado.</li>
+</ul>
+<p>Si el tipo es &#x201c;teclado&#x201d; se mostrar&#xe1;n las siguientes propiedades:</p>
+<p><img src="images/img30_1.png" alt="Propiedades componente botón operación teclado" title="Propiedades componente botón operación teclado" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Tiempo real</b>: Permite seleccionar si inicializar el teclado con el &#xfa;ltimo valor de la se&#xf1;al.</li>
+</ul>
+<p>Si el tipo es &#x201c;selector&#x201d; se mostrar&#xe1;n las siguientes propiedades:</p>
+<p><img src="images/img30_2.png" alt="Propiedades componente botón operación selector" title="Propiedades componente botón operación selector" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Mapeo textos</b>: Permite seleccionar la se&#xf1;al sobre la que se va a enviar el comando.</li>
+<li><b>Mostrar valor</b>: Permite seleccionar si mostrar el valor o no.</li>
+<li><b>Tama&#xf1;o fuente</b>: Si se ha seleccionado &#x201c;mostrar valor&#x201d;, permite modificar el tama&#xf1;o del texto.</li>
+</ul>
+<p>Si el tipo es &#x201c;env&#xed;o&#x201d; se mostrar&#xe1;n las siguientes propiedades:</p>
+<p><img src="images/img30_3.png" alt="Propiedades componente botón operación envío" title="Propiedades componente botón operación envío" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Valor</b>: Permite seleccionar el valor a enviar.</li>
+</ul></section></section><section>
+<h4><a name="a1.1.4_Capas"></a><a name="layers"></a>1.1.4 Capas</h4>
+<p>Desde el apartado de capas, podemos crear tantas capas como necesitemos para el dise&#xf1;o de nuestro sin&#xf3;ptico as&#xed; como elegir en que capa queremos trabajar en cada momento bloqueando el resto de capas. Se recomienda su uso cuando importamos sin&#xf3;pticos grandes y queremos a&#xf1;adir componentes din&#xe1;micos sin modificar su aspecto.</p>
+<p>Las opciones que disponemos en el panel de capas son las siguientes:</p>
+<p><img src="images/img25.png" alt="Panel de capas" title="Panel de capas" style="width: 300px;" /></p>
+<ul>
+
+<li><b>A&#xf1;adir</b>: Permite a&#xf1;adir una nueva capa</li>
+<li><b>Eliminar</b>: Permite borrar la capa seleccionada</li>
+<li><b>Renombrar</b>: Permite renombrar la capa seleccionada</li>
+<li><b>Subir capa</b>: Permite la ordenaci&#xf3;n de capas, subiendo una posici&#xf3;n la capa seleccionada.</li>
+<li><b>Bajar capa</b>: Permite la ordenaci&#xf3;n de capas, bajando una posici&#xf3;n la capa seleccionada.</li>
+<li><b>Ocultar/Mostrar capa</b>: Permite ocultar o mostrar en el tapiz la capa.</li>
+</ul></section><section>
+<h4><a name="a1.1.5_Par.C3.A1metros."></a><a name="params"></a>1.1.5 Par&#xe1;metros.</h4>
+<p>Los par&#xe1;metros son objetos que permiten la configuraci&#xf3;n y edicion de valores en ciertos elementos, como etiquetas, barra de progresi&#xf3;n&#x2026; de forma que se puedan editar y acceder f&#xe1;cilmente a estos valores.</p><section>
+<h5><a name="a1.1.5.1_Lista_de_par.C3.A1metros."></a><a name="paramList"></a>1.1.5.1 Lista de par&#xe1;metros.</h5>
+<p><img src="images/001PR.png" alt="Panel de parametros" title="Panel de parametros" style="width: 300px;" /></p>
+<p>En el apartado de par&#xe1;metros est&#xe1; definida la lista de parametros del documento, en este apartado podemos crear, editar y eliminar estos.</p>
+<ul>
+
+<li><b>A&#xf1;adir</b>: Permite a&#xf1;adir un nuevo par&#xe1;metro.</li>
+<li><b>Eliminar</b>: Permite borrar el par&#xe1;metro selecionado.</li>
+</ul>
+<p>Al seleccionar un par&#xe1;metro se mostrar&#xe1; el panel derecho con las propiedades del par&#xe1;metro.</p></section><section>
+<h5><a name="a1.1.5.2_Propiedades_de_par.C3.A1metros."></a><a name="paramEditor"></a>1.1.5.2 Propiedades de par&#xe1;metros.</h5>
+<p>Permite modificar las siguientes propiedades del par&#xe1;metro seleccionado:</p>
+<p><img src="images/002PR.png" alt="Editor de parametros" title="Editor de parametros" style="width: 300px;" /></p>
+<ul>
+
+<li><b>T&#xed;tulo</b>: A&#xf1;adir o editar un t&#xed;tulo.</li>
+<li><b>Descripci&#xf3;n</b>: A&#xf1;adir o editar una descripci&#xf3;n.</li>
+<li><b>Requerido</b>: Si se quiere que el valor sea obligatorio.</li>
+<li><b>Tipo</b>: los parametros pueden ser de dos tipos, valor o se&#xf1;al.</li>
+<li><b>Selector de se&#xf1;ar/valor</b>: En este apartado podemos seleccionar una se&#xf1;al con la ayuda del modal o simplemente a&#xf1;adir un nombre.</li>
+</ul></section></section></section><section>
+<h3><a name="a1.2_Visor_de_sin.C3.B3pticos"></a><a name="viewer"></a>1.2 Visor de sin&#xf3;pticos</h3>
+<p>El visor de sin&#xf3;pticos permite la visualizaci&#xf3;n de un sin&#xf3;ptico previamente dise&#xf1;ado con las herramientas del <a href="#editor">Dise&#xf1;ador</a> mostrando los valores en tiempo real de los componentes din&#xe1;micos configurados.</p>
+<p>Para visualizar un sin&#xf3;ptico, ser&#xe1; necesario seleccionar un documento de tipo sin&#xf3;ptico desde el explorador de documentos, disponemos de varias opciones.</p>
+<ul>
+
+<li>
+
+<p>Desde la jerarqu&#xed;a una vez seleccionado el documento, bien mediante la opci&#xf3;n de <img src="images/img26.png" alt="IDbox" /> de la toolbar superior, mediante la opci&#xf3;n de Abrir del men&#xfa; contextual del documento o con doble click sobre el sin&#xf3;ptico a visualizar.</p>
+</li>
+<li>
+
+<p>En el explorador de documentos, en la secci&#xf3;n central de documentos de la jerarqu&#xed;a seleccionada, al hacer click sobre el sin&#xf3;ptico.</p>
+</li>
+</ul>
+<p>Mediante el bot&#xf3;n <span class="ti-signal"></span> se podr&#xe1; visualizar el listado de se&#xf1;ales del sin&#xf3;ptico.</p>
+<p><img src="images/img31.png" alt="Lista señales" title="Lista señales" style="width: 800px;" /></p><section><section>
+<h5><a name="a1.2.1_Sin.C3.B3ptico_con_par.C3.A1metros."></a><a name="modalParameterVisor"></a>1.2.1 Sin&#xf3;ptico con par&#xe1;metros.</h5>
+<p>Si el sin&#xf3;ptico visualizado tiene par&#xe1;metros, al cargar se mostrar una modal que permite asignar los valores a los par&#xe1;metros del sin&#xf3;ptico.</p>
+<p><img src="images/004PR.png" alt="Modal de parámetros" title="Modal de parámetros" style="width: 800px;" /></p>
+<blockquote>
+
+<p>Es obligatorio asignar valor a todos los valores requeridos.</p>
+</blockquote></section></section></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

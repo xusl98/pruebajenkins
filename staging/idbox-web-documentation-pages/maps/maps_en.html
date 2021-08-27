@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="ti-map-alt"></cite>
+  
+<h1>MAPAS</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#editor">Editor</a>
+<ul>
+
+<li>2.1 <a href="#gestion-capas">Layer management</a></li>
+<li>2.2 <a href="#marcadores-seniales">Markers and signs</a></li>
+<li>2.3 <a href="#mapas-calor">Heat maps</a></li>
+</ul>
+</li>
+<li>3 <a href="#visor">Viewer</a></li>
+<li>4 <a href="#opciones-visualizacion">Display options</a></li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>Maps will allow us to visualize markers with signs or heat maps that are geographically positioned.</p>
+<p>They can be created from the shortcuts section. Clicking on this option will open a new map.</p>
+<p><img src="images/Imagen11.png" class="grande" alt="Creation of maps from the shortcut" title="Creation of maps from the shortcut" /></p><hr /></section><section>
+<h2><a name="a2_Editor"></a><a name="editor"></a>2 Editor</h2>
+<p>The map editor will allow us to create the document to our needs, adding layers that will contain markers with signs, heat maps or kmls.</p>
+<p>Once we finish making all the changes on the map we will be able to save it by clicking on the save button on the toolbar. <span class="ti-save"></span></p><hr /><section>
+<h3><a name="a2.1_Layer_management"></a><a name="gestion-capas"></a>2.1 Layer management</h3>
+<p>The layers will allow us to organize our markers or heat maps so that the points of the map are grouped together. It will also allow us to inject kml type files into the map.</p>
+<p>To access the layer management, click on &#x201c;Layers&#x201d; in the left side menu.</p>
+<p><img src="images/Imagen211.png" class="grande" alt="Layer management section" title="Layer management section" /></p>
+<p>Here we will list the layers that we have available on this map. Each of the layers on the right side has the <span class="ti-eye"></span>. If we click on it, it will hide all the elements of that layer on the map and will change the icon to <span class="icon-id-no-eye"></span>. If we click again on this icon, it will show us the elements of the layer on the map.</p>
+<p>On the other hand we have the following functionalities:</p>
+<ul>
+
+<li><span class="ti-plus"></span>Add layer: It will allow us to add layers. It will open an auxiliary window in which we will introduce the name of the layer and its type. In the case of wanting to add a kml file to the map we will have to select that file from our system.</li>
+<li><span class="ti-pencil"></span>Edit layer: It will allow us to rename the selected layer.</li>
+<li><span class="ti-trash"></span>Delete layer: It will allow us to delete the selected layer. If it has elements, we will get a warning message to confirm that we will delete all the elements of the layer with it.</li>
+<li>The <span class="ti-arrow-up"></span>up layer and <span class="ti-arrow-down"></span>down layer buttons allow us to reorder the layers in the list.</li>
+</ul></section><section>
+<h3><a name="a2.2_Markers_and_signs"></a><a name="marcadores-seniales"></a>2.2 Markers and signs</h3>
+<p>We will enter the &#x201c;Markers and Signals&#x201d; section by clicking on the left panel in the same.</p>
+<p><img src="images/Imagen221.png" class="grande" alt="Left panel markers and signs" title="Left panel markers and signs" /></p>
+<p>All visible layers that are of type &#x201c;Markers and Signals&#x201d; will be listed here.</p>
+<p>We will be able to add a new marker with the &#x201c;New Marker&#x201d; button <span class="ti-pin"></span> of the layer we want to add it to. The marker will be geopositioned in the center of the current map. Once added we could drag the marker to a different geoposition.</p>
+<p>The &#x201c;New Signal&#x201d; button <span class="ti-signal"></span>, will open the <a href="../selector/selector.html">signal selector</a>, so that we can select one or several signals. This will add one or several markers, each one with a signal already geopositioned and showing its real time. Therefore the geopositioning of these markers will be given by the geopositioning of the signal. If the signal has never been geopositioned in any map, saving this map will be when the signal&#x2019;s geoposition is assigned. If a signal is dragged to another geoposition, that will be its geoposition in all maps, when we save this map.</p>
+<p>We can select a marker by clicking on it. This will center the map on that particular marker.</p>
+<p>If the markers are very close together they will be automatically grouped at a point and we will have to zoom in if we want to see them (if they are exactly at the same latitude and longitude, we will have to move one before adding the next one).</p>
+<p>We will be able to delete a specific marker by selecting a marker and clicking on the delete button<span class="ti-trash"></span>.</p>
+<p>Once the marker has been added we can edit it by clicking on the edit button<span class="ti-pencil-alt"></span>.</p>
+<p>When editing a bookmark we will see the following right panel:</p>
+<p><img src="images/Imagen222.png" class="grande" alt="Right panel editing bookmarks" title="Right panel editing bookmarks" /></p>
+<p>The marker options are:</p>
+<ul>
+
+<li>Geopositioned Signal: Indicates the signal that geopositions the marker on the map.</li>
+<li>Title: Marker title.</li>
+<li>Description: To write annotations about this marker.</li>
+<li>Link to document: It will allow us to have links to existing documents in the marker. It will open the document selector to select the document.</li>
+<li>Link with signals: The links with signals that are created in a marker will be associated to the real time signals that are established in this marker. When we click on this button a window will open in which we will select the dates and the link we want to put. For example, if we put a link to a trend chart, when we click in viewer mode on that link it will take us to the trend chart with the signals that have been set in this marker.</li>
+</ul>
+<p><img src="images/Imagen223.png" class="mediano" alt="Signal link" title="Signal link" /> * Signal with real time: We will be able to add signals to see their real time in the map viewer mode. In addition these signals serve as parameter for the &#x201c;Links with signals&#x201d;. * Marker preview: Here we will preview how the marker will look like when we see it in the viewer mode, with its signals in real time and links. * Show tooltip at startup: If this check is enabled, the marker will open when we enter the map in viewer mode. * Icon selection: We will be able to modify the icon of our marker. Also with the add <span class="ti-plus"></span> and delete<span class="ti-trash"></span> buttons we can add our own custom icons by selecting them from our team or delete them.</p></section><section>
+<h3><a name="a2.3_Heat_maps"></a><a name="mapas-calor"></a>2.3 Heat maps</h3>
+<p>The map allows us to register heat maps to see at a glance which signals have more value than others. To list all visible heatmaps click on the &#x201c;Heatmaps&#x201d; section in the left panel.</p>
+<p><img src="images/Imagen231.png" class="grande" alt="Left panel heat maps" title="Left panel heat maps" /></p>
+<p>With the add button <span class="ti-plus"></span>, we will associate signals to the heat map. This will open the <a href="../selector/selector.html">signal selector</a> so that we can choose which signals we want in this heat map.</p>
+<p>We will be able to delete any of the signals by selecting it and pressing the delete button<span class="ti-trash"></span>.</p>
+<p>In case of the editor we will not see the heat map as such, but where its points are positioned. To edit the heat map, select any of its points and press the edit button<span class="ti-pencil-alt"></span>. This will open the right panel of the heat map.</p>
+<p><img src="images/Imagen232.png" class="grande" alt="Right panel editing heat maps" title="Right panel editing heat maps" /></p>
+<p>From this panel we can configure how the heat map will be displayed in the viewer with the following options:</p>
+<ul>
+
+<li>Outer and inner: define the colors to be used in the outermost and innermost layer of the heat map respectively. We can press the swap button <span class="ti-arrows-horizontal"></span> to swap these colors.</li>
+<li>Low and high limits: will indicate the limits of the signal value at which the colors will reach their minimum and maximum. We can swap these values using the swap button <span class="ti-arrows-horizontal"></span>.</li>
+<li>Radius: It will indicate the radius of each point of the heat map. The value is in pixels.</li>
+</ul></section></section><section>
+<h2><a name="a3_Viewer"></a><a name="visor"></a> 3 Viewer</h2>
+<p>When we open a map type document or click on the &#x201c;Preview&#x201d; button <span class="ti-control-play"></span> in the editor toolbar . We will see the map as we have defined it. We will see all visible layers of markers and signs, heatmaps or kmls.</p>
+<p>We will be able to interact with the markers to open and close them and to show us the information we defined in the viewer or to take us to a link if we click on it. In addition we will be able to visualize the values that will form the heat maps.</p>
+<p><img src="images/Imagen31.png" class="grande" alt="Map viewer" title="Map viewer" /></p>
+<p>We can also hide the layers or show the layers as we did from the <a href="#gestion-capas">Layer management</a> section, using the toolbar:</p>
+<p><img src="images/Imagen32.png" class="grande" alt="Layer management in toolbar" title="Layer management in toolbar" /></p>
+<p>Finally we will be able to move between the elements using the &#x201c;Select an element&#x201d; combo. This will show us all the marker nodes and heat maps available and will take us to it once we click on it.</p>
+<p><img src="images/Imagen33.png" class="grande" alt="Select items" title="Select items" /></p><hr /></section><section>
+<h2><a name="a4_Display_and_query_options"></a><a name="opciones-visualizacion"></a> 4 Display and query options</h2>
+<p>Both in the viewer and in the editor we will be able to change some options to visualize it in a different way. The difference is that if we change them in the editor they will be saved together with the map. The options are the following:</p>
+<ul>
+
+<li><span class="ti-layout-column2"></span>StreetView: This option is located in the toolbar and will split the screen to show us the street view on the right. In addition we will have to drag the orange man to the place where we want on the map.</li>
+<li><span class="ti-car"></span>Show traffic: Located in the toolbar, it will show the traffic on the map. Once shown we will be able to hide it again by means of the same button that will have changed to &#x201c;Hide traffic&#x201d;.</li>
+<li><span class="icon-id-terrain"></span>Map Type: This option can be found at the bottom left of the map. This will open a drop-down menu in which we will select the type of map we want to see among the following options: &#x201c;Street map&#x201d;, &#x201c;Terrain&#x201d;, &#x201c;Satellite&#x201d;, &#x201c;Satellite with labels&#x201d;.</li>
+</ul>
+<p>In addition, within the map we can search for a specific place so that the center of the map is located in that place using the &#x201c;Write your query&#x201d; functionality.</p>
+<p><img src="images/Imagen41.png" class="grande" alt="Write your inquiry" title="Write your inquiry" /></p></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="icon-id-bpm"></cite>
+  
+<h1>DIAGRAMAS</h1>
+</div>
+
+<ol style="list-style-type: decimal">
+
+<li><a href="#intro">Introducci&#xf3;n</a>
+<ul>
+
+<li>1.1 <a href="#edicion">Edici&#xf3;n del c&#xe1;lculo</a>
+<ul>
+
+<li>1.1.1 <a href="#acciones">Acciones y preferencias</a></li>
+<li>1.1.2 <a href="#seales">Se&#xf1;ales</a></li>
+<li>1.1.3 <a href="#diagrama">Diagrama</a>
+<ul>
+
+<li>1.1.3.1 <a href="#etiquetas">Etiquetas</a></li>
+<li>1.1.3.2 <a href="#dependencias">Dependencias</a></li>
+</ul>
+</li>
+<li>1.1.4 <a href="#propseal">Propiedades de la se&#xf1;al</a></li>
+<li>1.1.5 <a href="#multiple">Selecci&#xf3;n m&#xfa;ltiple</a></li>
+</ul>
+</li>
+<li>1.2 <a href="#componentes">Componentes</a>
+<ul>
+
+<li>1.2.1 <a href="#caracteristicas">Caracter&#xed;sticas</a></li>
+<li>1.2.2 <a href="#tipos">Tipos</a>
+<ul>
+
+<li>1.2.2.1 <a href="#entrada">Entrada</a></li>
+<li>1.2.2.2 <a href="#enviadores">Enviadores</a></li>
+<li>1.2.2.3 <a href="#constantes">Constantes</a></li>
+<li>1.2.2.4 <a href="#conversores">Conversores</a></li>
+<li>1.2.2.5 <a href="#funciones">Funciones</a></li>
+<li>1.2.2.6 <a href="#filtros">Filtros</a></li>
+<li>1.2.2.7 <a href="#operadores">Operadores</a></li>
+<li>1.2.2.8 <a href="#validacion">Validaci&#xf3;n</a></li>
+<li>1.2.2.9 <a href="#temporizadores">Temporizadores</a></li>
+<li>1.2.2.10 <a href="#flujo">Flujo</a></li>
+<li>1.2.2.11 <a href="#otros">Otros</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1.3 <a href="#reproduccion">Reproducci&#xf3;n</a></li>
+<li>1.4 <a href="#documentacion">Documentaci&#xf3;n del c&#xe1;lculo</a></li>
+</ul>
+</li>
+</ol><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>El principal m&#xf3;dulo de c&#xe1;lculo que integra la herramienta para ejecutar evaluaciones l&#xf3;gicas y generar nuevas se&#xf1;ales dentro del sistema, es <b>diagramas o c&#xe1;lculos del BPM</b> (<i>Business Process Management</i>). La herramienta permite, a partir de una o m&#xfa;ltiples se&#xf1;ales de entrada, procesar unos determinadas componentes l&#xf3;gicos o acciones, con el objetivo de generar una nueva se&#xf1;al de salida que formar&#xe1; parte del sistema y sobre la que podr&#xe1;n aplicar los an&#xe1;lisis pertinentes.</p>
+<p>Los nuevos diagramas se pueden crear desde la secci&#xf3;n de accesos directos del cliente Web.</p>
+<p><img src="images/Diagrama1.png" alt="IDbox" title="Creación de nuevo diagrama desde los accesos directos." /></p><hr /><section>
+<h3><a name="a1.1_Edici.C3.B3n"></a><a name="edicion"></a>1.1 Edici&#xf3;n</h3>
+<p>Una de las principales caracter&#xed;sticas que proporciona el m&#xf3;dulo es la capacidad de edici&#xf3;n <i>online</i> de un c&#xe1;lculo desde el propio cliente Web. Se proporciona una lista de caracter&#xed;sticas para poder dise&#xf1;ar con un editor tradicional nuestros c&#xe1;lculos y poder posteriormente ejecutarles dentro de una instancia de IDbox.</p>
+<p><i>La ejecuci&#xf3;n del c&#xe1;lculo requerir&#xe1; la intervenci&#xf3;n de un administrador una vez que &#xe9;ste fue dise&#xf1;ado apropiadamente.</i></p><section>
+<h4><a name="a1.1.1_Acciones_y_preferencias"></a><a name="acciones"></a>1.1.1 Acciones y preferencias</h4>
+<p>Desde el apartado de Men&#xfa;, situado en el lateral izquierdo (colapsable) se proporcionan las tradicionales acciones de edici&#xf3;n de un diagrama:</p>
+<p><img src="images/Diagrama2.png" alt="IDbox" title="Acciones y preferencias del diagrama." /></p>
+<ul>
+
+<li><b>Copiar</b>: Posibilidad de copiar (combinaci&#xf3;n de teclado CTRL+C) elementos.</li>
+<li><b>Pegar</b>: Acci&#xf3;n de pegar aquellos elementos previamente copiados (CTRL+V)</li>
+<li><b>Clonar</b>: Capacidad de clonar elementos previamente dise&#xf1;ados y configurados sobre el tapiz del diagrama.</li>
+<li><b>Eliminar</b>: Posibilidad de borrar elementos con una acci&#xf3;n de surpimir (tecla de Supr)</li>
+<li><b>Preferencias del canvas</b>: Caracter&#xed;sticas de tama&#xf1;o, color de fondo y ajustes de contenido del tapiz del diagrama.</li>
+<li><b>Ocultar rejilla</b>: Acci&#xf3;n que permite deshabilitar las l&#xed;neas de orientaci&#xf3;n sobre el tapiz en el caso que no fueran necesarias.</li>
+<li><b>Panel de propiedades</b>: Propiedades generales del diagrama.</li>
+</ul></section><section>
+<h4><a name="a1.1.2_Se.C3.B1ales"></a><a name="seales"></a>1.1.2 Se&#xf1;ales</h4>
+<p>Desde el men&#xfa; lateral izquierdo, se encuentra la acci&#xf3;n de a&#xf1;adir se&#xf1;ales al tapiz con una simple acci&#xf3;n de arrastrar el icono <span class="ti-signal"></span> sobre el tapiz del diagrama que posteriormente abrir&#xe1; un men&#xfa; contextual con la lista de se&#xf1;ales disponibles dentro del sistema.</p>
+<p>Desde este <b><a href="../selector/selector.html">men&#xfa; del sistema</a></b> se podr&#xe1;n seleccionar una o m&#xfa;ltiples se&#xf1;ales que se traducir&#xe1;n en las se&#xf1;ales de entrada del c&#xe1;lculo.</p>
+<p><i>Arrastrando la rueda del rat&#xf3;n permite poder moverte por el diagrama, as&#xed; como combinando la tecla CTRL aumentar o disminuir el detalle.</i></p></section><section>
+<h4><a name="a1.1.3_Diagrama"></a><a name="diagrama"></a>1.1.3 Diagrama</h4>
+<p>Se encuentra esta caracter&#xed;stica seleccionando el tapiz del diagrama y en el men&#xfa; lateral derecho, que es la regi&#xf3;n donde se muestra informaci&#xf3;n individual seg&#xfa;n el elemento seleccionado. La configuraci&#xf3;n del diagrama permite acceder a los principales detalles de configuraci&#xf3;n como son el nombre actual del diagrama (vac&#xed;o si estamos editando un nuevo diagrama), etiquetas y sus dependencias.</p>
+<p><img src="images/Diagrama4.png" alt="IDbox" title="Características principales del diagrama." /></p><section>
+<h5><a name="a1.1.3.1_Etiquetas"></a><a name="etiquetas"></a>1.1.3.1 Etiquetas</h5>
+<p>Listado de todas las principales puertas de entrada del c&#xe1;lculo (se&#xf1;ales que intervienen) as&#xed; como las salidas (se&#xf1;ales resultantes).</p></section><section>
+<h5><a name="a1.1.3.2_Dependencias"></a><a name="dependencias"></a>1.1.3.2 Dependencias</h5>
+<p>En este apartado se listan todas aquellas dependencias con otros diagramas seg&#xfa;n <b>alias de c&#xe1;lculo</b> que permita reutilizar rutinas de evaluaci&#xf3;n, as&#xed; como peque&#xf1;as acciones u operaciones l&#xf3;gicas que se deduzcan en otros diagramas externos y por lo tanto, relacionados.</p></section></section><section>
+<h4><a name="a1.1.4_Propiedades_de_la_se.C3.B1al"></a><a name="propseal"></a>1.1.4 Propiedades de la se&#xf1;al</h4>
+<p>Cuando  se  selecciona  una se&#xf1;al  sobre  el  lienzo  se  muestra  su informaci&#xf3;n: nombre de la se&#xf1;al seleccionada, formato (anal&#xf3;gico, digital o discreto), unidades y descripci&#xf3;n.</p>
+<p><img src="images/Diagrama9.png" alt="IDbox" title="Propiedades de la señal seleccionada." /></p></section><section>
+<h4><a name="a1.1.5_Selecci.C3.B3n_m.C3.BAltiple"></a><a name="multiple"></a>1.1.5 Selecci&#xf3;n m&#xfa;ltiple</h4>
+<p>Cuando  se  selecciona  m&#xe1;s  de  un  elemento sobre el tapiz de un diagrama,  se  despliega  a  la  derecha  un panel informativo con las estad&#xed;sticas de n&#xfa;mero de componentes, enlaces, puertas y totales.</p>
+<p>Adem&#xe1;s, se permite alinear la selecci&#xf3;n en varias posiciones.</p>
+<p><img src="images/Diagrama8.png" alt="IDbox" title="Característica de selección múltiple de elementos en un tapiz." /></p><hr /></section></section><section>
+<h3><a name="a1.2_Componentes"></a><a name="componentes"></a>1.2 Componentes</h3>
+<p>Listado de todos aquellos elementos necesarios para poder dise&#xf1;ar las evaluaciones l&#xf3;gicas que se requieren dentro de un c&#xe1;lculo.</p>
+<p>Se seleccionan desde el men&#xfa; lateral izquierdo y haciendo click sobre el icono <span class="ti-widget"></span> que mostrar&#xe1; todos aquellos elemenentos organizados por tipo y detallados en el siguiente listado inferior.</p>
+<p>Se permite la posibilidad de filtrar elementos seg&#xfa;n tipos de componente desde un buscador en la cabecera superior del men&#xfa; que filtrar&#xe1; seg&#xfa;n se escribe. En la parte inferior, se muestra una peque&#xf1;a leyenda de informaci&#xf3;n que describe brevemente el elemento seleccionado.</p>
+<p>Para a&#xf1;adir un elemento sobre el tapiz, solamente ser&#xe1; necesario desplegar la agrupaci&#xf3;n oportuna y seleccionar el componente, arrastr&#xe1;ndolo sobre el tapiz actual para posteriormente comenzar a enganchar sus puertas de entrada y habilitando las pertinentes de salida.</p>
+<p>Tambi&#xe9;n se puede consultar la informaci&#xf3;n correspondiente al componente  seleccionando,  mostr&#xe1;ndose  sobre el  panel inferior del panel izquierdo.</p>
+<p><img src="images/Diagrama6.png" alt="IDbox" title="Acción de arrastrar un nuevo componente sobre el tapiz." /></p>
+<blockquote>
+
+<p>Existe la posibilidad de ampliar el tama&#xf1;o del componente en el tapiz, arrastrando la esquina inferior derecha y ampli&#xe1;ndolo seg&#xfa;n se requiera.</p>
+</blockquote><section>
+<h4><a name="a1.2.1_Caracter.C3.ADsticas"></a><a name="caracteristicas"></a>1.2.1 Caracter&#xed;sticas</h4>
+<p>Una vez que se selecciona un componente en concreto, desde el men&#xfa; lateral derecho del editor se listan todas las caracter&#xed;sticas principales del elemento:</p>
+<ul>
+
+<li>Nombre</li>
+<li>Tipo</li>
+<li>Puertas</li>
+<li>Par&#xe1;metros</li>
+</ul>
+<p>Una de las principales caracter&#xed;sticas de edici&#xf3;n de un componente es la configuraci&#xf3;n de sus puertas (los puntos de entrada o salida en un flujo de ejecuci&#xf3;n).</p>
+<p>Al  pulsar  sobre  el  bot&#xf3;n <b>&#x201c;Editar  puertas&#x201d;</b>  se  abre  una  nueva  ventana  en  la  que  se muestran:</p>
+<ul>
+
+<li>
+
+<p><b>Puertas de entrada</b>: Son aquellos puntos de entrada del flujo de ejecuci&#xf3;n sobre un componente. Se permite introducir una descripci&#xf3;n, elegir un rol entre los posibles (dependen  del  tipo  de  componente),  cambiar  su  visibilidad,  ver  si  tiene  alg&#xfa;n  enlace, a&#xf1;adir o eliminar se&#xf1;ales.</p>
+</li>
+<li>
+
+<p><b>Puertas  de  salida</b>:  El punto o los puntos de s&#xe1;lida en un proceso.  Presenta las mismas caracter&#xed;sticas que las puertas de entrada, pero tambi&#xe9;n  se puede  asignar  un  &#x201c;alias&#x201d;  o asociar un se&#xf1;al de salida con la que enlace el c&#xe1;lculo. No se podr&#xe1; seleccionar una se&#xf1;al y un alias simult&#xe1;neamente para la misma puerta. Esta se&#xf1;al ser&#xe1; la nueva se&#xf1;al calculada que configure el diagrama de c&#xe1;lculo.</p>
+</li>
+</ul>
+<blockquote>
+
+<p>Un <b>rol</b> es el tipo de comportamiento que presenta la puerta (entrada, salida o seg&#xfa;n su tipo), mientras que un <b>alias</b> representa un nombre intermedio de c&#xe1;lculo que puede compartirse en otros c&#xe1;lculos como evaluaciones parciales de un c&#xe1;lculo mayor.</p>
+</blockquote>
+<p><img src="images/Diagrama7.png" alt="IDbox" title="Configuración de las puertas de un componente." /></p>
+<p>Desde el apartado inferior de <b>par&#xe1;metros</b> del men&#xfa; de configuraci&#xf3;n del componente, se asignan todos aquellos que afecten al componente seleccionado y que var&#xed;an seg&#xfa;n su tipo o comportamiento.</p></section><section>
+<h4><a name="a1.2.2_Tipos"></a><a name="tipos"></a>1.2.2 Tipos</h4>
+<p>A continuaci&#xf3;n se detallan a grandes rasgos los principales componentes que proporciona el editor <i>online</i> y que se encuentran en constante evoluci&#xf3;n o disponibilidad seg&#xfa;n el tipo de instalaci&#xf3;n que se configure.</p>
+<p>En oportunidades la siguiente lista podr&#xed;a verse sujeta a cambios:</p><section>
+<h5><a name="a1.2.2.1_Entrada"></a><a name="entrada"></a>1.2.2.1 Entrada</h5>
+<p>Grupo de componentes que &#xfa;nicamente presentan puertas de salida como flujo de entrada en un c&#xe1;lculo. Por ejemplo, Driver FTP, Simulador, etc.</p></section><section>
+<h5><a name="a1.2.2.2_Enviadores"></a><a name="enviadores"></a>1.2.2.2 Enviadores</h5>
+<p>Grupo de componentes que &#xfa;nicamente presentan una &#xfa;nica puerta de entrada como flujo final en un c&#xe1;lculo. Por ejemplo, env&#xed;os SMS, Mail, Post, etc.</p></section><section>
+<h5><a name="a1.2.2.3_Constantes"></a><a name="constantes"></a>1.2.2.3 Constantes</h5>
+<p>Todos aquellos componentes que configuran una constante como parte del c&#xe1;lculo y que por &#xed;ndole &#xfa;nicamente disponen de puertas de salida. Este tipo de componentes configuran un valor permanente y que se dispara con una frecuencia constante.</p></section><section>
+<h5><a name="a1.2.2.4_Conversores"></a><a name="conversores"></a>1.2.2.4 Conversores</h5>
+<p>Componentes que convierten un grupo de entradas en una determinada salida y que se agrupan seg&#xfa;n temperatura, tiempo o tipo.</p></section><section>
+<h5><a name="a1.2.2.5_Funciones"></a><a name="funciones"></a>1.2.2.5 Funciones</h5>
+<p>Grupos de componente relacionados con la evaluaci&#xf3;n de funciones internas dentro de un c&#xe1;lculo que aceptan multiples entradas y una &#xfa;nica salida.</p></section><section>
+<h5><a name="a1.2.2.6_Filtros"></a><a name="filtros"></a>1.2.2.6 Filtros</h5>
+<p>Lista de componentes que act&#xfa;an como filtros evaluando estados, cambiando valores o aplicando m&#xe1;scaras sobre estados de una muestra.</p></section><section>
+<h5><a name="a1.2.2.7_Operadores"></a><a name="operadores"></a>1.2.2.7 Operadores</h5>
+<p>Grupo de principales operadores l&#xf3;gicos para configurar un c&#xe1;lculo y que se desglosan en los siguientes:</p>
+<ul>
+
+<li><b>Aritm&#xe9;ticos</b>: Multiplicaciones, sumas, restas, divisiones, logaritmos, porcentajes, etc.</li>
+<li><b>L&#xf3;gicos</b>: Tipos l&#xf3;gicos como AND, OR, NOR, NOT, NAND, etc.</li>
+<li><b>Relacionales</b>: Comparaciones, mayor que, menor, diferentes, etc.</li>
+<li><b>Trigonom&#xe9;tricos</b>: Tangentes, cosenos, senos, arco tangente, tangente hiperb&#xf3;lica, etc.</li>
+<li><b>Contadores</b>: Cuentas de estados, valores, totales, l&#xf3;gicos, pulsos, etc.</li>
+<li><b>Estad&#xed;sticos</b>: Res&#xfa;menes estad&#xed;sticos de tipos anal&#xf3;gicos, digitales, discretos, condicionales.</li>
+</ul></section><section>
+<h5><a name="a1.2.2.8_Validaci.C3.B3n"></a><a name="validacion"></a>1.2.2.8 Validaci&#xf3;n</h5>
+<p>Componentes que comprueban estados o rangos seg&#xfa;n un conjunto de entradas o salidas.</p></section><section>
+<h5><a name="a1.2.2.9_Temporizadores"></a><a name="temporizadores"></a>1.2.2.9 Temporizadores</h5>
+<p>Componentes principales para marcar una frecuencia de ejecuci&#xf3;n o activar una condici&#xf3;n temporal dentro de un diagrama de c&#xe1;lculo.</p></section><section>
+<h5><a name="a1.2.2.10_Flujo"></a><a name="flujo"></a>1.2.2.10 Flujo</h5>
+<p>Componentes principales de flujo de ejecuci&#xf3;n de un c&#xe1;lculo como condiciones, pasos selectivos (switch), v&#xe1;lvulas, etc.</p></section><section>
+<h5><a name="a1.2.2.11_Otros"></a><a name="otros"></a>1.2.2.11 Otros</h5>
+<p>Grupos de componentes extra que pueden variar seg&#xfa;n el tipo de instalaci&#xf3;n o terceras implementaciones.</p><hr /></section></section></section><section>
+<h3><a name="a1.2_Reproducci.C3.B3n"></a><a name="reproduccion"></a>1.2 Reproducci&#xf3;n</h3>
+<p>Para visualizar o reproducir un c&#xe1;lculo <i>online</i>, ser&#xe1; necesario seleccionar un documento de tipo Diagrama desde el explorador del sistema y directamente abrir el documento en modo visualizaci&#xf3;n. En &#xe9;l podemos hacer zoom con el rat&#xf3;n y mover el diagrama arrastr&#xe1;ndolo.</p>
+<p>Tambi&#xe9;n se dispone de la posibilidad de editar un documento y comprobar progresivamente los cambios utilizando el <b>bot&#xf3;n de play superior</b> de la cabecera.</p>
+<p>Para consultar el tiempo real del diagrama o depurar el flujo de ejecuci&#xf3;n del mismo, es tan sencillo como situar el puntero del rat&#xf3;n por encima de la puerta deseada (c&#xed;rculos). Si queremos mostrar los mensajes  con  la  informaci&#xf3;n  asociada  a  un  componente (rect&#xe1;ngulo),  pasaremos  el  puntero  del rat&#xf3;n por encima del componente que corresponda.</p>
+<p>Ambos mensajes emergentes, los referentes a las puertas y a los componentes, se pueden fijar haciendo click sobre la chincheta que aparece en la esquina superior derecha.</p>
+<p><img src="images/Diagrama10.png" alt="IDbox" title="Reproducción de un diagrama." /></p><hr /></section><section>
+<h3><a name="a1.3_Documentaci.C3.B3n_del_c.C3.A1lculo"></a><a name="documentacion"></a>1.3 Documentaci&#xf3;n del c&#xe1;lculo</h3>
+<p>Se puede desplegar con una simple acci&#xf3;n de click sobre el t&#xed;tulo de <b>descripci&#xf3;n</b> de la barra de herramientas o haciendo click directamente sobre el panel colapsado, en la parte inferior derecha (icono de flecha). Al desplegarse, muestra la documentaci&#xf3;n correspondiente al c&#xe1;lculo y un editor embebido para conformar el detalle. El editor puede ampliar a pantalla completa pulsando sobre el icono <span class="ti-fullscreen"></span> y as&#xed; tener una mayor comodidad, tanto visualizando como editando.</p>
+<p><img src="images/Diagrama11.png" alt="IDbox" title="Descripción y documentación de un diagrama." /></p></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

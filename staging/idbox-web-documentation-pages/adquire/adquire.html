@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+<cite class="ti-settings"></cite>
+<h1>Adquisici&#xf3;n de datos</h1>
+</div>
+
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a></li>
+<li>2 <a href="#status-monitor">Monitor de estado</a>
+<ul>
+
+<li>2.1 <a href="#license-info">Informaci&#xf3;n de licencia</a></li>
+<li>2.2 <a href="#architecture">Arquitectura</a></li>
+</ul>
+</li>
+<li>3 <a href="#service-creation">Creaci&#xf3;n de servicios</a></li>
+<li>4 <a href="#service-edition">Edici&#xf3;n de servicios</a>
+<ul>
+
+<li>4.1 <a href="#service-edition-diagram">Edici&#xf3;n diagrama</a></li>
+<li>4.2 <a href="#service-edition-catalog">Edici&#xf3;n cat&#xe1;logo</a>
+<ul>
+
+<li>4.2.1 <a href="#service-edition-catalog-interaction">Interaccion de se&#xf1;ales y piezas</a></li>
+<li>4.2.2 <a href="#service-edition-catalog-changes">Control de cambios</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>IDbox est&#xe1; formado por distintos servicios que se orquestan para proporcionar la funcionalidad personalizada deseada, como puede ser la adquisici&#xf3;n de datos. La administraci&#xf3;n y configuraci&#xf3;n de estos servicios puede realizarse a trav&#xe9;s del administrador del sistema mediante sus p&#xe1;ginas de monitor de estado, y creaci&#xf3;n/edici&#xf3;n de servicio. A lo largo de la secci&#xf3;n se muestra el funcionamiento de cada una de ellas, cuyo acceso es posible desde el panel de control tal y como muestra la siguiente imagen.</p>
+<p><img src="images/controlpanel_configurator.jpg" class="mediano" alt="Acceso desde el panel de control" title="Acceso desde el panel de control" /></p><hr /></section><section>
+<h2><a name="a2._Monitor_de_estado"></a><a name="status-monitor"></a>2. Monitor de estado</h2>
+<p>El monitor de estado es el punto de acceso a la administraci&#xf3;n de servicios, permitiendo visualizar y configurar los servicios actualmente instalados o la creaci&#xf3;n de nuevos a lo largo de los distintos servidores a los que se tiene acceso.</p><section>
+<h3><a name="a2.1_Informaci.C3.B3n_de_licencia"></a><a name="license-info"></a>2.1 Informaci&#xf3;n de licencia</h3>
+<p>Sit&#xfa;ada en la parte superior derecha, y como se visualiza en la siguiente imagen, la informaci&#xf3;n de licencia permite visualizar su tipo, el porcentaje de se&#xf1;ales utilizadas respecto a su l&#xed;mite y su fecha de expiraci&#xf3;n. La barra de progreso permite percibir el porcentaje de consumo actual de manera gr&#xe1;fica.</p>
+<p><img src="images/license_info.jpg" class="mediano" alt="Información de licencia" title="Información de licencia" /></p></section><section>
+<h3><a name="a2.2_Arquitectura"></a><a name="architecture"></a>2.2 Arquitectura</h3>
+<p>Para facilitar la ubicaci&#xf3;n de cada uno de los servicios, se muestran agrupados en distintos bloques que representan el servidor que los alberga. A modo de ejemplo, en la siguiente imagen se observa un &#xfa;nico servidor, pero la cantidad depender&#xe1; del n&#xfa;mero de servidores que comprenda la infraestructura.</p>
+<p><img src="images/server_services.jpg" class="grande" alt="Servicios de un servidor" title="Servicios de un servidor" /></p>
+<p>Esta visualizaci&#xf3;n se estructura en tres partes resaltadas en rojo que a continuaci&#xf3;n se detallan.</p>
+<ol style="list-style-type: decimal">
+
+<li><b>Acciones</b>: adem&#xe1;s de visualizar su direccionamiento, permite a&#xf1;adir un nuevo servicio, iniciar o detener el servicio seleccionado, as&#xed; como acceder a al edici&#xf3;n diagrama o edici&#xf3;n cat&#xe1;logo.</li>
+<li><b>Consumos y rendimiento</b>: muestra el uso de memoria y cpu tanto de IDbox como del servidor, adem&#xe1;s del almacenamiento disponible.</li>
+<li><b>Servicios</b>: lista completa de los servicios asociados al servidor, junto con su estado, nombre, descripci&#xf3;n, puerto, fecha de puesta en ejecuci&#xf3;n, n&#xfa;mero de se&#xf1;ales y versi&#xf3;n.</li>
+</ol>
+<p>Adem&#xe1;s, como una herramienta adicional para facilitar la b&#xfa;squeda de los servicios, en la parte superior izquierda es posible introducir un t&#xe9;rmino que se aplica a todos los servidores disponibles de manera simult&#xe1;nea, filtrando todas las posibles coincidencias.</p>
+<p><img src="images/services_search.jpg" class="mediano" alt="Búsqueda de servicios" title="Búsqueda de servicios" /></p><hr /></section></section><section>
+<h2><a name="a3._Creaci.C3.B3n_de_servicios"></a><a name="service-creation"></a>3. Creaci&#xf3;n de servicios</h2>
+<p>Mediante la acci&#xf3;n de nuevo servicio disponible desde el servidor deseado en el monitor de estado, el asistente por pasos para la creaci&#xf3;n de servicio se inicia. El primer paso debe completarse con el nombre a dar al servicio, y una descripci&#xf3;n opcional, como muestra la siguiente imagen.</p>
+<p><img src="images/newservice_step1.jpg" class="grande" alt="Primer paso de la creación de servicio" title="Primer paso de la creación de servicio" /></p>
+<p>El segundo paso permite la configuraci&#xf3;n del servicio a partir de una plantilla predefinida en el sistema, que es posible seleccionar a la izquierda, y que puede ser tanto un &#x201c;Servicio vac&#xed;o&#x201d; por defecto como un tipo de driver en concreto. Mientras que en el primer caso no ser&#xe1; necesario proporcionar m&#xe1;s detalles, en el segundo escenario es necesario completar una serie de par&#xe1;metros b&#xe1;sicos de inicializaci&#xf3;n que a modo de ejemplo muestra la siguiente imagen.</p>
+<p><img src="images/newservice_step2.jpg" class="grande" alt="Segundo paso de la creación de servicio" title="Segundo paso de la creación de servicio" /></p><hr /></section><section>
+<h2><a name="a4._Edici.C3.B3n_de_servicios"></a><a name="service-edition"></a>4. Edici&#xf3;n de servicios</h2>
+<p>Los servicios pueden ser modificados desde dos perspectivas: la edici&#xf3;n de diagrama y de cat&#xe1;logo. Mientras que el primer editor facilita la configuraci&#xf3;n de la l&#xf3;gica y comportamiento general del servicio, el segundo permite gestionar la interacci&#xf3;n con las se&#xf1;ales de IDbox que contiene.</p><section>
+<h3><a name="a4.1_Edici.C3.B3n_diagrama"></a><a name="service-edition-diagram"></a>4.1 Edici&#xf3;n diagrama</h3>
+<p>Para acceder a la edicion diagrama es suficiente con seleccionar el servicio deseado desde el monitor de estado y hacer clic sobre el icono de edici&#xf3;n de servicio: <cite class="ti-settings"></cite>. Una vez accionado, el editor se encuentra disponible para su uso tal y como se muestra en la siguiente imagen junto con las secciones que se describen seguidamente.</p>
+<p><img src="images/diagram_editor.jpg" class="grande" alt="Editor de diagrama" title="Editor de diagrama" /></p>
+<ol style="list-style-type: decimal">
+
+<li><b>Acciones</b>: proporciona las herramientas de deshacer, rehacer, guardado, pantalla completa y cierre de la edici&#xf3;n.</li>
+<li><b>Herramientas</b>: permite acceder a las operaciones de edici&#xf3;n y componentes disponibles para su uso.</li>
+<li><b>Tapiz</b>: &#xe1;rea de dise&#xf1;o a donde poder arrastrar y enlazar los componentes seg&#xfa;n el flujo que se desee construir.</li>
+<li><b>Propiedades</b>: cada uno de los elementos seleccionados en el tapiz cuentan con una serie de propiedades que pueden personalizarse en este panel derecho.</li>
+</ol></section><section>
+<h3><a name="a4.2_Edici.C3.B3n_cat.C3.A1logo"></a><a name="service-edition-catalog"></a>4.2 Edici&#xf3;n cat&#xe1;logo</h3>
+<p>El acceso a la edici&#xf3;n de cat&#xe1;logo puede efectuarse seleccionando el servicio deseado en el monitor de estado y haciendo clic sobre el icono de cat&#xe1;logo: <cite class="ti-signal"></cite>. Como muestra la siguiente imagen, tras esta acci&#xf3;n el editor queda disponible para su uso con diferentes &#xe1;reas de uso que de describen a continuaci&#xf3;n.</p>
+<p><img src="images/catalog_editor.jpg" class="grande" alt="Editor de catálogo" title="Editor de catálogo" /></p>
+<ol style="list-style-type: decimal">
+
+<li><b>Acciones</b>: permite ejecutar el guardado de los cambios, pantalla completa y cierre de la edici&#xf3;n.</li>
+<li><b>Cat&#xe1;logo</b>: muestra la lista de se&#xf1;ales que forman parte del cat&#xe1;logo del servicio y el modo de interacci&#xf3;n con las piezas. Igualmente, se facilitan las operaciones de importar se&#xf1;ales al sistema, exportar plantilla de importaci&#xf3;n, y a&#xf1;adir o borrar se&#xf1;ales del sistema al cat&#xe1;logo.</li>
+<li><b>Propiedades</b>: facilita la configuraci&#xf3;n de las propiedades para la se&#xf1;al seleccionada seg&#xfa;n las piezas que procesa y permite un <a href="../signals/signals.html#seniales">acceso directo a la edici&#xf3;n de la se&#xf1;al</a> as&#xed; como su informaci&#xf3;n resumida.</li>
+</ol>
+<p>En el caso de modificar una se&#xf1;al desde la edici&#xf3;n de cat&#xe1;logo, al guardar una configuraci&#xf3;n de alarmas o l&#xed;mites de la se&#xf1;al provocar&#xe1; su sincronizaci&#xf3;n con el cat&#xe1;logo cuando se cuente con una pieza LIMIT, tal y como muestra la siguiente advertencia.</p>
+<p><img src="images/limit_configuration_warning.jpg" class="mediano" alt="Advertencia de sincronización de LIMIT" title="Advertencia de sincronización de LIMIT" /></p><section>
+<h4><a name="a4.2.1_Interaccion_de_se.C3.B1ales_y_piezas"></a><a name="service-edition-catalog-interaction"></a>4.2.1 Interaccion de se&#xf1;ales y piezas</h4>
+<p>La interacci&#xf3;n entre las se&#xf1;ales incluidas en el cat&#xe1;logo y las piezas del servicio puede tomar tres estados que se muestran en la siguiente figura y se describen a continuaci&#xf3;n.</p>
+<p><img src="images/signal_interaction.jpg" class="mediano" alt="Posibilidades de interacción entre pieza y señal" title="Posibilidades de interacción entre pieza y señal" /></p>
+<ul>
+
+<li><b>Procesado</b>: la pieza y se&#xf1;al seleccionadas est&#xe1;n configuradas y en funcionamiento.</li>
+<li><b>Excluido</b>: la pieza y se&#xf1;al seleccionadas est&#xe1;n configuradas pero no activado su funcionamento.</li>
+<li><b>Ignorado</b>: la pieza y se&#xf1;al no est&#xe1;n configuradas, y por tanto, tampoco en funcionamiento.</li>
+</ul></section><section>
+<h4><a name="a4.2.2_Control_de_cambios"></a><a name="service-edition-catalog-changes"></a>4.2.2 Control de cambios</h4>
+<p>A medida que se aplican cambios, bien cambiando el modo de interacci&#xf3;n desde la lista de cat&#xe1;logo o alterando los valores entre las propiedades, las se&#xf1;ales modificadas muestran un indicador que las diferencia del resto. Igualmente, y como muestra la siguiente imagen, la navegaci&#xf3;n entre &#x201c;Se&#xf1;ales&#x201d; y &#x201c;Modificadas&#x201d; permite tanto su filtrado como cuenteo.</p>
+<p><img src="images/modified_signal_catalog.jpg" class="grande" alt="Señal modificada en el catálogo" title="Señal modificada en el catálogo" /></p>
+<p>Es importante destacar que los cambios acumulados no se almacenan hasta accionar el guardado, salvo la agregaci&#xf3;n de se&#xf1;ales que se produce de manera inst&#xe1;ntanea.</p></section></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

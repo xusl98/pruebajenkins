@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <i></i>
+  
+<h1>CONTENIDO GENERICO</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a>
+<ul>
+
+<li>1.1 <a href="#nuevoDocumento">Nuevo Documento</a></li>
+</ul>
+</li>
+<li>2 <a href="#editor">Editor</a>
+<ul>
+
+<li>2.1 <a href="#seleccionDetipo">Selecci&#xf3;n de tipo</a></li>
+<li>2.2 <a href="#url">Url</a></li>
+<li>2.3 <a href="#texto">Texto</a></li>
+</ul>
+</li>
+<li>3 <a href="#visor">Visor</a></li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>El contenido gen&#xe9;ricos sirve para generar documentos personalizados basados en una URL o en un Texto plano.</p><section>
+<h3><a name="a1.1_Nuevo_Documento"></a><a name="nuevoDocumento"></a>1.1 Nuevo Documento</h3>
+<p>Para poder crear un documento de cero hay que acceder a la Tab de &#x201c;OTROS&#x201d; y en la expansi&#xf3;n hay hacer clic a &#x201c;GEN&#xc9;RICO&#x201d;</p>
+<p><img src="images/crearDocumento.png" class="grande" alt="Crear documento genérico" title="Crear documento genérico" /></p><hr /></section></section><section>
+<h2><a name="a2_Editor"></a><a name="editor"></a>2 Editor</h2>
+<p>Una vista simple que contiene un t&#xed;tulo, selecci&#xf3;n de formato y contenido.</p>
+<p><img src="images/documentoEnBlanco.png" class="grande" alt="Nuevo documento" title="Nuevo documento" /></p><hr /><section>
+<h3><a name="a2.1_Selecci.C3.B3n_de_tipo"></a><a name="seleccionDetipo"></a>2.1 Selecci&#xf3;n de tipo</h3>
+<p>Aqu&#xed; decidimos de que tipo queremos que sea el nuevo documento</p>
+<p><img src="images/tipoDeContenidoTexto.png" class="grande" alt="Selección de tipo" title="Selección de tipo" /></p></section><section>
+<h3><a name="a2.2_Url"></a><a name="url"></a>2.2 Url</h3>
+<p>Introducimos la url de la web que queremos mostrar al momento de guardar.</p>
+<p><img src="images/url.png" class="grande" alt="url" title="url" /></p></section><section>
+<h3><a name="a2.3_Texto"></a><a name="texto"></a>2.3 Texto</h3>
+<p>El campo de texto nos permite editar mediante varias herramientas los estilos y contenidos de nuestro texto adem&#xe1;s de poder a&#xf1;adir im&#xe1;genes y links.</p>
+<p><img src="images/editorDeTexto.png" class="grande" alt="Editor de texto" title="Editor de texto" /></p><hr /></section></section><section>
+<h2><a name="a3_Visor"></a><a name="visor"></a> 3 Visor</h2>
+<p>El resultado del documento creado se mostrar&#xe1; en el visor.</p>
+<p>Ejemplo: <img src="images/visor.png" class="grande" alt="Visor" title="Visor" /></p></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

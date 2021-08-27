@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+<cite class="icon-id-states"></cite>
+<h1>States</h1>
+</div>
+
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#admin">States administration</a>
+<ul>
+
+<li>2.1 <a href="#admin-list">States list</a></li>
+<li>2.2 <a href="#admin-properties">States properties</a></li>
+</ul>
+</li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>Along the different sections of IDbox it is possible to display an associated status next to the data, which consists of an icon and a text as shown in the following image.</p>
+<p><img src="images/states_examples.png" class="mediano" alt="Statuses example in the explorer" title="Statuses example in the explorer" /></p>
+<p>In this way, it is possible to configure and identify one or several specific scenarios such as INVALID, NORMAL, ALARM HIGH, among others. Aspects related to their administration are shown in the following sections.</p></section><section>
+<h2><a name="a2._States_administration"></a><a name="admin"></a>2. States administration</h2>
+<p>System statuses can be managed from the section enabled in the control panel as shown in the following figure.</p>
+<p><img src="images/states_control_panel.png" class="mediano" alt="Access to status management from the control panel" title="Access to status management from the control panel" /></p>
+<p>Once inside, two sections are displayed as shown in the following image - a list of states on the left and their properties on the right. The changes made can be persisted by the save button available in the upper toolbar.</p>
+<p><img src="images/states_admin_selected.png" class="grande" alt="States management" title="States management" /></p>
+<p>The following documentation sections describe the use of each section.</p><section>
+<h3><a name="a2.1_States_list"></a><a name="admin-list"></a>2.1 States list</h3>
+<p>The left panel shows the list of the statuses registered in the application. They can be filtered by a search term using the search engine located at the top.</p>
+<p>Statuses are sorted by ascending priority order, being the first ones less important than the last ones. This way, if a status is made up of several ones, the order will be established according to this criteria. To change the priority, simply click on the row and drag it to the desired position while holding the selection.</p></section><section>
+<h3><a name="a2.2_States_properties"></a><a name="admin-properties"></a>2.2 States properties</h3>
+<p>By clicking on one of the available states in the list, the right panel displays its detailed information as well as the visual aspect in terms of its icon and text. Except for the name, which is an identifier, the other fields listed below can be customized:</p>
+<ul>
+
+<li><b>Alias</b>: allows you to identify the state with a custom name.</li>
+<li><b>Description</b>: customized text describing the scenario represented by the state.</li>
+<li><b>Color</b>: by using the picker or a hexadecimal/RGB code it is possible to define a representative color for the status.</li>
+<li><b>Icon</b>: allows you to attach a 16x16px image in PNG format to be shown along the status display.</li>
+</ul>
+<p>It is important to note that some states may not be able to be modified by the user.</p></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

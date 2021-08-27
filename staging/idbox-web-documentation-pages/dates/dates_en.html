@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div style="clear: both;">
+  
+<div style="float: left; margin-inline: 5px;">
+    <img src="images/dates.png" alt="Fechas" width="50" />
+  </div>
+  
+<div style="float: left; margin-center">
+    
+<h1>Date selector</h1>
+  </div>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#lite">Reduced date selector</a></li>
+<li>3 <a href="#interval">Interval selector</a></li>
+<li>4 <a href="#full">Complete date selector</a>
+<ul>
+
+<li>4.1 <a href="#last-data">Latest data</a></li>
+<li>4.2 <a href="#fixed-dates">Fixed dates</a></li>
+<li>4.3 <a href="#next-data">Upcoming data</a></li>
+<li>4.4 <a href="#period">Period</a>
+<ul>
+
+<li>4.4.1 <a href="#skip">Displacement</a></li>
+</ul>
+</li>
+<li>4.5 <a href="#advanced">Advanced dates</a></li>
+</ul>
+</li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>The date picker is a basic tool of IDboxRT, which allows you to select both static dates and dynamic time intervals.</p>
+<p>There are 3 ways to open the date picker, spread over the different sections of the website.</p><hr /></section><section>
+<h2><a name="a2._Reduced_date_selector"></a><a name="lite"></a>2. Reduced date selector</h2>
+<p>The most common date selector is the one that looks like a text field, which can be found for example in the launcher or in the right panel of the series configuration.</p>
+<p><img src="images/Imagen1.png" alt="IDbox" title="Reduced date selector" /></p>
+<p>As a base we have a text field with the start and end dates written. We will be able to write to change each of the dates, always keeping the format shown by default. The dates selected by typing will be taken into account as <a href="#fixed-dates">fixed dates</a>.</p>
+<p>If instead we need a more complex configuration we can click on the calendar shown to the right of the text field and a modal window will open with the <a href="#full">complete date selector</a>.</p><hr /></section><section>
+<h2><a name="a3._Interval_selector"></a><a name="interval"></a>3. Interval selector</h2>
+<p>The range selector is used to quickly select a date range from <a href="#last-data">&#x201c;Latest data&#x201d;</a>. It consists of a group of buttons with some predefined date periods. They can be identified by a number and the first letter of the period they represent (Hours, Days, Weeks, Months or Years).</p>
+<p><img src="images/Imagen2.png" alt="IDbox" title="Interval selector" /></p>
+<p>If the configuration we are looking for does not comply with the options shown, we could click on the button <span class="ti-settings"></span> and a modal window will open with the <a href="#full">complete date selector</a>.</p><hr /></section><section>
+<h2><a name="a4._Complete_date_selector"></a><a name="full"></a>4. Complete date selector</h2>
+<p>All date configurations available in IDboxRT can be configured in this component.</p>
+<p><img src="images/Imagen3.png" alt="IDbox" title="Complete date selector" /></p>
+<p>In the upper part we will be able to visualize the dates that would result from the calculation of the selected interval. To its right, we will have an approximation of the selected interval, for example, if we select a period of 1 week and 4 days, 1 week will be displayed.</p>
+<p>Below this we can see a series of tabs:</p><section>
+<h3><a name="a4.1_Latest_data"></a><a name="last-data"></a>4.1 Latest data</h3>
+<p><img src="images/Imagen4.png" alt="IDbox" title="Latest data" /></p>
+<p>Allows you to select a date range composed of a number and a unit. The selected period will be taken into account from the current time backwards and will be updated each time it is consulted.</p></section><section>
+<h3><a name="a4.2_Fixed_dates"></a><a name="fixed-dates"></a>4.2 Fixed dates</h3>
+<p><img src="images/Imagen5.png" alt="IDbox" title="Fixed dates" /></p>
+<p>Allows you to select a date range consisting of date and time. For the dates a calendar will be displayed by clicking on one of the two upper fields. Clicking on the first field will allow you to modify the start date, then the end date and then the calendar will close. On the other hand, if we click on the date field it will only ask for the end date and it will collapse when we select it.</p>
+<p>The selected dates will be static.</p></section><section>
+<h3><a name="a4.3_Upcoming_data"></a><a name="next-data"></a>4.3 Upcoming data</h3>
+<p>For this section to be available, it must be activated in the <a href="#a">configuration file</a>.</p>
+<p><img src="images/Imagen6.png" alt="IDbox" title="Upcoming data" /></p>
+<p>Allows you to select a date range composed of a number and a unit. The selected period will be taken into account from the current time forward and will be updated each time it is consulted.</p></section><section>
+<h3><a name="a4.4_Period"></a><a name="period"></a>4.4 Period</h3>
+<p><img src="images/Imagen7.png" alt="IDbox" title="Period" /></p>
+<p>It is based on the operation of the <a href="#last-data">last-data</a> selector but with additions. The first thing will be a selector equal to the one used in last-data.</p>
+<p>After that we will have two checks:</p>
+<ol style="list-style-type: decimal">
+
+<li>
+
+<p>Current: It will indicate if the period we want to see is in progress or not. Ex: If we have selected a week in the first part and we select &#x201c;Current&#x201d; the resulting dates will be from the first moment of the week to the current moment. However, with &#x201c;Current&#x201d; deactivated the dates will be from the beginning of the previous week to the end of the previous week.</p>
+</li>
+<li>
+
+<p>Complete: The check &#x201c;Complete&#x201d; forces the end date to be the end of the period. In the case of selecting the current week it would end at the time of now. However, if we select &#x201c;Complete&#x201d; the period will end at the end of the week, implying a future date. For the result of this calculation to return future dates it will be necessary to activate the corresponding parameter in the <a href="#a">configuration file</a>.</p>
+</li>
+</ol><section>
+<h4><a name="a4.4.1_Displacement"></a><a name="skip"></a>4.4.1 Displacement</h4>
+<p>The displacement is used to move the time interval forward or backward in time, it is like adding dates. We can select the value and the units. If the value is negative we will subtract days and if it is positive we will add. When adding dates, future dates will only be calculated when the corresponding parameter in the <a href="#a">configuration file</a> is activated.</p>
+<p>E.g.: If we want to see the period corresponding to 2 days ago we will have to first select 1 day in the normal period selector, and then in the scroll section select -2 days.</p></section></section><section>
+<h3><a name="a4.5_Advanced_dates"></a><a name="advanced"></a>4.5 Advanced dates</h3>
+<p><img src="images/Imagen8.png" class="grande" alt="Advanced dates" title="Advanced dates" /></p>
+<p>Allows you to select an independent start and end date, specifying a formula for each of them. This formula will be divided into groups of operators, which will be separated by spaces.</p>
+<p>Each operator will consist of a letter representing a time period, a mathematical symbol (+, - or =) and a value.</p>
+<ul>
+
+<li>D: Days</li>
+<li>W: Weeks</li>
+<li>M: Months</li>
+<li>Y: Years</li>
+<li>h: Hours</li>
+<li>m: Minutes</li>
+<li>s: Seconds</li>
+</ul>
+<p>For any of these operators (X) these operations can be performed:</p>
+<ul>
+
+<li>D=1 Assigns the value 1 to the current day.</li>
+<li>M+2 Assigns to the current month a +2, if we are in June will show August</li>
+<li>Y-1 Assigns to the current year a -1, if we are in 2021 it will show 2020</li>
+</ul>
+<p>If any period is not affected by any operator it will use the value of the current date.</p></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

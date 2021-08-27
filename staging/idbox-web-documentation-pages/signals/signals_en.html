@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="ti-signal"></cite>
+  
+<h1>SIGNALS</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#seniales">Signals</a></li>
+<li>3 <a href="#grupos-seniales">Signal Groups</a></li>
+<li>3 <a href="#campos-adicionales">Additional fields</a></li>
+<li>4 <a href="#funciones">Functions</a></li>
+<li>5 <a href="#unidades">Units</a></li>
+<li>6 <a href="#categorias">Categories</a></li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>In this section we will specify how signal administration can be performed.</p>
+<p>Next, we will define each of the sections that make up the signal administration.</p><hr /></section><section>
+<h2><a name="a2_Signals"></a><a name="seniales"></a>2 Signals</h2><section>
+<h3><a name="a2.1_Configuration"></a><a name="signal-crud"></a>2.1 Configuration</h3>
+<p>From the control panel we can access the &#x201c;Signals&#x201d; section.</p>
+<p><img src="images/Imagen21.png" class="grande" alt="Signals section" title="Signals section" /></p>
+<p>This will allow us to list all the signals we have available or search for a specific one using the search engine.</p>
+<p><img src="images/Imagen22.png" class="grande" alt="List of signals" title="List of signals" /></p>
+<p>The add button <span class="ti-plus"></span> will allow us to add new signals to the system. If we select a signal we can edit it with the <span class="ti-pencil-alt"></span> button or delete it with <span class="ti-trash"></span>. In addition we can quickly associate signals to a signal group with the <span class="icon-id-signalgroups"></span> button by marking one or several signals at the same time.</p>
+<p>On the other hand, the <span class="icon-id-d-template"></span> button allows exporting an Excel document in two ways: with the data of the selected signals or a base template, which in both cases can be imported later to the system by means of the <span class="icon-id-import"></span> button to make additions, massive modifications of signals or both.</p>
+<p>Adding or editing a signal will open a window to modify its data.</p>
+<p><img src="images/Imagen23.png" class="grande" alt="Editing a signal" title="Editing a signal" /></p>
+<p>The fields in this section are explained here:</p>
+<ul>
+
+<li>Identifier: The signal identifier, automatically assigned by the system.</li>
+<li>Signal: The name of the signal.</li>
+<li>Description: Description of the signal.</li>
+<li>Origin: Information about the data origin of the signal.</li>
+<li>Time Zone: It will allow us to change the time zone to which the signal belongs.</li>
+<li>Statistical type: It will allow us to select if the signal statistic is &#x201c;Arithmetic&#x201d; or &#x201c;Time-weighted&#x201d;.</li>
+<li>Calculated: Indicates whether the signal is calculated or not.</li>
+<li>Active: If checked, it will indicate that the signal is active in the system.</li>
+<li>Signal groups: The signal groups to which the signal belongs. Pressing it will open a selector to select them.</li>
+<li>Type: Indicates whether the signal is &#x201c;Analog&#x201d;, &#x201c;Digital&#x201d; of type &#x201c;Text&#x201d; or &#x201c;Discrete&#x201d;.</li>
+</ul>
+<p>If the signal is analog, the following fields will also be displayed:</p>
+<ul>
+
+<li>Minimum value: Minimum value of the signal.</li>
+<li>Maximum value: Maximum value of the signal.</li>
+<li>Units: Combo containing possible types of units to assign to the signal.</li>
+<li>Notation: Whether its values will be represented in &#x201c;Decimal&#x201d; or &#x201c;Scientific&#x201d; notation.</li>
+<li>Number of decimal places: Indicates how many decimal places the signal will be represented.</li>
+</ul>
+<p>In the case of a digital signal we can establish:</p>
+<ul>
+
+<li>True value: Text that represents that the signal has a true value.</li>
+<li>False value: Text that represents that the signal has a false value.</li>
+</ul>
+<p>Finally, in the case of discrete signals we can select a category.</p>
+<p>In the last grid we will see the configuration of the alarms.</p>
+<p>Only in the case that we have entered to edit the signal from the section <a href="adquire/adquire.html#service-edition-catalog">catalog edition from the service configurator</a>.</p>
+<p><img src="images/Imagen24.png" class="grande" alt="Alarm editing" title="Alarm editing" /></p>
+<p>The alarm configuration fields are as follows:</p>
+<ul>
+
+<li>Type: type of alarm to be monitored. The possible values are &#x201c;Value&#x201d;, &#x201c;High&#x201d;, &#x201c;Low&#x201d; and &#x201c;Status&#x201d;:</li>
+</ul>
+<p>*Value: If the value of the alarm is exactly the value we specify in the &#x201c;Value&#x201d; field, it will be triggered. *High: If the alarm value exceeds the threshold of the &#x201c;Value&#x201d; field, the alarm will be triggered. *Low: As soon as the alarm value is lower than the &#x201c;Value&#x201d; field, the alarm will be triggered. *Status: If the alarm goes to the status specified in the &#x201c;Value&#x201d; field, the alarm will be triggered.</p>
+<ul>
+
+<li>Value: Field that will vary according to the type. It will be a number if the type is &#x201c;Value&#x201d;, &#x201c;High&#x201d; or &#x201c;Low&#x201d; and one or several states if it is of type &#x201c;Status&#x201d;.</li>
+<li>State: State that the alarm will have when it is issued.</li>
+<li>Activation description: Message given to the alarm when it is activated.</li>
+<li>Activation severity: Severity corresponding to the alarm that is activated. Possible values are &#x201c;Trivial&#x201d;, &#x201c;Low&#x201d;, &#x201c;Medium&#x201d;, &#x201c;High&#x201d; or &#x201c;Critical&#x201d;.</li>
+<li>Activation refresh: Time, in seconds. If since the alarm was activated, this time passes with the alarm active, the alarm acknowledgement will be requested again.</li>
+<li>Deactivation description: Description that will be given when the alarm is deactivated.</li>
+<li>Deactivation severity: Severity corresponding to the alarm when it is deactivated. Possible values are &#x201c;Trivial&#x201d;, &#x201c;Low&#x201d;, &#x201c;Medium&#x201d;, &#x201c;High&#x201d; or &#x201c;Critical&#x201d;.</li>
+<li>Deadband: Differential margin to recover the alarm value.</li>
+<li>Delay: Time that the alarm has to be fulfilled before it is actually triggered.</li>
+<li>Omission signal: This field indicates the digital signal that would omit that alarm when its value is true.</li>
+<li>Plant states: System states in which the alarm definition would be applied.</li>
+</ul>
+<p>To save the signal in its entirety, click on the &#x201c;Accept&#x201d; button.</p></section><section>
+<h3><a name="a2.2_Information"></a><a name="signal-informatiom"></a>2.2 Information</h3>
+<p>The fields previously shown in the configuration are also available in visualization mode along more details through the signal information tab. It can be opened via the information icon <span class="ti-info"></span> located close to the signal as shown in the following example of the main explorer view.</p>
+<p><img src="images/signal-info-explorer.png" class="mediano" alt="Signal information access from the explorer" title="Signal information access from the explorer" /></p>
+<p>Once it is opened, as can be seen in the following image, the information tab is split into several sections that can be navigated through the menu located on the left side as well as a summary located at the top containing its name, description, type and a shortcut for its edition.</p>
+<p><img src="images/signal-info-tab.png" class="grande" alt="Signal information tab" title="Signal information tab" /></p>
+<p>Based on the signal type, different options will be available depending on its features. The following list describes each of them.</p>
+<ul>
+
+<li><b>Details</b>: shows the properties and features, groups to which it belongs, additional fields and configured alarms.</li>
+<li><b>Documents</b>: a list of documents classified by its type - based on user permissions and security group - in which this signal is being used.</li>
+<li><b>Analysis</b>: the result of the application of different analysis techniques on the data to obtain information on the behavior of the signal over time is displayed.</li>
+<li>
+
+<p><b>Statistical analysis</b> is available for analog, digital and discrete signals. Values are calculated through the application of different functions to the data that provide information about its historical behaviour. The number of available statistics varies according to the type of the signal on which they are calculated.</p>
+</li>
+<li>
+
+<p><b>Data distribution graph</b> shows how signal values are distributed according to the number of observations for the selected time period. The amount of data used for the representation is a sample summarized by mark.</p>
+</li>
+</ul>
+<p><img src="images/signal-info-analysis.png" class="grande" alt="Signal analysis" title="Signal analysis" /></p><hr /></section></section><section>
+<h2><a name="a3_Signal_Groups"></a><a name="grupos-seniales"></a>3 Signal Groups</h2>
+<p>In this section we can manage the groups of signals that exist in the system. It can be accessed from the control panel:</p>
+<p><img src="images/Imagen31.png" class="grande" alt="Signal groups section" title="Signal groups section" /></p>
+<p>This will take us to a grid with the groups of signals registered. Using the search engine we will be able to filter a group of signals.</p>
+<p><img src="images/Imagen32.png" class="grande" alt="List of signal groups" title="List of signal groups" /></p>
+<p>We will add a new group of signals using the add <span class="ti-plus"></span> button. If we select a specific group, the options to edit <span class="ti-pencil-alt"></span> or delete <span class="ti-trash"></span> will be enabled.</p>
+<p>By adding or editing we will enter the edit section of a signal group.</p>
+<p><img src="images/Imagen33.png" class="grande" alt="Editing a group of signals" title="Editing a group of signals" /></p>
+<p>In this screen we can edit the following properties:</p>
+<ul>
+
+<li>Name: Name under which the group of signals will be displayed.</li>
+<li>Description: Description of the signal group.</li>
+<li>Security groups: Select an existing security group in which the signal group will be included. It is not possible to modify it once the group has already been created.</li>
+<li>Access groups: Indicate the access groups that will be able to view this group of signals.</li>
+<li>Parent signal group: List the other signal groups within the selected security group so that we can select which one will be its parent in the signal group hierarchy.</li>
+<li>Signals in group: Grid that will show us the signals that are in this signal group. We can add them by <span class="ti-plus"></span> or remove them from the group by <span class="ti-trash"></span>.</li>
+</ul>
+<p>To save the signal group, click on the <span class="ti-save"></span> button in the toolbar.</p><hr /></section><section>
+<h2><a name="a3_Additional_fields"></a><a name="campos-adicionales"></a>3 Additional fields</h2>
+<p>In this section we can manage additional fields of the signals that exist in the system. It can be accessed from the control panel:</p>
+<p><img src="images/Imagen34.png" class="grande" alt="Additional fields section" title="Additional fields section" /></p>
+<p>This will take us to the additional fields management window, on the left side we can select the security group from which we want to see the additional fields or mark that we want to see all the additional fields in the system.</p>
+<blockquote>
+
+<p>Note: if we select &#x201c;Show all additional fields in the system&#x201d; we will not be able to add a new additional field.</p>
+</blockquote>
+<p><img src="images/Imagen37.png" class="grande" alt="List of additional fields" title="List of additional fields" /></p>
+<p>We will add a new additional field using the add button <span class="ti-plus"></span>. Selecting an additional field will enable the options to edit <span class="ti-pencil-alt"></span> or delete <span class="ti-trash"></span>.</p>
+<p>When adding a new additional field, a new row will be added to the additional fields table in which we must indicate the name we want to give to the new additional field.</p>
+<p><img src="images/Imagen36.png" class="grande" alt="Creation of additional field" title="Creation of additional field" /></p><hr /></section><section>
+<h2><a name="a4_Functions"></a><a name="funciones"></a>4 Functions</h2>
+<p>In this section we will be able to manage the functions that exist in the system. We can access it from the control panel:</p>
+<p><img src="images/Imagen38.png" class="grande" alt="Function section" title="Function section" /></p>
+<p>This will take us to a grid with the registered functions. Using the search engine we will be able to filter the functions.</p>
+<p><img src="images/Imagen39.png" class="grande" alt="List of functions" title="List of functions" /></p>
+<p>We will add a new function using the add button <span class="ti-plus"></span>. Selecting a function will enable the editing <span class="ti-pencil-alt"></span> and deleting <span class="ti-trash"></span> options.</p>
+<p>Adding or editing will open the edit section of a function.</p>
+<p><img src="images/Imagen40.png" class="grande" alt="Editing a function" title="Editing a function" /></p>
+<p>In this screen we can edit the following properties:</p>
+<ul>
+
+<li>Name: Name under which the function will be displayed.</li>
+<li>Description: Description of the function.</li>
+<li>Equation: We can add a signal that will be displayed as a history in the equation or operators found in the drop-down menu at the bottom.</li>
+</ul>
+<p>To save the function, click on the <span class="ti-save"></span> button on the toolbar.</p><hr /></section><section>
+<h2><a name="a5_Units"></a><a name="unidades"></a>5 Units</h2>
+<p>In this section we will be able to manage the units that exist in the system. We can access it from the control panel:</p>
+<p><img src="images/Imagen41.png" class="grande" alt="Unit section" title="Unit section" /></p>
+<p>This will take us to a grid with the units registered. Using the search engine we can filter the units.</p>
+<p><img src="images/Imagen42.png" class="grande" alt="List of units" title="List of units" /></p>
+<p>We will add a new unit using the add button <span class="ti-plus"></span>. If we select a unit, the editing <span class="ti-pencil-alt"></span> and deleting <span class="ti-trash"></span> options will be enabled.</p>
+<p>Adding or editing will open the edit section of a unit.</p>
+<p><img src="images/Imagen43.png" class="grande" alt="Editing a unit" title="Editing a unit" /></p>
+<p>In this screen we can edit the following properties:</p>
+<ul>
+
+<li>Symbol: It is the symbol used to express the unit.</li>
+<li>Parent unit: It is the unit that the unit in creation/edition will depend on (Optional).</li>
+<li>Measurement: It is the type of measurement, if it has a parent unit it will have the measurement of the parent.</li>
+<li>Slope: It is the value by which the current unit must be multiplied to obtain the parent unit.</li>
+<li>yIntercept: In case the parent unit and the current unit do not coincide in the zero value, the difference between both is established. For example degrees Celsius would have yIntercept = -273.15, since the 0 of the parent unit (degrees Kelvin) is equivalent to -273.15&#xb0;C.</li>
+</ul>
+<p>To save the unit, click on the <span class="ti-save"></span> button on the toolbar.</p><hr /></section><section>
+<h2><a name="a6_Categories"></a><a name="categorias"></a>6 Categories</h2>
+<p>In this section we will be able to manage the categories that exist in the system. We can access it from the control panel:</p>
+<p><img src="images/Imagen44.png" class="grande" alt="Category section" title="Category section" /></p>
+<p>This will take us to a grid with the categories registered. Using the search engine we will be able to filter the categories.</p>
+<p><img src="images/Imagen45.png" class="grande" alt="List of categories" title="List of categories" /></p>
+<p>On the left side you will find the list of categories with buttons to add <span class="ti-plus"></span>, edit <span class="ti-pencil-alt"></span> and delete <span class="ti-trash"></span>.</p>
+<p>If there are categories, by default the first one will be selected when accessing this screen, which will cause the grid with the values of that category to be displayed on the right side of the screen.</p>
+<p><img src="images/Imagen46.png" class="grande" alt="List of category values" title="List of category values" /></p>
+<p>If we select the value of a category, the editing <span class="ti-pencil-alt"></span> and deleting <span class="ti-trash"></span> options will be enabled.</p>
+<p>In this screen the edit and add actions will be performed within the same grid without the need to access a new screen, once you consider that you have finished editing/adding values you must use the save button that appears when editing/adding.</p>
+<p><img src="images/Imagen47.png" class="grande" alt="Editing a category value" title="Editing a category value" /></p>
+<p>In this grid you will be able to edit: * Categorical Value: Text used to represent the value. * Numeric Value: Numeric key that identifies the value.</p></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

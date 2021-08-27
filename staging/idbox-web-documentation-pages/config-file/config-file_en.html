@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+    <cite class="ti-settings"></cite>
+    
+<h1>Configuration file</h1>
+</div>
+
+<p>In the configuration file you will be able to configure different parameters for the correct operation of the web. This file is located in <b>IDbox/Clients/Web/assets/config/config-env.js</b>. To apply the changes made to the configuration it will be necessary to refresh the browser.</p>
+<ul>
+
+<li><b>assetsAPI</b>: Asset api URL</li>
+<li><b>assetsLookupdb</b>: Lookupdb asset api URL</li>
+<li><b>assetsCredentials</b>: Asset API credentials</li>
+<li><b>kmlAPI</b>: URL of kmls map api</li>
+<li><b>baseUrl</b>:</li>
+<li><b>apiUrl</b>:</li>
+<li><b>signalRUrl</b>:</li>
+<li><b>signalRHub</b>:</li>
+<li><b>authenticationMode</b>:</li>
+<li><b>defaultCreds</b>:</li>
+<li><b>defaultSecurityGroup</b>:</li>
+<li><b>apiTokenUrl</b>:</li>
+<li><b>openID</b>:
+<ul>
+
+<li><b>authority</b>:</li>
+<li><b>client_id</b>:</li>
+<li><b>redirect_url</b>:</li>
+<li><b>post_logout_redirect_url</b>:</li>
+<li><b>response_type</b>:</li>
+<li><b>scope</b>:</li>
+<li><b>filterProtocolClaims</b>:</li>
+<li><b>loadUserInfo</b>:</li>
+<li><b>automaticSilentRenew</b>:</li>
+<li><b>silent_redirect_uri</b>:</li>
+</ul>
+</li>
+<li><b>allowGeneralFutureDates</b>: Defines whether a future date is allowed to be selected in all date selectors on the website.</li>
+<li><b>graphics</b>:
+<ul>
+
+<li><b>trend</b>:
+<ul>
+
+<li><a name="maximumNumberOfTagsTrend"></a> <b>maximumNumberOfTags</b>: Defines the maximum number of series that can be plotted on the trend graph.</li>
+<li><a name="allowZoomByWheel"></a> <b>allowZoomByWheel</b> Enables the functionality to zoom the trend graph using the mouse wheel.</li>
+<li><b>maxPoints</b>: Defines the maximum number of points to be plotted on the trend graph. This value will be used for the automatic mark calculation.</li>
+<li><b>defaultVisualizationType</b>: Aspect of the series to be loaded by default. The available values are <b>Line</b>, <b>Spline</b>, <b>StepLine</b>, <b>Area</b>, <b>Column</b> y <b>Scatter</b>. These values will only apply to analog signals.</li>
+</ul>
+</li>
+<li><b>grouped</b>:
+<ul>
+
+<li><b>maximumNumberOfTags</b>: Defines the maximum number of series that can be represented in the cluster plot.</li>
+<li><b>defaultVisualizationType</b>: Aspect of the series to be loaded by default. The available values are <b>Line</b>, <b>Spline</b>, <b>StepLine</b>, <b>Area</b>, <b>Column</b> y <b>Scatter</b>. These values will only apply to analog signals.</li>
+</ul>
+</li>
+<li><b>realtime</b>:
+<ul>
+
+<li><b>maximumNumberOfTags</b>: Defines the maximum number of series that can be plotted on the real time chart.</li>
+<li><a name="defaultPointNumber"></a> <b>defaultPointNumber</b>: Defines the number of points to be used by default in real time plots.</li>
+<li><b>defaultVisualizationType</b>: Aspect of the series to be loaded by default. The available values are <b>Line</b>, <b>Spline</b>, <b>StepLine</b>, <b>Area</b>, <b>Column</b> y <b>Scatter</b>. These values will only apply to analog signals.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>historics</b>:
+<ul>
+
+<li><b>maximumNumberOfTags</b>: Defines the maximum number of series that can be represented in a history document.</li>
+</ul>
+</li>
+<li><b>functions</b>:
+<ul>
+
+<li><b>maximumFunctionLength</b>:</li>
+</ul>
+</li>
+<li><b>reports</b>:
+<ul>
+
+<li><b>maximumNumberOfTags</b>: Defines the maximum number of signals that can be included in a report document.</li>
+</ul>
+</li>
+<li><b>shortcuts</b>:
+<ul>
+
+<li><b>enabled</b>:</li>
+<li><b>title</b>:</li>
+<li><b>logo</b>:</li>
+<li><b>url</b>:</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

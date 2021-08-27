@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div style="clear: both;">
+  
+<div style="float: left; margin-inline: 5px;">
+    <img src="images/charts.png" alt="Gráficas" width="50" />
+  </div>
+  
+<div style="float: left; margin-center">
+    
+<h1>Graphics</h1>
+  </div>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#tendencia">Trend graph</a></li>
+<li>3 <a href="#agrupados">Grouped graph</a></li>
+<li>4 <a href="#tiempo-real">Real-time graph</a></li>
+<li>5 <a href="#configurador">Configurator</a>
+<ul>
+
+<li>5.1 <a href="#series">Series</a>
+<ul>
+
+<li>5.1.1 <a href="#series-fechas">Dates</a></li>
+<li>5.1.2 <a href="#series-general">General</a></li>
+<li>5.1.3 <a href="#series-aspecto">Appearance</a></li>
+<li>5.1.4 <a href="#series-asintotas">Asintotas</a></li>
+</ul>
+</li>
+<li>5.2 <a href="#ejesy">Y-axis</a>
+<ul>
+
+<li>5.2.1 <a href="#ejesy-general">General</a></li>
+<li>5.2.2 <a href="#ejesy-seriesasociadas">Associated series</a></li>
+<li>5.2.3 <a href="#ejesy-asintotas">Asintotas</a></li>
+</ul>
+</li>
+<li>5.3 <a href="#ejesx">X-axis</a></li>
+<li>5.4 <a href="#tipos">Type of graph</a>
+<ul>
+
+<li>5.4.1 <a href="#config-tendencia">Trend configuration</a></li>
+<li>5.4.2 <a href="#config-agrupados">Grouped configuration</a></li>
+<li>5.4.3 <a href="#config-tiemporeal">Real-time configuration</a></li>
+</ul>
+</li>
+<li>5.5 <a href="#plantillas">Templates</a></li>
+</ul>
+</li>
+<li>6 <a href="#toolbar">Toolbar</a></li>
+<li>7 <a href="#comunes">Common elements</a>
+<ul>
+
+<li>7.1 <a href="#estadisticas">Statistics panel</a></li>
+<li>7.2 <a href="#tooltips-fijos">Fixed tooltips</a></li>
+</ul>
+</li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>One of the analysis tools available in the system are the graphs. The application allows the following types of graphs:</p>
+<ul>
+
+<li>of historical data, called Trend</li>
+<li>by time groupings, called Clustered</li>
+<li>in Real time</li>
+<li>and Scatter (disabled).</li>
+</ul>
+<p>Graphs can be created from the shortcut section (1), from the launcher (2) or from the shortcut (3).</p>
+<p><img src="images/Imagen1.png" class="grande" alt="Creation of graphs from the launcher" title="Creation of graphs from the launcher" /></p>
+<p>1) To create the graph from the launcher you need to have signals in &#x201c;My Signal Selection&#x201d;, select the signals you want to have in the graph and press one of the buttons corresponding to the desired graph type. Note: In the signals section of the explorer, by clicking on the button <span class="icon-id-starempty"></span>, that signal will be added to &#x201c;My signal selection&#x201d;.</p>
+<p>2) From the shortcut section only the trend graph will be available. Pressing the button will open a trend graph with the selected signals and with a period of one week.</p>
+<p>3) Clicking on the chart shortcut will display the options to create a new chart or to create a chart template. Clicking on either of them will open the chart creation wizard. If we do not have permissions to view the inventory, the option to create a template will not be displayed.</p>
+<p><img src="images/Imagen51.png" class="mediano" alt="Creation of graphs from the shortcut" title="Creation of graphs from the shortcut" /></p>
+<ul>
+
+<li>Type of graph Correlation and scatter plots are disabled.
+<ul>
+
+<li>Signals Will only be displayed if you click on &#x201c;New graph&#x201d; (A). A minimum of one signal must be selected and the maximum value configured in the <a href="../config-file/config-file.html#maximumNumberOfTagsTrend">configuration file</a> will be used.</li>
+<li><a name="new-template"></a>Templates It will only be displayed if you click on &#x201c;New template&#x201d; (B) first. You have to select at least one template and no more than three. Only templates with at least one attribute of type signal will be shown.</li>
+<li>Attributes It will only be shown if you click on &#x201c;New template&#x201d; (B). Allows you to select attributes for each of the templates selected in the previous step. You have to select between one and three attributes. Only signal type attributes will be shown.</li>
+<li>Dates Allows to select the dates configuration of the chart. It will apply to all series.</li>
+</ul>
+</li>
+</ul>
+<p>Once the initial configuration is set, the configured graph will be displayed on the screen. The central area, the graphical representation corresponds to the previously selected configuration type of graph, dates and series.</p>
+<p>On the left side there is a drop-down menu to modify the graph configuration (1). Switching between the different sections of the menu will display the configuration menu located in the right panel (3) which will show options specific to the selected menu. This menu will be hidden by default until the cogwheel (2) is clicked.</p>
+<p><img src="images/Imagen3.png" class="grande" alt="Toolbar" title="Toolbar" /></p>
+<p>The toolbar is located at the top right.</p><hr /></section><section>
+<h2><a name="a2_Trend_graph"></a><a name="tendencia"></a>2 Trend graph</h2>
+<p>The <i>&quot;Trend graph &quot;</i> functionality allows the representation of a set of historical data at different resolutions on a collection of points. It also allows the representation of statistical data and the application of mathematical functions for data monitoring.</p>
+<p>For the creation of this type of graph, in addition to the options explained in the previous section, the tool has a direct access from the document explorer, for the quick creation of this type of graphs once the series have been selected.</p>
+<p><img src="images/Imagen3-1.png" class="grande" alt="Graph creation from the explorer" title="Graph creation from the explorer" /></p>
+<p>By default, this graph will be configured with the period of the last 24 hours and marked Auto.</p>
+<p><img src="images/Imagen4-1.png" class="grande" alt="Trend graph" title="Trend graph" /></p>
+<p>From the graph representation itself, it allows us to quickly change the configuration of the period, allows the introduction of different time intervals to perform the queries and the <b>mark</b>, frequency at which the data is displayed.</p>
+<p>Different interaction modes are available to analyze the selected time window.</p>
+<ul>
+
+<li>Zoom by dragging with the left click on the graph to zoom in on the timestamp, this action can also be performed in the browser.</li>
+<li>Dragging the navigator with left click to move in time.</li>
+<li>Drag the navigator from the edges to increase or decrease the time interval.</li>
+<li>Right click dragging in the direction you want to move forward or backward in time.</li>
+<li>Mouse wheel to increase or decrease the time interval (Configurable in the <a href="../config-file/config-file.html#allowZoomByWheel">configuration file</a>).</li>
+<li>Using the navigation buttons that appear at the bottom of the graph when you move the mouse over that area (image below). They will allow to move forward and backward in time, as well as to increase or decrease the displayed time interval.</li>
+</ul>
+<p><img src="images/Imagen26.png" class="mediano" alt="Navigation buttons" title="Navigation buttons" /></p>
+<p>You can configure <a href="#config-tendencia">general parameters of the graphic in the configurator</a>.</p><hr /></section><section>
+<h2><a name="a3.09Grouped_graph"></a><a name="agrupados"></a>3	Grouped graph</h2>
+<p>The clustering plot allows to represent the historical data of any signal by displaying/clustering the values in <a href="#selection-agrupado">common time scales</a> allowing to visualize the patterns in different time groupings of the signals. The clustering can be done according to different statistical clustering measures.</p>
+<p><img src="images/Imagen21.png" class="grande" alt="Grouped graph" title="Grouped graph" /></p>
+<p>From the graph representation itself, it allows us to quickly change the configuration of the period, allows the introduction of different time intervals to perform the queries and the statistical type.</p>
+<p>You can configure <a href="#config-agrupados">general parameters of the graphic in the configurator</a>.</p><hr /></section><section>
+<h2><a name="a4_Real-time_graphic"></a><a name="tiempo-real"></a>4 Real-time graphic</h2>
+<p>This type of graph allows you to consult the values of the selected signals in real time. The values shown at the bottom of the Y-axis may vary depending on whether there are data readings with nearby values.</p>
+<p><img src="images/Imagen25.png" class="grande" alt="Real-time graph" title="Real-time graph" /></p>
+<p>Unlike the other graphs, in real time you do not select a time interval to graph, but you select a number of samples. When a real time graph is loaded, the last X data, selected in the third step of the wizard, will be loaded. By default, this setting will take the value present in the <a href="../config-file/config-file.html#defaultPointNumber">configuration file</a>.</p>
+<p><img src="images/Imagen27.png" class="grande" alt="Number of points in real-time" title="Number of points in real-time" /></p>
+<p>The time axis will be adjusted to the received samples. It may happen that two signals with a very different base frequency are plotted, and in this case the graph will not be displayed correctly. For example, if signal 1 has its maximum frequency at 1 hour and signal 2 has it at 1 second and with the graph configured at 300 samples, the data of signal 1 will occupy 5 days, while those of signal 2 will occupy 5 minutes. In this case, signal 2 will be barely visible at the end of the time axis in the graph, so a warning will be displayed recommending to hide one of the signals. <b>Hidden signals will not be taken into account for the calculation of the X-axis interval</b>.</p>
+<p>You can configure <a href="#config-tiemporeal">general parameters of the graphic in the configurator</a></p><hr /></section><section>
+<h2><a name="a5_Configurator"></a><a name="configurador"></a>5 Configurator</h2>
+<p>The chart configurator is divided into 4 sections, represented by the icons in the left sidebar (1) that give access to each section. Clicking on each of them will expand a panel next to it with the section. By default there will be no section selected. Clicking on the already selected section will hide it.</p>
+<p><img src="images/Imagen4.png" class="mediano" alt="Graphics menu" title="Graphics menu" /></p><hr /><section>
+<h3><a name="a5.1_Series"></a><a name="series"></a>5.1 Series</h3>
+<p>Displays the series represented in the graph and has the following actions in the toolbar:</p>
+<p><img src="images/Imagen28.png" class="mediano" alt="Series toolbar" title="Series toolbar" /></p>
+<ul>
+
+<li>Add: This action will open a new window allowing the insertion of new signals or functions to the graph without having to open a new graph from scratch. If we want to add functions we will have to look for the &#x201c;Functions&#x201d; section in the lower left part of the window.</li>
+</ul>
+<p><img src="images/Imagen57.png" class="grande" alt="Add functions" title="Add functions" /></p>
+<ul>
+
+<li>Duplicate: Allows the duplication of the selected series with its configuration.</li>
+<li>Delete: Deletion of the selected series.</li>
+<li>Hide: Allows the selected series to be hidden and displayed on the chart.</li>
+</ul>
+<p>In addition to adding, copying, deleting, displaying/hiding series on the graph, the option is given to perform <span class="ti-settings"></span> configuration. There are two types:</p>
+<ul>
+
+<li>Single: changes made will apply to only one series.</li>
+</ul>
+<p><img src="images/Imagen29.png" class="grande" alt="Unique configuration" title="Unique configuration" /></p>
+<ul>
+
+<li>Multiple: the changes made will apply to all selected series. If no series is selected, they will all be counted as selected.</li>
+</ul>
+<p><img src="images/Imagen30.png" class="grande" alt="Multiple configuration" title="Multiple configuration" /></p>
+<blockquote>
+
+<p>In the multiple configuration it is not possible to edit all configurations as it is in the single configuration.</p>
+</blockquote>
+<p>List of locked configurations in multiple editing:</p>
+<ul>
+
+<li>Edit the title of a series.</li>
+<li>Change the tag or function of a series.</li>
+<li>If the selected series use different units, it is not possible to edit the units.</li>
+<li>If the selected series have different signal types, it will not be possible to edit the statistical type.</li>
+</ul>
+<p>If within our selection we have selected a function, the following fields will be blocked:</p>
+<ul>
+
+<li>Statistical type</li>
+<li>Units</li>
+</ul>
+<p>If we are performing a multiple edition, a list with all the series of the graph will be displayed. When a field is shown in which each series has a different value, the field will be shown with an empty value.</p>
+<p><img src="images/Imagen32.png" class="mediano" alt="Empty aspect fields" title="Empty aspect fields" /></p>
+<p>A selected series changes its background color to the corporate color. To select or deselect a series, left-click on it. You can use the &#x201c;Shift&#x201d; key to quickly make a multiple selection. To do this, select the first series in the list that you want, and then click on the last series while holding down the &#x201c;Shift&#x201d; key, all series between the first and the last one will be automatically selected.</p>
+<p>It will also be possible in this list to reorder the series by dragging them with left click.</p>
+<p>The configuration of a series is divided into 4 blocks:</p><section>
+<h4><a name="a5.1.1_Dates"></a><a name="series-fechas"></a>5.1.1 Dates</h4>
+<p>Allows you to select the time interval for which the data will be displayed. You can type the dates in the <a href="../dates/dates.html#lite">text field</a> or click on the calendar (1) to open <a href="../dates/dates.html#full">the date selector</a>.</p>
+<p><img src="images/Imagen31.png" class="mediano" alt="Date configuration" title="Date configuration" /></p></section><section>
+<h4><a name="a5.1.2_General"></a><a name="series-general"></a>5.1.2 General</h4>
+<p>Allows you to select the characteristics related to the configuration of the series data.</p>
+<p><img src="images/Imagen33.png" class="mediano" alt="General configuration" title="General configuration" /></p>
+<ul>
+
+<li>Title: Allows to change the name of the series. This will be the name by which the series is identified in the interface (legend, menus, etc.).</li>
+<li>Signal: Allows to change the signal shown in the graph for another one chosen from the Signal Selector. If we are in trend, the selection of functions will also be allowed.</li>
+<li>Units: In case the selected signal has a unit associated with it, a unit conversion may be applied to the data represented (from among the conversions available for that unit).</li>
+<li>Statistical type: Allows to select the statistical type (when the represented data are not raw data). The options depend on the type of signal selected:
+<ul>
+
+<li>Analog signals: Mean, maximum, minimum, variance, standard deviation, count, cumulative, maximum and minimum and standard deviation from the mean.</li>
+<li>Discrete signals: Count, mode, count of true values and count of false values.</li>
+<li>Digital signals: Count and mode.</li>
+<li>Functions: Discrete type selection is not available for functions**.</li>
+</ul>
+</li>
+<li>
+
+<p>Interpolation: Select the interpolation to be applied. It can be No interpolation, Linear, Step before and Step after.</p>
+</li>
+<li>Mark: Allows to select the frequency for which the data will be requested. If the resolution is greater than &#x2018;Max&#x2019; it will be statistical data, otherwise it will be raw data. The Auto option allows the mark to be adjusted dynamically according to the selected time period. It will be possible to write marks higher than the last displayed mark. If the mark entered is hours, it will be set to a divisor of 24 hours. Example: If 7 hours are entered, it will be automatically changed to 8 hours. If 10 hours are entered, it will be automatically changed to 12 hours.</li>
+</ul></section><section>
+<h4><a name="a5.1.3_Appearance"></a><a name="series-aspecto"></a>5.1.3 Appearance</h4>
+<p>Allows you to select the display characteristics of the series on the graph.</p>
+<p><img src="images/Imagen35.png" class="mediano" alt="Aspect configuration" title="Aspect configuration" /></p>
+<ul>
+
+<li><b>Line type</b>: Allows you to modify the format of the graphical representation. The options are:
+<ul>
+
+<li><b>Line</b>: Series of segments connecting the signal values.</li>
+<li><b>Smooth line</b>: Smooth curve connecting the signal values.</li>
+<li><b>Stepped line</b>: Series of segments similar to the line, but using only vertical and horizontal lines to connect the signal values (the line will be horizontal until we have a new value, when it will be joined by a vertical straight line).</li>
+<li><b>Area</b>: Generates a defined area between zero and the signal values with the line type.</li>
+<li><b>Column</b>: Series of columns for each signal value.</li>
+<li><b>Marker</b>: Only the values of the series will be displayed in dotted format.</li>
+</ul>
+</li>
+<li><b>Visible</b>: Allows to configure the visibility of the series.</li>
+<li><b>Marker color</b>: Allows to configure the color of the markers of each of the values represented.</li>
+<li><b>Marker thickness</b>: Allows to configure the size of the markers of each of the represented values. If it is 0, they will not be displayed.</li>
+<li><b>Marker border color</b>: Allows to configure the border color of the markers.</li>
+<li><b>Marker border thickness</b>: Allows to configure the thickness of the markers border. If it is 0 it will not be shown.</li>
+<li><b>Line color</b>: Allows to configure the color of the lines that join the different values.</li>
+<li><b>Line thickness</b>: Allows to configure the thickness of the line. In case of being 0 no lines will be shown (dot plot).</li>
+<li><b>Line style</b>: Allows to change the line style. Useful to differentiate two series with the same color.</li>
+<li><b>Opacity</b>: Allows to change the opacity of the area fill.</li>
+<li><b>Column color</b>: Allows to change the color of the columns when we are in column mode.</li>
+</ul>
+<blockquote>
+
+<p>The column color is only available with Column line type. In column type only the column color will be available. The opacity is only available with row type Area.</p>
+</blockquote>
+<ul>
+
+<li><b>Status icons</b>: Allows the markers whose value has a status change to show the icon that represents that status.</li>
+<li><b>Show gaps</b>: Button that acts as a shortcut to filter the &#x201c;OutOfDate&#x201d; status.</li>
+<li><b>Hide invalid</b>: Button that acts as a shortcut to filter the &#x201c;Invalid&#x201d; status.</li>
+<li><b>Filter statuses</b>: filter by the different statuses registered at application level.</li>
+</ul></section><section>
+<h4><a name="a5.1.4_Value_marking"></a><a name="series-asintotas"></a> 5.1.4 Value marking</h4>
+<p>Allows to configure a series so that when its values are higher or lower than another series the values are marked with an area. If there is no compatible series in the graph this section will be locked.</p>
+<p><img src="images/Imagen52.png" class="mediano" alt="Value marking" title="Value marking" /></p>
+<ul>
+
+<li>
+
+<p><b>Reference series</b>: Here you select the signal with which to contrast the values. For a series to be compatible and allowed to be selected it has to fulfill 2 conditions. 1) The date configuration must be the same. 2) The series have to be associated to the same axes, both X and Y.</p>
+</li>
+<li>
+
+<p><b>Type of marking</b>: Field to indicate if we want the values to be marked to be the upper or the lower ones.</p>
+</li>
+</ul>
+<p><img src="images/Imagen53.png" class="grande" alt="Value marking" title="Value marking" /></p></section><section>
+<h4><a name="a5.1.5_Asymptotes"></a><a name="series-asintotas"></a>5.1.5 Asymptotes</h4>
+<p>Allows the configuration of a line associated to the series with an editable value. At the top we find 3 buttons to add asymptotes.</p>
+<p><img src="images/Imagen36.png" class="mediano" alt="Asymptote configuration" title="Asymptote configuration" /></p>
+<ul>
+
+<li><b>Add asymptote</b>: Allows to add an asymptote (associated line). Each added asymptote will be displayed in a list in this section and can be configured.</li>
+<li><b>Add representative limits</b>: The asymptotes corresponding to the representative limits for the selected signal will be added (they correspond to the maximum and minimum of the signal&#x2019;s own configuration). If they are already added, the button will change to delete them.</li>
+<li><b>Add maximum, minimum and average</b>: 3 lines will be added for the selected signal corresponding each one to the maximum, minimum and average value of the data shown by that signal in the representation. If they are already added, the button will change to delete them.</li>
+</ul>
+<p>The following properties can be configured for each asymptote:</p>
+<ul>
+
+<li><b>Title</b>: Allows to change the name of the asymptote, which will be displayed on the graph.</li>
+<li><b>Value type</b>:
+<ul>
+
+<li><b>Custom</b>: We will indicate in the value field the position of the asymptote.</li>
+<li><b>Maximum representative</b>: It will position the asymptote at the maximum value of the series configuration.</li>
+<li><b>Representative minimum</b>: Will position the asymptote at the minimum value of the series configuration.</li>
+<li><b>Maximum</b>: It will position the asymptote at the maximum value of the painted data of the series.</li>
+<li><b>Minimum</b>: Will position the asymptote at the minimum value of the painted data of the series.</li>
+<li><b>Average</b>: It will position the asymptote at the average value of the painted data of the series.</li>
+</ul>
+</li>
+<li>
+
+<p>Value: Position of the asymptote. If the asymptote is not of type &#x201c;Custom&#x201d; this property cannot be modified.</p>
+</li>
+<li>Line type: Allows to modify the format of the asymptote representation in the graph.</li>
+<li>Color: Allows to configure the color of the asymptote.</li>
+<li>Value marking: Allows to define the rolling bands (upper and lower limits). If enabled, the values of the series passing over the asymptote position will show an area towards the asymptote.</li>
+</ul><hr /></section></section><section>
+<h3><a name="a5.2_Y-axis"></a><a name="ejesy"></a>5.2 Y-axis</h3>
+<p>Displays the axes represented in the graph and has the following actions in the toolbar:</p>
+<p><img src="images/Imagen5-2.png" class="mediano" alt="Y-axis toolbar" title="Y-axis toolbar" /></p>
+<ul>
+
+<li>Add: This action will add a new Y axis.</li>
+<li>Duplicate: Allows the duplication of the selected axes with their configuration.</li>
+<li>Delete: Deletion of the selected axes.</li>
+<li>Hide: Allows the selected axes to be hidden and displayed on the graph.</li>
+</ul>
+<blockquote>
+
+<p>If an axis does not have an associated series it will not be represented in the graph.</p>
+</blockquote>
+<p>In addition to adding, copying, deleting, displaying/hiding axes on the graph, the option is given to perform <span class="ti-settings"></span>. There are two types:</p>
+<ul>
+
+<li>Single: changes made will apply to only one axis.</li>
+</ul>
+<p><img src="images/Imagen38.png" class="grande" alt="Unique configuration" title="Unique configuration" /></p>
+<ul>
+
+<li>Multiple: changes made will apply to all selected series. If no axis is selected, all will be counted as selected.</li>
+</ul>
+<p><img src="images/Imagen37.png" class="grande" alt="Multiple configuration" title="Multiple configuration" /></p>
+<blockquote>
+
+<p>In the multiple configuration it is not possible to edit all configurations as it is in the single configuration.</p>
+</blockquote>
+<p>List of locked configurations in multiple Y-axis editing:</p>
+<ul>
+
+<li>Edit the title of an axis.</li>
+<li>Associated series configuration.</li>
+</ul>
+<p>When displaying a field in which each axis has a different value, the field with the empty value will be displayed.</p>
+<p>A selected axis changes its background color to the corporate color. To select or deselect an axis left click on it. The &#x201c;Shift&#x201d; key can be used to quickly make a multiple selection. To do this, select the first axis in the list that you want, and then click on the last one while holding down the &#x201c;Shift&#x201d; key, all axes between the first and the last one will be automatically selected.</p>
+<p>It will also be possible in this list to reorder the axes by dragging them with left click.</p>
+<p>The configuration of an axis is divided into 3 blocks:</p></section><section>
+<h3><a name="a5.2.1_General"></a><a name="ejesy-general"></a>5.2.1 General</h3>
+<p>Allows to select the general characteristics of the selected Y-axis.</p>
+<p><img src="images/Imagen39.png" class="mediano" alt="General configuration Y-axis" title="General configuration Y-axis" /></p>
+<ul>
+
+<li><b>Title</b>: Allows to modify the title of the axis.</li>
+<li><b>Visible</b>: Check box to modify the visibility of the axis.</li>
+<li><b>Grid</b>: Check box to show or hide the horizontal lines.</li>
+<li><b>Color</b>: Allows to modify the color of the axis.</li>
+<li><b>Logarithmic scale</b>: Checkbox to change the scale with which the values will be represented (between normal and logarithmic).</li>
+<li><b>Position</b>: Allows you to change the position of the axes (between left and right).</li>
+<li><b>Adjustment</b>: Configures the scale of the axis. The options are:
+<ul>
+
+<li><b>Auto</b>: The axis is automatically adjusted to the values of the signals linked to the axis.</li>
+<li><b>Manual</b>: Two additional settings are displayed to indicate the Min and Max of the axes.</li>
+<li><b>TAG setting</b>: The maximum and minimum values configured in the signal are used as maximum and minimum. For this option to be available, the axis can only have a series associated with an analog signal.</li>
+</ul>
+</li>
+</ul></section><section>
+<h3><a name="a5.2.2_Associated_series"></a><a name="ejesy-seriesasociadas"></a>5.2.2 Associated series</h3>
+<p>Displays the list of series linked to the selected axis, accompanied by a checkbox that will be checked if the series belongs to the selected axis. A series can be linked or unlinked to an axis by checking or unchecking the box. <b>If an axis has no associated series, it will not be shown in the graph.</b></p>
+<p><img src="images/Imagen40.png" class="mediano" alt="Associated series" title="Associated series" /></p></section><section>
+<h3><a name="a5.2.3_Asymptotes"></a><a name="ejesy-asintotas"></a>5.2.3 Asymptotes</h3>
+<p>Allows the configuration of a line associated to the axis with an editable value. At the top we find 2 buttons to add asymptotes.</p>
+<p><img src="images/Imagen41.png" class="mediano" alt="Asymptote configuration" title="Asymptote configuration" /></p>
+<ul>
+
+<li><b>Add asymptote</b>: Allows to add an asymptote (associated line). Each added asymptote will be displayed in a list in this section and can be configured.</li>
+<li><b>Add maximum, minimum and average</b>: 3 lines will be added for the selected signal, each corresponding to the maximum, minimum and average value of the data displayed on the axis. These data correspond to the grouping of all the series associated with the axis. If they are already added, the button will change to delete them.</li>
+</ul>
+<p>The following properties can be configured for each asymptote:</p>
+<ul>
+
+<li><b>Title</b>: Allows to change the name of the asymptote, which will be displayed on the graph.</li>
+<li><b>Value type</b>:
+<ul>
+
+<li><b>Custom</b>: We will indicate in the value field the position of the asymptote.</li>
+<li><b>Maximum</b>: It will position the asymptote at the maximum value of the painted data of the series.</li>
+<li><b>Minimum</b>: Will position the asymptote at the minimum value of the painted data of the series.</li>
+<li><b>Average</b>: It will position the asymptote at the average value of the painted data of the series.</li>
+</ul>
+</li>
+<li>
+
+<p>Value: Position of the asymptote. If the asymptote is not of type &#x201c;Custom&#x201d; this property cannot be modified.</p>
+</li>
+<li>Line type: Allows to modify the format of the asymptote representation in the graph.</li>
+<li>Color: Allows to configure the color of the asymptote.</li>
+<li>Value marking: Allows to define the rolling bands (upper and lower limits). If enabled, the values of the series passing over the asymptote position will show an area towards the asymptote.</li>
+</ul></section><section>
+<h3><a name="a5.2.4_Examples_configurations"></a><a name="ejesy-ejemplos"></a>5.2.4 Examples configurations</h3>
+<p>Examples - axis level configurations: (a) Axis visible; grid visible; axis position: left; associated series: one series of the 2 that the graph has; no asymptotes.</p>
+<p><img src="images/Imagen16.png" class="grande" alt="Example configuration at shaft level" title="Example configuration at shaft level" /></p>
+<p>b) Axis visible; grid: not visible; axis position: right; associated series: all; added asymptotes with max, min, and mean value.</p>
+<p><img src="images/Imagen17.png" class="grande" alt="Example configuration at shaft level" title="Example configuration at shaft level" /></p><hr /></section><section>
+<h3><a name="a5.3_X-axis"></a><a name="ejesx"></a>5.3 X-axis</h3>
+<p>Displays the axes represented in the graph and has the following actions in the toolbar:</p>
+<p><img src="images/Imagen5-2.png" class="grande" alt="Y-axis toolbar" title="Y-axis toolbar" /></p>
+<ul>
+
+<li>Add: This action will add a new Y axis.</li>
+<li>Duplicate: Allows the duplication of the selected axes with their configuration.</li>
+<li>Delete: Deletion of the selected axes.</li>
+<li>Hide: Allows the selected axes to be hidden and displayed on the graph.</li>
+</ul>
+<blockquote>
+
+<p>If an axis does not have an associated series it will not be represented in the graph.</p>
+</blockquote>
+<p>In addition to adding, copying, deleting, displaying/hiding axes in the graph, the following configuration options are available <span class="ti-settings"></span>. There are two types:</p>
+<ul>
+
+<li>Single: changes made will apply to only one axis.</li>
+</ul>
+<p><img src="images/Imagen49.png" class="grande" alt="Unique configuration" title="Unique configuration" /></p>
+<ul>
+
+<li>Multiple: the changes made will apply to all selected series. If no axis is selected, all will be counted as selected.</li>
+</ul>
+<p><img src="images/Imagen50.png" class="grande" alt="Multiple configuration" title="Multiple configuration" /></p>
+<blockquote>
+
+<p>In the multiple configuration it is not possible to edit all configurations as it is in the single configuration.</p>
+</blockquote>
+<p>List of locked configurations in multiple Y-axis editing:</p>
+<ul>
+
+<li>Edit the title of an axis.</li>
+<li>Change the tick interval.</li>
+<li>Configuration of associated series.</li>
+</ul>
+<p>When displaying a field in which each axis has a different value, the field with the empty value will be displayed.</p>
+<p>A selected axis changes its background color to the corporate color. To select or deselect an axis left click on it. The &#x201c;Shift&#x201d; key can be used to quickly make a multiple selection. To do this, select the first axis in the list that you want, and then click on the last one while holding down the &#x201c;Shift&#x201d; key, all axes between the first and the last one will be automatically selected.</p>
+<p>It will also be possible in this list to reorder the axes by dragging them with left click.</p>
+<p>The configuration of an axis is divided into 3 blocks:</p></section><section>
+<h3><a name="a5.3.1_General"></a><a name="ejesy-general"></a>5.3.1 General</h3>
+<p>Allows to select the general characteristics of the selected X-axis.</p>
+<p><img src="images/Imagen42.png" class="mediano" alt="X-axis general configuration" title="X-axis general configuration" /></p>
+<ul>
+
+<li><b>Title</b>: Allows to modify the title of the axis.</li>
+<li><b>Visible</b>: Check box to modify the visibility of the axis.</li>
+<li><b>Grid</b>: Allows to display vertical lines for each time division of the x-axis.</li>
+<li><b>Tick interval</b>: By default its value is Auto allowing the time interval marks to be displayed on the x-axis to be automatically adjusted according to the time period configured in the graph. When selecting another value from the drop-down list, the X-axis will display tick marks according to the chosen value.</li>
+</ul>
+<p><img src="images/Imagen19.png" class="grande" alt="X-axis configuration" title="X-axis configuration" /></p>
+<p><img src="images/Imagen20.png" class="grande" alt="Tick interval" title="Tick interval" /></p>
+<ul>
+
+<li><b>Color</b>: Allows to modify the color of the axis.</li>
+</ul></section><section>
+<h3><a name="a5.3.2_Associated_series"></a><a name="ejesx-seriesasociadas"></a>5.3.2 Associated series</h3>
+<p>Displays the list of series linked to the selected axis, accompanied by a checkbox that will be checked if the series belongs to the selected axis. A series can be linked or unlinked to an axis by checking or unchecking the box. <b>If an axis has no associated series, it will not be shown in the graph.</b></p>
+<p><img src="images/Imagen40.png" class="mediano" alt="Associated series" title="Associated series" /></p><hr /></section><section>
+<h3><a name="a5.4_Types_of_graphics"></a><a name="tipos"></a>5.4 Types of graphics</h3>
+<p>Allows you to change the chart type to one of the other chart types available in the system. Due to incompatibilities between all chart types when changing the type only the selected signals and dates will be taken into account. Also, not all charts support the same types of signals. When it is the case that they are not compatible the series will be deleted. If no signal is compatible, the signal selector will be opened so that the chart does not remain empty. When you change the type of graph the current configuration is not lost, it remains stored until you select that type of graph again. For example, if you are editing a trend chart and by mistake you change it to grouped, you will be able to return to trend and the configuration will not be lost.</p>
+<p>From the &#x201c;Configuration&#x201d; button <span class="ti-settings"></span> the right side panel will be displayed, which allows you to modify the general options of the chart in question. Some settings are common to all graph types:</p>
+<p><img src="images/Imagen20-1.png" class="grande" alt="General graphic configuration" title="General graphic configuration" /></p>
+<ul>
+
+<li><b>Graph</b>: allows you to configure whether the trend graph will be of type <b>Simple</b>: default option, all series share axis regardless of their scale.
+<ul>
+
+<li><b>Simple</b>: default option, all series share the same axis regardless of their scale. It allows to configure the axes by accessing the Y axes configuration.</li>
+<li><b>Multiaxes</b>: Since each signal contains different scales due to the value of its data, with the option of multiple axes it is possible to visualize the values of the different signals at the same time with their corresponding axes (these axes will be configurable). Within this configuration for each series we can define a Maximum and Minimum value for the axes, so that the axes are not self-adjusted by their values but allow us to observe the signals on the scale that we decide.</li>
+<li><b>Multigraphic</b>: This option allows the visualization of the series separately, each one on an axis.</li>
+</ul>
+</li>
+<li><b>Theme</b>: Allows you to change the colors, the effects of the graph display. The options are Light, Sand and Dark.</li>
+<li><b>Legend</b>: Allows to show/hide the legend (1) of the chart.</li>
+</ul>
+<p>There are also specific options for each graph:</p></section><section>
+<h3><a name="a5.4.1_Trend_configuration"></a><a name="config-tendencia"></a>5.4.1 Trend configuration</h3>
+<ul>
+
+<li><b>Navigator</b>: Allows to show/hide the lower navigation bar (2), located below the X-axis, and allows to modify the time period represented in the graph area. The 2 black marks (3 and 4) represent the time period displayed on the graph.</li>
+<li><b>Navigator series</b> allows to select which of the signals configured in the graph will be used to represent it in the Navigator.</li>
+</ul></section><section>
+<h3><a name="a5.4.1_Grouped_configuration"></a><a name="config-agrupados"></a>5.4.1 Grouped configuration</h3>
+<ul>
+
+<li><b>Stacking</b>: Allows to represent the data of the graph accumulated one on top of the other. The first image has the stacking deactivated and the second one activated.</li>
+</ul>
+<p><img src="images/Imagen43.png" class="grande" alt="Grouped without stacking" title="Grouped without stacking" /></p>
+<p><img src="images/Imagen44.png" class="grande" alt="Grouped stacked" title="Grouped stacked" /></p>
+<ul>
+
+<li><b>Grouped by</b>: You can choose whether you want to group by time intervals or group by each signal.</li>
+<li><b>Grouped X (Level 1)</b>: Temporal grouping that will be calculated for the X-axis.</li>
+<li><b>Grouped X (Level 2 Multilevel)</b>: When selected, a second X-axis will be created with the selected grouping to have more extensive information.</li>
+</ul>
+<p><img src="images/Imagen45.png" class="grande" alt="Ungrouped mode" title="Ungrouped mode" /></p>
+<ul>
+
+<li><b>Show empty categories</b>: If any displayed category has no value, it will be allowed to hide it using this button.</li>
+<li><b>Grouped Y (Heat map)</b>: Selecting this will switch to a heat map display using the two groupings. The values represented are the same as in Multilevel mode.</li>
+</ul>
+<p><img src="images/Imagen46.png" class="grande" alt="Heat map" title="Heat map" /></p>
+<ul>
+
+<li><b>Heat map series</b>: In heat map mode only one series can be displayed. With this selector you can choose which one to display.</li>
+</ul>
+<blockquote>
+
+<p>If we are in Multilevel mode we will not be able to activate the heat map mode, and vice versa.</p>
+</blockquote></section><section>
+<h3><a name="a5.4.1_Real-time_configuration"></a><a name="config-tiemporeal"></a>5.4.1 Real-time configuration</h3>
+<p><b>The real time graph does not present any specific configuration.</b></p><hr /></section><section>
+<h3><a name="a5.5_Templates"></a><a name="plantillas"></a>5.5 Templates</h3>
+<p>Document templates are a tool to be able to use the same chart configuration to represent the signals of different assets in the inventory.</p>
+<p>If when creating the chart we select <a href="#nueva-plantilla">&#x201c;New Template&#x201d;</a> this new section will appear (1).</p>
+<p><img src="images/Imagen54.png" class="mediano" alt="Chart template" title="Chart template" /></p>
+<p>Within it we can distinguish 3 different sections.</p>
+<p>1) On the one hand, the left panel (2) will show the list of all the selected templates. By default, the ones selected in the wizard will appear, but we can add up to 3.</p>
+<p>2) In the upper bar we will have an asset selection button (3). When a template is opened for the first time an asset is automatically selected for each template on which to paint the graph, and from this button you can change them for others.</p>
+<p>3) The right panel will only be visible when a template is selected in the left panel (1). It will show a list (4) of all the attributes compatible with the graph, and those that are represented will be marked as selected. If an attribute is selected, a new series will be added to the chart, and if it is deselected it will be deleted.</p>
+<p>Template type documents can be differentiated from the rest by displaying a special icon <span class="ti-layout"></span>.</p>
+<p>If we save a document template when we open it, a modal window will open for us to select the assets we want to represent.</p><hr /></section></section><section>
+<h2><a name="a6_Toolbar"></a><a name="toolbar"></a> 6 Toolbar</h2>
+<p>A toolbar will appear at the top of the trend and grouped graphs, within which different elements can be differentiated.</p>
+<p><img src="images/Imagen56.png" class="grande" alt="Graph toolbar" title="Graph toolbar" /></p>
+<p>The first thing that appears is a summary of the date range selected in the chart. If the series have different date periods, the interval covering the dates of all the series will be displayed.</p>
+<p>Then there is the period selector, where we can select between some predefined date periods to apply to all series. In addition, if we select the &#x201c;Custom&#x201d; option, it will open <a href="../dates/dates.html#full">the date picker</a> in order to have a more complex configuration.</p>
+<p>Then, if we are in the trend graph, a field will be displayed to change the mark of all the series in the graph. However, if we are in the grouped chart, a field will be displayed to change the statistical type of all the series.</p>
+<p>In addition, if we are in template mode, a button to change the selected assets will appear at the end of the toolbar.</p><hr /></section><section>
+<h2><a name="a7_Common_elements"></a><a name="comunes"></a> 7 Common elements</h2><section>
+<h3><a name="a7.1_Statistics_panel"></a><a name="estadisticas"></a> 7.1 Statistics panel</h3>
+<p>At the bottom of the chart, you can find a drop-down menu which displays a panel with the statistics of the selected series in the chart&#x2019;s date range. <b>This functionality is not available in the real time chart.</b></p>
+<p><img src="images/Imagen4-2.png" class="mediano" alt="Statistics display panel" title="Statistics display panel" /></p></section><section>
+<h3><a name="a7.2_Fixed_tooltips"></a><a name="tooltips-fijos"></a> 7.2 Fixed tooltips</h3>
+<p>Clicking on the painted area of the graph will display a modal window to add a fixed tooltip. In this window we will be able to configure what information we want to show, besides being able to write a title and a description.</p>
+<p><img src="images/Imagen47.png" class="mediano" alt="Editing fixed tooltips" title="Editing fixed tooltips" /></p>
+<p>If we click on accept, the fixed tooltip will be added, which we can move around the graph, as well as close it or click on the edit button to reopen the modal window.</p>
+<p><img src="images/Imagen48.png" class="mediano" alt="Fixed tooltip" title="Fixed tooltip" /></p></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+<cite class="ti-settings"></cite>
+<h1>Data acquisition</h1>
+</div>
+
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#status-monitor">Status monitor</a>
+<ul>
+
+<li>2.1 <a href="#license-info">License information</a></li>
+<li>2.2 <a href="#architecture">Architecture</a></li>
+</ul>
+</li>
+<li>3 <a href="#service-creation">Creation of services</a></li>
+<li>4 <a href="#service-edition">Editing services</a>
+<ul>
+
+<li>4.1 <a href="#service-edition-diagram">Diagram editing</a></li>
+<li>4.2 <a href="#service-edition-catalog">Catalog edition</a>
+<ul>
+
+<li>4.2.1 <a href="#service-edition-catalog-interaction">Interaction of signals and parts</a></li>
+<li>4.2.2 <a href="#service-edition-catalog-changes">Change control</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>IDboxRT consists of different services that are orchestrated to provide the desired custom functionality, such as data acquisition. The administration and configuration of these services can be done through the system administrator via its status monitor and service creation/edit pages. Throughout the section, the operation of each of these is shown, which can be accessed from the control panel as shown in the following image.</p>
+<p><img src="images/controlpanel_configurator.jpg" class="mediano" alt="Access from the control panel" title="Access from the control panel" /></p><hr /></section><section>
+<h2><a name="a2._Status_monitor"></a><a name="status-monitor"></a>2. Status monitor</h2>
+<p>The status monitor is the access point to service administration, allowing to visualize and configure the currently installed services or the creation of new ones across the different servers to which access is available.</p><section>
+<h3><a name="a2.1_License_information"></a><a name="license-info"></a>2.1 License information</h3>
+<p>Located at the top right, and as shown in the following image, the license information displays its type, the percentage of used signals compared to its limit and its expiration date. The progress bar shows the current consumption percentage graphically.</p>
+<p><img src="images/license_info.jpg" class="mediano" alt="License information" title="License information" /></p></section><section>
+<h3><a name="a2.2_Architecture"></a><a name="architecture"></a>2.2 Architecture</h3>
+<p>To facilitate the location of each of the services, they are shown grouped in different blocks that represent the server that hosts them. As an example, the following image shows a single server, but the number will depend on the number of servers comprising the infrastructure.</p>
+<p><img src="images/server_services.jpg" class="grande" alt="Server services" title="Server services" /></p>
+<p>This visualization is structured in three parts highlighted in red, which are detailed below.</p>
+<ol style="list-style-type: decimal">
+
+<li><b>Actions</b>: in addition to displaying your routing, it allows you to add a new service, start or stop the selected service, as well as access the diagram edition or catalog edition.</li>
+<li><b>Consumption and performance</b>: shows the memory and cpu usage of both IDbox and the server, as well as the available storage.</li>
+<li><b>Services</b>: complete list of the services associated to the server, together with their status, name, description, port, date of execution, signal number and version.</li>
+</ol>
+<p>Moreover, as an additional tool to facilitate the search for services, in the upper left corner it is possible to enter a term that applies to all available servers simultaneously, filtering all possible matches.</p>
+<p><img src="images/services_search.jpg" class="mediano" alt="Search for services" title="Search for services" /></p><hr /></section></section><section>
+<h2><a name="a3._Creation_of_services"></a><a name="service-creation"></a>3. Creation of services</h2>
+<p>By means of the new service available action from the desired server in the status monitor, the step-by-step wizard for service creation is started. The first step must be completed with the name to be given to the service, and an optional description, as shown in the following image.</p>
+<p><img src="images/newservice_step1.jpg" class="grande" alt="First step of service creation" title="First step of service creation" /></p>
+<p>The second step allows the configuration of the service from a predefined template in the system, which can be selected on the left, and which can be either a default &#x201c;Empty Service&#x201d; or a specific type of driver. While in the first case it will not be necessary to provide further details, in the second scenario it is necessary to complete a series of basic initialization parameters, as shown in the following image as an example.</p>
+<p><img src="images/newservice_step2.jpg" class="grande" alt="Second step of service creation" title="Second step of service creation" /></p><hr /></section><section>
+<h2><a name="a4._Editing_services"></a><a name="service-edition"></a>4. Editing services</h2>
+<p>Services can be modified from two perspectives: diagram and catalog editing. While the first editor facilitates the configuration of the general logic and behavior of the service, the second allows managing the interaction with the IDbox signals it contains.</p><section>
+<h3><a name="a4.1_Diagram_editing"></a><a name="service-edition-diagram"></a>4.1 Diagram editing</h3>
+<p>To access the diagram editor, simply select the desired service from the status monitor and click on the service editor icon: <cite class="ti-settings"></cite>. Once activated, the editor is available for use as shown in the following image together with the sections described below.</p>
+<p><img src="images/diagram_editor.jpg" class="grande" alt="Diagram editor" title="Diagram editor" /></p>
+<ol style="list-style-type: decimal">
+
+<li><b>Actions</b>: provides the undo, redo, save, full screen and close editing tools.</li>
+<li><b>Tools</b>: provides access to the editing operations and components available for use.</li>
+<li><b>Tapestry</b>: design area where you can drag and link the components according to the flow you want to build.</li>
+<li><b>Properties</b>: each of the elements selected in the tapestry has a series of properties that can be customized in this right panel.</li>
+</ol></section><section>
+<h3><a name="a4.2_Catalog_edition"></a><a name="service-edition-catalog"></a>4.2 Catalog edition</h3>
+<p>Catalog editing can be accessed by selecting the desired service in the status monitor and clicking on the catalog icon: <cite class="ti-signal"></cite>. As shown in the following image, after this action the editor becomes available for use with different areas of use described below.</p>
+<p><img src="images/catalog_editor.jpg" class="grande" alt="Catalog Editor" title="Catalog Editor" /></p>
+<ol style="list-style-type: decimal">
+
+<li><b>Actions</b>: allows you to execute the saving of changes, full screen and closing of the edition.</li>
+<li><b>Catalog</b>: shows the list of signals that are part of the service catalog and how to interact with the parts. It also facilitates the operations of importing signals to the system, exporting import template, and adding or deleting signals from the system to the catalog.</li>
+<li><b>Properties</b>: facilitates the configuration of the properties for the selected signal according to the parts it processes and allows a <a href="../signals/signals.html#signals.htmlsignals">direct access to signal editing</a> as well as its summary information.</li>
+</ol>
+<p>In the case of modifying a signal from the catalog edition, saving an alarm or limit configuration of the signal will cause its synchronization with the catalog when a LIMIT part is present, as shown in the following warning.</p>
+<p><img src="images/limit_configuration_warning.jpg" class="mediano" alt="LIMIT synchronization warning" title="LIMIT synchronization warning" /></p><section>
+<h4><a name="a4.2.1_Interaction_of_signals_and_parts"></a><a name="service-edition-catalog-interaction"></a>4.2.1 Interaction of signals and parts</h4>
+<p>The interaction between the signals included in the catalog and the service parts can take three states which are shown in the following figure and described below.</p>
+<p><img src="images/signal_interaction.jpg" class="mediano" alt="Possibilities of interaction between part and signal" title="Possibilities of interaction between part and signal" /></p>
+<ul>
+
+<li><b>Processed</b>: the selected part and signal are configured and in operation.</li>
+<li><b>Excluded</b>: the selected part and signal are configured but not activated.</li>
+<li><b>Ignored</b>: the part and signal are not configured, and therefore not in operation.</li>
+</ul></section><section>
+<h4><a name="a4.2.2_Change_control"></a><a name="service-edition-catalog-changes"></a>4.2.2 Change control</h4>
+<p>As changes are applied, either by changing the interaction mode from the catalog list or by altering the values between properties, the modified signals show an indicator that differentiates them from the rest. Likewise, and as shown in the following image, the navigation between &#x201c;Signals&#x201d; and &#x201c;Modified&#x201d; allows both filtering and counting.</p>
+<p><img src="images/modified_signal_catalog.jpg" class="grande" alt="Signal modified in the catalog" title="Signal modified in the catalog" /></p>
+<p>It is important to note that the accumulated changes are not stored until the save is triggered, except for the aggregation of signals, which occurs instantaneously.</p></section></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

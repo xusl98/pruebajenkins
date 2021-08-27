@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div style="clear: both;">
+  
+<div style="float: left; margin-inline: 5px;">
+    <img src="images/sinoptics.png" alt="Sinópticos" width="50" />
+  </div>
+  
+<div style="float: left; margin-center">
+    
+<h1>Synoptics</h1>
+  </div>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ol style="list-style-type: decimal">
+
+<li><a href="#intro">Introduction</a>
+<ul>
+
+<li>1.1 <a href="#editor">Designer</a>
+<ul>
+
+<li>1.1.1 <a href="#menu">Menu</a></li>
+<li>1.1.2 <a href="#drawing">Drawing tools</a>
+<ul>
+
+<li>1.1.2.1 <a href="#drawing_generic">Generic properties</a></li>
+<li>1.1.2.2 <a href="#drawing_effects">Effects</a></li>
+<li>1.1.2.3 <a href="#drawing_specific">Specific properties</a>
+<ul>
+
+<li>1.1.2.3.1 <a href="#rectangle">Rectangle</a></li>
+<li>1.1.2.3.2 <a href="#ellipse">Ellipse</a></li>
+<li>1.1.2.3.3 <a href="#text">Text</a></li>
+<li>1.1.2.3.4 <a href="#image">Image</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1.1.3 <a href="#dynamic">Dynamic components</a>
+<ul>
+
+<li>1.1.3.1 <a href="#label">Label</a></li>
+<li>1.1.3.2 <a href="#gauje">Indicator</a></li>
+<li>1.1.3.3 <a href="#progress_bar">Progress bar</a></li>
+<li>1.1.3.4 <a href="#switch">Switch</a></li>
+<li>1.1.3.5 <a href="#circular_progress">Circular progress bar</a></li>
+<li>1.1.3.6 <a href="#link">Link</a></li>
+<li>1.1.3.7 <a href="#pie_chart">Pie chart</a></li>
+<li>1.1.3.8 <a href="#chart">Chart</a></li>
+<li>1.1.3.9 <a href="#historic_table">Historical table</a></li>
+<li>1.1.3.10 <a href="#operation_switch">Operation switch</a></li>
+<li>1.1.3.11 <a href="#operation_button">Operation button</a></li>
+</ul>
+</li>
+<li>1.1.4 <a href="#layers">Layers</a></li>
+<li>1.1.5 <a href="#params">Parameters</a>
+<ul>
+
+<li>1.1.5.1 <a href="#paramList">List of parameters</a></li>
+<li>1.1.5.2 <a href="#paramEditor">Parameter properties</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1.2 <a href="#viewer">Viewer</a>
+<ul>
+
+<li>1.2.1 <a href="#modalParameterVisor">Synoptic with parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>One of the analysis tools available in the system are the synoptics, which allows the visualization of the values in real time represented by vector graphics that change dynamically according to the different values of the signals associated with them.</p>
+<p>This section is divided into two important tools: the viewer and the synoptic designer.</p><section>
+<h3><a name="a1.1_Synoptic_designer"></a><a name="editor"></a>1.1 Synoptic designer</h3>
+<p>The synoptic designer allows both the edition of an existing synoptic in IDboxRT and the creation of a new one.</p>
+<p>The creation of a new synoptic will be done from the shortcuts section of the Web client.</p>
+<p><img src="images/img1.png" alt="Creation of synoptic from shortcuts" title="Creation of synoptic from shortcuts" style="width: 300px;" /></p>
+<p>There are several options for editing a synoptic: * From the document explorer, we will search in the document hierarchy for the location of the synoptic and edit it either by using the edit option in the top toolbar of the hierarchy or by using that option from the context menu of the document.</p>
+<p><img src="images/img2.png" alt="Editing a synoptic from latoolbar" title="Editing a synoptic from latoolbar" style="width: 300px;" /> <img src="images/img3.png" alt="Editing a synoptic from the context menu" title="Editing a synoptic from the context menu" style="width: 300px;" /></p>
+<ul>
+
+<li>In the document explorer, in the central document section of the selected hierarchy, the following button <img src="images/img4.png" alt="IDboxRT" /> will appear on the synoptic to edit the synoptic.</li>
+<li>From editing another synoptic, there is also the possibility of opening another synoptic in edit mode.</li>
+</ul>
+<p>With any of the above options, the synoptic designer will open.</p>
+<p><img src="images/img5.png" alt="Designer of a new synoptic" title="Designer of a new synoptic" style="width: 300px;" /></p>
+<p>The main area of the interface (1) will be occupied by the tapestry, where the synoptic will be drawn.</p>
+<blockquote>
+
+<p>The mouse wheel allows to increase or decrease the detail of the tapestry.</p>
+</blockquote>
+<p>Selecting an option from the left side panel(2) will display a submenu with the available settings for that element.</p>
+<p>The menus available from the left side panel are: * <b>Menu</b>: Provides access to the basic tools for working on the elements. * <b>Drawing tools</b>: Gives access to the static elements that can be added to the synoptic (shapes, text, image, etc.). * <b>Dynamic components</b>: Gives access to the dynamic elements that can be added to the synoptic (progress bar, chart, indicator, etc.). * <b>Layers</b>: Gives access to the list of synoptic layers. Allows to configure the synoptic layers.</p>
+<p>When more than one component is selected in the tapestry, the right side panel opens with alignment options to apply to the selection in various positions.</p>
+<p><img src="images/img5_1.png" alt="Multiple selection alignment" title="Multiple selection alignment" style="width: 300px;" /></p>
+<p>The editor has a clipboard where the last copied elements are stored, allowing you to drag the elements to the pencil to create copies.</p>
+<p><img src="images/img5_2.png" alt="Clipboard" title="Clipboard" style="width: 500px;" /></p><section>
+<h4><a name="a1.1.1_Menu"></a><a name="menu"></a>1.1.1 Menu</h4>
+<p>From the Menu section, selecting it will display an adjacent panel with the following actions:</p>
+<p><img src="images/img6.png" alt="Actions synoptic menu" title="Actions synoptic menu" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Show/Hide code</b>: Displays the svg code of the synoptic. It is possible to modify the synoptic from the code view.</li>
+<li><b>Copy</b>: Possibility to copy selected elements (keyboard shortcut CTRL+C).</li>
+<li><b>Paste</b>: Action of pasting those elements previously copied (CTRL+V).</li>
+<li><b>Clone</b>: Ability to clone previously designed elements on the synoptic tapestry.</li>
+<li><b>Delete</b>: Possibility of deleting elements (Supr key).</li>
+<li><b>Move to the front</b>: Allows you to sort elements on the screen, bringing the selected elements in front of the screen.</li>
+<li><b>Move to the bottom</b>: Allows you to sort the elements of the screen, to move the selected elements to the back of the screen.</li>
+<li><b>Group</b>: Allows you to group the selected elements.</li>
+<li><b>Ungroup</b>: Allows to ungroup a previously grouped element in as many elements as they had before the grouping.</li>
+<li><b>Tapestry preferences</b>: It allows you to choose the resolution, adjust the tapestry to the content of the canvas, change the orientation and apply a background color to the tapestry. Selecting this option opens a side panel to the right of the tapestry with these options.</li>
+</ul>
+<p><img src="images/img6_1.png" alt="Actions tapestry preferences" title="Actions tapestry preferences" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Show grid</b>: Allows you to show or hide the grid on the canvas.</li>
+</ul></section><section>
+<h4><a name="a1.1.2_Drawing_tools"></a><a name="drawing"></a>1.1.2 Drawing tools</h4>
+<p>The drawing tools allow us to draw static shapes in the synoptic, you can enhance these elements by changing the color, borders and other effects.</p>
+<p>In order to draw elements on the tapestry, we should select the desired shape and click on the tapestry at the place where we want to start drawing the element.</p>
+<p>The following drawing tools are available.</p>
+<p><img src="images/img7.png" alt="Drawing tools" title="Drawing tools" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Select</b>: Allows you to select one or more (Shift) objects on the wallpaper.</li>
+<li><b>Rectangle</b>: Allows you to draw a rectangle. If &#x2018;shift&#x2019; is held down while drawing, it will draw a square.</li>
+<li><b>Ellipse</b>: Allows you to draw an ellipse. If &#x2018;shift&#x2019; is held down while drawing, it will draw a circle.</li>
+<li><b>Line</b>: Allows you to draw straight lines.</li>
+<li><b>Pencil</b>: Allows you to draw a freehand line.</li>
+<li><b>Path</b>: Allows you to draw a path point by point. The tool allows you to modify the curvature of the lines joining the points once the path has been created.</li>
+<li><b>Text</b>: Creates a text box.</li>
+<li><b>Image</b>: Allows you to insert an image to the tapestry.</li>
+</ul>
+<p>When drawing any of the shapes, a right panel will open with generic properties as well as specific properties for some of them.</p>
+<p><img src="images/img8.png" alt="Properties of the drawing tools" title="Properties of the drawing tools" style="width: 300px;" /></p><section>
+<h5><a name="a1.1.2.1_Generic_properties"></a><a name="drawing_generic"></a>1.1.2.1 Generic properties</h5>
+<p>The generic properties that apply to all drawing tools are as follows:</p>
+<p><img src="images/img9.png" alt="Generic drawing tool properties" title="Generic drawing tool properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>ID</b>: Identifier that the object will have in the code.</li>
+<li><b>Alias</b>: Name that will allow the object to be identified in the template selectors.</li>
+<li><b>x and y</b>: Indicates the x and y position of the object in the tapestry and allows the exact location of the object when entering the values in the fields.</li>
+<li><b>Rotation</b>: Indicates the rotation range of the object.</li>
+<li><b>Border thickness</b>: Sets the border thickness of the object by a value, either entered in the text box or by the value selectors. <img src="images/img9_1.png" alt="IDbox" /></li>
+<li><b>Border color</b>: Set the border color by hexadecimal code.</li>
+<li><b>Fill color</b>: Set the fill color of the element by hexadecimal code.</li>
+<li><b>Opacity</b>: Sets the transparency of the object.</li>
+</ul></section><section>
+<h5><a name="a1.1.2.2_Effects"></a><a name="drawing_effects"></a>1.1.2.2 Effects</h5>
+<p>The properties included in the effects section are also common to all drawing tools, except for the color change property which does not apply to the image component.</p>
+<p><img src="images/img10.png" alt="Drawing tool effects" title="Drawing tool effects" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Blinking</b>: Option to activate the flashing of the element when the synoptic is being displayed.</li>
+<li><b>Tooltip text</b>: Text that will be displayed when hovering or clicking on the object. <b>Tooltip Object</b></li>
+<li><b>Object tooltip</b>: Allows you to select another object in the synoptic (by selecting it with the magnifying glass or typing its identifier in the text field) to be displayed when you hover the mouse pointer over it.</li>
+<li><b>Show at startup</b>: Option to display the tooltip at the start of the synoptic.</li>
+<li><b>Hide the rest</b>: Option to hide the other visible tooltips of the synoptic.</li>
+<li><b>Show on mouse over</b>: Displays the tooltip when hovering over the element. If this check is disabled, the tooltip will be displayed only when you click on the element. <b>Color change</b></li>
+<li><b>Value</b>: Allows you to select the signal by which the color change of the document is to be produced.</li>
+<li><b>Change in</b>: Allows you to select whether the color change will be defined by the value or state of the selected signal.</li>
+<li><b>Add new item</b>: Configuration of the color as well as the interval by which the color change will occur in the element. It allows us to add as many items as color changes per interval needed.</li>
+</ul></section><section>
+<h5><a name="a1.1.2.3_Specific_properties"></a><a name="drawing_specific"></a>1.1.2.3 Specific properties</h5>
+<p>Some drawing tools have specific properties. Of the tools currently available in the system, the rectangle, ellipse, text and image have specific properties.</p><section>
+<h6><a name="a1.1.2.3.1_Rectangle"></a><a name="rectangle"></a>1.1.2.3.1 Rectangle</h6>
+<p>The rectangle tool has the following specific properties.</p>
+<p><img src="images/img11.png" alt="Rectangle specific properties" title="Rectangle specific properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Width/height</b>: Allows you to fine-tune the dimensions of the rectangle/square.</li>
+<li><b>Corner radius</b>: Allows the radius to be applied to corners.</li>
+</ul></section><section>
+<h6><a name="a1.1.2.3.1_Ellipse"></a><a name="ellipse"></a>1.1.2.3.1 Ellipse</h6>
+<p>The ellipse tool has the following specific properties.</p>
+<p><img src="images/img12.png" alt="Specific ellipse properties" title="Specific ellipse properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Radio X/Radio Y</b>: Allows to adjust the dimensions (X and Y) with more numerical precision.</li>
+</ul></section><section>
+<h6><a name="a1.1.2.3.1_Text"></a><a name="text"></a>1.1.2.3.1 Text</h6>
+<p>The text tool has the following specific properties.</p>
+<p><img src="images/img13.png" alt="Specific text properties" title="Specific text properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Content</b>: Indicates the text to be displayed in the element.</li>
+<li><b>Font size</b>: Allows you to change the font size.</li>
+<li><b>Text formatting options</b>: Allows you to activate bold, italic and underline text formatting. Several formats can be combined.</li>
+<li><b>Source</b>: Allows the selection of the font for the text.</li>
+<li><b>Alignment</b>: Allows you to select the alignment of the text in the element itself.</li>
+</ul></section><section>
+<h6><a name="a1.1.2.3.1_Image"></a><a name="image"></a>1.1.2.3.1 Image</h6>
+<p>The image tool has the following specific properties.</p>
+<p><img src="images/img14.png" alt="Specific image properties" title="Specific image properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Width/Height</b>: Allows for more precise numerical adjustment of the image dimensions.</li>
+<li><b>Select image</b>: Allows you to change the previously selected image when adding the object.</li>
+</ul></section></section></section><section>
+<h4><a name="a1.1.3_Dynamic_components"></a><a name="dynamic"></a>1.1.3 Dynamic components</h4>
+<p>The dynamic components are the objects in charge of creating the animations that show the status of the different control points to be monitored. Their representation will change depending on the values they receive in real time from the associated signal.</p>
+<p>To add these components to the tapestry, we will have to select the component and drag it to the desired position of the tapestry.</p>
+<p>The following dynamic components are available.</p>
+<p><img src="images/img15.png" alt="Dynamic components" title="Dynamic components" style="width: 200px;" /></p>
+<p>As with the drawing tools, all these dynamic components have the same generic properties explained in the drawing tools section <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a>, in addition to those specific to each component.</p>
+<p>All dynamic components share the same property which is <b>signal</b>, which we will choose from the specific properties of each component, which will open the signal selector where we can select the signal or function to which we want to link the component.</p><section>
+<h5><a name="a1.1.3.1_Component_label."></a><a name="label"></a>1.1.3.1 Component label.</h5>
+<p>The label component is a text box to which a signal is assigned, and will show its value in real time on the display.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and the <a href="#drawing_effects">effects</a>, the label component has the properties of the <a href="#text">Text</a> component and the following specific ones.</p>
+<p><img src="images/img16.png" alt="Specific properties component tag" title="Specific properties component tag" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Type</b>: Option to choose whether to display the value or the status in real time.</li>
+<li><b>Signal</b>: Allows you to select a signal from the list of available signals that will be opened by clicking on the magnifying glass or by clicking directly on this field.</li>
+<li><b>Number of decimal places</b>: Option to enter the number of decimal places to be displayed.</li>
+<li><b>Text mapping</b>: Allows us to enter text mappings to the values. For example: O-Off, 1-On.</li>
+<li><b>Show units</b>: Checked by default. Allows us to choose whether to show the units of the signal.</li>
+<li><b>Thousands separator</b>: Allows us to choose whether a dot will be displayed as a thousands separator.</li>
+<li><b>Show status</b>: If the selected type is &#x201c;status&#x201d;, it allows us to choose whether all the statuses or the highest priority status will be shown.</li>
+<li><b>Link</b>: If the selected type is &#x201c;value&#x201d;, it allows us to choose if the click event will be enabled to open a new graph with the selected signal.</li>
+<li><b>Graph type</b>: Allows us to choose the type of graph that will be opened when clicking on the object.</li>
+<li><b>Date selection</b>: If the selected graph type is other than &#x201c;real time&#x201d;, it allows us to choose the dates with which the graph will open when clicking on the object.</li>
+</ul></section><section>
+<h5><a name="a1.1.3.2_Indicator_component."></a><a name="gauje"></a>1.1.3.2 Indicator component.</h5>
+<p>The indicator component is a needle that changes its position according to the real-time value of the selected signal within the minimum and maximum values configured in the component itself.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a> (except for the color change property which does not apply to this component), the indicator component has the following specific properties.</p>
+<p><img src="images/img17.png" alt="Specific properties of the indicator component" title="Specific properties of the indicator component" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Signal</b>: Allows you to select a signal from the list of available signals that will be opened by clicking on the magnifying glass or by clicking directly on this field.</li>
+<li><b>Minimum value</b>: Minimum range of indicator values.</li>
+<li><b>Maximum value</b>: Maximum range of values of the indicator.</li>
+<li><b>Minimum angle</b>: Minimum range of needle rotation (in degrees).</li>
+<li><b>Maximum angle</b>: Maximum range of needle rotation (in degrees).</li>
+</ul></section><section>
+<h5><a name="a1.1.3.3_Progress_bar."></a><a name="progress_bar"></a>1.1.3.3 Progress bar.</h5>
+<p>The progress bar component is a band-shaped graphic element that varies according to the real-time value of the signal.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a>, the progress bar component has the properties of the <a href="#rectangle">Rectangle</a> component and the following specific ones.</p>
+<p><img src="images/img18.png" alt="Specific progress bar properties" title="Specific progress bar properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Signal</b>: Allows you to select a signal from the list of available signals that will be opened by clicking on the magnifying glass or directly on this field.</li>
+<li><b>Minimum value</b>: Minimum value to be displayed in the progress bar.</li>
+<li><b>Maximum value</b>: Maximum value to be displayed in the progress bar.</li>
+<li><b>Orientation</b>: Allows you to orient the progress bar horizontally or vertically.</li>
+<li><b>Reverse direction</b>: Activate the reverse direction on the bar, moving from right to left.</li>
+<li><b>Background color</b>: Static background color of the bar.</li>
+</ul></section><section>
+<h5><a name="a1.1.3.4_Switch_component."></a><a name="switch"></a>1.1.3.4 Switch component.</h5>
+<p>The switch component allows you to draw several objects, each of which will be displayed depending on the real-time value of the selected signal.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a> (except for the color change property which does not apply to this component), the switch component has the following specific properties.</p>
+<p><img src="images/img19.png" alt="Specific switch properties" title="Specific switch properties" style="width: 200px;" /></p>
+<ul>
+
+<li><b>Signal</b>: Allows you to select a signal from the list of available signals that will be opened by clicking on the magnifying glass or by clicking directly on this field.</li>
+<li><b>Add new item</b>: Allows you to add as many items as value configurations you want for the signal. For each item added, a configuration tab of the item will be displayed as shown in the following picture.</li>
+</ul>
+<p><img src="images/img20.png" alt="Configuration item" title="Configuration item" style="width: 200px;" /></p>
+<p>This configuration will show a thumbnail of the image that will be displayed when the signal has the value configured for that item. * <b>Minimum value</b>: Minimum value of the range of values for which the image will be displayed. * <b>Maximum value</b>: Maximum value of the range of values for which the image will be displayed. * <b>Default item</b>: Allows us to select which will be the default item to display from all the configured items.</p>
+<p>To add the image to each configured item we must follow the following steps. 1. In the tapestry we will have to have the shape or image that we want to link to the item (in our example it will be the square in red).</p>
+<p><img src="images/img20_1.png" alt="Tapestry with switch component and image for the item" title="Tapestry with switch component and image for the item" style="width: 200px;" /></p>
+<ol style="list-style-type: decimal">
+
+<li>Drag the image (red square) over the switch component that you have previously incorporated to the tapestry, the following screen will appear where you will have to drag the image to the desired item.</li>
+</ol>
+<p><img src="images/img20_2.png" alt="Configuration screen image to item and order" title="Configuration screen image to item and order" style="width: 150px;" /></p>
+<p>The items can be rearranged either from the configuration screen of the switch itself by dragging and dropping the item to be moved and dropping it on the new position or by using the items screen shown in the previous image, selecting the item to be moved and repositioning it using the arrows.</p></section><section>
+<h5><a name="a1.1.3.5_Circular_progress_bar."></a><a name="circular_progress"></a>1.1.3.5 Circular progress bar.</h5>
+<p>The circular progress bar component is a percentage indicator in the form of a circle that visually displays the value of the selected signal.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a>, the circular progress bar has the following specific properties.</p>
+<p><img src="images/img21.png" alt="Circular progress bar properties" title="Circular progress bar properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Signal</b>: Allows you to select a signal from the list of available signals that will be opened by clicking on the magnifying glass or by clicking directly on this field.</li>
+<li><b>Minimum value</b>: Minimum value to be displayed in the progress bar.</li>
+<li><b>Maximum value</b>: Maximum value to be displayed in the progress bar.</li>
+<li><b>Background color</b>: Static background color of the bar.</li>
+</ul></section><section>
+<h5><a name="a1.1.3.6_Link_component."></a><a name="link"></a>1.1.3.6 Link component.</h5>
+<p>The link component creates a rectangle in the tapestry that is placed over the area to be linked. It allows to choose between links to different web documents (synoptics, graphics, diagrams, etc.).</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a>, the link component has the following specific properties.</p>
+<p><img src="images/img22.png" alt="Properties of the link component" title="Properties of the link component" style="width: 300px;" /></p>
+<p><img src="images/003PR.png" alt="Link with parameters" title="Link with parameters" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Document</b>: Allows you to select the location and the document on which you want to create a link.</li>
+<li><b>Edit parameters</b>: Visible if the selected document is of synoptic type and has parameters. When clicked, it displays a modal window in which you can set the values of the parameters of the selected synoptic.</li>
+</ul>
+<p><img src="images/004PR.png" alt="Parameter modal" title="Parameter modal" style="width: 800px;" /></p></section><section>
+<h5><a name="a1.1.3.7_Pie_chart."></a><a name="pie_chart"></a>1.1.3.7 Pie chart.</h5>
+<p>The pie chart component allows to visualize the values of different signals by means of a pie chart representation.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a> (except for the color change property which does not apply to this component), the pie chart has the following specific properties.</p>
+<p><img src="images/img23.png" alt="Pie chart properties" title="Pie chart properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Add new item</b>: Allows the selection and configuration of the signals to be added to the pie chart. When adding a new item, a tab is added to the configuration where we can select the signal, the tooltip to display and the color, as well as the option to delete the selected item.</li>
+</ul>
+<p><img src="images/img23_1.png" alt="Configuration item pie chart" title="Configuration item pie chart" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Full circle</b>: Select whether you want a full circle (360&#xba;, checked) or half circle (180&#xba; unchecked).</li>
+<li><b>Start angle</b>: Allows you to select what will be the starting position in degrees for the first value.</li>
+<li><b>Show tooltip</b>: Checked by default, it shows the name of the signal or the configured text to be shown in the tooltip, when passing over the corresponding pie section.</li>
+<li><b>Show description</b>: Displays the name of the sign above each pie section.</li>
+<li><b>Show percentage</b>: Shows the percentage of the signal on top of each pie section.</li>
+<li><b>Inner radius</b>: Allows to set the hollow center of the pie (donut type) either in pixel indicating only numerical value or in percentage adding to the numerical value a % symbol.</li>
+</ul>
+<p>Within the pie chart configuration, there is an option to reorder items by drag and drop.</p></section><section>
+<h5><a name="a1.1.3.8_Graphic_component."></a><a name="chart"></a>1.1.3.8 Graphic component.</h5>
+<p>The graphic component allows you to add to the synoptic a graphic previously generated and stored in the system.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a> (except for the color change property which does not apply to this component), the graphics component has the following specific properties.</p>
+<p><img src="images/img24.png" alt="Graphic component properties" title="Graphic component properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Document</b>: Allows you to select the location and the graphic to be embedded in the synoptic.</li>
+<li><b>Background color</b>: Allows you to select the background color of the graph, by default transparent.</li>
+</ul></section><section>
+<h5><a name="a1.1.3.9_Historical_table."></a><a name="historic_table"></a>1.1.3.9 Historical table.</h5>
+<p>The historical table component allows to display the historical data of several signals in table format.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a> (except for the color change property which does not apply to this component), the history table component has the following specific properties.</p>
+<p><img src="images/img27.png" alt="Historical table component properties" title="Historical table component properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Signals</b>: Allows you to select the signals to be displayed.</li>
+<li><b>Title</b>: Allows to indicate whether to display the name or the description of the signal, by default the name of the signal will be displayed.</li>
+<li><b>Mark</b>: Allows to modify the frequency of the historical data.</li>
+<li><b>Samples</b>: Allows to modify the number of samples to be displayed.</li>
+<li><b>Pivot</b>: Allows to pivot the table (change the rows by columns).</li>
+<li><b>AutoUpdate</b>: Allows to indicate if the table will be updated with new historical data.</li>
+<li><b>Edit table</b>: Shows a modal window that allows to modify the table properties.</li>
+</ul><section>
+<h6><a name="a1.1.3.9.1_Table_properties."></a><a name="table_properties"></a>1.1.3.9.1 Table properties.</h6>
+<p>Allows you to modify the properties of the table by displaying its preview.</p>
+<p><img src="images/img28.png" alt="Modal properties table" title="Modal properties table" /></p>
+<ul>
+
+<li><b>Rows</b>: Displays the number of rows in the table.</li>
+<li><b>Columns</b>: Displays the number of columns in the table.</li>
+<li><b>Border</b>: Allows you to select whether to show the table border or not.</li>
+<li><b>Color border</b>: Allows to modify the color of the table border.</li>
+<li><b>Headers</b>: Allows to modify the highlighted cells (none, first row, first column, last row, last column, rows to bands, columns to bands).</li>
+<li><b>Alignment</b>: Allows you to modify the alignment of the table texts (left, center or right).</li>
+<li><b>Header color</b>: Allows you to modify the fill color of the highlighted cells.</li>
+<li><b>Content color</b>: Allows you to change the color of the cells that are not highlighted.</li>
+</ul>
+<p>You can change the height of the rows and the width of the columns by dragging the mouse over the dividing line:</p>
+<p><img src="images/img28_1.png" alt="Modal table properties: Change column size" title="Modal table properties: Change column size" style="width: 400px;" /></p>
+<p><img src="images/img28_2.png" alt="Modal table properties: Change row size" title="Modal table properties: Change row size" style="width: 400px;" /></p></section></section><section>
+<h5><a name="a1.1.3.10_Interruptor_operaci.C3.B3n."></a><a name="operation_switch"></a>1.1.3.10 Interruptor operaci&#xf3;n.</h5>
+<p>The switch component allows to send commands on the selected signal.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and the <a href="#drawing_effects">effects</a> (except for the color change property which does not apply to this component), the operation switch component has the following specific properties.</p>
+<p><img src="images/img29.png" alt="Component properties switch operation" title="Component properties switch operation" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Signal</b>: Allows to select the signal on which the command is to be sent.</li>
+<li><b>Value on</b>: Value to be sent when the breaker is turned on.</li>
+<li><b>Value off</b>: Value to be sent when the switch is turned off.</li>
+</ul>
+<p>To add the image to each configured item we must follow the following steps.</p>
+<ol style="list-style-type: decimal">
+
+<li>
+
+<p>In the tapestry we will have to have the shape or image that we want to link to the item. (in our example it will be the square in green) <img src="images/img29_1.png" alt="Tapestry with switch component and image for the item" title="Tapestry with switch component and image for the item" style="width: 200px;" /></p>
+</li>
+<li>
+
+<p>Drag the image (green square) over the switch component that we have previously incorporated to the tapestry, the following screen will appear where we will have to drag the image to the desired item. <img src="images/img29_2.png" alt="Image to item and order configuration screen" title="Image to item and order configuration screen" style="width: 150px;" /></p>
+</li>
+</ol></section><section>
+<h5><a name="a1.1.3.11_Operation_button."></a><a name="operation_button"></a>1.1.3.11 Operation button.</h5>
+<p>The operation button component allows you to send a command on the selected signal. It allows to select among three ways of sending.</p>
+<p>In addition to the <a href="#drawing_generic">Generic properties</a> and <a href="#drawing_effects">effects</a>, the operation button component has the following specific properties.</p>
+<p><img src="images/img30.png" alt="Operation button component properties" title="Operation button component properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Signal</b>: Allows to select the signal on which the command is to be sent.</li>
+<li><b>Delay</b>: Delay time for sending the command.</li>
+<li><b>Minimum value</b>: Minimum value that can be sent in the command.</li>
+<li><b>Maximum value</b>: Maximum value that can be sent in the command.</li>
+<li><b>Time limit</b>: Time limit for resetting the value.</li>
+<li><b>Time limit value</b>: Value to be reset when the time indicated in the &#x201c;time limit&#x201d; field has elapsed.</li>
+<li><b>Type</b>: Allows to select the type of sending: keyboard, selector or sending. The default type is keyboard.</li>
+</ul>
+<p>If the type is &#x201c;keyboard&#x201d; the following properties will be displayed:</p>
+<p><img src="images/img30_1.png" alt="Keyboard operation button component properties" title="Keyboard operation button component properties" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Real time</b>: Select whether to initialize the keyboard with the last value of the signal.</li>
+</ul>
+<p>If the type is &#x201c;selector&#x201d; the following properties will be displayed:</p>
+<p><img src="images/img30_2.png" alt="Component properties button operation selector" title="Component properties button operation selector" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Text mapping</b>: Allows you to select the signal on which the command is to be sent.</li>
+<li><b>Show value</b>: Allows you to select whether to show the value or not.</li>
+<li><b>Source size</b>: If &#x201c;show value&#x201d; has been selected, the size of the text can be modified.</li>
+</ul>
+<p>If the type is &#x201c;send&#x201d;, the following properties will be displayed:</p>
+<p><img src="images/img30_3.png" alt="Component properties of the send operation button" title="Component properties of the send operation button" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Value</b>: Select the value to be sent.</li>
+</ul></section></section><section>
+<h4><a name="a1.1.4_Layers"></a><a name="layers"></a>1.1.4 Layers</h4>
+<p>From the layers section, we can create as many layers as we need for the design of our synoptic as well as choose in which layer we want to work in each moment blocking the rest of the layers.</p>
+<p>Its use is recommended when we import large synoptics and we want to add dynamic components without modifying their appearance.</p>
+<p>The options available in the layers panel are the following:</p>
+<p><img src="images/img25.png" alt="Layers panel" title="Layers panel" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Add</b>: Allows you to add a new layer.</li>
+<li><b>Delete</b>: Allows you to delete the selected layer.</li>
+<li><b>Rename</b>: Allows you to rename the selected layer.</li>
+<li><b>Move up layer</b>: Allows layer sorting, moving the selected layer up one position.</li>
+<li><b>Move down layer</b>: Allows you to sort layers, moving the selected layer down one position.</li>
+<li><b>Hide/Show layer</b>: Allows you to hide or show the layer on the tapestry.</li>
+</ul></section><section>
+<h4><a name="a1.1.5_Parameters."></a><a name="params"></a>1.1.5 Parameters.</h4>
+<p>Parameters are objects that allow the configuration and editing of values in certain elements, such as labels, progression bar&#x2026; so that these values can be easily edited and accessed.</p><section>
+<h5><a name="a1.1.5.1_List_of_parameters."></a><a name="paramList"></a>1.1.5.1 List of parameters.</h5>
+<p><img src="images/001PR.png" alt="Parameters panel" title="Parameters panel" style="width: 300px;" /></p>
+<p>In the parameters section is defined the list of parameters of the document, in this section we can create, edit and delete them.</p>
+<ul>
+
+<li><b>Add</b>: Allows to add a new parameter.</li>
+<li><b>Delete</b>: Allows to delete the selected parameter.</li>
+</ul>
+<p>When selecting a parameter, the right panel with the properties of the parameter will be displayed.</p></section><section>
+<h5><a name="a1.1.5.2_Parameter_properties."></a><a name="paramEditor"></a>1.1.5.2 Parameter properties.</h5>
+<p>Allows you to modify the following properties of the selected parameter:</p>
+<p><img src="images/002PR.png" alt="Parameter editor" title="Parameter editor" style="width: 300px;" /></p>
+<ul>
+
+<li><b>Title</b>: Add or edit a title.</li>
+<li><b>Description</b>: Add or edit a description.</li>
+<li><b>Required</b>: If you want the value to be mandatory.</li>
+<li><b>Type</b>: Parameters can be of two types, value or token.</li>
+<li><b>Signal/value selector</b>: In this section we can select a signal with the help of the modal or simply add a name.</li>
+</ul></section></section></section><section>
+<h3><a name="a1.2_Synoptic_viewer"></a><a name="viewer"></a>1.2 Synoptic viewer</h3>
+<p>The synoptic viewer allows the visualization of a synoptic previously designed with the <a href="#editor">Designer</a> tools showing the real-time values of the configured dynamic components.</p>
+<p>To display a synoptic, it will be necessary to select a synoptic type document from the document explorer, several options are available.</p>
+<ul>
+
+<li>
+
+<p>From the hierarchy, once the document has been selected, either through the <img src="images/img26.png" alt="IDboxRT" /> option of the upper toolbar, through the Open option of the document&#x2019;s contextual menu or by double clicking on the synoptic to be displayed.</p>
+</li>
+<li>
+
+<p>In the document explorer, in the central document section of the selected hierarchy, by clicking on the synoptic.</p>
+</li>
+</ul>
+<p>By means of the <span class="ti-signal"></span> button, the list of signals of the synoptic can be viewed.</p>
+<p><img src="images/img31.png" alt="Signal list" title="Signal list" style="width: 800px;" /></p><section><section>
+<h5><a name="a1.2.1_Synoptic_with_parameters."></a><a name="modalParameterVisor"></a>1.2.1 Synoptic with parameters.</h5>
+<p>If the displayed synoptic has parameters, when loading, a modal is displayed that allows assigning the values to the synoptic parameters.</p>
+<p><img src="images/004PR.png" alt="Parameter modal" title="Parameter modal" style="width: 800px;" /></p>
+<blockquote>
+
+<p>It is mandatory to assign a value to all required values.</p>
+</blockquote></section></section></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

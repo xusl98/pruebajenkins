@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <span class="icon-id-explorer"></span>
+  
+<h1>EXPLORADOR</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a></li>
+<li>2 <a href="#gruposSeniales">Grupos de se&#xf1;ales</a>
+<ul>
+
+<li>2.1 <a href="#jerarquiaGruposSeniales">&#xc1;rbol de jerarqu&#xed;a</a></li>
+<li>2.2 <a href="#detalleGruposSeniales">Detalle</a></li>
+</ul>
+</li>
+<li>3 <a href="#documentos">Documentos</a>
+<ul>
+
+<li>3.1 <a href="#jerarquiaDocumentos">&#xc1;rbol de jerarqu&#xed;a</a></li>
+<li>3.2 <a href="#detalleDocumentos">Detalle</a></li>
+</ul>
+</li>
+<li>4 <a href="#inventario">Inventario</a>
+<ul>
+
+<li>4.1 <a href="#jerarquiaActivos">&#xc1;rbol de jerarqu&#xed;a</a></li>
+<li>4.2 <a href="#detalleActivos">Detalle</a></li>
+</ul>
+</li>
+<li>5 <a href="#gridtiempoReal">Tabla de se&#xf1;ales de tiempo real</a></li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>El explorador es una de las partes principales de IDbox, adem&#xe1;s ser&#xe1; la pantalla que el usuario visualice, en caso de que no tenga un documento como p&#xe1;gina de inciio, una vez se haya autentificado en el sistema.</p>
+<p>Desde este podremos visualizar las jerarqu&#xed;as de grupos de se&#xf1;ales, documentos de IDbox e inventario, adem&#xe1;s de poder iniciar un an&#xe1;lisis de forma r&#xe1;pida y sencilla.</p>
+<p><img src="images/image01.png" class="grande" alt="acceso explorador" title="Acceso explorador" /></p>
+<p>El acceso al explorador se realiza desde el icono <span class="icon-id-explorer"></span> presente en la barra superior.</p><hr /></section><section>
+<h2><a name="a2_Grupos_de_se.C3.B1ales"></a><a name="gruposSeniales"></a>2 Grupos de se&#xf1;ales</h2>
+<p>Al abrir el explorador visualizaremos la jerarqu&#xed;a de grupos de se&#xf1;ales de IDbox, junto con las se&#xf1;ales asociadas al grupo de seguridad por defecto de nuestro usuario. En la parte izquierda se presenta el &#xe1;rbol de jerarqu&#xed;a de grupos de se&#xf1;ales y en la parte central podemos observar una vista detalle.</p>
+<p><img src="images/image02.png" class="grande" alt="Grupos de señales" title="Grupos de señales explorador" /></p><section>
+<h3><a name="a2.1_.C3.81rbol_de_jerarqu.C3.ADa"></a><a name="jerarquiaGruposSeniales"></a> 2.1 &#xc1;rbol de jerarqu&#xed;a</h3>
+<p>La organizaci&#xf3;n de los grupos de se&#xf1;ales se presenta en forma de &#xe1;rbol jerarqu&#xed;co, en este, podemos encontrar todos los grupos de se&#xf1;ales (1) disponibles para el usuario, as&#xed; como los distintos grupos de seguridad (2) a los que el usuario pertenece.</p>
+<p><img src="images/image03.png" class="grande" alt="Jerarquía grupos de señales" title="Jerarquía grupos de señales" /></p>
+<p>Las acciones que puede realizar el usuario sobre el &#xe1;rbol de jerarqu&#xed;a de grupos de se&#xf1;ales son las siguientes:</p>
+<ul>
+
+<li>Men&#xfa; contextual haciendo clic derecho sobre un elemento del &#xe1;rbol:
+<ul>
+
+<li>Grupo de seguridad:
+<ul>
+
+<li>Recargar: permite al usuario recargar el elemento del &#xe1;rbol, recargar&#xe1; los elementos que culegan de &#xe9;l.</li>
+</ul>
+</li>
+<li>Grupo de se&#xf1;ales:
+<ul>
+
+<li>Recargar: permite al usuario recargar el elemento del &#xe1;rbol, recargar&#xe1; los elementos que culegan de &#xe9;l.</li>
+<li>Editar: nos llevar&#xe1; a la pesta&#xf1;a de edici&#xf3;n del grupo de se&#xf1;ales.</li>
+<li>Renombrar: se habilitar&#xe1; la entrada de texto para que podamos modificar el nombre de grupo de se&#xf1;ales directamente desde el explorador.</li>
+<li>Eliminar: elimina el grupo de se&#xf1;ales del sistema.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="images/image04.png" class="mediano" alt="Menú contextual" title="Menú contextual" /></p>
+<ul>
+
+<li>A trav&#xe9;s de la botonera de acciones presente en la parte superior del &#xe1;rbol, podemos realizar las mismas acciones anteriormente descritas, para ello basta con seleccionar un elemento del &#xe1;rbol y se habilitar&#xe1;n las acciones correspondientes al tipo de elemento seleccionado, ya sea grupo de seguridad o grupo de se&#xf1;ales. Destacar que siempre tendremos presente las acciones de recargar <span class="ti-reload"></span> y contraer elemento <span class="icon-id-collapse"></span> y &#xfa;nicamente se mostrar&#xe1;n las acciones de editar <span class="ti-pencil-alt"></span>, renombrar <span class="ti-text"></span> y eliminar <span class="ti-trash"></span> cuando seleccionemos un grupo de se&#xf1;ales</li>
+</ul>
+<p><img src="images/image05.png" class="mediano" alt="Botonera de acciones" title="Botonera de acciones" /></p>
+<p>A continuaci&#xf3;n, se detalla como visualizar las se&#xf1;ales presentes en un grupo de seguridad o en grupo de se&#xf1;ales en concreto, en funci&#xf3;n del tipo de elemento seleccionado en el &#xe1;rbol de jerarqu&#xed;a de se&#xf1;ales. * Literal Se&#xf1;ales (1): visualizaremos todas las se&#xf1;ales asociadas a nuestro grupo de seguridad por defecto. * Grupo de seguridad (2): visualizaremos todas las se&#xf1;ales asociadas al grupo de seguridad seleccionado. * Grupo de se&#xf1;ales (3): visualizaremos todas las se&#xf1;ales asociadas al grupo de se&#xf1;ales seleccionado.</p>
+<p><img src="images/image06.png" class="mediano" alt="Botonera de acciones" title="Botonera de acciones" /></p></section><section>
+<h3><a name="a2.2_Detalle"></a><a name="detalleGruposSeniales"></a> 2.2 Detalle</h3>
+<p>En la parte central de explorador se mostrar&#xe1; una <a href="#GridtiempoReal">tabla de se&#xf1;ales con tiempo real</a>, las se&#xf1;ales a mostrar difieren del elemento seleccionado en el &#xe1;rbol como se explica en el punto anterior.</p></section></section><section>
+<h2><a name="a3_Documentos"></a><a name="documentos"></a>3 Documentos</h2>
+<p>Desde el &#xe1;rbol de documentos, podemos acceder a los diferentes tipos de documentos presentes en nuestra jerarqu&#xed;a de IDbox.</p><section>
+<h3><a name="a3.1_.C3.81rbol_de_jerarqu.C3.ADa"></a><a name="jerarquiaDocumentos"></a> 3.1 &#xc1;rbol de jerarqu&#xed;a</h3>
+<p>La organizaci&#xf3;n de los documentos mantiene la estructura del &#xe1;rbol de se&#xf1;ales, por tanto, en la ra&#xed;z se visualizar&#xe1;n todos los documentos presentes y sobre los que tengamos acceso de nuestro grupo de seguridad por defecto, y adem&#xe1;s visualizaremos tambi&#xe9;n el resto de grupos de acceso en los cuales est&#xe9; asociado el usuario.</p>
+<p>Las acciones que puede realizar el usuario sobre el &#xe1;rbol de jerarqu&#xed;a de documentos son las siguientes:</p>
+<ul>
+
+<li>Men&#xfa; contextual haciendo clic derecho sobre un elemento del &#xe1;rbol:
+<ul>
+
+<li>Grupo de seguridad:
+<ul>
+
+<li>Recargar: permite al usuario recargar el elemento del &#xe1;rbol, recargar&#xe1; los elementos que culegan de &#xe9;l.</li>
+<li>Nueva carpeta: crea una carpeta dentro del grupo de seguridad seleccionado</li>
+</ul>
+</li>
+<li>Carpeta:
+<ul>
+
+<li>Recargar: permite al usuario recargar el elemento del &#xe1;rbol, recargar&#xe1; los elementos que culegan de &#xe9;l.</li>
+<li>Nueva carpeta: crea una carpeta dentro de la carpeta seleccionada.</li>
+<li>Renombrar: permite renombrar el elemento de la jerarqu&#xed;a seleccionado.</li>
+<li>Eliminar: elimina la carpeta del sistema.</li>
+<li>Publicar: permite modificar los grupos de acceso a los cuales est&#xe1; asociada la carpeta.</li>
+<li>Acceso directo: permite crear un acceso directo de la carpeta en el lugar de destino que el usuario seleccione.</li>
+</ul>
+</li>
+<li>Documento:
+<ul>
+
+<li>Recargar: permite al usuario recargar el elemento del &#xe1;rbol, recargar&#xe1; los elementos que culegan de &#xe9;l.</li>
+<li>Editar: abre el documento en modo edici&#xf3;n.</li>
+<li>Abrir: abre el documento en modo visor.</li>
+<li>Nueva carpeta: crea una carpeta dentro de la carpeta seleccionada.</li>
+<li>Renombrar: permite renombrar el elemento de la jerarqu&#xed;a seleccionado.</li>
+<li>Eliminar: elimina la carpeta del sistema.</li>
+<li>Publicar: permite modificar los grupos de acceso a los cuales est&#xe1; asociada la carpeta.</li>
+<li>Acceso directo: permite crear un acceso directo de la carpeta en el lugar de destino que el usuario seleccione.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>A trav&#xe9;s de la botonera de acciones presente en la parte superior del &#xe1;rbol, podemos realizar las mismas acciones anteriormente descritas, para ello basta con seleccionar un elemento del &#xe1;rbol y se habilitar&#xe1;n las acciones correspondientes al tipo de elemento seleccionado, ya sea un grupo de seguridad, una carpeta o un documento. Destacar que siempre tendremos presente las acciones de recargar y contraer elemento y cuando seleccionemos un documento no estar&#xe1;n presentes las acciones de publicar y acceso directo.</p>
+<p>Para modificar la organizaci&#xf3;n de nuestra jerarqu&#xed;a de IDbox, ya sea porque deseamos cambiar el orden de prioridad en el que se muestran los elementos o moverlo a otra carpeta basta con arrastrar el elemento y posicionarlo en el lugar deseado. Una vez que hayamos realizado dicha acci&#xf3;n aparecer&#xe1; en la botonera superior un nuevo icono <span class="ti-save"></span> haciendo clic en &#xe9;l se guardar&#xe1;n los cambios.</p>
+<blockquote>
+
+<p>NOTA: No es posible mover un documento de un grupo de seguridad a otro.</p>
+</blockquote></section><section>
+<h3><a name="a3.2_Detalle"></a><a name="jerarquiaDocumentos"></a> 3.2 Detalle</h3>
+<p>Al hacer clic en cualquier elemento de la jerarqu&#xed;a de documentos se cargar&#xe1; en la vista una <a href="#GridtiempoReal">tabla de se&#xf1;ales con tiempo real</a> (1), la cual muestra la se&#xf1;ales ordenadas por frecuencia de uso y un carrusel por cada tipo de documentos, en cada carrusel los documentos se presentan ordenados por los que tienen mayor frecuencia de acceso (2). Por ejemplo: si hacemos clic en una carpeta nos mostrar&#xe1; las se&#xf1;ales m&#xe1;s frecuentemente usadas en los documentos que contiene dicha carpeta, y en el carrusel de documentos se visualizar&#xe1;n todos los documentos almacenados en dicha carpeta.</p>
+<p><img src="images/image09.png" class="grande" alt="Explorador documentos" title="Explorador documentos" /></p>
+<p>En el carrusel de documentos, &#xfa;nicamente se mostrar&#xe1;n los documentos que nos entren en la pantalla para ver todos los documentos asociados a un mismo tipo deberemos hacer clic en ver todo (1)</p>
+<p><img src="images/image10.png" class="grande" alt="Explorador documentos" title="Explorador documentos" /></p>
+<p>Haciendo clic en alg&#xfa;n sobre alguno de los documentos del carrusel se abrir&#xe1; dicho documento en modo visor, adem&#xe1;s al situar el cursor sobre la ficha del documento se mostrar&#xe1;n las siguientes acciones: * Info (1): Muestra en una panel lateral la informaci&#xf3;n relativa al documento. * Abrir en modo editor (2): Abre el documento en modo editor.</p>
+<p><img src="images/image11.png" class="grande" alt="Ficha carrusel documentos" title="Carrusel documentos" /></p>
+<p>Desde el panel lateral de informaci&#xf3;n de documento podemos echar un vistazo r&#xe1;pido a cierta informaci&#xf3;n asociada al documento, incluidas las se&#xf1;ales que contiene dicho documento.</p>
+<p><img src="images/image12.png" class="mediano" alt="Ficha carrusel documentos" title="Carrusel documentos" /></p>
+<p>La informaci&#xf3;n que se muestra es la siguientes: nombre del documento, descripci&#xf3;n, fecha de creaci&#xf3;n, tama&#xf1;o (s&#xf3;lo aplica a sin&#xf3;pticos), autor, grupo de seguridad en el cual est&#xe1; almacenado el documento y las se&#xf1;ales que contiene dicho documento junto con su valor en tiempo real. Desde el apartado de se&#xf1;ales en documentos podemos realizar un an&#xe1;lisis r&#xe1;pido creando una gr&#xe1;fica de tendencia (1), gr&#xe1;fica de agrupados (2) y un documento de hist&#xf3;ricos (3) con las se&#xf1;ales que hayamos seleccionado previamente, dicho an&#xe1;lsis se creara con un rango temporal del &#xfa;ltimo d&#xed;a. Adem&#xe1;s, haciendo clic en a&#xf1;adir a favoritos (4) podemos a&#xf1;adir la se&#xf1;al deseada al lanzador para futuros an&#xe1;lisis.</p>
+<p><img src="images/image13.png" class="grande" alt="Ficha carrusel documentos" title="Carrusel documentos" /></p></section></section><section>
+<h2><a name="a4_Inventario"></a><a name="inventario"></a>4 Inventario</h2>
+<p>Desde el &#xe1;rbol de documentos, podemos acceder a los diferentes tipos de documentos presentes en nuestra jerarqu&#xed;a de IDbox. Mantiene la estructura del &#xe1;rbol de se&#xf1;ales, por tanto, en la ra&#xed;z se visualizar&#xe1;n todos los documentos presentes y sobre los que tengamos acceso de nuestro grupo de seguridad por defecto (1), y adem&#xe1;s visualizaremos tambi&#xe9;n el resto de grupos de acceso en los cuales est&#xe9; asociado el usuario (2).</p><section>
+<h3><a name="a4.1_.C3.81rbol_de_jerarqu.C3.ADa"></a><a name="jerarquiaActivos"></a> 4.1 &#xc1;rbol de jerarqu&#xed;a</h3>
+<p>En activos podremos visualizar la jerarqu&#xed;a asociada al inventario, y las diferentes propiedades asignadas a cada uno de los activos (1) y organizadores (2). Al desplegar el &#xe1;rbol de invetario se mostrar&#xe1; la informaci&#xf3;n relativa al primer activo presente en el &#xe1;rbol.</p>
+<p><img src="images/image07.png" class="mediano" alt="Jerarquía activos" title="Jerarquía activos" /></p>
+<p>Las acciones que puede realizar el usuario sobre el &#xe1;rbol de jerarqu&#xed;a de activos son las siguientes:</p>
+<ul>
+
+<li>Men&#xfa; contextual haciendo clic derecho sobre un elemento del &#xe1;rbol:
+<ul>
+
+<li>Recargar: permite al usuario recargar el elemento del &#xe1;rbol, recargar&#xe1; los elementos que culegan de &#xe9;l.</li>
+<li>Nueva plantilla: Permite crear un nuevo documento de tipo plantilla. Al pulsarlo se abrir&#xe1; una ventana modal para seleccionar el tipo de documento de la plantilla. Cuando se cargue la plantilla est&#xe1; tendr&#xe1; preseleccionada la plantilla de inventario que se hab&#xed;a seleccionado.</li>
+</ul>
+</li>
+</ul>
+<p>A trav&#xe9;s de la botonera de acciones presente en la parte superior del &#xe1;rbol, podemos realizar la recarga o colapsar el nodo seleccionado.</p></section><section>
+<h3><a name="a3.2_Detalle"></a><a name="detalleActivos"></a> 3.2 Detalle</h3>
+<p>En la parte central del explorador, se mostrar&#xe1; la siguiente informaci&#xf3;n relativa al activo seleccionado: nombre (1), descripci&#xf3;n (2), propiedades (3), se&#xf1;ales asociadas (4), campos calculados (5) y las plantillas de documentos que se pueden aplicar al activo selecionado (6).</p>
+<p><img src="images/image14.png" class="grande" alt="Detalle activo" title="Detalle activo" /></p>
+<p>En la vista de activos tenemos distintas opciones de visualizaci&#xf3;n: * Modo vista (1): * Elemento: detalle del activo/organizador seleccionado. * Contenido: visualizaremos los detalles de los organizadores/activos que contiene el activo seleccionado. * Modo categoria (2): * Sin categor&#xed;a: detalle del activo/organizador seleccionado. * Con categor&#xed;a: se mostrar&#xe1;n agrupdos por hastags las distintas propiedas y se&#xf1;ales de los activos.</p></section></section><section>
+<h2><a name="a4._Tabla_de_se.C3.B1ales_de_tiempo_real"></a><a name="gridtiempoReal"></a>4. Tabla de se&#xf1;ales de tiempo real</h2>
+<p>La visualizaci&#xf3;n de se&#xf1;ales junto su valor en tiempo real, siempre estar&#xe1; presente en el &#xe1;rbol de se&#xf1;ales, documentos y activos, con la particularidad de que en activos y documentos, &#xfa;nicamente se nos mostrar&#xe1;n las primeras 10 se&#xf1;ales y deberemos hacer clic en &#x201c;Ver todo&#x201d; para entrar en modo p&#xe1;ginado, mientras que si estamos en el &#xe1;rbol de se&#xf1;ales siempre se mostrar&#xe1; la tabla de se&#xf1;ales en modo p&#xe1;ginado. Cabe destacar que si estamos en modo podremos aplicar un filtro complejo. A continuaci&#xf3;n se detalla la ser&#xed;e de acciones que es posible realizar desde esta secci&#xf3;n: * Mi selecci&#xf3;n <span class="icon-id-starempty"></span>: A&#xf1;ade las se&#xf1;ales actualmente seleccionadas al lanzador. * Hist&#xf3;ricos <span class="ti-server"></span>: Crea un documento de hist&#xf3;ricos con las se&#xf1;ales seleccionadas y con un rango temporal de &#xfa;ltimo d&#xed;a. * Suscripci&#xf3;n <span class="ti-bell"></span>: Inicia la creaci&#xf3;n de una regla de notificaci&#xf3;n con las se&#xf1;ales seleccionadas. * Tendencia <span class="ti-stats-up"></span>: Crea una gr&#xe1;fica de tendencia con las se&#xf1;ales seleccionadas y con un rango temporal de &#xfa;ltimo d&#xed;a. * Fijar/Liberar valor <span class="ti-lock"></span>: Permite fijar o liberar un valor de tiempo real. * Filtrado <span class="ti-filter"></span>: Permite realizar introducir un filtrado complejo, de manera que nos permita filtrar r&#xe1;pidamente las se&#xf1;ales en funci&#xf3;n de su tipo, nombre, descripci&#xf3;n, etc.</p>
+<blockquote>
+
+<p>NOTA: la opci&#xf3;n de introducir un filtrado complejo &#xfa;nicamente ser&#xe1; visible cuando estamos en modo p&#xe1;ginado, es decir, cuando hemos hecho clic en &#x201c;ver todo&#x201d; o estamos listando se&#xf1;ales de la jerarqu&#xed;a de se&#xf1;ales.</p>
+</blockquote>
+<p><img src="images/image15.png" class="grande" alt="Detalle activo" title="Detalle activo" /></p></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

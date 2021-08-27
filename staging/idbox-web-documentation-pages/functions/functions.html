@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="ti-ruler-alt-2"></cite>
+  
+<h1>Funciones</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a></li>
+<li>2 <a href="#admin">Administraci&#xf3;n de funciones</a></li>
+<li>3 <a href="#modal">Edici&#xf3;n de funciones</a>
+<ul>
+
+<li>3.1 <a href="#formulas">F&#xf3;rmulas</a>
+<ul>
+
+<li>3.1.1 <a href="#formulasIDbox">F&#xf3;rmulas IDbox</a></li>
+<li>3.1.2 <a href="#formulasMatematicas">F&#xf3;rmulas matematicas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>En esta secci&#xf3;n se explicar&#xe1; como crear, editar o eliminar funciones.</p></section><section>
+<h2><a name="a2._Administraci.C3.B3n_de_funciones"></a><a name="admin"></a>2. Administraci&#xf3;n de funciones</h2>
+<p>Desde el panel de control se podr&#xe1; acceder a la secci&#xf3;n de &#x201c;Funciones&#x201d;.</p>
+<p><img src="images/Image2.png" class="grande" alt="Funciones desde el panel de control" title="Funciones desde el panel de control" /></p>
+<p>Dentro de ella podremos ver un listado de todas las funciones que tengamos disponibles.</p>
+<p><img src="images/Image1.png" class="grande" alt="Listado de funciones" title="Listado de funciones" /></p>
+<p>En la parte superior derecha tendremos botones para crear, editar o eliminar funciones.</p>
+<p><img src="images/Image3.png" class="mediano" alt="Listado de funciones" title="Listado de funciones" /></p>
+<p>Si pulsamos el bot&#xf3;n de eliminar se eliminar&#xe1;n las funciones seleccionadas.</p>
+<p>Si pulsamos sobre crear o editar se abrir&#xe1; la ventana modal de edici&#xf3;n de funciones.</p></section><section>
+<h2><a name="a3._Edici.C3.B3n_de_funciones"></a><a name="modal"></a>3. Edici&#xf3;n de funciones</h2>
+<p><img src="images/Image4.png" class="grande" alt="Edición de funciones" title="Edición de funciones" /></p>
+<p>A continuaci&#xf3;n se explicar&#xe1;n todos los campos mostrados en la ventana:</p>
+<ul>
+
+<li>Nombre (Campo obligatorio): Ser&#xe1; el nombre con el que se identificar&#xe1; a la funci&#xf3;n en los distintos listados y documentos de la aplicaci&#xf3;n.</li>
+<li>Descripci&#xf3;n: Descripci&#xf3;n de la funci&#xf3;n.</li>
+<li>A&#xf1;adir se&#xf1;al: Permite a&#xf1;adir una nueva se&#xf1;al a la equaci&#xf3;n.</li>
+<li>Equaci&#xf3;n (Campo obligatorio): Ser&#xe1; la base de la funci&#xf3;n, donde se indique como se calcular&#xe1;n los valores. Para que una funci&#xf3;n sea valida solo se podr&#xe1;n a&#xf1;adir <a href="#formulas">f&#xf3;rmulas</a> como las especificadas mas abajo y operadores matem&#xe1;ticos (+, -, /, *). Si la funci&#xf3;n fuese invalida se marcar&#xe1; este campo en rojo y se mostrar&#xe1; un mensaje informativo.</li>
+<li>Funci&#xf3;n: Panel donde se mostrar&#xe1; una previsualizaci&#xf3;n de la equaci&#xf3;n escrita en el campo anterior.</li>
+</ul>
+<blockquote>
+
+<p>En el c&#xe1;lculo de las funciones se tomar&#xe1; siempre el resultado como una se&#xf1;al anal&#xf3;gica.</p>
+</blockquote><section>
+<h3><a name="a3.1_F.C3.B3rmulas"></a><a name="formulas"></a>3.1 F&#xf3;rmulas</h3>
+<p>Debajo del panel de &#x201c;Funci&#xf3;n&#x201d; podremos ver un listado de las f&#xf3;rmulas disponibles. Las cuales est&#xe1;n divididas en dos partes que se ver&#xe1;n mas adelante.</p>
+<p><img src="images/Image5.png" class="grande" alt="Fórmulas" title="Fórmulas" /></p>
+<p>Al lado derecho del listado podremos ver otro panel donde se mostrar&#xe1; la descripci&#xf3;n de lo que hace cada c&#xe1;lculo, as&#xed; como una muestra de como utilizarlo. Adem&#xe1;s, con las f&#xf3;rmulas de IDbox se podr&#xe1; ver en el apartado de &#x201c;Uso&#x201d; los distintos valores que puede tomar cada par&#xe1;metro.</p><section>
+<h4><a name="a3.1.1_F.C3.B3rmulas_IDbox"></a><a name="formulasIDbox"></a>3.1.1 F&#xf3;rmulas IDbox</h4>
+<p>Las f&#xf3;rmulas de IDbox son c&#xe1;lculos que se basan en operaciones sobre se&#xf1;ales de IDbox. Para a&#xf1;adir una nueva f&#xf3;rmula de este tipo tendremos que hacer doble click y se abrir&#xe1; una ventana donde tendremos que seleccionar cada par&#xe1;metro. Al pulsar &#x201c;Aceptar&#x201d; en la ventana se a&#xf1;adir&#xe1; el c&#xe1;lculo a la equaci&#xf3;n.</p></section><section>
+<h4><a name="a3.1.2_F.C3.B3rmulas_matem.C3.A1ticas"></a><a name="formulasMatematicas"></a>3.1.2 F&#xf3;rmulas matem&#xe1;ticas</h4>
+<p>Las f&#xf3;rmulas matem&#xe1;ticas son c&#xe1;lculos que no requieren del uso de se&#xf1;ales de IDbox, aunque se pueden utilizar c&#xe1;lculos de IDbox como par&#xe1;metro para los c&#xe1;lculos matem&#xe1;ticos.</p>
+<blockquote>
+
+<p>Acos(Signal([Se&#xf1;al2], &#x2018;Average&#x2019;, &#x2018;StepBefore&#x2019;))</p>
+</blockquote>
+<p>Para a&#xf1;adir un c&#xe1;lculo matem&#xe1;tico tendremos que hacer doble click y se a&#xf1;adir&#xe1; directamente a la equaci&#xf3;n, donde tendremos que sustituir cada par&#xe1;metro por el valor deseado.</p></section></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

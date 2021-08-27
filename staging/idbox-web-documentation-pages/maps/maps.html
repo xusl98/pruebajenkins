@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="ti-map-alt"></cite>
+  
+<h1>MAPAS</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a></li>
+<li>2 <a href="#editor">Editor</a>
+<ul>
+
+<li>2.1 <a href="#gestion-capas">Gesti&#xf3;n de capas</a></li>
+<li>2.2 <a href="#marcadores-seniales">Marcadores y se&#xf1;ales</a></li>
+<li>2.3 <a href="#mapas-calor">Mapas de calor</a></li>
+</ul>
+</li>
+<li>3 <a href="#visor">Visor</a></li>
+<li>4 <a href="#opciones-visualizacion">Opciones de visualizaci&#xf3;n</a></li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>Los mapas nos permitir&#xe1;n visualizar marcadores con se&#xf1;ales o mapas de calor que est&#xe9;n posicionados geogr&#xe1;ficamente.</p>
+<p>Se pueden crear desde la secci&#xf3;n de accesos directos. Al pulsar en esta opci&#xf3;n se nos abrir&#xe1; un nuevo mapa.</p>
+<p><img src="images/Imagen11.png" class="grande" alt="Creación de mapas desde el acceso directo" title="Creación de mapas desde el acceso directo" /></p><hr /></section><section>
+<h2><a name="a2_Editor"></a><a name="editor"></a>2 Editor</h2>
+<p>El editor de mapas nos permitir&#xe1; crear el documento a nuestra medida, dando de alta capas que contendr&#xe1;n marcadores con se&#xf1;ales, mapas de calor o kmls.</p>
+<p>Una vez terminemos de hacer todos los cambios sobre el mapa podremos guardarle pulsando sobre el bot&#xf3;n de guardar de la barra de herramientas <span class="ti-save"></span></p><hr /><section>
+<h3><a name="a2.1_Gesti.C3.B3n_de_capas"></a><a name="gestion-capas"></a>2.1 Gesti&#xf3;n de capas</h3>
+<p>Las capas nos permitir&#xe1;n organizar nuestros marcarcadores o mapas de calor para que los puntos del mapa est&#xe9;n agrupados. Adem&#xe1;s nos permitir&#xe1; inyectar en el mapa ficheros de tipo kml.</p>
+<p>Para acceder la gesti&#xf3;n de capas pulsaremos en el men&#xfa; lateral izquierdo en &#x201c;Capas&#x201d;.</p>
+<p><img src="images/Imagen211.png" class="grande" alt="Sección de gestión de capas" title="Sección de gestión de capas" /></p>
+<p>Aqu&#xed; se nos listar&#xe1;n las capas que tenemos disponibles en este mapa. Cada una de las capas a la derecha tiene el bot&#xf3;n de <span class="ti-eye"></span>. Si pulsamos en &#xe9;l, nos ocultar&#xe1; todos los elementos de esa capa en el mapa y nos cambiar&#xe1; el icono a <span class="icon-id-no-eye"></span>. Si pulsamos nuevamente en este icono, nos mostrar&#xe1; los elementos de la capa en el mapa.</p>
+<p>Por otro lado tenemos las siguientes funcionalidades:</p>
+<ul>
+
+<li><span class="ti-plus"></span>A&#xf1;adir capa: Nos permitir&#xe1; a&#xf1;adir capas. Nos abrir&#xe1; una venta auxiliar en el que introduciremos el nombre de la capa y su tipo. En el caso de querer a&#xf1;adir un fichero kml al mapa tendremos que seleccionar ese fichero de nuestro sistema.</li>
+<li><span class="ti-pencil"></span>Editar capa: Nos permitir&#xe1; renombrar la capa que tenemos seleccionada.</li>
+<li><span class="ti-trash"></span>Borrar capa: Nos permitir&#xe1; eliminar la capa seleccionada. Si esta tuviera elementos nos saldr&#xe1; un mensaje de advertencia para confirmar que borraremos todos los elementos de la capa con ella.</li>
+<li>Los botones de <span class="ti-arrow-up"></span>subir capa y <span class="ti-arrow-down"></span>bajar capa, nos permitir&#xe1;n reordenar las capas en la lista.</li>
+</ul></section><section>
+<h3><a name="a2.2_Marcadores_y_se.C3.B1ales"></a><a name="marcadores-seniales"></a>2.2 Marcadores y se&#xf1;ales</h3>
+<p>Entraremos a la secci&#xf3;n &#x201c;Marcadores y Se&#xf1;ales&#x201d; pulsando en el panel izquierdo en la misma.</p>
+<p><img src="images/Imagen221.png" class="grande" alt="Panel izquierdo marcadores y señales" title="Panel izquierdo marcadores y señales" /></p>
+<p>Aqu&#xed; se listar&#xe1;n todas las capas visibles que sean de tipo &#x201c;Marcadores y Se&#xf1;ales&#x201d;.</p>
+<p>Podremos a&#xf1;adir un nuevo marcador con el bot&#xf3;n &#x201c;Nuevo Marcador&#x201d; <span class="ti-pin"></span> de la capa a la que queramos a&#xf1;adirle. El marcador estar&#xe1; geoposicionado en el centro que tengamos el mapa actualmente. Una vez dado de alta podr&#xed;amos arrastrar el marcador a otra geoposici&#xf3;n distinta.</p>
+<p>El bot&#xf3;n &#x201c;Nueva Se&#xf1;al&#x201d; <span class="ti-signal"></span>, nos abrir&#xe1; el <a href="../selector/selector.html">selector de se&#xf1;ales</a>, para que podamos seleccionar una o varias se&#xf1;ales. Esto a&#xf1;adir&#xe1; uno o varios marcadores, cada uno con una se&#xf1;al ya geoposicionada y mostrando su tiempo real. Por tanto la geoposici&#xf3;n de estos marcadores vendr&#xe1; dado por la geoposici&#xf3;n de la se&#xf1;al. Si la se&#xf1;al nunca ha sido geoposicionada en ning&#xfa;n mapa, al guardar este mapa ser&#xe1; cuando se asigne la geoposici&#xf3;n de la se&#xf1;al. Si se arrastra una se&#xf1;al a otra geoposici&#xf3;n, esa ser&#xe1; su geoposici&#xf3;n en todos los mapas, cuando guardemos este mapa.</p>
+<p>Podemos seleccionar un marcador pulsando sobre el mismo. Esto nos centrar&#xe1; el mapa en ese marcador concreto.</p>
+<p>Si los marcadores est&#xe1;n muy juntos se agrupar&#xe1;n autom&#xe1;ticamente en un punto y tendremos que hacer zoom si queremos verles (si est&#xe1;n exactamente en la misma latitud y longitud, tendremos que mover uno antes de dar de alta el siguiente).</p>
+<p>Podremos eliminar un marcador espec&#xed;fico seleccionando un marcador y pulsando en el bot&#xf3;n de eliminar<span class="ti-trash"></span>.</p>
+<p>Una vez dado de alta el marcador podremos editarle mediante en el bot&#xf3;n de editar<span class="ti-pencil-alt"></span>.</p>
+<p>Al editar un marcador nos saldr&#xe1; el siguiente panel derecho</p>
+<p><img src="images/Imagen222.png" class="grande" alt="Panel derecho edición marcadores" title="Panel derecho edición marcadores" /></p>
+<p>Las opciones del marcador son:</p>
+<ul>
+
+<li>Se&#xf1;al Geoposicionada: Indica la se&#xf1;al que geoposiciona al marcador en el mapa.</li>
+<li>T&#xed;tulo: T&#xed;tulo del marcador.</li>
+<li>Descripci&#xf3;n: Para escribir anotaciones sobre este marcador</li>
+<li>Enlace a documento: Nos permitir&#xe1; tener enlaces a documentos existentes en el marcador. Nos abrir&#xe1; el selector de documentos para seleccionar el documento.</li>
+<li>Enlace con se&#xf1;ales: Los enlaces con se&#xf1;ales que se creen en un marcador ir&#xe1;n asociados a las se&#xf1;ales de tiempo real que se establezcan en este marcador. Cuando pulsemos en este bot&#xf3;n nos abrir&#xe1; una ventana en la que seleccionaremos las fechas y el enlace que queremos poner. Por ejemplo si pusi&#xe9;ramos un enlace a una gr&#xe1;fica de tendencia, cuando pulsemos en el modo visor en ese enlace nos llevar&#xe1; a la gr&#xe1;fica de tendencia con las se&#xf1;ales que se han establecido en este marcador. <img src="images/Imagen223.png" class="mediano" alt="Enlace con señales" title="Enlace con señales" /></li>
+<li>Se&#xf1;al con tiempo real: Podremos a&#xf1;adir se&#xf1;ales para ver su tiempo real en el modo visor del mapa. Adem&#xe1;s estas se&#xf1;ales sirven como par&#xe1;metro para los &#x201c;Enlaces con se&#xf1;ales&#x201d;.</li>
+<li>Previsualizaci&#xf3;n del marcador: Aqu&#xed; se previsualizar&#xe1; c&#xf3;mo quedar&#xe1; el marcador cuando le veamos en el modo visor, con sus se&#xf1;ales en tiempo real y enlaces.</li>
+<li>Mostrar tooltip al inicio: Si este check est&#xe1; habilitado el marcador se abrir&#xe1; seg&#xfa;n entremos al mapa en el modo visor.</li>
+<li>Selecci&#xf3;n de icono: Podremos modificar el icono de nuestro marcador. Adem&#xe1;s con los botones de a&#xf1;adir <span class="ti-plus"></span> y eliminar<span class="ti-trash"></span> podremos a&#xf1;adir nuestros propios iconos personalizados seleccion&#xe1;ndoles de nuestro equipo o eliminales.</li>
+</ul></section><section>
+<h3><a name="a2.3_Mapas_de_calor"></a><a name="mapas-calor"></a>2.3 Mapas de calor</h3>
+<p>El mapa nos permite dar de alta mapas de calor para de un vistazo ver qu&#xe9; se&#xf1;ales tienen m&#xe1;s valor que otras. Para listar todos los mapas de calor visibles pulsaremos en la secci&#xf3;n del panel izquierdo &#x201c;Mapas de Calor&#x201d;.</p>
+<p><img src="images/Imagen231.png" class="grande" alt="Panel izquierdo mapas de calor" title="Panel izquierdo mapas de calor" /></p>
+<p>Con el bot&#xf3;n de a&#xf1;adir <span class="ti-plus"></span>, asociaremos se&#xf1;ales al mapa de calor. Esto nos abrir&#xe1; el <a href="../selector/selector.html">selector de se&#xf1;ales</a> para que podamos escoger qu&#xe9; se&#xf1;ales queremos en este mapa de calor.</p>
+<p>Podremos borrar cualquiera de las se&#xf1;ales seleccion&#xe1;ndole y pulsando el bot&#xf3;n de eliminar<span class="ti-trash"></span>.</p>
+<p>En caso del editor no veremos el mapa de calor como tal, sino donde se posicionan sus puntos. Para editar el mapa de calor valdr&#xe1; con seleccionar cualquiera de sus puntos y pulsar el bot&#xf3;n de editar<span class="ti-pencil-alt"></span>. Esto nos abrir&#xe1; el panel derecho del mapa de calor.</p>
+<p><img src="images/Imagen232.png" class="grande" alt="Panel derecho edición mapas de calor" title="Panel derecho edición mapas de calor" /></p>
+<p>Desde este panel podremos configurar como visualizaremos en el visor el mapa de calor con las siguientes opciones:</p>
+<ul>
+
+<li>Exterior e interior: Define los colores que se usar&#xe1;n en la capa m&#xe1;s externa e interna del mapa de calor respectivamente. Podemos pulsar el bot&#xf3;n de intercambiar <span class="ti-arrows-horizontal"></span> para intercambiar estos colores</li>
+<li>L&#xed;mites bajo y alto: Indicar&#xe1;n los l&#xed;mites del valor de la se&#xf1;al en los que los colores alcanzar&#xe1;n su m&#xed;nimo y m&#xe1;ximo. Podemos intercambiar estos valores mediante el bot&#xf3;n de intercambiar <span class="ti-arrows-horizontal"></span></li>
+<li>Radio: Indicar&#xe1; el radio de cada punto del mapa de calor. El valor est&#xe1; en p&#xed;xeles.</li>
+</ul></section></section><section>
+<h2><a name="a3_Visor"></a><a name="visor"></a> 3 Visor</h2>
+<p>Cuando abramos un documento de tipo mapa o pulsemos sobre el bot&#xf3;n de &#x201c;Vista previa&#x201d; <span class="ti-control-play"></span> de la barra de herramientas del editor . Visualizaremos el mapa como le hayamos definido. Veremos todas las capas visibles de marcadores y se&#xf1;ales, mapas de calor o kmls.</p>
+<p>Podremos interactuar con los marcadores para abrirles y cerrarles y que nos muestren la informaci&#xf3;n que definimos en el visor o que nos lleven a un enlace si pulsamos en el. Adem&#xe1;s ya podremos visualizar los valores que formar&#xe1;n los mapas de calor.</p>
+<p><img src="images/Imagen31.png" class="grande" alt="Visor de mapas" title="Visor de mapas" /></p>
+<p>Adem&#xe1;s podremos ocultar las capas o mostrar las capas tal y como lo hac&#xed;amos desde la secci&#xf3;n de <a href="#gestion-capas">Gesti&#xf3;n de capas</a>, mediante la barra de herramientas:</p>
+<p><img src="images/Imagen32.png" class="grande" alt="Gestión de capas en barra de herramientas" title="Gestión de capas en barra de herramientas" /></p>
+<p>Por &#xfa;ltimo podremos movernos entre los elementos mediante el combo de &#x201c;Seleccione un elemento&#x201d;. Este nos mostrar&#xe1; todos los nodos de los marcadores y mapas de calor disponibles y nos llevar&#xe1; a el mismo una vez pulsemos en &#xe9;l.</p>
+<p><img src="images/Imagen33.png" class="grande" alt="Seleccionar elementos" title="Seleccionar elementos" /></p><hr /></section><section>
+<h2><a name="a4_Opciones_de_visualizaci.C3.B3n_y_consulta"></a><a name="opciones-visualizacion"></a> 4 Opciones de visualizaci&#xf3;n y consulta</h2>
+<p>Tanto en el visor como en el editor podremos cambiar algunas opciones para visualizarle de otro modo. La diferencia es que si las cambiamos en el editor se guardar&#xe1;n junto con el mapa. Las opciones son las siguientes:</p>
+<ul>
+
+<li><span class="ti-layout-column2"></span>StreetView: Esta opci&#xf3;n se sit&#xfa;a en la barra de herramientas y nos dividir&#xe1; la pantalla para mostrarnos a la derecha la vista de calle. Adem&#xe1;s tendremos que arrastrar al hombre naranja al lugar donde queremos del mapa.</li>
+<li><span class="ti-car"></span>Mostrar tr&#xe1;fico: Situada en la barra de herramientas, nos se&#xf1;alizar&#xe1; el tr&#xe1;fico en el mapa. Una vez mostrado podremos volver a ocultarle mediante el mismo bot&#xf3;n que habr&#xe1; cambiado a &#x201c;Ocultar tr&#xe1;fico&#x201d;.</li>
+<li><span class="icon-id-terrain"></span>Tipo de Mapa: Podremos encontrar esta opci&#xf3;n en la parte inferior izquierda del mapa. Esto nos abrir&#xe1; un desplegable en el que seleccionaremos el tipo de mapa que queremos ver entre las siguientes opciones: &#x201c;Callejero&#x201d;, &#x201c;Terreno&#x201d;, &#x201c;Sat&#xe9;lite&#x201d;, &#x201c;Sat&#xe9;lite con etiquetas&#x201d;.</li>
+</ul>
+<p>Adem&#xe1;s dentro del mapa podremos buscar un sitio espec&#xed;fico para que el centro del mapa se sit&#xfa;e en ese lugar mediante la funcionalidad &#x201c;Escribe tu consulta&#x201d;.</p>
+<p><img src="images/Imagen41.png" class="grande" alt="Escribe tu consulta" title="Escribe tu consulta" /></p></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

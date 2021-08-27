@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'idbox_icons';
+src:  url('fonts/icomoon.eot?avs28f');
+  src:  url('fonts/icomoon.eot?avs28f#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?avs28f') format('truetype'),
+    url('fonts/icomoon.woff?avs28f') format('woff'),
+    url('fonts/icomoon.svg?avs28f#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'idbox_icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-id-terrain:before {
+  content: "\e900";
+}
+.icon-id-no-traffic:before {
+  content: "\e901";
+}
+.icon-id-heatmap:before {
+  content: "\e902";
+}
+.icon-id-kml:before {
+  content: "\e903";
+}
+.icon-id-unlock:before {
+  content: "\e904";
+}
+.icon-id-timelapse:before {
+  content: "\e905";
+}
+.icon-id-pie:before {
+  content: "\e906";
+}
+.icon-id-prog-circular:before {
+  content: "\e907";
+}
+.icon-id-switch:before {
+  content: "\e908";
+}
+.icon-id-prog-bar:before {
+  content: "\e909";
+}
+.icon-id-indicator:before {
+  content: "\e90a";
+}
+.icon-id-personalized:before {
+  content: "\e90b";
+}
+.icon-id-broken:before {
+  content: "\e90c";
+}
+.icon-id-mouse:before {
+  content: "\e90d";
+}
+.icon-id-y-axis:before {
+  content: "\e90e";
+}
+.icon-id-x-axis:before {
+  content: "\e90f";
+}
+.icon-id-series:before {
+  content: "\e910";
+}
+.icon-id-no-eye:before {
+  content: "\e911";
+}
+.icon-id-d-template:before {
+  content: "\e912";
+}
+.icon-id-import:before {
+  content: "\e913";
+}
+.icon-id-export:before {
+  content: "\e914";
+}
+.icon-id-run-query:before {
+  content: "\e915";
+}
+.icon-id-not-home:before {
+  content: "\e916";
+}
+.icon-id-aero:before {
+  content: "\e917";
+}
+.icon-id-bring-back:before {
+  content: "\e918";
+}
+.icon-id-bring-front:before {
+  content: "\e919";
+}
+.icon-id-assetmanager:before {
+  content: "\e91a";
+}
+.icon-id-bpm:before {
+  content: "\e91b";
+}
+.icon-id-collapse:before {
+  content: "\e91c";
+}
+.icon-id-dashboard:before {
+  content: "\e91d";
+}
+.icon-id-dashboardgroups:before {
+  content: "\e91e";
+}
+.icon-id-explorer:before {
+  content: "\e91f";
+}
+.icon-id-groups:before {
+  content: "\e920";
+}
+.icon-id-luca:before {
+  content: "\e921";
+}
+.icon-id-memory:before {
+  content: "\e922";
+}
+.icon-id-roles:before {
+  content: "\e923";
+}
+.icon-id-settings:before {
+  content: "\e924";
+}
+.icon-id-signal:before {
+  content: "\e925";
+}
+.icon-id-starfull:before {
+  content: "\e926";
+}
+.icon-id-starempty:before {
+  content: "\e927";
+}
+.icon-id-states:before {
+  content: "\e928";
+}
+.icon-id-suscribesignals:before {
+  content: "\e929";
+}
+.icon-id-synoptic:before {
+  content: "\e92a";
+}
+.icon-id-user:before {
+  content: "\e92b";
+}
+.icon-id-alarmgroups:before {
+  content: "\e92c";
+}
+.icon-id-bpmgroups:before {
+  content: "\e92d";
+}
+.icon-id-accessgroups:before {
+  content: "\e92e";
+}
+.icon-id-synopticgroups:before {
+  content: "\e92f";
+}
+.icon-id-chartgroups:before {
+  content: "\e930";
+}
+.icon-id-signalgroups:before {
+  content: "\e931";
+}
+.icon-id-securitygroups:before {
+  content: "\e932";
+}
+.icon-id-reportgroups:before {
+  content: "\e933";
+}
+.icon-id-mapgroups:before {
+  content: "\e934";
+}
+.icon-id-machinelearning:before {
+  content: "\e935";
+}
+.icon-id-logout:before {
+  content: "\e936";
+}
+.icon-id-historicalgroups:before {
+  content: "\e937";
+}
+.icon-id-calculations:before {
+  content: "\e938";
+}
+.icon-id-download-template:before {
+  content: "\e939";
+}
+
+

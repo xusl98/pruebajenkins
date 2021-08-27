@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div style="clear: both;">
+  
+<div style="float: left; margin-inline: 5px;">
+    <span class="ti-alert"></span>
+  </div>
+  
+<div style="float: left; margin-center">
+    
+<h1>Alarms</h1>
+  </div>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#alarmas">Alarm display</a></li>
+<li>3 <a href="#alarmasFiltrado">Basic alarm filtering</a></li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>From the alarms document we will be able to visualize the alarms occurred in the system, allowing to apply a basic filtering of the alarms that we want to visualize.</p>
+<p>Alarm documents can be created from the launcher (1) or from the shortcut (2).</p>
+<p><img src="images/image01.png" class="grande" alt="Alarm document creation" title="Alarm document creation" /></p>
+<p>1) Clicking on the alarm shortcut will open the wizard to create a new alarm document, in which we can select the signals to filter and the range of dates to display, it should be noted that to create a new alarm document it is not necessary to select any signal, the signals with which we create the alarm document will be applied to the basic filtering, so that only the alarms of these signals will be displayed.</p>
+<ul>
+
+<li>Signals We can select the signals on which we want to consult the alarms, in case we do not select any signal, the alarms of the whole system will be displayed.
+<ul>
+
+<li>Dates configuration: Allows you to select the time interval for which the data will be displayed. You can type the dates in the <a href="../dates/dates.html#lite">text field</a> or click on the calendar (2) to open <a href="../dates/dates.html#full">the date selector</a>.</li>
+</ul>
+</li>
+</ul>
+<p>Once the initial configuration is set, the configured graph will be displayed on the screen. The central area, the graphical representation corresponds to the previously selected configuration, type of graph, dates and series.</p>
+<p>2) To create an alarm document from the launcher just click on the alarms icon and a new alarm document will be created, as in the wizard it is not mandatory to select a signal to create an alarm document.</p>
+<p>Once the alarm document is created, in the central part we can visualize the time, duration, description of the signal that generated the alarm and if it has been recognized by any user. On the right side of the document we have the basic filtering panel that will allow us to exclude the alarms to be displayed.</p>
+<p><img src="images/image02.png" class="grande" alt="Barra de herramientas" title="Documento de alarmas" /></p><hr /></section><section>
+<h2><a name="a2_Alarm_display."></a><a name="alarmas"></a>2 Alarm display.</h2>
+<p>There are two possible actions that can be performed from the alarm display:</p>
+<p>1) Start/Pause real time: Allows you to stop or resume the real-time listing of alarms. <span class="ti-play"></span> 2) Acknowledge alarms: By selecting one or more items from the list and clicking on acknowledge alarms <span class="ti-eye"></span>.When the alarm is acknowledged, the Ack field is activated as &#x201c;true&#x201d;,indicating that this alarm has already been attended and in the user field (Ack User) who acknowledged the alarm.</p>
+<p><img src="images/image04.png" class="grande" alt="Toolbar" title="Toolbar" /></p>
+<p>The following fields are shown in the data table: 1) Time: Time at which the alarm occurred. 2) Severity: Severity level of the alarm. 3) Duration: Duration of the alarm, in case the alarm is still active, &#x201c;Active&#x201d; will be displayed. 4) Signal: Signal associated with the alarm. 5) Description: Description associated to the alarm configuration. 6) Ack: Indicates whether the alarm has been acknowledged. 7) Ack user: Displays the user who has acknowledged the alarm.</p><hr /></section><section>
+<h2><a name="a3.09Basic_alarm_filtering"></a><a name="alarmasFiltrado"></a>3	Basic alarm filtering</h2>
+<p>In the basic alarm filtering panel, we can establish a series of filters, so that only the alarms that comply with the established filters will be displayed.</p>
+<p><img src="images/image05.png" class="grande" alt="Grouped graph" title="Grouped graph" /></p>
+<p>The following filters are available: 1)Signals: We will only display the alarms of signals entered, in case we have not entered any signal, &#x201c;All signals&#x201d; will be displayed. 2)Dates configuration: Allows to select the time interval for which the data will be displayed. Dates can be typed in the <a href="../dates/dates.html#lite">text field</a> or click on the calendar (1) to open <a href="../dates/dates.html#full">the date selector</a>. 3)Severity: Severity level we wish to display, by default &#x201c;No filter&#x201d; appears selected, therefore we will display alarms with all criticality levels. 4)Active: Indicates whether we wish to display only alarms, active, deactivated or both. 5)Acknowledged: Indicates whether we wish to display only alarms that are unacknowledged, pending acknowledgement or both. 6)Duration: Allows the possibility of filtering the alarms by their duration, indicating a minimum and maximum duration.</p></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

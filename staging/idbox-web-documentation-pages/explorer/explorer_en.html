@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <span class="icon-id-explorer"></span>
+  
+<h1>EXPLORER</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#gruposSeniales">Signal groups</a>
+<ul>
+
+<li>2.1 <a href="#jerarquiaGruposSeniales">Hierarchy tree</a></li>
+<li>2.2 <a href="#detalleGruposSeniales">Detail</a></li>
+</ul>
+</li>
+<li>3 <a href="#documentos">Documents</a>
+<ul>
+
+<li>3.1 <a href="#jerarquiaDocumentos">Hierarchy tree</a></li>
+<li>3.2 <a href="#detalleDocumentos">Detail</a></li>
+</ul>
+</li>
+<li>4 <a href="#inventario">Inventory</a>
+<ul>
+
+<li>4.1 <a href="#jerarquiaActivos">Hierarchy tree</a></li>
+<li>4.2 <a href="#detalleActivos">Detail</a></li>
+</ul>
+</li>
+<li>5 <a href="#gridtiempoReal">Real-time signal table</a></li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>The explorer is one of the main parts of IDboxRT, and it will also be the screen that the user will see, in case he/she does not have a document as a start page, once he/she has authenticated in the system.</p>
+<p>From here we will be able to visualize the hierarchies of signal groups, IDboxRT documents and inventory, in addition to being able to start an analysis quickly and easily.</p>
+<p><img src="images/image01.png" class="grande" alt="acceso explorador" title="Browser access" /></p>
+<p>Access to the explorer is through the icon <span class="icon-id-explorer"></span> present in the top bar.</p><hr /></section><section>
+<h2><a name="a2_Signal_groups"></a><a name="gruposSeniales"></a>2 Signal groups</h2>
+<p>When the explorer is opened, the IDboxRT signal group hierarchy is displayed, together with the signals associated with our user&#x2019;s default security group. The signal group hierarchy tree is shown on the left side and in the central part we can see a detail view.</p>
+<p><img src="images/image02.png" class="grande" alt="Signal groups explorer" title="Signal groups explorer" /></p><section>
+<h3><a name="a2.1_Hierarchy_tree"></a><a name="jerarquiaGruposSeniales"></a> 2.1 Hierarchy tree</h3>
+<p>The organization of the signal groups is presented in the form of a hierarchical tree, in which we can find all the signal groups (1) available to the user, as well as the different security groups (2) to which the user belongs.</p>
+<p><img src="images/image03.png" class="grande" alt="Hierarchy of signal groups" title="Hierarchy of signal groups" /></p>
+<p>The actions that the user can perform on the signal group hierarchy tree are as follows:</p>
+<ul>
+
+<li>Context menu by right clicking on a tree element:
+<ul>
+
+<li>Security group:
+<ul>
+
+<li>Reload: allows the user to reload the tree element, it will reload the elements that hang from it.</li>
+</ul>
+</li>
+<li>Signal group:
+<ul>
+
+<li>Reload: allows the user to reload the tree element, it will reload the elements that hang from it.</li>
+<li>Edit: will take us to the signal group editing tab.</li>
+<li>Rename: text input will be enabled so that we can modify the signal group name directly from the explorer.</li>
+<li>Delete: removes the signal group from the system.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="images/image04.png" class="mediano" alt="Context menu" title="Context menu" /></p>
+<ul>
+
+<li>Through the action button panel at the top of the tree, we can perform the same actions described above, by simply selecting an element in the tree and the actions corresponding to the type of element selected will be enabled, whether it is a security group or a group of signals. It should be noted that we will always keep in mind the reload actions. <span class="ti-reload"></span> and contract element <span class="icon-id-collapse"></span> and only the edit actions will be displayed <span class="ti-pencil-alt"></span>, rename <span class="ti-text"></span> and delete <span class="ti-trash"></span> when selecting a group of signals.</li>
+</ul>
+<p><img src="images/image05.png" class="mediano" alt="Action buttons" title="Action buttons" /></p>
+<p>Below is detailed how to display the signals present in a particular safety group or group of signals, depending on the type of element selected in the signal hierarchy tree. * Signals literal (1): all the signals associated to our default security group will be displayed. * Safety group (2): all the signals associated to the selected safety group will be displayed. * Signal group (3): all the signals associated to the selected signal group will be displayed.</p>
+<p><img src="images/image06.png" class="mediano" alt="Action buttons" title="Action buttons" /></p></section><section>
+<h3><a name="a2.2_Detail"></a><a name="detalleGruposSeniales"></a> 2.2 Detail</h3>
+<p>In the central part of the explorer there will be displayed a <a href="#GridtiempoReal">table of signals with real time</a>, the signals to be displayed differ from the selected element in the tree as explained in the previous point.</p></section></section><section>
+<h2><a name="a3_Documents"></a><a name="documentos"></a>3 Documents</h2>
+<p>From the document tree, we can access the different types of documents present in our IDboxRT hierarchy.</p><section>
+<h3><a name="a3.1_Hierarchy_tree"></a><a name="jerarquiaDocumentos"></a> 3.1 Hierarchy tree</h3>
+<p>The organization of the documents maintains the structure of the signaling tree, therefore, in the root will be displayed all the documents present and to which we have access of our security group by default, and in addition we will also display the rest of the access groups in which the user is associated.</p>
+<p>The actions that the user can perform on the document hierarchy tree are the following:</p>
+<ul>
+
+<li>Context menu by right clicking on a tree element:
+<ul>
+
+<li>Security group:
+<ul>
+
+<li>Reload: allows the user to reload the item from the tree, it will reload the items that hang from it.</li>
+<li>New folder: creates a folder within the selected security group.</li>
+</ul>
+</li>
+<li>Folder:
+<ul>
+
+<li>Reload: allows the user to reload the item in the tree, it will reload the items that hang from it.</li>
+<li>New folder: creates a folder inside the selected folder.</li>
+<li>Rename: allows the user to rename the selected hierarchy item.</li>
+<li>Delete: deletes the folder from the system.</li>
+<li>Publish: allows you to modify the access groups to which the folder is associated.</li>
+<li>Shortcut: allows you to create a shortcut to the folder in the destination location selected by the user.</li>
+</ul>
+</li>
+<li>Document:
+<ul>
+
+<li>Reload: allows the user to reload the tree element, it will reload the elements that hang from it.</li>
+<li>Edit: opens the document in edit mode.</li>
+<li>Open: opens the document in viewer mode.</li>
+<li>New folder: creates a folder inside the selected folder.</li>
+<li>Rename: allows you to rename the selected hierarchy element.</li>
+<li>Delete: deletes the folder from the system.</li>
+<li>Publish: allows you to modify the access groups to which the folder is associated.</li>
+<li>Shortcut: allows you to create a shortcut to the folder in the destination location selected by the user.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Through the actions button panel at the top of the tree, we can perform the same actions described above, just by selecting an element from the tree and the actions corresponding to the type of element selected will be enabled, whether it is a security group, a folder or a document. Note that the reload and collapse actions will always be present and when selecting a document the publish and shortcut actions will not be present.</p>
+<p>To modify the organization of our IDboxRT hierarchy, either because we want to change the order of priority in which the items are displayed or move it to another folder just drag the item and place it in the desired location. Once this action has been performed, a new icon will appear in the upper button panel. <span class="ti-save"></span> clicking on it will save the changes.</p>
+<blockquote>
+
+<p>NOTE: It is not possible to move a document from one security group to another.</p>
+</blockquote></section><section>
+<h3><a name="a3.2_Detail"></a><a name="jerarquiaDocumentos"></a> 3.2 Detail</h3>
+<p>Clicking on any element of the document hierarchy will load in the view a <a href="#GridtiempoReal">signal table with real time</a> (1), which shows the signs sorted by frequency of use and a carousel for each type of document, in each carousel the documents are presented sorted by those with the highest frequency of access (2). For example: if we click on a folder it will show us the most frequently used signals in the documents contained in that folder, and in the carousel of documents all the documents stored in that folder will be displayed.</p>
+<p><img src="images/image09.png" class="grande" alt="Document explorer" title="Document explorer" /></p>
+<p>In the document carousel, only the documents that enter the screen will be shown. To see all the documents associated with the same type, click on see all (1).</p>
+<p><img src="images/image10.png" class="grande" alt="Document explorer" title="Document explorer" /></p>
+<p>Clicking on any of the documents in the carousel will open that document in viewer mode, and placing the cursor on the document tab will display the following actions: * Info (1): Displays in a side panel the information related to the document. * Open in editor mode (2): Opens the document in editor mode.</p>
+<p><img src="images/image11.png" class="grande" alt="Documents carousel" title="Documents carousel" /></p>
+<p>From the document information side panel we can take a quick look at some information associated with the document, including the signals contained in the document.</p>
+<p><img src="images/image12.png" class="mediano" alt="Documents carousel" title="Documents carousel" /></p>
+<p>The information displayed is as follows: document name, description, creation date, size (only applies to synoptic documents), author, security group in which the document is stored and the signals contained in the document together with their value in real time. From the section of signals in documents we can perform a quick analysis creating a trend chart (1), grouped chart (2) and a historical document (3) with the signals that we have previously selected, this analysis will be created with a time range of the last day. In addition, by clicking on add to favorites (4) we can add the desired signal to the launcher for future analysis.</p>
+<p><img src="images/image13.png" class="grande" alt="Documents carousel" title="Documents carousel" /></p></section></section><section>
+<h2><a name="a4_Inventory"></a><a name="inventario"></a>4 Inventory</h2>
+<p>From the document tree, we can access the different types of documents present in our IDboxRT hierarchy. It maintains the structure of the signal tree, therefore, in the root will be displayed all the documents present and to which we have access of our default security group (1), and in addition we will also display the rest of the access groups in which the user is associated (2).</p><section>
+<h3><a name="a4.1_Hierarchy_tree"></a><a name="jerarquiaActivos"></a> 4.1 Hierarchy tree</h3>
+<p>In assets we can view the hierarchy associated with the inventory, and the different properties assigned to each of the assets (1) and organizers (2). When the inventory tree is displayed, the information related to the first asset in the tree will be shown.</p>
+<p><img src="images/image07.png" class="mediano" alt="Hierarchy tree" title="Hierarchy tree" /></p>
+<p>The actions that the user can perform on the asset hierarchy tree are the following:</p>
+<ul>
+
+<li>Context menu by right clicking on a tree element:
+<ul>
+
+<li>Reload: allows the user to reload the tree element, it will reload the elements that hang from it.</li>
+<li>New template: Allows the user to create a new document template. When clicking, a new window will open for selecting the document type of the template. The new template will have selected the previously selected template.</li>
+</ul>
+</li>
+</ul>
+<p>Through the action button panel at the top of the tree, we can reload or collapse the selected node.</p></section><section>
+<h3><a name="a3.2_Detail"></a><a name="detalleActivos"></a> 3.2 Detail</h3>
+<p>In the central part of the explorer, the following information will be displayed for the selected asset: name (1), description (2), properties (3), associated signals (4), calculated fields (5) and the document templates that can apply to the selected asset (6).</p>
+<p><img src="images/image14.png" class="grande" alt="Active detail" title="Active detail" /></p>
+<p>In the asset view we have different display options: * View mode (1): * Item: detail of the selected asset/organizer. * Content: display the details of the organizers/assets contained in the selected asset. * Category mode (2): * Uncategorized: details of the selected asset/organizer. * With category: the different properties and signals of the assets will be shown grouped by hastags.</p></section></section><section>
+<h2><a name="a4._Real-time_signal_table"></a><a name="gridtiempoReal"></a>4. Real-time signal table</h2>
+<p>The display of signals together with their value in real time will always be present in the signal tree, documents and assets, with the particularity that in assets and documents, only the first 10 signals will be shown and we will have to click on &#x201c;See all&#x201d; to enter in paged mode, while if we are in the signal tree, the signal table will always be shown in paged mode. It should be noted that if we are in mode we will be able to apply a complex filter. The series of actions that can be performed from this section are detailed below: * My selection <span class="icon-id-starempty"></span>: Adds the currently selected signals to the launcher. * Historicals <span class="ti-server"></span>: Creates a history document with the selected signals and with a time range of the last day. * Subscription <span class="ti-bell"></span>: Starts the creation of a notification rule with the selected signals. * Tendency <span class="ti-stats-up"></span>: Creates a trend chart with the selected signals and with a time range of the last day. * Set/Release value <span class="ti-lock"></span>: Allows to set or release a real time value. * Filtering <span class="ti-filter"></span>: It allows us to introduce complex filtering, so that we can quickly filter the signals according to their type, name, description, etc.</p>
+<blockquote>
+
+<p>NOTE: the option to enter complex filtering will only be visible when we are in page mode, i.e. when we have clicked on &#x201c;view all&#x201d; or are listing signals from the signal hierarchy.</p>
+</blockquote>
+<p><img src="images/image15.png" class="grande" alt="Active detail" title="Active detail" /></p></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

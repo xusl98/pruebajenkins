@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="ti-bell"></cite>
+  
+<h1>NOTIFICATIONS</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#reglas-notificaciones">Notification rules</a>
+<ul>
+
+<li>2.1 <a href="#listado-reglas">List of rules</a></li>
+<li>2.2 <a href="#editar-reglas">Edit rules</a></li>
+<li>2.2.1 <a href="#editar-reglas-regla">Rule</a></li>
+<li>2.2.1 <a href="#editar-reglas-acciones">Actions</a></li>
+</ul>
+</li>
+<li>3 <a href="#historico-notifs">Notification history</a>
+<ul>
+
+<li>3.1 <a href="#seguimiento-notificacion">Notification follow-up</a></li>
+</ul>
+</li>
+</ul><section>
+<h2><a name="a1_Introduction"></a><a name="intro"></a>1 Introduction</h2>
+<p>Notifications will inform us of events in our system.</p>
+<p>You can find the notifications section in the Control Panel.</p>
+<p><img src="images/Imagen11.png" class="grande" alt="Notifications section" title="Notifications section" /></p><hr /></section><section>
+<h2><a name="a2_Notification_rules"></a><a name="reglas-notificaciones"></a>2 Notification rules</h2>
+<p>The notification rules section will allow us to define the rules by which we will receive notifications.</p><hr /><section>
+<h3><a name="a2.1_List_of_rules"></a><a name="listado-reglas"></a>2.1 List of rules</h3>
+<p>As we enter the notification rules section, we will see a grid listing the rules that have been registered. We can use the search engine to filter the rules. Using the plus button <span class="ti-plus"></span>, we can add a rule, with the <span class="ti-pencil-alt"></span>, edit it and delete it with <span class="ti-trash"></span>.</p>
+<p><img src="images/Imagen211.png" class="grande" alt="Notification rules" title="Notification rules" /></p></section><section>
+<h3><a name="a2.2_Edit_notification_rules"></a><a name="editar-reglas"></a>2.2 Edit notification rules</h3>
+<p>When we add or edit a rule, we will enter this section.</p>
+<p>When we are done with it we can save it using the <span class="ti-save"></span> save button on the toolbar.</p>
+<p><img src="images/Imagen221.png" class="grande" alt="Editing a rule" title="Editing a rule" /></p>
+<p>In the first section we find the following parameters:</p>
+<ul>
+
+<li>Name: Indicates the name of the rule.</li>
+<li>Signals: Here we will choose the signals that will be part of the rule. Clicking on the field will open the <a href="../selector/selector.html">signal selector</a>.</li>
+<li>Active: If checked, we will receive the notifications that comply with this rule. Otherwise we will not receive these notifications.</li>
+</ul><section>
+<h4><a name="a2.2.1_Rule"></a><a name="editar-reglas-regla"></a>2.2.1 Rule</h4>
+<p>The &#x201c;Rule&#x201d; section is where we define the set of actions that will trigger that notification to be sent.</p>
+<p>The most basic rule consists of a single operator of type &#x201c;Predicate&#x201d;. A predicate has the following options:</p>
+<p>The first combo indicates the signal involved in the predicate. All the signals chosen in the first section will be listed here. In the second combo we can set whether we want to make the rule depending on the value of that signal or the state of that signal. In case of choosing value, we can select in a third combo a comparison operator (e.g. greater than, greater than or equal to) and the value we want to compare.</p>
+<p>For example in the case of the following image we consider that this rule will be sent if the signal A01 passes the threshold of 50.</p>
+<p><img src="images/Imagen2211.png" class="grande" alt="Example predicate operator" title="Example predicate operator" /></p>
+<p>Once we understand the basic operation, we can complicate it as much as we want by means of &#x201c;Condition&#x201d; or &#x201c;Time&#x201d; operators. This will form a tree of operators.</p>
+<p>To add any operator we will click on an existing operator to select it and then the options to add will appear when we click on the <span class="ti-plus"></span>.</p>
+<p><img src="images/Imagen2212.png" class="mediano" alt="Add operators" title="Add operators" /></p>
+<p>To delete any of these operators and all those hanging from it, just select it and press <span class="ti-trash"></span>.</p>
+<p>The &#x201c;Condition&#x201d; operator will allow us to set any number of operators as children and these children can be of type &#x201c;Predicate&#x201d;, &#x201c;Condition&#x201d; or &#x201c;Time&#x201d;. In case of selecting AND, all the children must be fulfilled for the condition to be met. In case of OR, if any of the children are fulfilled, the condition will be fulfilled.</p>
+<p>The example in the following image will trigger the notification if both signals A01 and A02 are greater than 50.</p>
+<p><img src="images/Imagen2213.png" class="mediano" alt="Example condition operator" title="Example condition operator" /></p>
+<p>By means of the &#x201c;Time&#x201d; operator we will indicate that we will send the notification if a predicate or condition is maintained in time during the seconds specified in the time operator. Therefore it can only have a child of type &#x201c;Predicate&#x201d; or &#x201c;Condition&#x201d;.</p>
+<p>In the following example, the notification will be triggered when the signal A01 is greater than 50 for 10 seconds in a row.</p>
+<p><img src="images/Imagen2214.png" class="mediano" alt="Example time operator" title="Example time operator" /></p></section><section>
+<h4><a name="a2.2.2_Actions"></a><a name="editar-reglas-acciones"></a>2.2.2 Actions</h4>
+<p>The actions grid will allow us to define the actions that will be executed if the notification is sent because the rule is fulfilled. Actions will be added with the plus button <span class="ti-plus"></span>, edited with <span class="ti-pencil-alt"></span> and deleted with <span class="ti-trash"></span>.</p>
+<p>Each system can have its own actions. As standard we usually have at least the &#x201c;Push&#x201d;, &#x201c;Email&#x201d; and if we have IDboxRT mobile application, the &#x201c;MobilePush&#x201d;.</p>
+<p><img src="images/Imagen2221.png" class="mediano" alt="Definition of a Push action" title="Definition of a Push action" /></p>
+<p>Push notifications have the following fields:</p>
+<ul>
+
+<li>Users: List of users to whom the notification will be sent. They can be written separating them by &#x2018;;&#x2019; or if you click on the magnifying glass <span class="ti-search"></span>, it will open a user selector so that we can select the ones we want.</li>
+<li>Security Groups: List of security groups to which you will be notified if you belong. They can be written separating them by &#x2018;;&#x2019; or if you click on the magnifying glass <span class="ti-search"></span>, it will open a selector of security groups so that we can select the ones we want.</li>
+<li>Message: Text to be sent in the notification.</li>
+<li>Severity: Indicates the severity of the notification. It can have the values &#x201c;Trivial&#x201d;, &#x201c;Low&#x201d;, &#x201c;Medium&#x201d;, &#x201c;High&#x201d; or &#x201c;Critical&#x201d;.</li>
+<li>Ack: Indicates that this notification will require acknowledgement.</li>
+<li>Activation Type: Possible values are &#x201c;Activation&#x201d;, &#x201c;Deactivation&#x201d; or &#x201c;Status Change&#x201d;. Indicates whether the notification will be triggered when the condition is activated (with the value &#x201c;Activation&#x201d;), when the condition is deactivated (with the value &#x201c;Deactivation&#x201d;), or whether it will be triggered both when activated and when deactivated (with the value &#x201c;Status Change&#x201d;).</li>
+<li>Resend: Indicates that the notification will be resent periodically if the condition is met.</li>
+<li>Forwarding time: Time in seconds that will elapse between each forwarding.</li>
+</ul>
+<p>The fields of the &#x201c;MobilePush&#x201d; type are the same, but the notification will be sent to the mobile if we are logged into the IDboxRT mobile application.</p>
+<p>Additionally we may have the &#x201c;Email&#x201d; type notifications. These notifications are different because they will send an email to the user selected in the &#x201c;Recipients&#x201d; field and we can put the fields of the emails: &#x201c;CC&#x201d;, &#x201c;BCC&#x201d; and &#x201c;Subject&#x201d;.</p>
+<p>The &#x201c;Test&#x201d; button can be used to send a test notification without the need for the condition to be met.</p></section></section></section><section>
+<h2><a name="a3_Notification_history"></a><a name="historico-notifs"></a>3 Notification history</h2>
+<p>In this section we will be able to see the history of the notifications of the logged in user or those that are directed to any of the security groups to which our user belongs.</p>
+<p>As we enter we will see the last week of data in the grid.</p>
+<p><img src="images/Imagen31.png" class="mediano" alt="Notification history" title="Notification history" /></p>
+<p>On the right we can also change the following filters:</p>
+<ul>
+
+<li>Date selection: will allow us to modify the dates between which we consult the data.</li>
+<li>Type: It will allow us to filter by a specific type of notification.</li>
+<li>Severity: Filter by the severity of the notification.</li>
+</ul></section><section>
+<h2><a name="a3.1_Notification_follow-up"></a><a name="seguimiento-notificacion"></a>3.1 Notification follow-up</h2>
+<p>If we click on the information button <span class="ti-info"></span> in the notification history grid, a window will pop up showing the status of the notification.</p>
+<p><img src="images/Imagen311.png" class="mediano" alt="Notification follow-up" title="Notification follow-up" /></p></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

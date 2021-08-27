@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div style="clear: both;">
+  
+<div style="float: left; margin-inline: 5px;">
+    <img src="images/dates.png" alt="Fechas" width="50" />
+  </div>
+  
+<div style="float: left; margin-center">
+    
+<h1>Selector de fechas</h1>
+  </div>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a></li>
+<li>2 <a href="#lite">Selector de fechas reducido</a></li>
+<li>3 <a href="#interval">Selector de intervalos</a></li>
+<li>4 <a href="#full">Selector de fechas completo</a>
+<ul>
+
+<li>4.1 <a href="#last-data">Ultimos datos</a></li>
+<li>4.2 <a href="#fixed-dates">Fechas fijas</a></li>
+<li>4.3 <a href="#next-data">Pr&#xf3;ximos datos</a></li>
+<li>4.4 <a href="#period">Periodo</a>
+<ul>
+
+<li>4.4.1 <a href="#skip">Desplazamiento</a></li>
+</ul>
+</li>
+<li>4.5 <a href="#advanced">Fechas avanzadas</a></li>
+</ul>
+</li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>El selector de fechas es una herramienta basica del IDbox, que permite tanto seleccionar fechas est&#xe1;ticas como intervalos temporales din&#xe1;micos.</p>
+<p>Hay 3 maneras de abrir el selector de fechas, repartidas por las diferentes secciones de la web.</p><hr /></section><section>
+<h2><a name="a2._Selector_de_fechas_reducido"></a><a name="lite"></a>2. Selector de fechas reducido</h2>
+<p>El selector de fechas mas habitual es el que tiene aspecto de campo de texto, podremos encontrarlo por ejemplo en el lanzador o en el panel derecho de configuraci&#xf3;n de series.</p>
+<p><img src="images/Imagen1.png" class="grande" alt="Selector de fechas reducido" title="Selector de fechas reducido" /></p>
+<p>Como base tenemos un campo de texto con las fechas de inicio y fin escritas. Podremos escribir para cambiar cada una de las fechas, siempre manteniendo el formato mostrado por defecto. La fechas seleccionadas escribiendo se tendr&#xe1;n en cuenta como <a href="#fixed-dates">fechas fijas</a>.</p>
+<p>Si en cambio necesitamos una configuraci&#xf3;n mas compleja podremos pulsar sobre el calendario mostrado a la derecha del campo de texto y se abrir&#xe1; una ventana modal con el <a href="#full">selector de fechas completo</a>.</p><hr /></section><section>
+<h2><a name="a3._Selector_de_intervalos"></a><a name="interval"></a>3. Selector de intervalos</h2>
+<p>El selector de intervalos sirve para seleccionar rapidamente un periodo de fechas de <a href="#last-data">&#x201c;Ultimos datos&#x201d;</a>. Se compone de un grupo de botones que tendr&#xe1; ciertos periodos predefinidos. Se podr&#xe1;n identificar por un n&#xfa;mero y la inicial del periodo que representan (Horas, Dias, Semanas, Meses o A&#xf1;os).</p>
+<p><img src="images/Imagen2.png" class="grande" alt="Selector de intervalos" title="Selector de intervalos" /></p>
+<p>Si la configuraci&#xf3;n que buscamos no se cumpliese con las opciones mostradas se podr&#xed;a pulsar en el bot&#xf3;n  <span class="ti-settings"></span> y se abrir&#xed;a una ventana modal con el <a href="#full">selector de fechas completo</a>.</p><hr /></section><section>
+<h2><a name="a4._Selector_de_fechas_completo"></a><a name="full"></a>4. Selector de fechas completo</h2>
+<p>En este componente se podr&#xe1;n configurar todas las configuraciones de fechas disponibles en IDbox.</p>
+<p><img src="images/Imagen3.png" class="grande" alt="Selector de fechas completo" title="Selector de fechas completo" /></p>
+<p>En la parte superior podremos visualizar las fechas que resultar&#xed;an del c&#xe1;lculo del intervalo seleccionado. A su derecha, tendremos una aproximaci&#xf3;n del intervalo seleccionado, por ejemplo, si seleccionamos un periodo de 1 semana y 4 d&#xed;as se mostrar&#xe1; 1 semana.</p>
+<p>Debajo de esto podremos ver una serie de pesta&#xf1;as:</p><section>
+<h3><a name="a4.1_.C3.9Altimos_datos"></a><a name="last-data"></a>4.1 &#xda;ltimos datos</h3>
+<p><img src="images/Imagen4.png" class="grande" alt="Últimos datos" title="Últimos datos" /></p>
+<p>Permite seleccionar un periodo de fechas compuesto de un n&#xfa;mero y una unidad. El periodo seleccionado se tendr&#xe1; en cuenta desde el momento actual hacia atr&#xe1;s y se ira actualizando cada vez que se consulte.</p></section><section>
+<h3><a name="a4.2_Fechas_fijas"></a><a name="fixed-dates"></a>4.2 Fechas fijas</h3>
+<p><img src="images/Imagen5.png" class="grande" alt="Fechas fijas" title="Fechas fijas" /></p>
+<p>Permite seleccionar un periodo de fechas formado por fecha y hora. Para las fechas se desplegar&#xe1; un calendario al hacer click en uno de los dos campos superiores. Si se hace click en el primer campo permitir&#xe1; modificar la fecha inicio, despu&#xe9;s la de fin y despu&#xe9;s se cerrar&#xe1; el calendario. En cambio si hacemos click en el campo de la fecha solo preguntar&#xe1; por la fecha fin y se colapsar&#xe1; al seleccionarla.</p>
+<p>Las fechas seleccionadas ser&#xe1;n est&#xe1;ticas.</p></section><section>
+<h3><a name="a4.3_Pr.C3.B3ximos_datos"></a><a name="next-data"></a>4.3 Pr&#xf3;ximos datos</h3>
+<p>Para que esta secci&#xf3;n este disponible ser&#xe1; necesario activarla en el <a href="#a">fichero de configuraci&#xf3;n</a></p>
+<p><img src="images/Imagen6.png" class="grande" alt="Próximos datos" title="Próximos datos" /></p>
+<p>Permite seleccionar un periodo de fechas compuesto de un n&#xfa;mero y una unidad. El periodo seleccionado se tendr&#xe1; en cuenta desde el momento actual hacia delante y se ira actualizando cada vez que se consulte.</p></section><section>
+<h3><a name="a4.4_Periodo"></a><a name="period"></a>4.4 Periodo</h3>
+<p><img src="images/Imagen7.png" class="grande" alt="Periodo" title="Periodo" /></p>
+<p>Se basa en el funcionamiento del selector de <a href="#last-data">ultimos datos</a> pero con a&#xf1;adidos. Lo primero ser&#xe1; un selector igual al usado en ultimos datos.</p>
+<p>Despues de eso tendremos dos checks.</p>
+<ol style="list-style-type: decimal">
+
+<li>
+
+<p>Actual: Indicar&#xe1; si el periodo que queremos ver esta en curso o no. Ej: Si hemos seleccionado una semana en la primera parte y seleccionamos &#x201c;Actual&#x201d; las fechas resultantes ser&#xe1;n desde el primer momento de la semana hasta el momento actual. Sin embargo, con &#x201c;Actual&#x201d; desactivado las fechas ser&#xe1;n desde el principio de la semana anterior hasta el final de la semana anterior.</p>
+</li>
+<li>
+
+<p>Completo: El check &#x201c;Completo&#x201d; hace que se fuerce a la que fecha fin sea el final del periodo. En el caso de seleccionar la semana actual esta acabar&#xed;a en el momento de ahora. Sin embargo, si seleccionamos &#x201c;Completo&#x201d; el periodo terminar&#xe1; en el final de la semana, implicando una fecha futura. Para que el resultado de este c&#xe1;lculo devuelva fechas futuras ser&#xe1; necesario que este activado el parametro correspondiente en el <a href="#a">fichero de configuraci&#xf3;n</a>.</p>
+</li>
+</ol><section>
+<h4><a name="a4.4.1_Desplazamiento"></a><a name="skip"></a>4.4.1 Desplazamiento</h4>
+<p>El desplazamiento sirve para mover el intervalo temporal hacia delante o hacia atr&#xe1;s en el tiempo, es como sumar fechas. Podremos seleccionar el valor y las unidades. Si el valor es negativo restaremos d&#xed;as y si es positivo sumaremos. Cuando se sumen fechas solo se calcular&#xe1;n fechas futuras cuando el parametro correspondiente en el <a href="#a">fichero de configuraci&#xf3;n</a> este activado.</p>
+<p>Ej: Si queremos ver el periodo correspondiente a hace 2 d&#xed;as tendremos que seleccionar primero 1 d&#xed;a en el selector de periodo normal, y luego en el apartado de desplazamiento seleccionar -2 d&#xed;as.</p></section></section><section>
+<h3><a name="a4.5_Fechas_avanzadas"></a><a name="advanced"></a>4.5 Fechas avanzadas</h3>
+<p><img src="images/Imagen8.png" class="grande" alt="Fechas avanzadas" title="Fechas avanzadas" /></p>
+<p>Permite seleccionar una fecha de inicio y fin independientes, especificando para cada una de ellas una formula. Esta f&#xf3;rmula estar&#xe1; dividida en grupos de operadores, los cuales estar&#xe1;n separados por espacios.</p>
+<p>Cada operador constar&#xe1; de una letra que representar&#xe1; un periodo de tiempo, un simbolo matem&#xe1;tico (+, - o =) y un valor.</p>
+<ul>
+
+<li>D: D&#xed;as</li>
+<li>W: Semanas</li>
+<li>M: Meses</li>
+<li>Y: A&#xf1;os</li>
+<li>h: Horas</li>
+<li>m: Minutos</li>
+<li>s: Segundos</li>
+</ul>
+<p>Para cualquiera de estos operadores (X) se podr&#xe1;n realizar estas operaciones:</p>
+<ul>
+
+<li>D=1 Asigna el valor 1 al d&#xed;a actual</li>
+<li>M+2 Asigna al mes actual un +2, si estamos en junio mostrar&#xe1; agosto</li>
+<li>Y-1 Asigna al a&#xf1;o actual un -1, si estamos 2021 mostrar&#xe1; 2020</li>
+</ul>
+<p>Si alg&#xfa;n periodo no se ve afectado por ning&#xfa;n operador este utilizar&#xe1; el valor de la fecha actual.</p></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

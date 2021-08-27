@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div style="clear: both;">
+  
+<div style="float: left; margin-inline: 5px;">
+    <img src="images/charts.png" alt="Gráficas" width="50" />
+  </div>
+  
+<div style="float: left; margin-center">
+    
+<h1>Gr&#xe1;ficas</h1>
+  </div>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a></li>
+<li>2 <a href="#tendencia">Gr&#xe1;fica de tendencia</a></li>
+<li>3 <a href="#agrupados">Gr&#xe1;fica de agrupados</a></li>
+<li>4 <a href="#tiempo-real">Gr&#xe1;fica de tiempo real</a></li>
+<li>5 <a href="#configurador">Configurador</a>
+<ul>
+
+<li>5.1 <a href="#series">Series</a>
+<ul>
+
+<li>5.1.1 <a href="#series-fechas">Fechas</a></li>
+<li>5.1.2 <a href="#series-general">General</a></li>
+<li>5.1.3 <a href="#series-aspecto">Aspecto</a></li>
+<li>5.1.4 <a href="#series-asintotas">Asintotas</a></li>
+</ul>
+</li>
+<li>5.2 <a href="#ejesy">Ejes Y</a>
+<ul>
+
+<li>5.2.1 <a href="#ejesy-general">General</a></li>
+<li>5.2.2 <a href="#ejesy-seriesasociadas">Series asociadas</a></li>
+<li>5.2.3 <a href="#ejesy-asintotas">Asintotas</a></li>
+</ul>
+</li>
+<li>5.3 <a href="#ejesx">Ejes X</a></li>
+<li>5.4 <a href="#tipos">Tipo de gr&#xe1;fica</a>
+<ul>
+
+<li>5.4.1 <a href="#config-tendencia">Configuraci&#xf3;n tendencia</a></li>
+<li>5.4.2 <a href="#config-agrupados">Configuraci&#xf3;n agrupados</a></li>
+<li>5.4.3 <a href="#config-tiemporeal">Configuraci&#xf3;n tiempo real</a></li>
+</ul>
+</li>
+<li>5.5 <a href="#plantillas">Plantillas</a></li>
+</ul>
+</li>
+<li>6 <a href="#toolbar">Barra de herramientas</a></li>
+<li>7 <a href="#comunes">Elementos comunes</a>
+<ul>
+
+<li>7.1 <a href="#estadisticas">Panel de estad&#xed;sticas</a></li>
+<li>7.2 <a href="#tooltips-fijos">Tooltips fijos</a></li>
+</ul>
+</li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>Una de las herramientas de an&#xe1;lisis que dispone el sistema son las gr&#xe1;ficas. La aplicaci&#xf3;n permite los siguientes tipos de gr&#xe1;ficas:</p>
+<ul>
+
+<li>de datos hist&#xf3;ricos, llamada Tendencia</li>
+<li>por agrupaciones temporales, llamada Agrupados</li>
+<li>en tiempo real.</li>
+<li>y dispersi&#xf3;n (deshabilitada).</li>
+</ul>
+<p>Las gr&#xe1;ficas se pueden crear desde la secci&#xf3;n de accesos directos (1), desde el lanzador (2) o desde el shortcut (3).</p>
+<p><img src="images/Imagen1.png" class="grande" alt="Creación de gráficas desde el lanzador" title="Creación de gráficas desde el lanzador" /></p>
+<p>1) Para crear la gr&#xe1;fica desde el lanzador se necesita tener se&#xf1;ales en &#x201c;Mi selecci&#xf3;n de se&#xf1;ales&#x201d;, seleccionar las se&#xf1;ales que desea tener en la gr&#xe1;fica y pulsar uno de los botones correspondientes al tipo de gr&#xe1;fica deseado. Nota: En la secci&#xf3;n de se&#xf1;ales del explorador, pulsando el bot&#xf3;n <span class="icon-id-starempty"></span>, dicha se&#xf1;al se a&#xf1;adir&#xe1; a &#x201c;Mi selecci&#xf3;n de se&#xf1;ales&#x201d;.</p>
+<p>2) Desde la secci&#xf3;n de accesos directos solo estar&#xe1; disponible la gr&#xe1;fica de tendencia. Al pulsar el bot&#xf3;n se abrir&#xe1; una gr&#xe1;fica de tendencia con las se&#xf1;ales seleccionadas y con un periodo de una semana.</p>
+<p>3) Al pulsar en el shortcut de gr&#xe1;ficas se desplegar&#xe1;n las opciones para crear una nueva gr&#xe1;fica o crear una plantilla de gr&#xe1;fica. Pulsando en cualquiera de los dos se abrir&#xe1; el asistente de creaci&#xf3;n de gr&#xe1;ficas. Si no tenemos permisos para visualizar el inventario no se mostrar&#xe1; la opci&#xf3;n de crear una plantilla. <img src="images/Imagen51.png" class="mediano" alt="Creación de gráficas desde el shortcut" title="Creación de gráficas desde el shortcut" /></p>
+<ul>
+
+<li>Tipo de gr&#xe1;fica Las gr&#xe1;ficas de correlaci&#xf3;n y dispersi&#xf3;n estan deshabilitadas
+<ul>
+
+<li>Se&#xf1;ales Solo se mostrar&#xe1; si antes pulsamos en &#x201c;Nueva gr&#xe1;fica&#x201d; (A). Hay que seleccionar una se&#xf1;al como m&#xed;nimo y como m&#xe1;ximo se usar&#xe1; el valor configurado en el <a href="../config-file/config-file.html#maximumNumberOfTagsTrend">fichero de configuraci&#xf3;n</a>.</li>
+<li><a name="nueva-plantilla"></a>Plantillas Solo se mostrar&#xe1; si antes pulsamos en &#x201c;Nueva plantilla&#x201d; (B). Hay que seleccionar una plantilla como m&#xed;nimo y tres como m&#xe1;ximo. Solo se mostrar&#xe1;n plantillas que tengan como m&#xed;nimo un atributo de tipo se&#xf1;al.</li>
+<li>Atributos Solo se mostrar&#xe1; si antes pulsamos en &#x201c;Nueva plantilla&#x201d; (B). Permite seleccionar atributos por cada una de las plantillas que seleccionamos en el paso anterior. Hay que seleccionar entre uno y tres atributos. Solo se mostrar&#xe1;n atributos de tipo se&#xf1;al.</li>
+<li>Fechas Permite seleccionar la configuraci&#xf3;n de fechas de la gr&#xe1;fica. Aplicar&#xe1; a todas las series.</li>
+</ul>
+</li>
+</ul>
+<p>Establecida la configuraci&#xf3;n inicial, se mostrar&#xe1; la gr&#xe1;fica configurada en la pantalla. El &#xe1;rea central, la representaci&#xf3;n gr&#xe1;fica se corresponde con la configuraci&#xf3;n seleccionada previamente tipo de gr&#xe1;fica, fechas y series.</p>
+<p>A la izquierda se dispone de un men&#xfa; desplegable que permite modificar la configuraci&#xf3;n de la gr&#xe1;fica (1). Al cambiar entre las distintas secciones del men&#xfa; se desplegar&#xe1; el men&#xfa; de configuraci&#xf3;n situado en el panel derecho (3) el cual mostrar&#xe1; opciones espec&#xed;ficas del men&#xfa; seleccionado. Este menu estar&#xe1; oculto por defecto hasta que se pulse sobre la rueda dentada (2).</p>
+<p><img src="images/Imagen3.png" class="grande" alt="Barra de herramientas" title="Barra de herramientas" /></p>
+<p>En la parte superior derecha se sit&#xfa;a la barra de herramientas.</p><hr /></section><section>
+<h2><a name="a2_Gr.C3.A1fica_de_tendencia"></a><a name="tendencia"></a>2 Gr&#xe1;fica de tendencia</h2>
+<p>La funcionalidad <i>&#x201c;Gr&#xe1;fica de tendencia&#x201d;</i> permite la representaci&#xf3;n de un conjunto de datos hist&#xf3;ricos a distintas resoluciones sobre una colecci&#xf3;n de puntos. Adem&#xe1;s, permite la representaci&#xf3;n de datos estad&#xed;sticos y la aplicaci&#xf3;n de funciones matem&#xe1;ticas para la supervisi&#xf3;n de los datos.</p>
+<p>Para la creaci&#xf3;n de este tipo de gr&#xe1;fica, adem&#xe1;s de las opciones explicadas en el apartado anterior, la herramienta dispone de un acceso directo desde el explorador de documentos, para la creaci&#xf3;n r&#xe1;pida de este tipo de gr&#xe1;ficas una vez seleccionadas las series.</p>
+<p><img src="images/Imagen3-1.png" class="grande" alt="Creación de gráfica desde el explorador" title="Creación de gráfica desde el explorador" /></p>
+<p>Esta gr&#xe1;fica por defecto estar&#xe1; configurada con el periodo de las &#xfa;ltimas 24 horas y marca Auto.</p>
+<p><img src="images/Imagen4-1.png" class="grande" alt="Gráfica de tendencia" title="Gráfica de tendencia" /></p>
+<p>Desde la propia representaci&#xf3;n de la gr&#xe1;fica nos permite cambiar de manera r&#xe1;pida la configuraci&#xf3;n del periodo, permite la introducci&#xf3;n de distintos intervalos de tiempo para realizar las consultas y la <b>marca</b>, frecuencia a la que se muestran los datos.</p>
+<p>Se disponen de diferentes modos de interacci&#xf3;n para analizar la ventana temporal seleccionada.</p>
+<ul>
+
+<li>Zoom arrastrando con el click izquierdo sobre la gr&#xe1;fica para profundizar en la marca de tiempo, esta acci&#xf3;n se puede realizar tambi&#xe9;n en el navegador.</li>
+<li>Arrastrar el navegador con click izquierdo para moverse en el tiempo.</li>
+<li>Arrastrar el navegador desde los bordes para aumentar o disminuir el intervalo temporal.</li>
+<li>Click derecho arrastrando en la direcci&#xf3;n que se busque avanzar o retroceder en el tiempo.</li>
+<li>Rueda del rat&#xf3;n para aumentar o disminuir el intervalo temporal (Configurable en el <a href="../config-file/config-file.html#allowZoomByWheel">fichero de configuraci&#xf3;n</a>).</li>
+<li>Utilizando los botones de navegaci&#xf3;n que aparacen en la parte inferior de la grafica cuando se pasa el rat&#xf3;n por esa zona (imagen debajo). Permitir&#xe1;n avanzar y retroceder en el tiempo, adem&#xe1;s de aumentar o disminuir el intervalo temporal visualizado.</li>
+</ul>
+<p><img src="images/Imagen26.png" class="mediano" alt="Botones de navegación" title="Botones de navegación" /></p>
+<p>Se podr&#xe1;n configurar <a href="#config-tendencia">par&#xe1;metros generales de la gr&#xe1;fica en el configurador</a></p><hr /></section><section>
+<h2><a name="a3.09Gr.C3.A1fica_de_agrupados"></a><a name="agrupados"></a>3	Gr&#xe1;fica de agrupados</h2>
+<p>La gr&#xe1;fica de agrupados permite representar los datos hist&#xf3;ricos de cualquier se&#xf1;al mostrando/agrupando los valores en <a href="#seleccion-agrupado">escalas temporales comunes</a> permitiendo visualizar los patrones en distintas agrupaciones temporales de las se&#xf1;ales. La agrupaci&#xf3;n podr&#xe1; hacerse seg&#xfa;n distintas medidas de agrupaci&#xf3;n estad&#xed;stica.</p>
+<p><img src="images/Imagen21.png" class="grande" alt="Gráfica de agrupados" title="Gráfica de agrupados" /></p>
+<p>Desde la propia representaci&#xf3;n de la gr&#xe1;fica nos permite cambiar de manera r&#xe1;pida la configuraci&#xf3;n del periodo, permite la introducci&#xf3;n de distintos intervalos de tiempo para realizar las consultas y el tipo estad&#xed;stico.</p>
+<p>Se podr&#xe1;n configurar <a href="#config-agrupados">par&#xe1;metros generales de la gr&#xe1;fica en el configurador</a></p><hr /></section><section>
+<h2><a name="a4_Gr.C3.A1fica_en_tiempo_real"></a><a name="tiempo-real"></a>4 Gr&#xe1;fica en tiempo real</h2>
+<p>Este tipo de gr&#xe1;fica permite consultar los valores de las se&#xf1;ales seleccionadas en tiempo real. Los valores mostrados en la parte inferior del eje Y, pueden variar en funci&#xf3;n de si hay lectura de datos con valores cercanos.</p>
+<p><img src="images/Imagen25.png" class="grande" alt="Gráfica de tiempo real" title="Gráfica de tiempo real" /></p>
+<p>A diferencia de las otras gr&#xe1;ficas, en tiempo real no se selecciona un intervalo de tiempo a graficar, sino que se selecciona un n&#xfa;mero de muestras. Cuando se cargue una gr&#xe1;fica de tiempo real se cargar&#xe1;n los &#xfa;ltimos X datos, seleccionados en el tercer paso del wizard. Por defecto, esta configuraci&#xf3;n coger&#xe1; el valor presente en el <a href="../config-file/config-file.html#defaultPointNumber">fichero de configuraci&#xf3;n</a>.</p>
+<p><img src="images/Imagen27.png" class="grande" alt="Número de puntos tiempo real" title="Número de puntos tiempo real" /></p>
+<p>El eje temporal se ajustar&#xe1; a las muestras recibidas. Se puede dar el caso de que se grafiquen dos se&#xf1;ales con una frecuencia base muy diferente, y en ese caso la gr&#xe1;fica no se visualizar&#xe1; correctamente. Por ejemplo, si la se&#xf1;al 1 tiene su frecuencia m&#xe1;xima a 1 hora y la se&#xf1;al 2 la tiene a 1 segundo y con la gr&#xe1;fica configurada a 300 muestras, los datos de la se&#xf1;al 1 ocupar&#xe1;n 5 d&#xed;as, mientras que los de la se&#xf1;al 2 ocupar&#xe1;n 5 minutos. En este caso en la gr&#xe1;fica la se&#xf1;al 2 apenas ser&#xe1; visible al final del eje temporal, por lo que se mostrar&#xe1; un aviso recomendando ocultar alguna de las se&#xf1;ales. <b>Las se&#xf1;ales ocultas no se tendr&#xe1;n en cuenta para el c&#xe1;lculo del intervalo del eje X</b>.</p>
+<p>Se podr&#xe1;n configurar <a href="#config-tiemporeal">par&#xe1;metros generales de la gr&#xe1;fica en el configurador</a></p><hr /></section><section>
+<h2><a name="a5_Configurador"></a><a name="configurador"></a>5 Configurador</h2>
+<p>El configurador de gr&#xe1;ficas se divide en 4 secciones, representadas por los iconos de la barra lateral izquierda (1) que dan acceso a cada secci&#xf3;n. Al hacer click en cada uno de ellos se expandir&#xe1; un panel al lado con la secci&#xf3;n. Por defecto no habr&#xe1; ninguna secci&#xf3;n seleccionada. Si se hace click en la secci&#xf3;n ya seleccionada esta se ocultar&#xe1;.</p>
+<p><img src="images/Imagen4.png" class="mediano" alt="Menú gráficas" title="Menú gráficas" /></p><hr /><section>
+<h3><a name="a5.1_Series"></a><a name="series"></a>5.1 Series</h3>
+<p>Muestra las series representadas en la gr&#xe1;fica y dispone de las siguientes acciones en la barra de herramientas:</p>
+<p><img src="images/Imagen28.png" class="mediano" alt="Barra de herramientas de las Series" title="Barra de herramientas de las Series" /></p>
+<ul>
+
+<li>A&#xf1;adir: Esta acci&#xf3;n abrir&#xe1; una nueva ventana permitiendo la inserci&#xf3;n de nuevas se&#xf1;ales o funciones a la gr&#xe1;fica sin tener que abrir una nueva gr&#xe1;fica desde cero. Si queremos a&#xf1;adir funciones tendremos que buscar en la parte inferior izquierda de la ventana el apartado &#x201c;Funciones&#x201d;.</li>
+</ul>
+<p><img src="images/Imagen57.png" class="grande" alt="Añadir funciones" title="Añadir funciones" /></p>
+<ul>
+
+<li>Duplicar: Permite el duplicado de las sela&#xf1;es seleccionadas con su configuraci&#xf3;n.</li>
+<li>Borrar: Borrado de las series seleccionadas.</li>
+<li>Ocultar: Permite ocultar y visualizar en la gr&#xe1;fica las series seleccionadas.</li>
+</ul>
+<p>Adem&#xe1;s de a&#xf1;adir, copiar, borrar, visualizar/ocultar series en la gr&#xe1;fica, se da la opci&#xf3;n de realizar la configuraci&#xf3;n <span class="ti-settings"></span>. Existen dos tipos:</p>
+<ul>
+
+<li>&#xda;nica: los cambios realizados aplicar&#xe1;n a solo una serie.</li>
+</ul>
+<p><img src="images/Imagen29.png" class="grande" alt="Configuración única" title="Configuración única" /></p>
+<ul>
+
+<li>M&#xfa;ltiple: los cambios realizados aplicar&#xe1;n a todas las series seleccionadas. Si no hay ninguna serie seleccionada se contar&#xe1;n todas como seleccionadas.</li>
+</ul>
+<p><img src="images/Imagen30.png" class="grande" alt="Configuración múltiple" title="Configuración múltiple" /></p>
+<blockquote>
+
+<p>En la configuraci&#xf3;n m&#xfa;ltiple no es posible editar todas las configuraciones como lo es en la configuraci&#xf3;n &#xfa;nica.</p>
+</blockquote>
+<p>Listado de configuraciones bloqueadas en la edici&#xf3;n m&#xfa;ltiple:</p>
+<ul>
+
+<li>Editar el t&#xed;tulo de una serie.</li>
+<li>Cambiar el tag o funci&#xf3;n de una serie.</li>
+<li>Si las series seleccionadas usan unidades distintas no se podr&#xe1;n editar las unidades.</li>
+<li>Si las series seleccionadas tienen distintos tipos de se&#xf1;al no se podr&#xe1; editar el tipo estad&#xed;stico.</li>
+</ul>
+<p>Si dentro de nuestra selecci&#xf3;n tenemos seleccionada una funci&#xf3;n se bloquear&#xe1;n los siguientes campos:</p>
+<ul>
+
+<li>Tipo estad&#xed;stico</li>
+<li>Unidades</li>
+</ul>
+<p>Si estamos realizando una edici&#xf3;n m&#xfa;ltiple se mostrar&#xe1; un listado con todas las series de la gr&#xe1;fica. Cuando se muestre un campo en el que cada serie tiene un valor distinto se mostrar&#xe1; el campo con el valor vacio.</p>
+<p><img src="images/Imagen32.png" class="mediano" alt="Campos de aspecto vacios" title="Campos de aspecto vacios" /></p>
+<p>Una serie seleccionada cambia su color de fondo al color corporativo. Para seleccionar o deseleccionar una serie pulsar click izquierdo sobre ella. Se podr&#xe1; utilizar la tecla &#x201c;Shift&#x201d; para realizar una selecci&#xf3;n m&#xfa;ltiple r&#xe1;pidamente. Para ello, seleccionar la primera serie del listado que queremos, y luego pulsar sobre la &#xfa;ltima teniendo pulsada la tecla &#x201c;Shift&#x201d;, se seleccionar&#xe1;n automaticamente todas las series situadas entre la primera y la &#xfa;ltima.</p>
+<p>Tambi&#xe9;n sera posible en este listado reordenar las series arrastrandolas con click izquierdo.</p>
+<p>La configuraci&#xf3;n de una serie esta dividida en 4 bloques:</p><section>
+<h4><a name="a5.1.1_Fechas"></a><a name="series-fechas"></a>5.1.1 Fechas</h4>
+<p>Permite seleccionar el intervalo temporal para el que se mostrar&#xe1;n los datos. Se podr&#xe1;n escribir las fechas en el <a href="../dates/dates.html#lite">campo de texto</a> o pulsar sobre el calendario (1) para que se abra <a href="../dates/dates.html#full">el selector de fechas</a>.</p>
+<p><img src="images/Imagen31.png" class="mediano" alt="Configuración de fechas" title="Configuración de fechas" /></p></section><section>
+<h4><a name="a5.1.2_General"></a><a name="series-general"></a>5.1.2 General</h4>
+<p>Permite seleccionar las caracter&#xed;sticas relativas a la configuraci&#xf3;n de los datos de la serie.</p>
+<p><img src="images/Imagen33.png" class="mediano" alt="Configuración general" title="Configuración general" /></p>
+<ul>
+
+<li>T&#xed;tulo: Permite cambiar el nombre de la serie. Este ser&#xe1; el nombre con el que se identifica la serie en la interfaz (leyenda, men&#xfa;s, etc.).</li>
+<li>Se&#xf1;al: permite cambiar la se&#xf1;al mostrada en el gr&#xe1;fico por otra elegida del Selector de se&#xf1;ales. Si estamos en tendencia se permitir&#xe1; tambi&#xe9;n la selecci&#xf3;n de funciones.</li>
+<li>Unidades: En el caso de que la se&#xf1;al seleccionada tenga asociada una unidad, podr&#xe1; aplicarse una conversi&#xf3;n de unidades a los datos representados (de entre las conversiones disponibles para esa unidad).</li>
+<li>Tipo estad&#xed;stico: Permite seleccionar el tipo estad&#xed;stico (cuando los datos representados no son datos brutos). Las opciones depender&#xe1;n del tipo de se&#xf1;al seleccionada:
+<ul>
+
+<li>Se&#xf1;ales anal&#xf3;gicas: Media, m&#xe1;ximo, m&#xed;nimo, varianza, desviaci&#xf3;n t&#xed;pica, cuenta, acumulado, m&#xe1;ximo y m&#xed;nimo y desviaci&#xf3;n t&#xed;pica respecto a la media.</li>
+<li>Se&#xf1;ales discretas: Cuenta, moda, cuenta de valores true y cuenta de valores false.</li>
+<li>Se&#xf1;ales digitales: Cuenta y moda</li>
+<li><b>Funciones: La selecci&#xf3;n de tipos est&#xe1;disticos no est&#xe1; disponible para funciones</b>.</li>
+</ul>
+</li>
+<li>
+
+<p>Interpolaci&#xf3;n: Permite seleccionar la interpolaci&#xf3;n que se aplicar&#xe1;. Podr&#xe1; ser Sin interpolar, Lineal, Paso antes y Paso despu&#xe9;s.</p>
+</li>
+<li>Marca: Permite seleccionar la frecuencia para la que se pedir&#xe1;n los datos. Si la resoluci&#xf3;n es mayor que &#x2018;Max&#x2019; ser&#xe1;n datos estad&#xed;sticos, en caso contrario ser&#xe1;n datos brutos. La opci&#xf3;n Auto permite que la marca se ajuste de forma din&#xe1;mica seg&#xfa;n el periodo de tiempo seleccionado. Se podr&#xe1;n escribir marcas superiores a la &#xfa;ltima marca mostrada. Si la marca escrita son horas se ajustar&#xe1; a un divisor de 24 horas. Ejemplo: Si se introducen 7 horas, se cambiar&#xe1; automaticamente a 8 horas. Si se introducen 10 horas, se cambiar&#xe1; automaticamente a 12 horas.</li>
+</ul></section><section>
+<h4><a name="a5.1.3_Aspecto"></a><a name="series-aspecto"></a>5.1.3 Aspecto</h4>
+<p>Permite seleccionar las caracter&#xed;sticas de visualizaci&#xf3;n de la serie en la gr&#xe1;fica.</p>
+<p><img src="images/Imagen35.png" class="mediano" alt="Configuración de aspecto" title="Configuración de aspecto" /></p>
+<ul>
+
+<li><b>Tipo de l&#xed;nea</b>: Permite modificar el formato de la representaci&#xf3;n gr&#xe1;fica. Las opciones son
+<ul>
+
+<li><b>L&#xed;nea</b>: serie de segmentos que conecta los valores de la se&#xf1;al.</li>
+<li><b>L&#xed;nea suavizada</b>: curva suave que conecta los valores de la se&#xf1;al.</li>
+<li><b>L&#xed;nea escalonada</b>: serie de segmentos similar a la l&#xed;nea, pero que &#xfa;nicamente utiliza l&#xed;neas verticales y horizontales para conectar los valores de la se&#xf1;al (la l&#xed;nea ser&#xe1; horizontal hasta que tengamos un nuevo valor, en que se unir&#xe1; mediante una recta vertical)</li>
+<li><b>&#xc1;rea</b>: genera un &#xe1;rea definido entre cero y los valores de la se&#xf1;al con el tipo l&#xed;nea.</li>
+<li><b>Columna</b>: serie de columnas para cada valor de la se&#xf1;al.</li>
+<li><b>Marcador</b>:  se visualizar&#xe1; en formato de puntos solo los valores de la serie)</li>
+</ul>
+</li>
+<li><b>Visible</b>: Permite configurar la visibilidad de la serie.</li>
+<li><b>Color marcador</b>: Permite configurar el color de los marcadores de cada uno de los valores representados.</li>
+<li><b>Grosor marcador</b>: Permite configurar el tama&#xf1;o de los marcadores de cada uno de los valores representados. Si es 0 no se mostrar&#xe1;n.</li>
+<li><b>Color borde marcador</b>: Permite configurar el color del borde de los marcadores.</li>
+<li><b>Grosor borde marcador</b>: Permite configurar el grosor del borde de los marcadores. Si es 0 no se mostrar&#xe1;.</li>
+<li><b>Color l&#xed;nea</b>: Permite configurar el color de las l&#xed;neas que unen los distintos valores.</li>
+<li><b>Grosor l&#xed;nea</b>: Permite configurar el grosor de la l&#xed;nea. En caso de ser 0 no se mostrar&#xe1;n l&#xed;neas (gr&#xe1;fica de puntos).</li>
+<li><b>Estilo de linea</b>: Permite cambiar el estilo de la l&#xed;nea. &#xda;til para diferenciar dos series con el mismo color.</li>
+<li><b>Opacidad</b>: Permite cambiar la opacidad del relleno del area.</li>
+<li><b>Color columna</b>: Permite cambiar el color de las columnas cuando estamos en modo columna.</li>
+</ul>
+<blockquote>
+
+<p>El color de la columna solo esta disponible con tipo de linea Columna. En tipo columna solo estar&#xe1; disponible el color de columna. La opacidad solo esta disponible con el tipo de linea Area.</p>
+</blockquote>
+<ul>
+
+<li><b>Iconos de estado</b>: Permite que en los marcadores en cuyo valor haya habido un cambio de estado se muestre el icono que representa dicho estado.</li>
+<li><b>Mostrar huecos</b>: Bot&#xf3;n que actua como acceso directo para filtrar el estado &#x201c;OutOfDate&#x201d;.</li>
+<li><b>Ocultar invalidos</b>: Bot&#xf3;n que actua como acceso directo para filtrar el estado &#x201c;Invalid&#x201d;.</li>
+<li><b>Filtrar estados</b>: filtra por los diferentes estados dados de alta a nivel de aplicaci&#xf3;n.</li>
+</ul></section><section>
+<h4><a name="a5.1.4_Marcado_de_valores"></a><a name="series-asintotas"></a>5.1.4 Marcado de valores</h4>
+<p>Permite configurar una serie para que cuando sus valores sean superiores o inferiores a otra serie los valores aparezcan marcados con un area. Si no hay ninguna serie compatible en la gr&#xe1;fica esta secci&#xf3;n estar&#xe1; bloqueada.</p>
+<p><img src="images/Imagen52.png" class="mediano" alt="Marcado de valores" title="Marcado de valores" /></p>
+<ul>
+
+<li>
+
+<p><b>Serie de referencia</b>: Aqu&#xed; se seleccionar&#xe1; la se&#xf1;al con la que contrastar los valores. Para que una serie sea compatible y se permita seleccionar tiene que cumplir 2 condiciones. 1) La configuraci&#xf3;n de fechas tiene que ser igual 2) Las series tienen que estar asociadas a los mismos ejes, tanto X como Y</p>
+</li>
+<li>
+
+<p><b>Tipo de marcado</b>: Campo para indicar si queremos que los valores que se marquen sean los superiores o los inferiores.</p>
+</li>
+</ul>
+<p><img src="images/Imagen53.png" class="grande" alt="Marcado de valores" title="Marcado de valores" /></p></section><section>
+<h4><a name="a5.1.5_As.C3.ADntotas"></a><a name="series-asintotas"></a>5.1.5 As&#xed;ntotas</h4>
+<p>Permite la configuraci&#xf3;n de una recta asociada a la serie con un valor editable. En la parte superior encontraremos 3 botones para a&#xf1;adir as&#xed;ntotas.</p>
+<p><img src="images/Imagen36.png" class="mediano" alt="Configuración de asintotas" title="Configuración de asintotas" /></p>
+<ul>
+
+<li><b>A&#xf1;adir as&#xed;ntota</b>: Permite a&#xf1;adir una as&#xed;ntota (recta asociada). Cada as&#xed;ntota a&#xf1;adida se mostrar&#xe1; en una lista en este apartado y podr&#xe1; configurarse.</li>
+<li><b>A&#xf1;adir l&#xed;mites representativos</b>: Se a&#xf1;adir&#xe1;n las asintotas correspondientes a los l&#xed;mites representativos para la se&#xf1;al seleccionada (corresponden al m&#xe1;ximo y m&#xed;nimo de la configuraci&#xf3;n propia de la se&#xf1;al). Si ya est&#xe1;n a&#xf1;adidas el bot&#xf3;n cambiar&#xe1; para que la funcionalidad sea eliminarlas.</li>
+<li><b>A&#xf1;adir m&#xe1;ximo, m&#xed;nimo y media</b>: Se a&#xf1;adir&#xe1;n 3 lineas para la se&#xf1;al seleccionada correspondientes cada una al valor m&#xe1;ximo, m&#xed;nimo, y medio de los datos mostrados por esa se&#xf1;al en la representaci&#xf3;n. Si ya est&#xe1;n a&#xf1;adidas el bot&#xf3;n cambiar&#xe1; para que la funcionalidad sea eliminarlas.</li>
+</ul>
+<p>Para cada asintota se podr&#xe1;n configurar las siguientes propiedades:</p>
+<ul>
+
+<li><b>T&#xed;tulo</b>: Permite cambiar el nombre de la as&#xed;ntota, el cual se visualizar&#xe1; en la gr&#xe1;fica.</li>
+<li><b>Tipo de valor</b>:
+<ul>
+
+<li><b>Personalizado</b>: Indicaremos en el campo valor la posici&#xf3;n de la as&#xed;ntota.</li>
+<li><b>M&#xe1;ximo representativo</b>: Posicionar&#xe1; la as&#xed;ntota en el valor m&#xe1;ximo de la configuraci&#xf3;n de la serie.</li>
+<li><b>M&#xed;nimo representativo</b>: Posicionar&#xe1; la as&#xed;ntota en el valor m&#xed;nimo de la configuraci&#xf3;n de la serie.</li>
+<li><b>M&#xe1;ximo</b>: Posicionar&#xe1; la as&#xed;ntota en el valor m&#xe1;ximo de los datos pintados de la serie.</li>
+<li><b>M&#xed;nimo</b>: Posicionar&#xe1; la as&#xed;ntota en el valor m&#xed;nimo de los datos pintados de la serie.</li>
+<li><b>Media</b>: Posicionar&#xe1; la as&#xed;ntota en el valor medio de los datos pintados de la serie.</li>
+</ul>
+</li>
+<li>
+
+<p>Valor: Posici&#xf3;n de la as&#xed;ntota. Si la asintota no es del tipo &#x201c;Personalizado&#x201d; esta propiedad no se podr&#xe1; modificar.</p>
+</li>
+<li>Tipo de l&#xed;nea: Permite modificar el formato de la representaci&#xf3;n de la as&#xed;ntota en la gr&#xe1;fica.</li>
+<li>Color: Permite configurar el color de la as&#xed;ntota</li>
+<li>Marcado de valores: Permite definir bandas de rodadura (l&#xed;mites superiores e inferiores). Si se activan los valores de la serie que pasen por encima de la posici&#xf3;n de la asintota mostrar&#xe1;n un &#xe1;rea hacia la asintota.</li>
+</ul><hr /></section></section><section>
+<h3><a name="a5.2_Ejes_Y"></a><a name="ejesy"></a>5.2 Ejes Y</h3>
+<p>Muestra los ejes representados en la gr&#xe1;fica y dispone de las siguientes acciones en la barra de herramientas:</p>
+<p><img src="images/Imagen5-2.png" class="mediano" alt="Barra de herramientas Eje Y" title="Barra de herramientas Eje Y" /></p>
+<ul>
+
+<li>A&#xf1;adir: Esta acci&#xf3;n a&#xf1;adir&#xe1; un nuevo eje Y.</li>
+<li>Duplicar: Permite el duplicado de los ejes seleccionados con su configuraci&#xf3;n.</li>
+<li>Borrar: Borrado de los ejes seleccionados.</li>
+<li>Ocultar: Permite ocultar y visualizar en la gr&#xe1;fica los ejes seleccionados.</li>
+</ul>
+<blockquote>
+
+<p>Si un eje no tiene una serie asociada no ser&#xe1; representado en la gr&#xe1;fica</p>
+</blockquote>
+<p>Adem&#xe1;s de a&#xf1;adir, copiar, borrar, visualizar/ocultar ejes en la gr&#xe1;fica, se da la opci&#xf3;n de realizar la configuraci&#xf3;n <span class="ti-settings"></span>. Existen dos tipos:</p>
+<ul>
+
+<li>&#xda;nica: los cambios realizados aplicar&#xe1;n a solo un eje.</li>
+</ul>
+<p><img src="images/Imagen38.png" class="grande" alt="Configuración única" title="Configuración única" /></p>
+<ul>
+
+<li>M&#xfa;ltiple: los cambios realizados aplicar&#xe1;n a todas las series seleccionadas. Si no hay ning&#xfa;n eje seleccionado se contar&#xe1;n todos como seleccionados.</li>
+</ul>
+<p><img src="images/Imagen37.png" class="grande" alt="Configuración múltiple" title="Configuración múltiple" /></p>
+<blockquote>
+
+<p>En la configuraci&#xf3;n m&#xfa;ltiple no es posible editar todas las configuraciones como lo es en la configuraci&#xf3;n &#xfa;nica.</p>
+</blockquote>
+<p>Listado de configuraciones bloqueadas en la edici&#xf3;n m&#xfa;ltiple de ejes Y:</p>
+<ul>
+
+<li>Editar el t&#xed;tulo de un eje.</li>
+<li>Configuraci&#xf3;n de series asociadas.</li>
+</ul>
+<p>Cuando se muestre un campo en el que cada eje tiene un valor distinto se mostrar&#xe1; el campo con el valor vacio.</p>
+<p>Un eje seleccionado cambia su color de fondo al color corporativo. Para seleccionar o deseleccionar un eje pulsar click izquierdo sobre el. Se podr&#xe1; utilizar la tecla &#x201c;Shift&#x201d; para realizar una selecci&#xf3;n m&#xfa;ltiple r&#xe1;pidamente. Para ello, seleccionar el primer eje del listado que queremos, y luego pulsar sobre el &#xfa;ltimo teniendo pulsada la tecla &#x201c;Shift&#x201d;, se seleccionar&#xe1;n automaticamente todos los ejes situados entre el primero y el &#xfa;ltimo.</p>
+<p>Tambi&#xe9;n sera posible en este listado reordenar los ejes arrastrandolas con click izquierdo.</p>
+<p>La configuraci&#xf3;n de un eje esta dividido en 3 bloques:</p></section><section>
+<h3><a name="a5.2.1_General"></a><a name="ejesy-general"></a>5.2.1 General</h3>
+<p>Permite seleccionar las caracter&#xed;sticas generales del eje Y seleccionado.</p>
+<p><img src="images/Imagen39.png" class="mediano" alt="Configuración general Eje Y" title="Configuración general Eje Y" /></p>
+<ul>
+
+<li><b>T&#xed;tulo</b>: Permite modificar el t&#xed;tulo del eje.</li>
+<li><b>Visible</b>: Casilla que permite modificar la visibilidad del eje.</li>
+<li><b>Grid</b>: Casilla para mostrar u ocultar las l&#xed;neas horizontales.</li>
+<li><b>Color</b>: Permite modificar el color del eje.</li>
+<li><b>Escala logar&#xed;tmica</b>: Casilla que permite cambiar la escala con la que se representar&#xe1;n los valores (entre normal y logar&#xed;tmica).</li>
+<li><b>Posici&#xf3;n</b>: Permite modificar la posici&#xf3;n de los ejes (entre izquierda y derecha)</li>
+<li><b>Ajuste</b>: Configura la escala del eje. Las opciones son:
+<ul>
+
+<li><b>Auto</b>: El eje se ajusta autom&#xe1;ticamente a los valores de las se&#xf1;ales vinculados al eje.</li>
+<li><b>Manual</b>: Se despliegan dos configuraciones adicionales para indicar el Min y el Max de los ejes.</li>
+<li><b>Configuraci&#xf3;n del TAG</b>: Se utilizan como m&#xe1;ximo y como m&#xed;nimo los valores m&#xe1;ximo y m&#xed;nimo configurados en la se&#xf1;al. Para que esta opci&#xf3;n este disponible el eje solo puede tener asociada una serie con una se&#xf1;al anal&#xf3;gica.</li>
+</ul>
+</li>
+</ul></section><section>
+<h3><a name="a5.2.2_Serie_asociadas"></a><a name="ejesy-seriesasociadas"></a>5.2.2 Serie asociadas</h3>
+<p>Muestra el listado de series vinculadas al eje seleccionado, acompa&#xf1;ado de una casilla que estar&#xe1; marcada si la serie pertenece al eje seleccionado. Se puede vincular o desvincular una serie a un eje marcando o desmarcando dicha casilla. <b>Si un eje no tiene series asociadas no se mostrar&#xe1; en la gr&#xe1;fica.</b></p>
+<p><img src="images/Imagen40.png" class="mediano" alt="Series asociadas" title="Series asociadas" /></p></section><section>
+<h3><a name="a5.2.3_As.C3.ADntotas"></a><a name="ejesy-asintotas"></a>5.2.3 As&#xed;ntotas</h3>
+<p>Permite la configuraci&#xf3;n de una recta asociada al eje con un valor editable. En la parte superior encontraremos 2 botones para a&#xf1;adir as&#xed;ntotas.</p>
+<p><img src="images/Imagen41.png" class="mediano" alt="Configuración de asintotas" title="Configuración de asintotas" /></p>
+<ul>
+
+<li><b>A&#xf1;adir as&#xed;ntota</b>: Permite a&#xf1;adir una as&#xed;ntota (recta asociada). Cada as&#xed;ntota a&#xf1;adida se mostrar&#xe1; en una lista en este apartado y podr&#xe1; configurarse.</li>
+<li><b>A&#xf1;adir m&#xe1;ximo, m&#xed;nimo y media</b>: Se a&#xf1;adir&#xe1;n 3 lineas para la se&#xf1;al seleccionada correspondientes cada una al valor m&#xe1;ximo, m&#xed;nimo, y medio de los datos mostrados en el eje. Estos datos corresponden a la agrupaci&#xf3;n de todas las series que tenga asociadas el eje. Si ya est&#xe1;n a&#xf1;adidas el bot&#xf3;n cambiar&#xe1; para que la funcionalidad sea eliminarlas.</li>
+</ul>
+<p>Para cada asintota se podr&#xe1;n configurar las siguientes propiedades:</p>
+<ul>
+
+<li><b>T&#xed;tulo</b>: Permite cambiar el nombre de la as&#xed;ntota, el cual se visualizar&#xe1; en la gr&#xe1;fica.</li>
+<li><b>Tipo de valor</b>:
+<ul>
+
+<li><b>Personalizado</b>: Indicaremos en el campo valor la posici&#xf3;n de la as&#xed;ntota.</li>
+<li><b>M&#xe1;ximo</b>: Posicionar&#xe1; la as&#xed;ntota en el valor m&#xe1;ximo de los datos pintados de la serie.</li>
+<li><b>M&#xed;nimo</b>: Posicionar&#xe1; la as&#xed;ntota en el valor m&#xed;nimo de los datos pintados de la serie.</li>
+<li><b>Media</b>: Posicionar&#xe1; la as&#xed;ntota en el valor medio de los datos pintados de la serie.</li>
+</ul>
+</li>
+<li>
+
+<p>Valor: Posici&#xf3;n de la as&#xed;ntota. Si la asintota no es del tipo &#x201c;Personalizado&#x201d; esta propiedad no se podr&#xe1; modificar.</p>
+</li>
+<li>Tipo de l&#xed;nea: Permite modificar el formato de la representaci&#xf3;n de la as&#xed;ntota en la gr&#xe1;fica.</li>
+<li>Color: Permite configurar el color de la as&#xed;ntota</li>
+<li>Marcado de valores: Permite definir bandas de rodadura (l&#xed;mites superiores e inferiores). Si se activan los valores de la serie que pasen por encima de la posici&#xf3;n de la asintota mostrar&#xe1;n un &#xe1;rea hacia la asintota.</li>
+</ul></section><section>
+<h3><a name="a5.2.4_Ejemplos_configuraciones"></a><a name="ejesy-ejemplos"></a>5.2.4 Ejemplos configuraciones</h3>
+<p>Ejemplos - configuraciones a nivel de eje: a) Eje visible; grid visible; posici&#xf3;n eje: izquierda; series asociadas: una serie de las 2 que tiene el gr&#xe1;fico; sin as&#xed;ntotas.</p>
+<p><img src="images/Imagen16.png" class="grande" alt="Ejemplo configuración a nivel de eje" title="Ejemplo configuración a nivel de eje" /></p>
+<p>b) Eje visible; grid: no visible; posici&#xf3;n eje: derecha; series asociadas: todas; a&#xf1;adidas as&#xed;ntotas con el valor m&#xe1;x, m&#xed;n, y media.</p>
+<p><img src="images/Imagen17.png" class="grande" alt="Ejemplo configuración a nivel de eje" title="Ejemplo configuración a nivel de eje" /></p><hr /></section><section>
+<h3><a name="a5.3_Ejes_X"></a><a name="ejesx"></a>5.3 Ejes X</h3>
+<p>Muestra los ejes representados en la gr&#xe1;fica y dispone de las siguientes acciones en la barra de herramientas:</p>
+<p><img src="images/Imagen5-2.png" class="grande" alt="Barra de herramientas Eje Y" title="Barra de herramientas Eje Y" /></p>
+<ul>
+
+<li>A&#xf1;adir: Esta acci&#xf3;n a&#xf1;adir&#xe1; un nuevo eje Y.</li>
+<li>Duplicar: Permite el duplicado de los ejes seleccionados con su configuraci&#xf3;n.</li>
+<li>Borrar: Borrado de los ejes seleccionados.</li>
+<li>Ocultar: Permite ocultar y visualizar en la gr&#xe1;fica los ejes seleccionados.</li>
+</ul>
+<blockquote>
+
+<p>Si un eje no tiene una serie asociada no ser&#xe1; representado en la gr&#xe1;fica</p>
+</blockquote>
+<p>Adem&#xe1;s de a&#xf1;adir, copiar, borrar, visualizar/ocultar ejes en la gr&#xe1;fica, se da la opci&#xf3;n de realizar la configuraci&#xf3;n <span class="ti-settings"></span>. Existen dos tipos:</p>
+<ul>
+
+<li>&#xda;nica: los cambios realizados aplicar&#xe1;n a solo un eje.</li>
+</ul>
+<p><img src="images/Imagen49.png" class="grande" alt="Configuración única" title="Configuración única" /></p>
+<ul>
+
+<li>M&#xfa;ltiple: los cambios realizados aplicar&#xe1;n a todas las series seleccionadas. Si no hay ning&#xfa;n eje seleccionado se contar&#xe1;n todos como seleccionados.</li>
+</ul>
+<p><img src="images/Imagen50.png" class="grande" alt="Configuración múltiple" title="Configuración múltiple" /></p>
+<blockquote>
+
+<p>En la configuraci&#xf3;n m&#xfa;ltiple no es posible editar todas las configuraciones como lo es en la configuraci&#xf3;n &#xfa;nica.</p>
+</blockquote>
+<p>Listado de configuraciones bloqueadas en la edici&#xf3;n m&#xfa;ltiple de ejes Y:</p>
+<ul>
+
+<li>Editar el t&#xed;tulo de un eje.</li>
+<li>Cambiar el intervalo de los ticks</li>
+<li>Configuraci&#xf3;n de series asociadas.</li>
+</ul>
+<p>Cuando se muestre un campo en el que cada eje tiene un valor distinto se mostrar&#xe1; el campo con el valor vacio.</p>
+<p>Un eje seleccionado cambia su color de fondo al color corporativo. Para seleccionar o deseleccionar un eje pulsar click izquierdo sobre el. Se podr&#xe1; utilizar la tecla &#x201c;Shift&#x201d; para realizar una selecci&#xf3;n m&#xfa;ltiple r&#xe1;pidamente. Para ello, seleccionar el primer eje del listado que queremos, y luego pulsar sobre el &#xfa;ltimo teniendo pulsada la tecla &#x201c;Shift&#x201d;, se seleccionar&#xe1;n automaticamente todos los ejes situados entre el primero y el &#xfa;ltimo.</p>
+<p>Tambi&#xe9;n sera posible en este listado reordenar los ejes arrastrandolas con click izquierdo.</p>
+<p>La configuraci&#xf3;n de un eje esta dividido en 3 bloques:</p></section><section>
+<h3><a name="a5.3.1_General"></a><a name="ejesy-general"></a>5.3.1 General</h3>
+<p>Permite seleccionar las caracter&#xed;sticas generales del eje X seleccionado.</p>
+<p><img src="images/Imagen42.png" class="mediano" alt="Configuración general eje X" title="Configuración general eje X" /></p>
+<ul>
+
+<li><b>T&#xed;tulo</b>: Permite modificar el t&#xed;tulo del eje.</li>
+<li><b>Visible</b>: Casilla que permite modificar la visibilidad del eje.</li>
+<li><b>Grid</b>: Permite visibilizar l&#xed;neas verticales para cada divisi&#xf3;n temporal del eje x.</li>
+<li><b>Intervalo de los ticks</b>: Por defecto su valor es Auto permitiendo que las marcas del intervalo de tiempo a mostrarse en el eje X se ajusten autom&#xe1;ticamente en funci&#xf3;n del periodo de tiempo configurado en la gr&#xe1;fica. Al seleccionar otro valor del desplegable el eje X presentar&#xe1; marcas en funci&#xf3;n del valor escogido.</li>
+</ul>
+<p><img src="images/Imagen19.png" class="grande" alt="Configuración ejes X" title="Configuración ejes X" /></p>
+<p><img src="images/Imagen20.png" class="grande" alt="Intervalo de ticks" title="Intervalo de ticks" /></p>
+<ul>
+
+<li><b>Color</b>: Permite modificar el color del eje.</li>
+</ul></section><section>
+<h3><a name="a5.3.2_Serie_asociadas"></a><a name="ejesx-seriesasociadas"></a>5.3.2 Serie asociadas</h3>
+<p>Muestra el listado de series vinculadas al eje seleccionado, acompa&#xf1;ado de una casilla que estar&#xe1; marcada si la serie pertenece al eje seleccionado. Se puede vincular o desvincular una serie a un eje marcando o desmarcando dicha casilla. <b>Si un eje no tiene series asociadas no se mostrar&#xe1; en la gr&#xe1;fica.</b></p>
+<p><img src="images/Imagen40.png" class="mediano" alt="Series asociadas" title="Series asociadas" /></p><hr /></section><section>
+<h3><a name="a5.4_Tipos_de_gr.C3.A1fica"></a><a name="tipos"></a>5.4 Tipos de gr&#xe1;fica</h3>
+<p>Permite modificar el tipo de gr&#xe1;fica a otras de los tipos disponibles en el sistema. Debido a incompatibilidades entre todos los tipos de gr&#xe1;fica cuando se cambia el tipo solo se tendr&#xe1;n en cuenta las se&#xf1;ales y las fechas seleccionadas. Adem&#xe1;s, no todas las gr&#xe1;fica soportan los mismos tipos de se&#xf1;ales. Cuando se de el caso de que no son compatibles las series se borrar&#xe1;n. Si se da el caso de que ninguna se&#xf1;al es compatible se abrir&#xe1; el selector de se&#xf1;ales para que la gr&#xe1;fica no se quede vacia. Cuando se cambia el tipo de gr&#xe1;fica la configuraci&#xf3;n actual no se pierde, se queda almacenada hasta que vuelvas a seleccionar ese tipo de gr&#xe1;fica. Por ejemplo, si se est&#xe1; editando una gr&#xe1;fica de tendencia y por error se cambia a agrupados se podr&#xe1; volver a tendencia y la configuraci&#xf3;n no se habr&#xe1; perdido.</p>
+<p>Desde el bot&#xf3;n &#x201c;Configuraci&#xf3;n&#x201d; <span class="ti-settings"></span> se desplegar&#xe1; el panel lateral derecho, que permite modificar las opciones generales de la gr&#xe1;fica en cuesti&#xf3;n. Algunas configuraciones son comunes para todas los tipos gr&#xe1;fica:</p>
+<p><img src="images/Imagen20-1.png" class="grande" alt="Configuración general de gráfica" title="Configuración general de gráfica" /></p>
+<ul>
+
+<li><b>Gr&#xe1;fica</b>: permite configurar si la gr&#xe1;fica de tendencia ser&#xe1; de tipo
+<ul>
+
+<li><b>Simple</b>: Opci&#xf3;n por defecto, todas las series comparten eje independientemente de su escala. Permite configurar los ejes accediendo a la configuraci&#xf3;n ejes Y.</li>
+<li><b>Multiejes</b>: Dado que cada se&#xf1;al contiene escalas distintas debido al valor de sus datos, con la opci&#xf3;n de m&#xfa;ltiples ejes se permiten visualizar los valores de las diferentes se&#xf1;ales a la vez con sus correspondientes ejes (dichos ejes ser&#xe1;n configurables). Dentro de esta configuraci&#xf3;n para cada serie podemos definir un valor M&#xe1;ximo y M&#xed;nimo para los ejes, de forma que los ejes no se autoajustan por sus valores sino que permite que observemos las se&#xf1;ales sobre la escala que decidamos</li>
+<li><b>Multigr&#xe1;fica</b>: Esta opci&#xf3;n permite la visualizaci&#xf3;n de las series por separado, cada una sobre un eje.</li>
+</ul>
+</li>
+<li><b>Tema</b>: Permite cambiar los colores, los efectos de visualizaci&#xf3;n de la gr&#xe1;fica. Las opciones son Claro, Arena y Oscuro.</li>
+<li><b>Leyenda</b> Permite mostrar/ocultar la leyenda (1) de la gr&#xe1;fica.</li>
+</ul>
+<p>Tambi&#xe9;n hay opciones especificas para cada gr&#xe1;fica:</p></section><section>
+<h3><a name="a5.4.1_Configuraci.C3.B3n_tendencia"></a><a name="config-tendencia"></a>5.4.1 Configuraci&#xf3;n tendencia</h3>
+<ul>
+
+<li><b>Navegador</b>: Permite mostrar/ocultar la barra de navegaci&#xf3;n inferior  (2),  situada debajo del eje X,  y permite modificar el periodo de tiempo representado en el &#xe1;rea del gr&#xe1;fico. Las 2 marcas de color negro (3 y 4) representan el periodo de tiempo que se muestra en la gr&#xe1;fica.</li>
+<li><b>Serie navegador</b> permite seleccionar cu&#xe1;l de las se&#xf1;ales configuradas en la gr&#xe1;fica se usar&#xe1; para representarlo en el Navegador.</li>
+</ul></section><section>
+<h3><a name="a5.4.1_Configuraci.C3.B3n_agrupados"></a><a name="config-agrupados"></a>5.4.1 Configuraci&#xf3;n agrupados</h3>
+<ul>
+
+<li><b>Apilar</b>: Permite representar los datos de la gr&#xe1;fica acumulados uno encima del otro. La primera imagen tiene el apilado desactivado y la segunda activado.</li>
+</ul>
+<p><img src="images/Imagen43.png" class="grande" alt="Agrupados sin apilar" title="Agrupados sin apilar" /></p>
+<p><img src="images/Imagen44.png" class="grande" alt="Agrupados apilado" title="Agrupados apilado" /></p>
+<ul>
+
+<li><b>Agrupado por</b>: Se podr&#xe1; escoger si se quiere agrupar por intervalos temporales o agrupar por cada se&#xf1;al.</li>
+<li><b>Agrupado X (Nivel 1)</b>: Agrupaci&#xf3;n temporal que se calcular&#xe1; para el eje X.</li>
+<li><b>Agrupado X (Nivel 2 Multinivel)</b>: Al seleccionarlo se crear&#xe1; un segundo eje X con el agrupado seleccionado para tener una informaci&#xf3;n mas extensa.</li>
+</ul>
+<p><img src="images/Imagen45.png" class="grande" alt="Modo desagrupado" title="Modo desagrupado" /></p>
+<ul>
+
+<li><b>Mostrar categorias vacias</b>: Si alguna categor&#xed;a mostrada no tiene valor se permitir&#xe1; ocultarla usando este bot&#xf3;n.</li>
+<li><b>Agrupado Y (Mapa de calor)</b>: Al seleccionarlo se pasar&#xe1; a una visualizaci&#xf3;n de mapa de calor utilizando las dos agrupaciones. Los valores representados son los mismos que en el modo Multinivel.</li>
+</ul>
+<p><img src="images/Imagen46.png" class="grande" alt="Mapa de calor" title="Mapa de calor" /></p>
+<ul>
+
+<li><b>Serie mapa de calor</b>: En el modo mapa de calor solo se puede representar una serie. Con este selector se puede escoger cual mostrar.</li>
+</ul>
+<blockquote>
+
+<p>Si estamos en modo Multinivel no podremos activar el modo mapa de calor, y viceversa.</p>
+</blockquote></section><section>
+<h3><a name="a5.4.1_Configuraci.C3.B3n_tiempo_real"></a><a name="config-tiemporeal"></a>5.4.1 Configuraci&#xf3;n tiempo real</h3>
+<p><b>La gr&#xe1;fica de tiempo real no presenta ninguna configuraci&#xf3;n espec&#xed;fica.</b></p><hr /></section><section>
+<h3><a name="a5.5_Plantillas"></a><a name="plantillas"></a>5.5 Plantillas</h3>
+<p>Las plantillas de documentos son una herramienta para poder utilizar una misma configuraci&#xf3;n de gr&#xe1;fica para representar las se&#xf1;ales de distintos activos del inventario.</p>
+<p>Si al crear la gr&#xe1;fica seleccionamos <a href="#nueva-plantilla">&#x201c;Nueva plantilla&#x201d;</a> aparecer&#xe1; esta nueva secci&#xf3;n (1).</p>
+<p><img src="images/Imagen54.png" class="mediano" alt="Plantilla de gráficas" title="Plantilla de gráficas" /></p>
+<p>Dentro de ella podremos diferenciar 3 apartados distintos.</p>
+<p>1) Por una parte, en el panel izquierdo (2) se mostrar&#xe1; la lista de todas las plantillas seleccionadas. Por defecto aparecer&#xe1;n las seleccionadas en el asistente pero podremos a&#xf1;adir hasta 3.</p>
+<p>2) En la barra superior tendremos un bot&#xf3;n de selecci&#xf3;n de activos (3). Cuando se abre una plantilla por primera vez se selecciona automaticamente un activo por cada plantilla sobre el que pintar la gr&#xe1;fica, y desde este bot&#xf3;n se podr&#xe1;n cambiar por otros.</p>
+<p>3) El panel derecho ser&#xe1; solo visible cuando se seleccione una plantilla en el panel izquierdo (1). En el se mostrar&#xe1; un listado (4) de todos los atributos compatibles con la gr&#xe1;fica, y se marcar&#xe1;n como seleccionados los que est&#xe1;n representados. Si se selecciona un atributo se a&#xf1;adir&#xe1; una nueva serie a la gr&#xe1;fica, y si se deselecciona se borrar&#xe1;.</p>
+<p>Los documentos de tipo plantilla se podr&#xe1;n diferenciar del resto por mostrar un icono especial <span class="ti-layout"></span>.</p>
+<p>Si guardamos una plantilla de documento al abrirla se abrir&#xe1; una ventana modal para que seleccionemos los activos que queremos representar.</p><hr /></section></section><section>
+<h2><a name="a6_Barra_de_herramientas"></a><a name="toolbar"></a> 6 Barra de herramientas</h2>
+<p>En la parte superior de las gr&#xe1;ficas de tendencia y agrupados aparecer&#xe1; una barra de herramientas, dentro de la cual se podr&#xe1;n diferenciar distintos elementos.</p>
+<p><img src="images/Imagen56.png" class="grande" alt="Barra de herramientas de gráficas" title="Barra de herramientas de gráficas" /></p>
+<p>Lo primero que aparece es un resumen del periodo de fechas seleccionado en la gr&#xe1;fica. Si las series tienen periodos de fechas distintos se mostrar&#xe1; el intervalo que cubra las fechas de todas las series.</p>
+<p>Despu&#xe9;s estar&#xe1; el selector de periodos, donde podremos seleccionar entre algunos periodos de fechas predefinidos para aplicar a todas las series. Adem&#xe1;s, si seleccionamos la opci&#xf3;n &#x201c;Personalizado&#x201d; se abrir&#xe1; <a href="../dates/dates.html#full">el selector de fechas</a> para poder tener una configuraci&#xf3;n mas compleja.</p>
+<p>Despu&#xe9;s, si estamos en la gr&#xe1;fica de tendencia se mostrar&#xe1; un campo para cambiar la marca de todas las series de la gr&#xe1;fica. Sin embargo, si estamos en la gr&#xe1;fica de agrupados se mostrar&#xe1; un campo para cambiar el tipo estad&#xed;stico de todas las series.</p>
+<p>Adem&#xe1;s, si estamos en modo plantilla, al final de la barra de herramientas aparecer&#xe1; un bot&#xf3;n para cambiar los activos seleccionados.</p><hr /></section><section>
+<h2><a name="a7_Elementos_comunes"></a><a name="comunes"></a> 7 Elementos comunes</h2><section>
+<h3><a name="a7.1_Panel_de_estad.C3.ADsticas"></a><a name="estadisticas"></a> 7.1 Panel de estad&#xed;sticas</h3>
+<p>En el pie de la gr&#xe1;fica, se puede encontrar un desplegable en el cu&#xe1;l se muestra un panel con las estad&#xed;sticas de las series seleccionadas en el rango de fechas de consulta de la gr&#xe1;fica. <b>Esta funcionalidad no esta disponible en la gr&#xe1;fica de tiempo real.</b></p>
+<p><img src="images/Imagen4-2.png" class="mediano" alt="Panel de visualización de estadísticas" title="Panel de visualización de estadísticas" /></p></section><section>
+<h3><a name="a7.2_Tooltips_fijos"></a><a name="tooltips-fijos"></a> 7.2 Tooltips fijos</h3>
+<p>Al hacer click sobre el area pintada de la gr&#xe1;fica se mostrar&#xe1; una ventana modal para a&#xf1;adir un tooltip fijo. En esta ventana podremos configurar que informaci&#xf3;n queremos mostrar, adem&#xe1;s de poder escribir un t&#xed;tulo y una descripci&#xf3;n.</p>
+<p><img src="images/Imagen47.png" class="mediano" alt="Edición de tooltips fijos" title="Edición de tooltips fijos" /></p>
+<p>Si pulsamos aceptar se a&#xf1;adir&#xe1; el tooltip fijo, el cual podremos mover por la gr&#xe1;fica, adem&#xe1;s de cerrarlo o pulsar sobre el bot&#xf3;n de editar para volver a abrir la ventana modal.</p>
+<p><img src="images/Imagen48.png" class="mediano" alt="Tooltip fijo" title="Tooltip fijo" /></p></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="ti-package"></cite>
+  
+<h1>ASSETS</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#plantillas-activos">Asset templates</a></li>
+<li>2.1 <a href="#definicion-atributos">Definition of attributes</a></li>
+<li>3 <a href="#activos">Assets</a></li>
+<li>4 <a href="#organizadores-plantillas">Template organizers</a></li>
+<li>5 <a href="#organizadores-activos">Asset organizers</a></li>
+<li>6 <a href="#carga-masiva">Bulk loading</a></li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>The &#x201c;Assets&#x201d; section of the control panel contains the tools for managing the asset inventory. From here you can register asset templates, assets, template organizers and asset organizers. In this way we can manage all IDboxRT asset inventory operations.</p>
+<p>This section is accessed from the control panel.</p>
+<p><img src="images/Imagen11.png" class="grande" alt="Inventory access" title="Inventory access" /></p>
+<p>In each section we will find a list with the elements registered in the corresponding block.</p>
+<p>In all sections we will find on the left a search engine and on the right among the options we will find an add button <span class="ti-plus"></span>, that will allow us to add a new element to that section. Also if we select a record it will allow us to edit it using the edit button <span class="ti-pencil-alt"></span>, or delete it using the delete button <span class="ti-trash"></span>.</p><hr /></section><section>
+<h2><a name="a2_Asset_templates"></a><a name="plantillas-activos"></a>2 Asset templates</h2>
+<p>As we enter the section we will find the list with the asset templates.</p>
+<p><img src="images/Imagen21.png" class="grande" alt="List of asset template" title="List of asset templates" /></p>
+<p>The filter button <span class="ti-filter"></span>, will allow us to filter by template extensibility (only pull out extensible ones, only non-extensible ones, etc.) and/or the template type (&#x201c;Complex&#x201d;, &#x201c;Lookup&#x201d; o &#x201c;Metadata&#x201d;).</p>
+<p>In addition, we have a button to import templates <span class="icon-id-import"></span> which is explained in section <a href="#carga-masiva">Bulk loading</a>.</p>
+<p>Once we add or edit a template, we will enter the template definition section.</p>
+<p><img src="images/Imagen22.png" class="grande" alt="Editing asset templates" title="Editing asset templates" /></p>
+<p>A template is a data structure that will define the attributes that an asset has. We can distinguish the following fields:</p>
+<ul>
+
+<li>Name: Name that we will give to the template.</li>
+<li>Description: Description of the template.</li>
+<li>Type of template: It may be of one of the following types:</li>
+<li>Complex: Mainly used to define a real asset by means of properties (attributes). These can be real assets of the company, infrastructure, machines, etc. The Complex template allows you to create a hierarchy (relate parent assets to child assets).</li>
+<li>Metadata: It is the definition of a data structure that when defined will complement the data of an organizer. Metadata templates can only be associated to organizers.</li>
+<li>Lookup: It will not appear to select in this combo because they cannot be created by the user. It is a data structure that defines the necessary attributes so that the lookup asset that is created based on this template can make a connection to a system external to the IDboxRT inventory. It is considered external system to the IDboxRT inventory: the backend of the IDboxRT or a third system. These connections will make possible the execution of queries defined at the level of a complex asset or a metadata asset.</li>
+<li>Simple: It will not appear for us to select in this combo because they cannot be created by the user. An example would be the &#x201c;Signal&#x201d; template, which will indicate that this field contains a reference to an IDboxRT signal. These templates are defined with the system.</li>
+<li>Extensible template only: Option available for the Complex template. Checking it makes it possible for the attributes of this template to be inherited in another template. Extensible-only templates by themselves do not allow to create assets, since they describe something partial or abstract.</li>
+<li>Non-extensible template: Option available for Complex templates. If checked, it indicates that no other template can inherit from it. A non-extensible template can inherit the attributes defined in an extensible-only template. The non-extensible template allows to create assets.</li>
+<li>Organized template: Indicates whether it is mandatory to save the template in a folder hierarchy known as a template organizer. Checking &#x201c;Organized template&#x201d; will make the &#x201c;Store in destination(s)&#x201d; field mandatory.</li>
+<li>Organized asset - assets to be registered based on this template will have the field &#x201c;Store in destination(s)&#x201d; marked as mandatory.</li>
+<li>Store in destination(s): Used to indicate the organizer(s) in which this template will be stored.</li>
+<li>Template to extend: Allows to import, inherit, the attributes defined in a &#x201c;Template only extensible&#x201d;. These attributes to be inherited will be shown only in the asset registration form.</li>
+</ul>
+<p>In the central part of the form the template attributes will be displayed. A template that has an active one cannot be modified. We will be able to search among the existing ones by means of &#x201c;Search&#x201d;.</p>
+<p>We can create a new attribute by clicking on the <span class="ti-plus"></span>. Selecting an existing attribute will allow us to edit it by means of the edit button <span class="ti-pencil-alt"></span>, or delete it using the delete button <span class="ti-trash"></span>.</p><section>
+<h3><a name="a2.1_Definition_of_attributes"></a><a name="definicion-atributos"></a>2.1 Definition of attributes</h3>
+<p>Once we edit or add an attribute, we will have the following screen to define the attributes.</p>
+<p><img src="images/Imagen211.png" class="grande" alt="Definition of attributes" title="Definition of attributes" /></p>
+<p>The attributes are composed of the following fields: * Name: Name of the attribute that will be shown when registering an asset. * Required: Indicates if the attribute will be required when registering the asset. * External: At the IDbox inventory level it is an informative field. It is used to give a value to the information, to know that what this field stores in the asset form is in an external system, it is not in the IDboxRT inventory. * Type: Indicates the type of data that the attribute will accept in the asset. The following types are possible:</p>
+<ul>
+
+<li>String: Allows text type characters (alphanumeric).
+<ul>
+
+<li>Integer: Allows only integers.</li>
+<li>Decimal: Allows decimal numbers. If the user will enter an integer number, it will be saved internally as decimal.</li>
+<li>Date: Allows data in date format.</li>
+<li>DateTime: Allows data in date and time formats.</li>
+<li>Complex: Selecting this option will display the Template field where you can choose between all Complex or Lookup templates. Selecting a Complex template will allow the creation of a hierarchy of parent - child assets. In the parent asset registration form, in the field corresponding to this attribute, the previously created child assets will be selected. Selecting a Lookup template, in the asset registration form, in the field corresponding to this attribute, it will be possible to select a previously registered lookup asset and define the query to be performed.</li>
+<li>Simple: As with the Complex type, the &#x201c;Templates&#x201d; field will be displayed in the form, allowing access to the simple Signal template. When selecting the &#x201c;Signal&#x201d; template in the Attribute Definition form, the External field will be checked automatically.</li>
+</ul>
+</li>
+<li>Tags : At the attribute level, one or more tags can be defined. A tag is an expression consisting of a lowercase text preceded by # (e.g. #capacity). Tags will allow to display, in Explorer, the value of the attribute where they have been defined. Clicking on Tags opens the &#x201c;Enter or select a tag&#x201d; form provided with a search engine in which you have to type the tag to assign. If the tag is not already created in the application, click OK. By accepting, the tag will be created and associated to the edited attribute. If the tag exists, it will be selected from the list returned by the search engine. It is not recommended to add tags to attributes that have a collection. The tags of these attributes cannot show the values of a collection.</li>
+<li>Pattern: This is the regular expression that defines the format of the data to be entered in the corresponding field of the asset (only capital letters, only letters, spaces, NIF format, etc.).</li>
+<li>Default value: By checking this check you will be able to indicate in the field with the same name the value that will be shown by default in the asset registration. The format of this value will depend on the type of attribute (string, integer, decimal, date, datetime).</li>
+<li>Max Length: Defines the maximum number of characters allowed for this attribute in the asset form.</li>
+<li>Min Length: Defines the minimum number of characters allowed for this attribute in the asset&#x2019;s form.</li>
+<li>Unique: Assets, as long as they are from the same template, cannot repeat the same value for the field defined as unique. The uniqueness applies to each of the inheritance hierarchies; it is per template.</li>
+<li>Collection: Indicates that instead of being a single value, the asset will have a collection of values of the type indicated in the &#x201c;Type&#x201d; field. Checking this option will enable the &#x201c;Capacity&#x201d; and &#x201c;Mapping Required&#x201d; buttons.</li>
+<li>Capacity - defines the mandatory number of values, elements that the collection will have. If no number is specified in Capacity the collection will have as many values, elements as the user needs.</li>
+<li>Mapping Required - is an identifier for each element in the collection. This identifier will be displayed only in the asset form; it will not be displayed when viewing the asset in Explorer. Checking this option will bring up a list on the right for us to give an identifier to each of the values. One row will be shown for each capability and we will be able to add more or delete them using the Add buttons <span class="ti-plus"></span> and eliminate <span class="ti-trash"></span>. In addition, if we enter a text in &#x201c;Autocomplete Mapping&#x201d;, it will autocomplete all identifiers with the text we have entered and an auto-incremental numeric (e.g. with the text &#x201c;Signal&#x201d;, it will write &#x201c;Signal 1&#x201d;, Signal 2&quot;, etc.).</li>
+</ul>
+<p>Save the entire template by clicking on the save button on the toolbar <span class="ti-save"></span>.</p><hr /></section></section><section>
+<h2><a name="a3_Assets"></a><a name="activos"></a>3 Assets</h2>
+<p>When entering this section we will find the list of the system&#x2019;s assets.</p>
+<p><img src="images/Imagen31.png" class="grande" alt="List of assets" title="List of assets" /></p>
+<p>In addition, we will have the filter button <span class="ti-filter"></span>, which will allow us to filter by asset name and/or template type (&#x201c;Complex&#x201d;, &#x201c;Lookup&#x201d; or &#x201c;Metadata&#x201d;).</p>
+<p>On the other hand, we have the active import buttons <span class="icon-id-import"></span> and download templates <span class="icon-id-d-template"></span> which are explained in the section <a href="#carga-masiva">Bulk Loading</a>.</p>
+<p>When we edit or create an asset we will enter the asset editing screen.</p>
+<p><img src="images/Imagen32.png" class="grande" alt="Editing an asset" title="Editing an asset" /></p>
+<p>In this screen we will have a form that will have a common part for all the assets and then a part that will depend on what we have defined in the asset template. How each field will look like is explained in the section <a href="#plantillas-activos">Asset Templates</a>. For example, if we have a field of type Integer defined in the template, this field will appear here to enter an integer.</p>
+<p>In the case of the common part, the fields are as follows: * Template: Indicates the template by which this form will be generated. The attributes defined in that template are the ones we will see here. * Store in destination(s): Indicates the organizers where the asset will be. * Name: The name of the asset. * Description: A description for the asset.</p>
+<p>It is worth noting the display of a Lookup type field. In the case of the image above, the &#x201c;NumUsersIDbox&#x201d; field is of Lookup type. In it we see the selection of a Lookup type asset in the &#x201c;Connection&#x201d; field, the query to be performed in the &#x201c;Query&#x201d; field and then an execute button <span class="ti-bolt"></span> in which we will run the &#x201c;Query&#x201d; against the external system defined in the &#x201c;Connection&#x201d; and it will show us the resulting value.</p>
+<p>In the case that the attributes are not simple and are of type &#x201c;Collection&#x201d;, a button will appear that will open another window to enter those values. In the example of the attribute in the screenshot above, &#x201c;Machines&#x201d; is of type &#x201c;Collection&#x201d;.</p>
+<p>The asset will be saved once we click on the save button in the toolbar <span class="ti-save"></span>.</p><hr /></section><section>
+<h2><a name="a4_Template_organizers"></a><a name="organizadores-plantillas"></a>4 Template organizers</h2>
+<p>Here you will find the list of template organizers.</p>
+<p><img src="images/Imagen41.png" class="grande" alt="Template organizers" title="Template organizers" /></p>
+<p>When editing or registering an organizer, you will enter the following screen.</p>
+<p><img src="images/Imagen42.png" class="grande" alt="Editing template organizer" title="Editing template organizer" /></p>
+<p>The fields are as follows: * Name: Name of the organizer. * Description: Description of the organizer. * Parent: Organizer that in the hierarchy, will be the parent of this one. * Metadata: Used to select a metadata template for the purpose of displaying information at the organizer level.</p>
+<p>By clicking on the save button on the toolbar <span class="ti-save"></span>, we will save the template organizer.</p><hr /></section><section>
+<h2><a name="a5_Asset_organizers"></a><a name="organizadores-activos"></a>5 Asset organizers</h2>
+<p>The first thing you will find is the list of asset organizers.</p>
+<p><img src="images/Imagen51.png" class="grande" alt="Asset organizers" title="Asset organizers" /></p>
+<p>If we add or edit one we will enter the edit screen of an asset organizer.</p>
+<p><img src="images/Imagen52.png" class="grande" alt="Asset organizer edition" title="Asset organizer edition" /></p>
+<p>The fields are as follows: * Name: Name of the organizer. * Description: Description of the organizer. * Parent: Organizer that in the hierarchy, will be the parent of this one. * Metadata: Used to select a metadata template in order to display information at organizer level.</p>
+<p>The asset organizer will be saved when we click on the save button in the toolbar <span class="ti-save"></span>.</p><hr /></section><section>
+<h2><a name="a6_Bulk_loading"></a><a name="carga-masiva"></a>6 Bulk loading</h2>
+<p>Bulk loading modes:</p>
+<ul>
+
+<li>Import from excel with templates: Imports the inventory system templates from the excel file with the definition. You will find it in the import button <span class="icon-id-import"></span> from the section <a href="#plantillas-activos">Asset Templates</a>.</li>
+<li>Export template for assets: Download the excel format that has to be followed to insert assets. This button <span class="icon-id-d-template"></span> is located in the section <a href="#activos">Assets</a>.</li>
+<li>Import excel file with assets: Once the excel file with the system assets is generated, it is imported to the system. We will find the button <span class="icon-id-import"></span> in the section <a href="#activos">Assets</a>.</li>
+</ul></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

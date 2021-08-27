@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+    <cite class="ti-settings"></cite>
+    
+<h1>Fichero de configuraci&#xf3;n</h1>
+</div>
+
+<p>En el fichero de configuraci&#xf3;n se podr&#xe1;n configurar distintos par&#xe1;metros para el correcto funcionamiento de la web. Este fichero se encuentra en <b>IDbox/Clients/Web/assets/config/config-env.js</b>. Para aplicar los cambios realizados en la configuraci&#xf3;n ser&#xe1; necesario actualizar el navegador.</p>
+<ul>
+
+<li><b>assetsAPI</b>: URL de la api de activos</li>
+<li><b>assetsLookupdb</b>: URL de la api de activos lookupdb</li>
+<li><b>assetsCredentials</b>: Credenciales para la API de activos</li>
+<li><b>kmlAPI</b>: URL de la api de kmls de mapas</li>
+<li><b>baseUrl</b>:</li>
+<li><b>apiUrl</b>:</li>
+<li><b>signalRUrl</b>:</li>
+<li><b>signalRHub</b>:</li>
+<li><b>authenticationMode</b>:</li>
+<li><b>defaultCreds</b>:</li>
+<li><b>defaultSecurityGroup</b>:</li>
+<li><b>apiTokenUrl</b>:</li>
+<li><b>openID</b>:
+<ul>
+
+<li><b>authority</b>:</li>
+<li><b>client_id</b>:</li>
+<li><b>redirect_url</b>:</li>
+<li><b>post_logout_redirect_url</b>:</li>
+<li><b>response_type</b>:</li>
+<li><b>scope</b>:</li>
+<li><b>filterProtocolClaims</b>:</li>
+<li><b>loadUserInfo</b>:</li>
+<li><b>automaticSilentRenew</b>:</li>
+<li><b>silent_redirect_uri</b>:</li>
+</ul>
+</li>
+<li><b>allowGeneralFutureDates</b>: Define si se permite seleccionar una fechas futuras en todos los selectores de fechas de la web.</li>
+<li><b>graphics</b>:
+<ul>
+
+<li><b>trend</b>:
+<ul>
+
+<li><a name="maximumNumberOfTagsTrend"></a> <b>maximumNumberOfTags</b>: Define el m&#xe1;ximo de series que se podr&#xe1;n representar en la gr&#xe1;fica de tendencia.</li>
+<li><a name="allowZoomByWheel"></a> <b>allowZoomByWheel</b> Habilita la funcionalidad para hacer zoom en la gr&#xe1;fica de tendencia usando la rueda del rat&#xf3;n.</li>
+<li><b>maxPoints</b>: Define el n&#xfa;mero m&#xe1;ximo de puntos que se representar&#xe1; en la gr&#xe1;fica de tendencia. Este valor se usar&#xe1; para el c&#xe1;lculo de la marca autom&#xe1;tica.</li>
+<li><b>defaultVisualizationType</b>: Aspecto de las series que se cargar&#xe1; por defecto. Los valores disponibles son <b>Line</b>, <b>Spline</b>, <b>StepLine</b>, <b>Area</b>, <b>Column</b> y <b>Scatter</b>. Estos valores solo aplicar&#xe1;n a se&#xf1;ales anal&#xf3;gicas.</li>
+</ul>
+</li>
+<li><b>grouped</b>:
+<ul>
+
+<li><b>maximumNumberOfTags</b>: Define el m&#xe1;ximo de series que se podr&#xe1;n representar en la gr&#xe1;fica de agrupados.</li>
+<li><b>defaultVisualizationType</b>: Aspecto de las series que se cargar&#xe1; por defecto. Los valores disponibles son <b>Line</b>, <b>Spline</b>, <b>StepLine</b>, <b>Area</b>, <b>Column</b> y <b>Scatter</b>. Estos valores solo aplicar&#xe1;n a se&#xf1;ales anal&#xf3;gicas.</li>
+</ul>
+</li>
+<li><b>realtime</b>:
+<ul>
+
+<li><b>maximumNumberOfTags</b>: Define el m&#xe1;ximo de series que se podr&#xe1;n representar en la gr&#xe1;fica de tiempo real.</li>
+<li><a name="defaultPointNumber"></a> <b>defaultPointNumber</b>: Define el n&#xfa;mero de puntos que se usar&#xe1; por defecto en gr&#xe1;ficas de tiempo real.</li>
+<li><b>defaultVisualizationType</b>: Aspecto de las series que se cargar&#xe1; por defecto. Los valores disponibles son <b>Line</b>, <b>Spline</b>, <b>StepLine</b>, <b>Area</b>, <b>Column</b> y <b>Scatter</b>. Estos valores solo aplicar&#xe1;n a se&#xf1;ales anal&#xf3;gicas.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>historics</b>:
+<ul>
+
+<li><b>maximumNumberOfTags</b>: Define el m&#xe1;ximo de series que se podr&#xe1;n representar en un documento de hist&#xf3;ricos.</li>
+</ul>
+</li>
+<li><b>functions</b>:
+<ul>
+
+<li><b>maximumFunctionLength</b>:</li>
+</ul>
+</li>
+<li><b>reports</b>:
+<ul>
+
+<li><b>maximumNumberOfTags</b>: Define el n&#xfa;mero m&#xe1;ximo de se&#xf1;ales que se pueden incluir en un documento de informe.</li>
+</ul>
+</li>
+<li><b>shortcuts</b>:
+<ul>
+
+<li><b>enabled</b>:</li>
+<li><b>title</b>:</li>
+<li><b>logo</b>:</li>
+<li><b>url</b>:</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="ti-server"></cite>
+  
+<h1>HIST&#xd3;RICOS</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a></li>
+<li>2 <a href="#historicos">Visualizaci&#xf3;n de hist&#xf3;ricos</a></li>
+<li>3 <a href="#configuracionHistoricos">Configuraci&#xf3;n</a></li>
+<li>4 <a href="#data-import">Importaci&#xf3;n de datos</a></li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>Desde el documento de hist&#xf3;ricos podremos visualizar el listado de los datos hist&#xf3;ricos de una o varias se&#xf1;ales, pudiendo seleccionar el intervalo de tiempo a mostrar, as&#xed; como la resoluci&#xf3;n de los datos.</p>
+<p>Los documentos de hist&#xf3;ricos se pueden crear desde desde el lanzador (1), desde el shortcut (2) o desde los accesos directos.</p>
+<p><img src="images/image01.png" class="grande" alt="Creación de documento de históricos" title="Creación de documento de históricos" /></p>
+<p>1) Para crear un documento de hist&#xf3;ricos desde el lanzador se necesita tener se&#xf1;ales en &#x201c;Mi selecci&#xf3;n de se&#xf1;ales&#x201d;, seleccionar las se&#xf1;ales que desea analizar hacer clic en &#x201c;Hist&#xf3;ricos&#x201d;.</p>
+<p><i>En la secci&#xf3;n de se&#xf1;ales del explorador, pulsando el bot&#xf3;n <span class="icon-id-starempty"></span>, dicha se&#xf1;al se a&#xf1;adir&#xe1; a &#x201c;Mi selecci&#xf3;n de se&#xf1;ales&#x201d;.</i></p>
+<p>2) Al pulsar en el acceso directo de hist&#xf3;ricos se abrir&#xe1; el asistente de creaci&#xf3;n de un nuevo documento, en el cual tendremos que realizar las siguientes acciones:</p>
+<ul>
+
+<li>Se&#xf1;ales: Hay que seleccionar una se&#xf1;al como m&#xed;nimo y como m&#xe1;ximo se usar&#xe1; el valor configurado en el <a href="../config-file/config-file.html#maximumNumberOfTagsHistorics">fichero de configuraci&#xf3;n</a>.
+<ul>
+
+<li>Fechas: Permite seleccionar la configuraci&#xf3;n de fechas del documento.</li>
+</ul>
+</li>
+</ul>
+<p>Establecida la configuraci&#xf3;n inicial, se mostrar&#xe1; el listado de hist&#xf3;ricos en la pantalla.</p>
+<p>3) Desde la secci&#xf3;n de accesos directos, al pulsar el bot&#xf3;n &#x201c;Hist&#xf3;ricos&#x201d; se abrir&#xe1; un nuevo documento de hist&#xf3;ricos con las se&#xf1;ales seleccionadas y con un periodo de una d&#xed;a.</p>
+<p>Una vez creado el documento de hist&#xf3;ricos, en la parte central se mostrar&#xe1;n los datos hist&#xf3;ricos y en el panel derecho la configuraci&#xf3;n relativa a los datos a visualizar.</p>
+<p><img src="images/image02.PNG" class="grande" alt="Barra de herramientas" title="Documento de históricos" /></p><hr /></section><section>
+<h2><a name="a2_Visualizaci.C3.B3n_de_hist.C3.B3ricos"></a><a name="historicos"></a>2 Visualizaci&#xf3;n de hist&#xf3;ricos</h2>
+<p>En la parte central podremos observar un listado de los datos hist&#xf3;ricos de los puntos seleccionados y con la configuraci&#xf3;n establecida.</p>
+<p>Se podr&#xe1;n realizar las siguientes acciones r&#xe1;pidas:</p>
+<p>1) Editar la muestra en bruto <span class="ti-pencil-alt"></span>: Habilita la edici&#xf3;n de dato en bruto, haciendo clic en el valor a cambiar se habilitar&#xe1; la edici&#xf3;n de la celda para que introduzcamos un nuevo valor.</p>
+<p>2) Tendencia <span class="ti-stats-up"></span>: Permite crear una gr&#xe1;fica de tendencia con las se&#xf1;ales y rango de fechas que tenemos establecido en el documento.</p>
+<p>3) Alarmas <span class="ti-alert"></span>: Permite crear un documento de alarmas con las se&#xf1;ales y rango de fechas que tenemos establecido en el documento.</p>
+<p>4) Estad&#xed;stico <span class="ti-dashboard"></span>: Cambia la vista a la visualizaci&#xf3;n de las estad&#xed;sticas.</p>
+<p>5) Recargar <span class="ti-reload"></span>: Recarga los datos a visualizar.</p>
+<p>6) Permalink <span class="ti-link"></span>: Permite generar un enlace para acceder directamente al documento.</p>
+<p><i>Las acciones &#x201c;Editar dato en bruto&#x201d;, &#x201c;Estad&#xed;stico&#x201d; y &#x201c;Alarmas&#x201d; no est&#xe1;n disponibles para funciones.</i></p>
+<p><img src="images/image03.png" class="grande" alt="Visualización históricos" title="Visualización de históricos" /></p>
+<p>En la tabla de datos se muestran los siguientes campos:</p>
+<ul>
+
+<li><b>Momento</b>: Momento en el que se ha generado el dato.</li>
+<li><b>Se&#xf1;ales</b>: Visualizaremos tantas columnas como se&#xf1;ales hayamos a&#xf1;adido al documento, en dicha columna se mostrar&#xe1; el dato junto con el icono del estado asociado m&#xe1;s prioritario, si posicionamos el cursor sobre el icono aparecer&#xe1; un tooltip indicando los alias de los estados asociados.</li>
+</ul><hr /></section><section>
+<h2><a name="a3.09Configuraci.C3.B3n"></a><a name="configuracionHistoricos"></a>3	Configuraci&#xf3;n</h2>
+<p>A trav&#xe9;s del panel lateral derecho podremos modificar la configuraci&#xf3;n del documento, as&#xed; como los datos a visualizar.</p>
+<p>La configuraci&#xf3;n que podemos modificar es la siguiente:</p>
+<ul>
+
+<li>Se&#xf1;ales: Permite a&#xf1;adir o eliminar se&#xf1;ales al documento.</li>
+<li>Marca: Permite seleccionar la frecuencia para la que se visualizar&#xe1;n los datos. Si la resoluci&#xf3;n es mayor que &#x201c;Max&#x201d; ser&#xe1;n datos estad&#xed;sticos, en caso contrario ser&#xe1;n datos brutos. La opci&#xf3;n Auto permite que la marca se ajuste de forma din&#xe1;mica seg&#xfa;n el periodo de tiempo seleccionado. Se podr&#xe1;n escribir marcas superiores a la &#xfa;ltima marca mostrada, si la marca escrita son horas se ajustar&#xe1; a un divisor de 24 horas. Ejemplo: Si se introducen 7 horas, se cambiar&#xe1; automaticamente a 8 horas. Si se introducen 10 horas, se cambiar&#xe1; automaticamente a 12 horas.</li>
+<li>Configuraci&#xf3;n de fechas: Permite seleccionar el intervalo temporal para el que se mostrar&#xe1;n los datos. Se podr&#xe1;n escribir las fechas en el <a href="../dates/dates.html#lite">campo de texto</a> o pulsar sobre el calendario para que se abra <a href="../dates/dates.html#full">el selector de fechas</a>.</li>
+</ul>
+<p>En caso de que la marca introducida sea mayor que m&#xe1;xima aparecer&#xe1;n nuevos par&#xe1;metros de configuraci&#xf3;n, referentes a interpolaci&#xf3;n y tipo estad&#xed;stico:</p>
+<ul>
+
+<li>
+
+<p>Tipo estad&#xed;stico: Permite seleccionar el tipo estad&#xed;stico. Las opciones depender&#xe1;n del tipo de se&#xf1;al seleccionada:</p>
+<ul>
+
+<li>Se&#xf1;ales anal&#xf3;gicas: Media, m&#xe1;ximo, m&#xed;nimo, varianza, desviaci&#xf3;n t&#xed;pica, cuenta, acumulado, m&#xe1;ximo y m&#xed;nimo y desviaci&#xf3;n t&#xed;pica respecto a la media.</li>
+<li>Se&#xf1;ales digitales: Cuenta, moda, cuenta de valores booleanos true y cuenta de valores false.</li>
+<li>Se&#xf1;ales discretas: Cuenta y moda.</li>
+<li><b>Funciones: La selecci&#xf3;n de tipos est&#xe1;disticos no est&#xe1; disponible para funciones</b>.</li>
+</ul>
+</li>
+<li>
+
+<p>Interpolaci&#xf3;n: Permite seleccionar la interpolaci&#xf3;n que se aplicar&#xe1;. Podr&#xe1; ser Sin interpolar, Lineal, Paso antes y Paso despu&#xe9;s.</p>
+</li>
+</ul>
+<p><img src="images/image04.PNG" class="grande" alt="Configuración históricos" title="Configuración documento de históricos" /></p><hr /></section><section>
+<h2><a name="a4.09Importaci.C3.B3n_de_datos"></a><a name="data-import"></a>4	Importaci&#xf3;n de datos</h2>
+<p>A la hora de gestionar el hist&#xf3;rico de las se&#xf1;ales, adem&#xe1;s de la <a href="#historicos">edici&#xf3;n del dato en bruto</a> o de las <a href="../adquire/adquire.html">diferentes t&#xe9;cnicas de adquisici&#xf3;n de datos disponibles</a>, es posible realizar tambi&#xe9;n una importaci&#xf3;n mediante hoja de c&#xe1;lculo desde el correspondiente apartado del Panel de control que se muestra a continuaci&#xf3;n.</p>
+<p><img src="images/control_panel_import.png" class="grande" alt="Acceso a la importación de datos desde el panel de control" title="Acceso a la importación de datos desde el panel de control" /></p>
+<p>Una vez se ha accedido, en su interior se encuentran disponibles las diferentes secciones que permiten la gesti&#xf3;n de la importaci&#xf3;n tal y como se visualiza en la siguiente imagen y se describe seguidamente.</p>
+<p><img src="images/data_import_page.png" class="grande" alt="Sección de importación de datos" title="Sección de importación de datos" /></p>
+<ol style="list-style-type: decimal">
+
+<li>
+
+<p><b>Plantilla</b>: Se trata de una hoja de c&#xe1;lculo que define la estructura sobre la que incluir los datos que se desean importar al sistema. La descarga comenzar&#xe1; al hacer clic sobre el bot&#xf3;n que se visualiza en la parte superior. Es importante tener en cuenta los siguientes aspectos:</p>
+<ul>
+
+<li>Las se&#xf1;ales involucradas deben estar asociadas a un agente de grabaci&#xf3;n de datos.</li>
+<li>Se debe detallar la zona horaria con el formato correcto. Ejemplo: &#x201c;UTC+2 Romance Standard Time&#x201d;.</li>
+</ul>
+</li>
+<li>
+
+<p><b>Selecci&#xf3;n documento</b>: Una vez completada la plantilla con los datos deseados, puede seleccionarse en el siguiente paso para comenzar con el proceso de importaci&#xf3;n haciendo clic sobre el bot&#xf3;n situado pr&#xf3;ximamente. Si la operaci&#xf3;n se completa correctamente, los datos quedar&#xe1;n registrados y accesibles desde el sistema; en caso contrario, ser&#xe1; necesario revisar el documento de plantilla antes de repetir el proceso.</p>
+</li>
+</ol></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

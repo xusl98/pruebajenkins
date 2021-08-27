@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="ti-server"></cite>
+  
+<h1>HISTORICAL</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#historicos">Visualization of historical data</a></li>
+<li>3 <a href="#configuracionHistoricos">Configuration</a></li>
+<li>4 <a href="#data-import">Data import</a></li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>From the historical data document we can view the list of historical data of one or several signals, selecting the time interval to be displayed, as well as the resolution of the data.</p>
+<p>History documents can be created from the launcher (1), from the shortcut (2) or from shortcuts.</p>
+<p><img src="images/image01.png" class="grande" alt="Creation of historical documents" title="Creation of historical documents" /></p>
+<p>1) To create a history document from the launcher you need to have signals in &#x201c;My signal selection&#x201d;, select the signals you want to analyze click on &quot; Historicals&quot;.</p>
+<p><i>In the signals section of the explorer, by clicking on the <span class="icon-id-starempty"></span> button, that signal will be added to &#x201c;My signal selection&#x201d;.</i></p>
+<p>2) Clicking on the historical shortcut will open the wizard for creating a new document, in which we will have to perform the following actions:</p>
+<ul>
+
+<li>Signals: You have to select one signal as minimum and as maximum the value configured in the <a href="../config-file/config-file.html#maximumNumberOfTagsHistorics">configuration file</a> will be used.
+<ul>
+
+<li>Dates: Allows to select the document dates configuration.</li>
+</ul>
+</li>
+</ul>
+<p>Once the initial configuration is set, the list of historical data will be displayed on the screen.</p>
+<p>3) From the shortcuts section, clicking on the &quot; Historicals&quot; button will open a new historical document with the selected signals and with a period of one day.</p>
+<p>Once the history document is created, the historical data will be displayed in the central part and the configuration related to the data to be displayed will be shown in the right panel.</p>
+<p><img src="images/image02.PNG" class="grande" alt="Toolbar" title="Toolbar" /></p><hr /></section><section>
+<h2><a name="a2_Visualization_of_historical_data"></a><a name="historicos"></a>2 Visualization of historical data</h2>
+<p>In the central part we will be able to see a list of the historical data of the selected points and with the established configuration.</p>
+<p>The following quick actions can be performed:</p>
+<p>1) Edit raw sample <span class="ti-pencil-alt"></span>: Enables raw data editing, clicking on the value to be changed will enable cell editing for us to enter a new value.</p>
+<p>2) Tendency <span class="ti-stats-up"></span>: Allows us to create a trend chart with the signals and date range we have set in the document.</p>
+<p>3) Alarms <span class="ti-alert"></span>: Allows to create an alarm document with the signals and date range we have set in the document.</p>
+<p>4) Statistical <span class="ti-dashboard"></span>: Switches the view to the statistics display.</p>
+<p>5) Reload <span class="ti-reload"></span>: Reloads the data to be displayed.</p>
+<p>6) Permalink <span class="ti-link"></span>: Allows to generate a link to directly access the document.</p>
+<p>*The actions &#x201c;Edit raw data&#x201d;, &#x201c;Statistics&#x201d; and &#x201c;Alarms&#x201d; are not available for functions.</p>
+<p><img src="images/image03.png" class="grande" alt="Historical display" title="Historical display" /></p>
+<p>The following fields are shown in the data table:</p>
+<ul>
+
+<li><b>Moment</b>: Moment in which the data has been generated.</li>
+<li><b>Signals</b>: We will visualize as many columns as signals we have added to the document, in this column the data will be shown together with the icon of the most priority associated status, if we place the cursor over the icon a tooltip will appear indicating the aliases of the associated statuses.</li>
+</ul><hr /></section><section>
+<h2><a name="a3.09Configuration"></a><a name="configuracionHistoricos"></a>3	Configuration</h2>
+<p>Through the right side panel we can modify the configuration of the document, as well as the data to be displayed.</p>
+<p>The configuration that we can modify is the following:</p>
+<ul>
+
+<li>Signals: Allows you to add or remove signals to the document.</li>
+<li>Mark: Allows to select the frequency for which the data will be displayed. If the resolution is greater than &#x201c;Max&#x201d; it will be statistical data, otherwise it will be raw data. The Auto option allows the mark to be adjusted dynamically according to the selected time period. It will be possible to write marks higher than the last displayed mark, if the written mark is hours it will be adjusted to a divisor of 24 hours. Example: If 7 hours are entered, it will be automatically changed to 8 hours. If 10 hours are entered, it will automatically change to 12 hours.</li>
+<li>Date setting: Allows you to select the time interval for which the data will be displayed. You can type the dates in the <a href="../dates/dates.html#lite">text field</a> or click on the calendar to open <a href="../dates/dates.html#full">the date selector</a>.</li>
+</ul>
+<p>If the mark entered is greater than the maximum, new configuration parameters will appear, referring to interpolation and statistical type:</p>
+<ul>
+
+<li>
+
+<p>Statistical type: allows to select the statistical type. The options will depend on the type of signal selected:</p>
+<ul>
+
+<li>Analog signals: mean, maximum, minimum, variance, standard deviation, count, cumulative, maximum and minimum and standard deviation with respect to the mean.</li>
+<li>Digital signals: Count, mode, count of boolean values true and count of values false.</li>
+<li>Discrete signals: count and mode.</li>
+<li>Functions: The selection of static types is not available for functions**.</li>
+</ul>
+</li>
+<li>
+
+<p>Interpolation: Allows to select the interpolation to be applied. It can be No interpolation, Linear, Step before and Step after.</p>
+</li>
+</ul>
+<p><img src="images/image04.PNG" class="grande" alt="Historical configurations" title="Historical configurations" /></p><hr /></section><section>
+<h2><a name="a4.09Data_import"></a><a name="data-import"></a>4	Data import</h2>
+<p>Apart from <a href="#historicos">editing the raw data</a> or using the <a href="../adquire/adquire_en.html">different data acquisition techniques</a> available for signal historical management, it is also possible to perform a spreadsheet import. This operation is available from its Control Panel option that is shown below.</p>
+<p><img src="images/control_panel_import.png" class="grande" alt="Data import access from the control panel" title="Data import access from the control panel" /></p>
+<p>Once it is opened, the different data import management sections are available, as shown in the following image and described below.</p>
+<p><img src="images/data_import_page.png" class="grande" alt="Data import page" title="Data import page" /></p>
+<ol style="list-style-type: decimal">
+
+<li>
+
+<p><b>Template</b>: A spreadsheet that sets the structure for including the data to be imported into the system. The download will start by clicking on the button displayed at the top. It is important to take into account the following aspects:</p>
+<ul>
+
+<li>Involved signals must be included in a data recorder service.</li>
+<li>A properly formatted time zone must be provided. For instance: &#x201c;UTC+2 Romance Standard Time&#x201d;.</li>
+</ul>
+</li>
+<li>
+
+<p><b>Document selection</b>: Once the template has been completed with the desired data, it can be selected in the next step so the import process can be started by clicking on its closest button. If the operation is completed correctly, the data will be recorded and accessible from the system - otherwise, it will be necessary to check the template document before repeating the process.</p>
+</li>
+</ol></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

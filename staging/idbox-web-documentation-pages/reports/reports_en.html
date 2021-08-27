@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+<cite class="ti-notepad"></cite>
+<h1>Reports</h1>
+</div>
+
+<ul>
+
+<li>1 <a href="#intro">Introduction</a></li>
+<li>2 <a href="#report-creation">Creation of reports</a>
+<ul>
+
+<li>2.1 <a href="#report-creation-init">Initial configuration</a>
+<ul>
+
+<li>2.1.1 <a href="#report-creation-init-quickstart">Fast start</a></li>
+<li>2.1.2 <a href="#report-creation-init-wizard">Customization wizard</a></li>
+</ul>
+</li>
+<li>2.2 <a href="#report-creation-save">Document save</a></li>
+</ul>
+</li>
+<li>3 <a href="#report-viewer">Display of reports</a></li>
+<li>4 <a href="#report-designer">Report design</a></li>
+</ul><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>Reports allow you to generate customized visualizations of events or facts occurring in a given data set over a selected date range. This section shows how to create, design and visualize them through IDboxRT.</p><hr /></section><section>
+<h2><a name="a2._Creation_of_reports"></a><a name="report-creation"></a>2. Creation of reports</h2>
+<p>Report creation allows you to generate a document stored in IDbox that can later be viewed or edited.</p><section>
+<h3><a name="a2.1_Initial_configuration"></a><a name="report-creation-init"></a>2.1 Initial configuration</h3>
+<p>To start creating a report, there are two access methods described below.</p><section>
+<h4><a name="a2.1.1_Fast_start"></a><a name="report-creation-init-quickstart"></a>2.1.1 Fast start</h4>
+<p>If we already have the desired set of signals previously selected in the &#x201c;Signal selection&#x201d; tool, using this option is the easiest way to create a report. As shown in the following image, it is only necessary to access the selection from the top bar of the web, set the desired date range and click on the &#x201c;Reports&#x201d; button.</p>
+<p><img src="images/signal_selection_reports.jpg" class="mediano" alt="Report generation with signal selection" title="Report generation with signal selection" /></p></section><section>
+<h4><a name="a2.1.2_Customization_wizard"></a><a name="report-creation-init-wizard"></a>2.1.2 Customization wizard</h4>
+<p>If further customization is desired, the report creation wizard allows you to enter a more specific configuration in a guided manner. To do this, access the reports section as shown in the image below. If a report is already open, it is also necessary to click on &#x201c;New report&#x201d;.</p>
+<p><img src="images/reports_shortcut.jpg" class="mediano" alt="Opening reports from the top menu" title="Opening reports from the top menu" /></p>
+<p>As shown in the following image, the report creation wizard allows you to navigate through three steps, described below, to complete the configuration.</p>
+<p><img src="images/report_wizard.png" class="grande" alt="Report creation wizard" title="Report creation wizard" /></p>
+<ol style="list-style-type: decimal">
+
+<li><b>Report type</b>: allows you to select a custom report that has been previously implemented and loaded. The default report type is always available and includes as data sources the signal(s) and historical(s) information as well as the &#x201c;start date&#x201d; and &#x201c;end date&#x201d; parameters.</li>
+<li><b>Signals</b>: at this point it is possible to include the desired signals in the new report using the signal selector.</li>
+<li><b>Report configuration</b>: allows you to select the historical mark for the document as well as the interpolation, statistics and units settings for each signal.</li>
+<li><b>Dates</b>: through the date selector it is possible to define the time interval on which the report will be based, either by providing a fixed range that is permanently maintained or a dynamic range that is recalculated for each opening of the report.</li>
+</ol></section></section><section>
+<h3><a name="a2.2_Document_save"></a><a name="report-creation-save"></a>2.2 Document save</h3>
+<p>Once the report is configured with one of the two methods presented above, the creation ends with the document save. To do this, entering a name is needed - and optionally its location - in the dialog shown below.</p>
+<p><img src="images/save_report.png" class="grande" alt="Report saving" title="Report saving" /></p><hr /></section></section><section>
+<h2><a name="a3._Report_display"></a><a name="report-viewer"></a>3. Report display</h2>
+<p>Documents that have been saved can be accessed later from the IDboxRT explorer. Once located, it is sufficient to click on the document or click on the &#x201c;Open&#x201d; action.</p>
+<p><img src="images/open_report.jpg" class="mediano" alt="Report opening" title="Report opening" /></p>
+<p>After this action, the report will be displayed on the screen with the different parts shown in the image and described below.</p>
+<p><img src="images/report_viewer.png" class="grande" alt="Report viewer" title="Report viewer" /></p>
+<ol style="list-style-type: decimal">
+
+<li><b>Actions</b>: allows you to consult the title of the report, and make use of different operations: generate link, open document, download and export report, print report, refresh report, set as home page, access documentation, create a subscription, full screen, extract screen and close document.</li>
+<li><b>Tools</b>: allows you to modify the date range (start and end), import an updated version of the report design or perform a search.</li>
+<li><b>Viewer</b>: offers a view of the rendered report according to the previously saved layout.</li>
+</ol><hr /></section><section>
+<h2><a name="a4._Report_design"></a><a name="report-designer"></a>4. Report design</h2>
+<p>The designer allows you to customize the report document by adding, deleting or modifying the available components on the canvas. The source file, which can be exported from the report visualization, follows the RDL/RDLC definition and is compatible with the following editors:</p>
+<ul>
+
+<li><b>Bold Reports Standalone Designer</b>: Free editor distributed by Bold Reports (Syncfusion). Compatible versions less than or equal to 3.1.43. <a class="externalLink" href="https://www.boldreports.com/standalone-report-designer">&gt;&gt; Available on the Bold Reports website</a></li>
+<li><b>Microsoft RDLC Report Designer</b>: Free editor distributed by Microsoft. <a class="externalLink" href="https://www.microsoft.com/es-es/download/details.aspx?id=53613">&gt;&gt; Available on the Microsoft download center</a></li>
+</ul>
+<p>Although each designer usage may vary, the following areas are generally identified as shown in the following image and described below.</p>
+<p><img src="images/report_designer.png" class="grande" alt="Report editor" title="Report editor" /></p>
+<ol style="list-style-type: decimal">
+
+<li><b>Actions</b>: along this panel it is possible to apply different operations such as undo, redo, save, open document, preview report or display settings.</li>
+<li><b>Components</b>: all the components available for the report to be added are listed here and its usage described in the documentation of each editor.</li>
+<li><b>Layout</b>: it is divided into several sections on which components can be added later by dragging them from the list. Once added to the canvas they can be moved to create the desired layout and design.</li>
+<li><b>Properties</b>: each of the selected elements from the canvas has a series of properties that can be adjusted in the right panel to modify their style, behavior or nomenclature.</li>
+</ol></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

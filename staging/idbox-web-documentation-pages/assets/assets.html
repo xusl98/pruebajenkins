@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+  <cite class="ti-package"></cite>
+  
+<h1>ACTIVOS</h1>
+</div>
+
+<p><br /></br> <br /></br></p>
+<ul>
+
+<li>1 <a href="#intro">Introducci&#xf3;n</a></li>
+<li>2 <a href="#plantillas-activos">Plantillas de activos</a></li>
+<li>2.1 <a href="#definicion-atributos">Definici&#xf3;n de atributos</a></li>
+<li>3 <a href="#activos">Activos</a></li>
+<li>4 <a href="#organizadores-plantillas">Organizadores de plantillas</a></li>
+<li>5 <a href="#organizadores-activos">Organizadores de activos</a></li>
+<li>6 <a href="#carga-masiva">Carga masiva</a></li>
+</ul><section>
+<h2><a name="a1._Introducci.C3.B3n"></a><a name="intro"></a>1. Introducci&#xf3;n</h2>
+<p>En el apartado de &#x201c;Activos&#x201d; del panel de control se encuentran las herramientas para gestionar el inventario de activos. Desde aqu&#xed; podr&#xe1; dar de alta plantillas de activos, activos, organizadores de plantillas y organizadores de activos. De esta manera podemos gestionar todas las operaciones del inventario de activos de IDbox.</p>
+<p>El acceso al este apartado se realiza desde el panel de control.</p>
+<p><img src="images/Imagen11.png" class="grande" alt="Acceso a inventario" title="Acceso a inventario" /></p>
+<p>En cada secci&#xf3;n nos encontraremos un listado con los elementos dados de alta en el bloque correspondiente.</p>
+<p>En todas las secciones encontraremos a la izquierda un buscador y a la derecha entre las opciones encontraremos un bot&#xf3;n de a&#xf1;adir <span class="ti-plus"></span>, que nos permitir&#xe1; a&#xf1;adir un elemento nuevo a esa secci&#xf3;n. Adem&#xe1;s si seleccionamos un registro nos permitir&#xe1; editarle mediante el bot&#xf3;n de editar <span class="ti-pencil-alt"></span>, o borrarle mediante el bot&#xf3;n de eliminar <span class="ti-trash"></span>.</p><hr /></section><section>
+<h2><a name="a2_Plantillas_de_activos"></a><a name="plantillas-activos"></a>2 Plantillas de activos</h2>
+<p>Seg&#xfa;n entramos a la secci&#xf3;n nos encontraremos el listado con las plantillas de activos.</p>
+<p><img src="images/Imagen21.png" class="grande" alt="Listado de plantillas de activos" title="Listado de plantillas de activos" /></p>
+<p>El bot&#xf3;n de filtro <span class="ti-filter"></span>, nos permitir&#xe1; filtrar por la extensibilidad de la plantilla (s&#xf3;lo sacar las extensibles, s&#xf3;lo las no extensibles, etc) y/o el tipo de la plantilla (&#x201c;Complex&#x201d;, &#x201c;Lookup&#x201d; o &#x201c;Metadata&#x201d;).</p>
+<p>Adem&#xe1;s tenemos en bot&#xf3;n de importar plantillas <span class="icon-id-import"></span> que se explica en la secci&#xf3;n <a href="#carga-masiva">Carga masiva</a>.</p>
+<p>Una vez a&#xf1;adamos o editemos una plantilla, entraremos en la secci&#xf3;n de definici&#xf3;n de la plantilla.</p>
+<p><img src="images/Imagen22.png" class="grande" alt="Edición de plantillas de activos" title="Edición de plantillas de activos" /></p>
+<p>Una plantilla es una estructura de datos que definir&#xe1; los atributos que tiene un activo. Podemos distinguir los siguientes campos:</p>
+<ul>
+
+<li>Nombre: Nombre que le daremos a la plantilla.</li>
+<li>Descripci&#xf3;n: Descripci&#xf3;n de la plantilla.</li>
+<li>Tipo de plantilla: Podr&#xe1; ser de uno de los siguientes tipos</li>
+<li>Complex: Principalmente se utiliza para definir un activo real mediante propiedades (atributos). Puede tratarse de activos reales de la empresa, de la infraestructura, de las m&#xe1;quinas, etc. La plantilla Complex permite crear una jerarqu&#xed;a (relacionar activos padre con activos hijos).</li>
+<li>Metadata: Es la definici&#xf3;n de una estructura de datos que cuando se definen esos datos se complementar&#xe1;n los datos de un organizador. Las plantillas metadata solo se pueden asociar a organizadores.</li>
+<li>Lookup: No nos aparecer&#xe1; para seleccionar en este combo porque no pueden ser creadas por el usuario. Es una estructura de datos que define los atributos necesarios para que el activo lookup que se da de alta en base a esta plantilla pueda realizar una conexi&#xf3;n a un sistema externo al inventario IDbox. Se considera sistema externo al inventario IDbox: el backend del IDbox o un tercer sistema. Est&#xe1;s conexiones har&#xe1;n posible la ejecuci&#xf3;n de consultas definidas a nivel de un activo complex o de un activo metadata.</li>
+<li>Simple: No nos aparecer&#xe1; para seleccionar en este combo porque no pueden ser creadas por el usuario. Un ejemplo ser&#xed;a la plantilla &#x201c;Signal&#x201d;, que indicar&#xe1; que ese campo contiene una referencia una se&#xf1;al de IDbox. Estas plantillas viene definidas con el sistema.</li>
+<li>Plantilla s&#xf3;lo extensible: Opci&#xf3;n disponible para la plantilla tipo Complex. Marcarla hace posible que los atributos de esta plantilla se puedan heredar en otra plantilla. Las plantillas solo extensibles por s&#xed; solas no permiten crear activos, ya que ellas describen algo parcial o abstracto.</li>
+<li>Plantilla no extensible: Opci&#xf3;n disponible para las plantillas tipo Complex. Si est&#xe1; marcada indica que ninguna otra plantilla puede heredar de ella. Una plantilla no extensible puede heredar los atributos definidos en una plantilla solo extensible. La plantilla no extensible permite crear activos.</li>
+<li>Plantilla organizada: Indica si es obligatorio guardar la plantilla en una jerarqu&#xed;a de carpetas conocida como organizador de plantillas. Marcar &#x201c;Plantilla organizada&#x201d; har&#xe1; que el campo &#x201c;Almacenar en destino(s)&#x201d; sea obligatorio.</li>
+<li>Activo organizado &#x2013; los activos que se dar&#xe1;n de alta en base a esta plantilla tendr&#xe1;n el campo &#x201c;Almacenar en destino(s)&#x201d; marcado como obligatorio.</li>
+<li>Almacenar en destino(s):  Se usa para indicar el organizador u organizadores en el que estar&#xe1; esta plantilla.</li>
+<li>Plantilla a extender: Permite importar, heredar, los atributos definidos en una &#x201c;Plantilla s&#xf3;lo extensibles&#x201d;. Estos atributos a heredar se mostrar&#xe1;n solo en el formulario de alta del activo.</li>
+</ul>
+<p>En la parte central del formulario se mostrar&#xe1;n los atributos de la plantilla. Una plantilla que tenga alg&#xfa;n activo no se podr&#xe1; modificar. Podremos buscar entre los existentes mediante &#x201c;Buscar&#x201d;.</p>
+<p>Podemos crear un atributo nuevo mediante el bot&#xf3;n de <span class="ti-plus"></span>. Seleccionando un atributo existente nos permitir&#xe1; editarle mediante el bot&#xf3;n de editar <span class="ti-pencil-alt"></span>, o borrarle mediante el bot&#xf3;n de eliminar <span class="ti-trash"></span>.</p><section>
+<h3><a name="a2.1_Definici.C3.B3n_de_atributos"></a><a name="definicion-atributos"></a>2.1 Definici&#xf3;n de atributos</h3>
+<p>Una vez editemos o a&#xf1;adamos un atributo, tendremos la siguiente pantalla para definir los atributos.</p>
+<p><img src="images/Imagen211.png" class="grande" alt="Definición de atributos" title="Definición de atributos" /></p>
+<p>Los atributos se componen de los siguientes campos: * Nombre: Nombre del atributo que se mostrar&#xe1; cuando demos de alta un activo. * Requerido: Indica si el atributo ser&#xe1; requerido a la hora de dar de alta el activo. * Externo: A nivel de inventario IDbox es un campo con car&#xe1;cter solo informativo. Se utiliza para dar un valor a la informaci&#xf3;n, para saber que, lo que almacena este campo en el formulario de activos est&#xe1; en un sistema externo, no est&#xe1; en el inventario IDbox. * Tipo: Indica el tipo de dato que aceptar&#xe1; el atributo en el activo. Los siguiente tipos son posibles:</p>
+<ul>
+
+<li>String: permite caracteres de tipo texto (alfanum&#xe9;rico)
+<ul>
+
+<li>Integer: permite solo n&#xfa;meros enteros</li>
+<li>Decimal: permite n&#xfa;meros decimales. Si el usuario introducir&#xe1; un n&#xfa;mero entero, internamente se guardar&#xe1; como decimal.</li>
+<li>Date: permite datos en formato de fecha</li>
+<li>DateTime: permite datos en formatos fecha y hora</li>
+<li>Complex: Al seleccionar esta opci&#xf3;n se mostrar&#xe1; el campo Plantilla donde se podr&#xe1; elegir entre todas las plantillas dadas de alta de tipo Complex o Lookup. Seleccionando una plantilla Complex, se permitir&#xe1; crear una jerarqu&#xed;a de activos padre - hijo. En el formulario de alta del activo padre, en el campo correspondiente a este atributo, se seleccionar&#xe1;n los activos hijos previamente creados. Seleccionando una plantilla Lookup, en el alta del activo en el campo correspondiente a este atributo se podr&#xe1; seleccionar un activo lookup previamente dado de alta y definir la consulta a realizar.</li>
+<li>Simple: Al igual que el tipo Complex, en el formulario se mostrar&#xe1; el campo &#x201c;Plantillas&#x201d; que permitir&#xe1; acceder a la plantilla simple Signal. Al seleccionar la plantilla &#x201c;Signal&#x201d; en el formulario Definici&#xf3;n de atributos, el campo Externo se marcar&#xe1; autom&#xe1;ticamente.</li>
+</ul>
+</li>
+<li>Etiquetas : A nivel de atributo se puede definir una o varias etiquetas (tags). Un tag es una expresi&#xf3;n que consiste en un texto escrito en min&#xfa;sculas precedido por #(ejemplo: #capacidad). Los tags permitir&#xe1;n mostrar, en Explorador, el valor del atributo donde se han definido. Al hacer click en Etiquetas se abre el formulario &#x201c;Introduzca o seleccione una etiqueta&#x201d; previsto con un buscador en el cual ha de escribir el tag a asignar. Si el tag no est&#xe1; creado en la aplicaci&#xf3;n, pulsar Aceptar. Aceptando se crear&#xe1; el tag y se asociar&#xe1; al atributo que editamos. Si el tag existe, este se seleccionar&#xe1; del listado que devuelve el buscador. No se recomienda a&#xf1;adir tags a los atributos que tienen colecci&#xf3;n. Las etiquetas de estos atributos no pueden mostrar los valores de una colecci&#xf3;n.</li>
+<li>Patr&#xf3;n: Es la expresi&#xf3;n regular que define el formato del dato a introducir en el campo correspondiente del activo (solo may&#xfa;sculas, solo letras, espacios, formato NIF, etc.)</li>
+<li>Valor por defecto: Marcando este check se podr&#xe1; indicar en el campo con el mismo nombre el valor que se mostrar&#xe1; por defecto en el alta del activo. El formato de este valor depender&#xe1; del tipo del atributo (string, integer, decimal, date, datetime).</li>
+<li>Longitud M&#xe1;x: Define el m&#xe1;ximo de caracteres que se admiten para este atributo en el formulario del activo.</li>
+<li>Longitud M&#xed;n: Define el m&#xed;nimo de caracteres que se admiten para este atributo en el formulario del activo.</li>
+<li>&#xda;nico: Los activos, siempre y cuando sean de la misma plantilla no podr&#xe1;n repetir el mismo valor para el campo definido como &#xfa;nico. La unicidad se aplica a cada una de las jerarqu&#xed;as de herencia; es por plantilla.</li>
+<li>Colecci&#xf3;n: Indica que en lugar de ser un valor simple, el activo tendr&#xe1; una colecci&#xf3;n de valores del tipo indicado en el campo &#x201c;Tipo&#x201d;. Si marcamos est&#xe1; opci&#xf3;n se habilitar&#xe1;n los botones de &#x201c;Capacidad&#x201d; y &#x201c;Mapeo Requerido&#x201d;.</li>
+<li>Capacidad - define el n&#xfa;mero obligatorio de valores, elementos que tendr&#xe1; la colecci&#xf3;n. Si no se indica ning&#xfa;n n&#xfa;mero en Capacidad la colecci&#xf3;n tendr&#xe1; tantos valores, elementos cuantos el usuario necesite.</li>
+<li>Mapeo requerido - es un identificador para cada elemento de la colecci&#xf3;n. Este identificador se mostrar&#xe1; solo en el formulario del activo; no se mostrar&#xe1; al visualizar el activo en Explorador. Al marcar esta opci&#xf3;n, nos aparecer&#xe1; un listado a la derecha para que demos un identificador a cada uno de los valores. Se mostrar&#xe1; una fila por cada capacidad y podremos dar de alta m&#xe1;s o eliminarlas mediante los botones de A&#xf1;adir <span class="ti-plus"></span> y eliminar <span class="ti-trash"></span>. Adem&#xe1;s si introducimos un texto en &#x201c;Autocompletar Mapeo&#x201d;, nos autocompletar&#xe1; todos identificadores con el texto que hayamos puesto y un num&#xe9;rico autoincremental (e.g. con el texto &quot;Se&#xf1;al &#x201c;, nos escribir&#xe1; &#x201c;Se&#xf1;al 1&#x201d;, Se&#xf1;al 2&#x201d;, etc).</li>
+</ul>
+<p>Guardaremos la plantilla al completo al pulsar sobre el bot&#xf3;n de guardar de la barra de herramientas <span class="ti-save"></span></p><hr /></section></section><section>
+<h2><a name="a3_Activos"></a><a name="activos"></a>3 Activos</h2>
+<p>Al entrar a esta secci&#xf3;n encontraremos el listado de los activos del sistema.</p>
+<p><img src="images/Imagen31.png" class="grande" alt="Listado de activos" title="Listado de activos" /></p>
+<p>Adem&#xe1;s tendremos el bot&#xf3;n de filtro <span class="ti-filter"></span>, que nos permitir&#xe1; filtrar por el nombre del activo y/o el tipo de la plantilla (&#x201c;Complex&#x201d;, &#x201c;Lookup&#x201d; o &#x201c;Metadata&#x201d;).</p>
+<p>Por otro lado tenemos los botones de importar activos <span class="icon-id-import"></span> y descargar plantillas <span class="icon-id-d-template"></span> que se explican en la secci&#xf3;n <a href="#carga-masiva">Carga masiva</a>.</p>
+<p>Cuando editemos o creemos un activo entraremos en la pantalla de edici&#xf3;n de un activo.</p>
+<p><img src="images/Imagen32.png" class="grande" alt="Edición de un activo" title="Edición de un activo" /></p>
+<p>En esta pantalla tendremos un formulario que tendr&#xe1; una parte com&#xfa;n para todos los activos y despu&#xe9;s una parte que depender&#xe1; de lo que hayamos definido en la plantilla del activo. C&#xf3;mo se ver&#xe1; cada campo est&#xe1; explicado en la secci&#xf3;n de <a href="#plantillas-activos">Plantillas de activos</a>. Por ejemplo si tenemos un campo de tipo Integer definido en la plantilla, aqu&#xed; nos aparecer&#xe1; ese campo para introducir un n&#xfa;mero entero.</p>
+<p>En el caso de la parte com&#xfa;n, los campos son los siguientes: * Plantilla: Indica la plantilla mediante la cual se generar&#xe1; este formulario. Los atributos definidos en esa plantilla son los que veremos aqu&#xed;. * Almacenar en destino(s): Indica los organizadores en los que estar&#xe1; el activo. * Nombre: El nombre del activo. * Descripci&#xf3;n: Una descripci&#xf3;n para el activo.</p>
+<p>Cabe destacar la visualizaci&#xf3;n de un campo de tipo Lookup. En el caso de la imagen superior, el campo &#x201c;NumUsersIDbox&#x201d; es de tipo lookup. En &#xe9;l vemos la selecci&#xf3;n de un activo de tipo Lookup en el campo &#x201c;Conexi&#xf3;n&#x201d;, la consulta que se realizar&#xe1; en el campo &#x201c;Consulta&#x201d; y despu&#xe9;s un bot&#xf3;n de ejecutar <span class="ti-bolt"></span> en el que ejecutaremos la &#x201c;Consulta&#x201d; contra el sistema externo definido en la &#x201c;Conexi&#xf3;n&#x201d; y nos mostrar&#xe1; el valor resultante.</p>
+<p>En el caso de que los atributos no sean simples y sean de tipo &#x201c;Colecci&#xf3;n&#x201d;, nos aparecer&#xe1; un bot&#xf3;n que abrir&#xe1; otra ventana para introducir esos valores. En el ejemplo en atributo de la captura superior, &#x201c;Machines&#x201d; es de tipo colecci&#xf3;n.</p>
+<p>El activo se guardar&#xe1; una vez que pulsemos en el bot&#xf3;n de guardar de la barra de herramientas <span class="ti-save"></span></p><hr /></section><section>
+<h2><a name="a4_Organizadores_de_plantillas"></a><a name="organizadores-plantillas"></a>4 Organizadores de plantillas</h2>
+<p>Aqu&#xed; encontraremos el listado de organizadores de plantillas.</p>
+<p><img src="images/Imagen41.png" class="grande" alt="Organizadores de plantillas" title="Organizadores de plantillas" /></p>
+<p>Al editar o dar de alta un organizador, entraremos en la siguiente pantalla.</p>
+<p><img src="images/Imagen42.png" class="grande" alt="Edición de organizador de plantillas" title="Edición de organizador de plantillas" /></p>
+<p>Los campos son los siguientes: * Nombre: Nombre del organizador. * Descripci&#xf3;n: Descripci&#xf3;n del organizador. * Padre: Organizador que en la jerarqu&#xed;a, ser&#xe1; el padre de este. * Metadatos: Se utiliza para seleccionar una plantilla metadata con el prop&#xf3;sito de mostrar informaci&#xf3;n a nivel de organizador.</p>
+<p>Pulsando sobre el bot&#xf3;n de guardar de la barra de herramientas <span class="ti-save"></span>, guardaremos el organizador de plantillas.</p><hr /></section><section>
+<h2><a name="a5_Organizadores_de_activos"></a><a name="organizadores-activos"></a>5 Organizadores de activos</h2>
+<p>Lo primero que encontraremos ser&#xe1; el listado de organizadores de activos.</p>
+<p><img src="images/Imagen51.png" class="grande" alt="Organizadores de activos" title="Organizadores de activos" /></p>
+<p>Si a&#xf1;adimos o editamos uno entraremos en la pantalla de edici&#xf3;n de un organizador de activos.</p>
+<p><img src="images/Imagen52.png" class="grande" alt="Edición de organizador de activos" title="Edición de organizador de activos" /></p>
+<p>Los campos son los siguientes: * Nombre: Nombre del organizador. * Descripci&#xf3;n: Descripci&#xf3;n del organizador. * Padre: Organizador que en la jerarqu&#xed;a, ser&#xe1; el padre de este. * Metadatos: Se utiliza para seleccionar una plantilla metadata con el prop&#xf3;sito de mostrar informaci&#xf3;n a nivel de organizador.</p>
+<p>Se guardar&#xe1; el organizador de activos cuando pulsemos en el bot&#xf3;n de guardar de la barra de herramientas <span class="ti-save"></span></p><hr /></section><section>
+<h2><a name="a6_Carga_masiva"></a><a name="carga-masiva"></a>6 Carga masiva</h2>
+<p>Modos de carga masiva:</p>
+<ul>
+
+<li>Importaci&#xf3;n de excel con plantillas: Importa las plantillas del sistema de inventario desde el fichero excel con la definici&#xf3;n. Lo encontraremos en el bot&#xf3;n de importaci&#xf3;n <span class="icon-id-import"></span> de la secci&#xf3;n <a href="#plantillas-activos">Plantillas de activos</a></li>
+<li>Exportaci&#xf3;n de plantilla para activos: Descarga el formato de la excel que se tiene que seguir para insertar activos. Este bot&#xf3;n <span class="icon-id-d-template"></span> se encuentra en la secci&#xf3;n <a href="#activos">Activos</a></li>
+<li>Importaci&#xf3;n de excel con activos: Una vez generado el fichero excel con los activos del sistema se importa al sistema. Encontraremos el bot&#xf3;n <span class="icon-id-import"></span> en la secci&#xf3;n de <a href="#activos">Activos</a></li>
+</ul></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>

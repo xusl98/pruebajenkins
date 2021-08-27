@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
+    <title>IDboxRT documentaci&#243;n</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="../bootstrap.min.css" rel="stylesheet" >
+    <link href="../module.css" rel="stylesheet" media="screen">
+    <link href="../fonts.css" rel="stylesheet">
+    <link href="../themify-icons.css" rel="stylesheet">
+    <link href="../idbox_icons.css" rel="stylesheet">
+    <link media="screen" href="../site.css" rel="stylesheet" >
+    <link href="../fonts/Montserrat.css" rel="stylesheet">
+    
+    <script language="JavaScript" type="text/javascript" src="../jquery-2.2.4.min.js"></script>
+    <script src="../functions.js"></script>
+    
+   </head>
+   
+   <body>
+		<a id="top" class="show"><div class="arrow"></div></a>
+
+		<div id="portada">  
+			<div class="container">
+				<div class="cabecera">
+		              <div class="logo">
+		                      <img src="../images/IDbox_logo.svg">
+		              </div>
+		              <div class="volver">
+		                <a href="../../index.html" class="button"><span>Volver al &#xCD;ndice</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		                <a href="javascript:history.back()" class="button"><span>Volver atr&aacute;s</span>
+		                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+		                    <path d="M1,5 L11,5"></path>
+		                    <polyline points="8 1 12 5 8 9"></polyline>
+		                  </svg>
+		                </a>
+		              </div>
+				</div>
+            
+            <hr>
+            
+			<div class="content">
+				<div class="titulo-seccion">
+<cite class="ti-lock"></cite>
+<h1>Security Module</h1>
+</div>
+
+<ol style="list-style-type: decimal">
+
+<li><a href="#intro">Introduction</a>
+<ul>
+
+<li>1.1 <a href="#grupos-seguridad">Security groups</a></li>
+<li>1.2 <a href="#usuarios">Users</a></li>
+<li>1.3 <a href="#roles">Roles</a></li>
+<li>1.4 <a href="#permisos">Permits</a></li>
+<li>1.5 <a href="#grupos-acceso">Access groups</a></li>
+</ul>
+</li>
+</ol><section>
+<h2><a name="a1._Introduction"></a><a name="intro"></a>1. Introduction</h2>
+<p>In the security section of the control panel you will find the tools to manage the security of the whole system. From here you will be able to register users, roles with permissions and access groups that will define the level of access to the information of the users that use the application.</p>
+<p><img src="images/usersintro.png" class="mediano" alt="Access to the security module" title="Access to the security module" /></p>
+<p>The security module is accessed from the user icon <span class="icon-id-user"></span> - Control Panel button <span class="icon-id-settings"></span>.</p><hr /><section>
+<h3><a name="a1.1.09Security_groups"></a><a name="grupos-seguridad"></a>1.1	Security groups</h3>
+<p>The user who consults the Security Groups section will be able to see all the groups associated to that user. Depending on the role assigned to the user, new security groups can be created, modified or deleted from the Security Groups section.</p>
+<p>The security group concept can be applied to parent companies and their child companies or to the departments of a company.</p>
+<p>Each security group has its own visual theme and can be associated with Roles and Groups for accessing documents and signals separately from the other groups. The user will only see the available elements of his Security Group, if he has several associated groups, the one he has configured as &#x2018;Default Security Group&#x2019; in his <a href="profile.html">Profile</a>.</p>
+<p><img src="images/gr-seg1.png" class="mediano" alt="Default security group" title="Default security group" /></p>
+<p>When opening the section a table with the security groups to which the user belongs will be displayed. The table will show the Name, Description, Logo and if it is Active.</p>
+<p><img src="images/gr-seg2.png" class="mediano" alt="List of security groups" title="List of security groups" /></p>
+<p>In the upper right part of the table there are icons for adding a new group or editing or deleting a selected group.</p>
+<p>Clicking on the icon to add a new security group <span class="ti-plus"></span> will open the form that allows you to configure the characteristics of the security group.</p>
+<p>The form is structured in 2 parts:</p>
+<ul>
+
+<li>
+
+<p>Data</p>
+</li>
+<li>
+
+<p>Parent</p>
+</li>
+</ul>
+<p><img src="images/gr-seg3.png" class="mediano" alt="Security group edition" title="Security group edition" /></p>
+<p>In the case of modifying an existing group, the previous screen will have the corresponding group data loaded, allowing its modification.</p>
+<p>Configurable characteristics:</p>
+<ul>
+
+<li>
+
+<p>Name: Name of the security group</p>
+</li>
+<li>
+
+<p>Description: Description of the security group</p>
+</li>
+<li>
+
+<p>Culture: Allows selecting the culture for the security group.</p>
+</li>
+<li>
+
+<p>Time zone: Allows configuring the default time zone.</p>
+</li>
+<li>
+
+<p>Corporate color: Displays the color selector. The selected color will be the theme color of the security group.</p>
+</li>
+<li>
+
+<p>Theme: Select the default theme of the security group (Light or Dark).</p>
+</li>
+<li>
+
+<p>Logo: Logo of the security group. It will open a browser dialog box to load the file in PNG or SVG format. The logo will appear as the application icon if this security group is being displayed (if selected in the &#x2018;Default security group&#x2019; section of the <a href="profile.html">Profile</a> form).</p>
+</li>
+<li>
+
+<p>Parent security group: A parent security group can be assigned to the group being configured.</p>
+</li>
+</ul>
+<p>To save the changes select the save icon <span class="ti-save"></span>.</p>
+<p>When creating a security group, 2 roles (Administrator and Viewer) and an access group (Default) are automatically created.</p>
+<p>At any point the option is provided to change the security group currently in use as a reference when viewing, creating and saving on the web. Using the selector at the top right shown in the following image, it is possible to first display the currently selected security group as well as to use the drop-down to choose a group from those available.</p>
+<p><img src="images/securitygroup_header_selector.png" class="mediano" alt="Current safety reference group" title="Current safety reference group" /></p>
+<p>Thus, when a new group is chosen, the website will be updated to adapt its view to that perspective in terms of permissions and content. It is important to note that the current reference security group is a personalized individual choice in the browser that will be remembered until the browser or session is closed, and is completely independent of the default security group selected in the user&#x2019;s profile.</p><hr /></section><section>
+<h3><a name="a1.2.09Users"></a><a name="usuarios"></a>1.2	Users</h3>
+<p>The Users section allows you to register new users and to view, manage (activate or deactivate, delete, modify characteristics and permissions) existing users in the system.</p>
+<p>The Users screen consists of a table that shows, for each of them, their first name, last name, user name, whether they are active (the corresponding check box is checked) and their e-mail address.</p>
+<p><img src="images/users1.png" class="mediano" alt="List of users" title="List of users" /></p>
+<p>Clicking on the icon to add a new user <span class="ti-plus"></span> will open the form that allows you to configure the user&#x2019;s characteristics.</p>
+<p>The form is structured in 3 parts:</p>
+<ul>
+
+<li>Data</li>
+</ul>
+<p><img src="images/users2.png" class="grande" alt="Management of basic user information" title="Management of basic user information" /></p>
+<ul>
+
+<li>Security groups</li>
+</ul>
+<p><img src="images/users3.png" class="grande" alt="User security group management" title="User security group management" /></p>
+<ul>
+
+<li>Permits</li>
+</ul>
+<p><img src="images/users4.png" class="grande" alt="Global user permissions management" title="Global user permissions management" /></p>
+<p>In the case of modifying an existing user, the previous screen will have the corresponding user data loaded, allowing its modification. Aditionally a new section will be shown: &#x201c;Advanced options&#x201d;.</p>
+<ul>
+
+<li>Advanced options</li>
+</ul>
+<p><img src="images/usersAdvancedOptions.png" class="grande" alt="Advanced options." title="Advanced options." /></p>
+<p>Configurable characteristics:</p>
+<ul>
+
+<li>
+
+<p>Image, First name, Last name, User, Email, Culture, Time zone, Subject (detailed in section <a href="profile.html">Profile</a>): If in culture the option Default is left the user will apply the culture of the security group to which he/she belongs.</p>
+</li>
+<li>
+
+<p>Active: If checked, enables the user. If unchecked, the user will not be able to log in, he/she will not be able to access the application.</p>
+</li>
+<li>
+
+<p>Security groups: The first box (left) shows a tree with the available security groups (click on the corresponding arrow to display them).  When marking the security groups to which you want to link the user in the box on the right, the 2 tabs show the roles and access groups associated to the selected security groups. Select the role and groups to which the user will belong.</p>
+</li>
+</ul>
+<p><img src="images/users5.png" class="mediano" alt="Role management by user security groups" title="Role management by user security groups" /></p>
+<p><img src="images/users6.png" class="mediano" alt="Access group management by user security groups" title="Access group management by user security groups" /></p>
+<ul>
+
+<li>Permissions: This section shows a table with the various permissions assignable for each section. Hovering the cursor over the icons in the table header (1) shows the actions for which permissions are given. The user will have the permissions of the boxes marked with a check (2). The permission with a dash (3) means that it does not apply at the level of that section. You can click on the icon of a particular action to select all sections of that action.</li>
+</ul>
+<p><img src="images/users7.png" class="mediano" alt="Global permissions management for the user" title="Global permissions management for the user" /></p>
+<p>These permissions may be restricted or extended depending on the role settings of the assigned access group.</p>
+<ul>
+
+<li>Advanced options : This section gives us two options. One is resetting the user password clicking the button &#x201c;Restet password&#x201d;. The other is to modify the origin of the user &#x201c;Local&#x201d;, &#x201c;LDAP&#x201d; or &#x201c;Extern&#x201d;. &#x201c;LDAP&#x201d; will be used for those users that are from LDAP when one is configured in the system. &#x201c;Extern&#x201d;, are those users that are logged e.g. with Google, if it is configured. &#x201c;Local&#x201d; is for everyone else, the ones that we create normally on this screen.</li>
+</ul>
+<p>The first time the new user logs in, the application will force him/her to change the password:</p>
+<p><img src="images/users8.png" class="mediano" alt="Change of password for the user" title="Change of password for the user" /></p><hr /></section><section>
+<h3><a name="a1.3.09Roles"></a><a name="roles"></a>1.3	Roles</h3>
+<p>The Roles section allows you to view the list of available roles for the different security groups. It also allows you to manage them (add new roles, modify or delete them), if you have permissions.</p>
+<p>Roles allow you to group a set of permissions for a Security Group. When assigning a Security Group to a user, by selecting the corresponding role, these permissions are granted.</p>
+<p>The Roles screen consists of a table showing, for each role, its name, description, the security group to which it belongs and whether it is active.</p>
+<p><img src="images/rol1.png" class="grande" alt="List of roles" title="List of roles" /></p>
+<p>On the right side there are three buttons that allow you to create a new role <span class="ti-plus"></span>, edit <span class="ti-pencil-alt"></span> and delete <span class="ti-trash"></span> the selected role.</p>
+<p>Clicking on the icon to add a new IDbox role will open the form that allows you to configure the role characteristics.</p>
+<p>The form is structured in 3 parts:</p>
+<ul>
+
+<li>
+
+<p>Data<br />
+<img src="images/rol2.png" class="mediano" alt="Role data" title="Role data" /></p>
+</li>
+<li>
+
+<p>Security groups<br />
+<img src="images/rol3.png" class="grande" alt="Role security group" title="Role security group" /></p>
+</li>
+<li>
+
+<p>Permisos<br />
+<img src="images/rol4.png" class="grande" alt="Role permissions" title="Role permissions" /></p>
+</li>
+</ul>
+<p>In the case of modifying an existing role, the previous screen will have the corresponding role data loaded, allowing its modification.</p>
+<p>Configurable characteristics:</p>
+<ul>
+
+<li>
+
+<p>Name: Role identifier.</p>
+</li>
+<li>
+
+<p>Description: Role description.</p>
+</li>
+<li>
+
+<p>Security Groups: In the first box (left) there is a tree with the available security groups (displayed by clicking on the corresponding arrow). The role must belong to a security group and can only belong to one.</p>
+</li>
+<li>
+
+<p>Parent Role: Displays the other existing Roles of the selected Security Group. By selecting a parent, the role will inherit all permissions from the parent. Additional permissions can be added to the child role</p>
+</li>
+</ul>
+<p><b>Note:</b> To select a parent uncheck the Do not select option.</p>
+<p><img src="images/rol5.png" class="grande" alt="Parent roles" title="Parent roles" /></p>
+<p>When a security group is created, the application automatically creates 2 roles: Administrator and Viewer. In the form of each of these 2 roles the corresponding Permissions can be consulted.</p>
+<p><img src="images/rol6.png" class="grande" alt="Role permissions" title="Role permissions" /></p>
+<ul>
+
+<li>Permissions: Displays a table with permissions for each section. Hovering the cursor over the icons in the table header (1) shows the actions on which permissions are given. The user will have the permissions of the boxes marked with a check (2). The permission with a dash (3) means that it does not apply at the level of that section. You can click on the icon of a particular action to select all sections of that action.</li>
+</ul>
+<p><img src="images/rol7.png" class="mediano" alt="Sections and actions on permits" title="Sections and actions on permits" /></p>
+<p>To save the changes select the icon <span class="ti-save"></span>.</p><hr /></section><section>
+<h3><a name="a1.4.09Permits"></a><a name="permisos"></a>1.4	Permits</h3>
+<p>The following will detail the Permissions settings in the new/edit Users and Roles forms.</p>
+<p>Permissions are displayed in a table where the intersection of a row with a column represents a permission.</p>
+<p><img src="images/perm1.png" class="grande" alt="List of permits" title="List of permits" /></p><hr /></section><section>
+<h3><a name="a1.5.09Access_groups"></a><a name="grupos-acceso"></a>1.5	Access groups</h3>
+<p>The Access Groups section will display the access groups associated with the logged in user.</p>
+<p>Access groups enable read or read/write access to a set of documents, signals, enables or disables access to a site.</p>
+<p><img src="images/group-access1.png" class="grande" alt="List of access groups" title="List of access groups" /></p>
+<p>Access groups act as a filter on which elements the logged on user can interact with.</p>
+<p>An access group can only have users assigned to it who belong to the security group in which the access group is registered.</p>
+<p>The permissions defined in an access group take precedence over user permissions or role permissions. The read permission on an access group overrides the write permissions of a role.</p>
+<p>Access groups allow people with the same roles to access different information depending on which access group they belong to.</p>
+<p>At the top left there is a search engine to filter the groups that are displayed. At the top right there are three buttons: add (+) or edit (pencil) or delete (trash) an existing group (if you have the corresponding permissions).</p>
+<p>The table with the access groups will show the Name, Description, Security group (to which the access group belongs) and whether it is Active.</p>
+<p>When adding a new security group, a screen like the following will appear (in the case of editing an existing group, the same screen will appear with the loaded data of the group being modified):</p>
+<p><img src="images/group-access2.png" class="grande" alt="Access group security group" title="Access group security group" /></p>
+<p>The configurable fields in the &#x2018;Data&#x2019; section are:</p>
+<p>Name: Name for the access group.</p>
+<p>Description: Description of the access group.</p>
+<p>Read: Checkbox for read permissions. It is checked by default and cannot be modified.</p>
+<p>Write: Checkbox for write permissions. Enables write permissions for the access group.</p>
+<p>In the Security group section, a drop-down tree appears with the nodes of the different security groups to which the connected user is associated. The access group to be configured must be associated to a security group (required field).</p>
+<p>Parent Access Group allows to associate a parent to the access group. The parent will be selectable among the access groups linked to the security group selected before.</p>
+<p>To save the changes select the save icon (floppy disk).</p><hr /></section></section>
+
+			</div>
+		</div>
+    
+		<div id="myModal" class="modal">
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  			<img class="modal-content" id="img01">
+  		<div id="caption"></div>
+	</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+	
+			// buscamos todas las imagenes
+			var imgs = document.getElementsByTagName('img');
+			for(var i = 0; i < imgs.length;i++)
+			{
+				  // por cada imagen le asignamos el evento clic que mostrara la imagen en la modal
+				  var img = imgs[i];
+				  img.onclick = function()
+				  {
+				      modal.style.display = "block";
+				      modalImg.src = this.src;
+				      captionText.innerHTML = this.alt;
+				  }
+			}
+	
+	
+	 
+			var span = document.getElementsByClassName("close")[0];
+			 
+			 
+			span.onclick = function() 
+			{
+			  	modal.style.display = "none";
+			}
+		
+		</script>
+
+  </body>
+
+   <footer>
+   
+        <div class="container">
+
+            <hr class="detalle">
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <div class="datos">
+                        <p>DOCUMENTACI&Oacute;N</p>
+                        <p>Versi&#243;n 3.0</p>
+                    </div>
+
+                    <div class="copy">
+                        <p>&copy;IDboxRT a CIC CONSULTING INFORM&Aacute;TICO Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
